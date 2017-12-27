@@ -1,14 +1,9 @@
 /**
  * Created by Janine on 2017-12-18.
  */
-import org.jsoup.Jsoup
-import org.jsoup.nodes.Document
-import org.jsoup.nodes.Element
-import org.jsoup.select.Elements
-
 import java.nio.charset.Charset
 import java.nio.file.Files
-import java.nio.file.Paths;
+import java.nio.file.Paths
 
 class Analyzer {
 
@@ -16,17 +11,24 @@ class Analyzer {
         def project_root = "C:\\Users\\Janine\\Desktop\\CodeReviewTool"
         //REPLACE with your project root
 
-        def outputfilename = project_root + "/" + "overprivout.txt"
-        def capsAsPerSamsungFile = project_root + "/" + "Capabilities.csv"
-        def allCapsFile = project_root + "/" + "capfull.csv"
-
+        def outputfilename = project_root + "/" + "codereviewout.txt"
+        Logger log = new Logger(outputfilename)
         String sourceCodeDir = project_root + "/out/" + "dump_ast" //REPLACE with your dataset
         new File(sourceCodeDir).eachFile { file ->
             try {
+                println "processing ${file.getName()}"
+
+                log.append "--app-start--"
+                log.append "processing ${file.getName()}"
+
                 String contents = readFile(file.toString(), Charset.defaultCharset());
 
-                Parser parser = new Parser()
+                Parser parser = new Parser(log)
                 parser.process(contents)
+
+                log.append "--app-end--"
+
+                println "done"
 
             } catch (IOException ie) {
                 ie.printStackTrace();

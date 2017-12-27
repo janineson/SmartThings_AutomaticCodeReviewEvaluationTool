@@ -1,0 +1,394 @@
+
+--app-start--
+processing CodeNarcAntReport.html
+FILENAME : ➥ AlfredWorkflow.groovy
+rule name : DocumentExposedEndpoints line : 36
+source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
+rule name : EmptyMethod line : 63
+source line/ message : [SRC]def installed() {} [MSG]Violation in class None. The method installed is both empty and not marked with @Override
+rule name : EmptyMethod line : 65
+source line/ message : [SRC]def updated() {} [MSG]Violation in class None. The method updated is both empty and not marked with @Override
+rule name : UseConsistentReturnValue line : 149
+source line/ message : [SRC]return type [MSG]Use consistent return values.
+rule name : InvertedIfElse line : 180
+source line/ message : [SRC]if (!device) { [MSG]Testing the negative condition first can make an if statement confusing
+lines of code : 194
+---Code Defect Rate---
+Reliability - 1.55%
+Security - 0.52%
+Maintainability - 0.52%
+---Violation Metrics---
+UseConsistentReturnValue : 1
+EmptyMethod : 2
+DocumentExposedEndpoints : 1
+InvertedIfElse : 1
+ 
+FILENAME : ➥ ButtonController.groovy
+rule name : MethodCount line : 18
+source line/ message : [SRC]definition( [MSG]Class None has 31 methods
+rule name : SpecificSubscription line : 160
+source line/ message : [SRC]subscribe(buttonDevice, "button", buttonEvent) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : MissingSwitchDefault line : 189
+source line/ message : [SRC]switch(buttonNumber) { [MSG]Missing default: case statement in switch().
+rule name : HandleNullValue line : 225
+source line/ message : [SRC]if (phrase != null) location.helloHome.execute(phrase) [MSG]Handle null values. Avoid NullPointerException by using the safe navigation (?) operator.
+rule name : NoRestrictedMethodCalls line : 225
+source line/ message : [SRC]if (phrase != null) location.helloHome.execute(phrase) [MSG]SmartThings restricted methods calls are not allowed.
+lines of code : 344
+---Code Defect Rate---
+Reliability - 0.87%
+Security - 0.58%
+Maintainability - 0.0%
+---Violation Metrics---
+HandleNullValue : 1
+MissingSwitchDefault : 1
+MethodCount : 1
+SpecificSubscription : 1
+NoRestrictedMethodCalls : 1
+ 
+FILENAME : ➥ CarpoolNotifier.groovy
+rule name : IfStatementCouldBeTernary line : 99
+source line/ message : [SRC]if (minusFive > latestState.date) [MSG]The if statement in class None can be rewritten using the ternary operator: return (minusFive > latestState.date) ? true : false
+lines of code : 114
+---Code Defect Rate---
+Reliability - 0.0%
+Security - 0.0%
+Maintainability - 0.88%
+---Violation Metrics---
+IfStatementCouldBeTernary : 1
+ 
+FILENAME : ➥ DoubleTap.groovy
+lines of code : 100
+---Code Defect Rate---
+Reliability - 0.0%
+Security - 0.0%
+Maintainability - 0.0%
+---Violation Metrics---
+NONE
+ 
+FILENAME : ➥ EnergyAlerts.groovy
+rule name : SpecificSubscription line : 53
+source line/ message : [SRC]subscribe(meter, "power", meterHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : EmptyElseBlock line : 74
+source line/ message : [SRC]} else { [MSG]The else block is empty
+rule name : EmptyElseBlock line : 85
+source line/ message : [SRC]} else { [MSG]The else block is empty
+rule name : CouldBeElvis line : 60
+source line/ message : [SRC]if (!atomicState.lastValue) { [MSG]Code could use elvis operator: atomicState.lastValue = atomicState.lastValue ?: meterValue
+lines of code : 103
+---Code Defect Rate---
+Reliability - 1.94%
+Security - 0.97%
+Maintainability - 0.97%
+---Violation Metrics---
+EmptyElseBlock : 2
+SpecificSubscription : 1
+CouldBeElvis : 1
+ 
+FILENAME : ➥ EnergySaver.groovy
+rule name : SpecificSubscription line : 49
+source line/ message : [SRC]subscribe(meter, "power", meterHandler) [MSG]Subscription must be specific to the Event you are interested in.
+lines of code : 59
+---Code Defect Rate---
+Reliability - 0.0%
+Security - 1.69%
+Maintainability - 0.0%
+---Violation Metrics---
+SpecificSubscription : 1
+ 
+FILENAME : ➥ GentleWakeUp.groovy
+rule name : MethodCount line : 26
+source line/ message : [SRC]definition( [MSG]Class None has 76 methods
+rule name : IfStatementCouldBeTernary line : 165
+source line/ message : [SRC]if (usesOldSettings() && direction && direction == "Down") { [MSG]The if statement in class None can be rewritten using the ternary operator: return ((this.usesOldSettings() && direction) && (direction == Down)) ? 99 : 0
+rule name : IfStatementCouldBeTernary line : 172
+source line/ message : [SRC]if (usesOldSettings() && direction && direction == "Down") { [MSG]The if statement in class None can be rewritten using the ternary operator: return ((this.usesOldSettings() && direction) && (direction == Down)) ? 0 : 99
+rule name : IfStatementCouldBeTernary line : 180
+source line/ message : [SRC]if (direction && direction == "Down") { // 99 -> 1 [MSG]The if statement in class None can be rewritten using the ternary operator: return (direction && (direction == Down)) ? '99%' : '0%'
+rule name : UseConsistentReturnValue line : 185
+source line/ message : [SRC]return hasStartLevel() ? "${startLevel}%" : "Current Level" [MSG]Use consistent return values.
+rule name : IfStatementCouldBeTernary line : 190
+source line/ message : [SRC]if (direction && direction == "Down") { // 99 -> 1 [MSG]The if statement in class None can be rewritten using the ternary operator: return (direction && (direction == Down)) ? '0%' : '99%'
+rule name : UseConsistentReturnValue line : 195
+source line/ message : [SRC]return "${endLevel}%" [MSG]Use consistent return values.
+rule name : HandleNullValue line : 250
+source line/ message : [SRC]input(name: "completionPhrase", type: "enum", title: "Ex..ses().label) [MSG]Handle null values. Avoid NullPointerException by using the safe navigation (?) operator.
+rule name : AtomicStateUpdateUsage line : 409
+source line/ message : [SRC]def eventData = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
+rule name : AtomicStateUpdateUsage line : 432
+source line/ message : [SRC]def eventData = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
+rule name : AtomicStateUpdateUsage line : 472
+source line/ message : [SRC]def percentCompleteEventData = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
+rule name : AtomicStateUpdateUsage line : 482
+source line/ message : [SRC]def timeRemainingEventData = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
+rule name : AtomicStateUsage line : 499
+source line/ message : [SRC]def dni = state.controllerDni [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : HandleNullValue line : 670
+source line/ message : [SRC]location.helloHome.execute(completionPhrase) [MSG]Handle null values. Avoid NullPointerException by using the safe navigation (?) operator.
+rule name : NoRestrictedMethodCalls line : 670
+source line/ message : [SRC]location.helloHome.execute(completionPhrase) [MSG]SmartThings restricted methods calls are not allowed.
+rule name : AtomicStateUpdateUsage line : 702
+source line/ message : [SRC]def startLevels = [:] [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
+rule name : UseConsistentReturnValue line : 777
+source line/ message : [SRC]return "${minutes}:00" [MSG]Use consistent return values.
+rule name : UseConsistentReturnValue line : 781
+source line/ message : [SRC]return "${minutes}:${seconds}" [MSG]Use consistent return values.
+rule name : IfStatementCouldBeTernary line : 798
+source line/ message : [SRC]if (direction && direction == "Down") { [MSG]The if statement in class None can be rewritten using the ternary operator: return (direction && (direction == Down)) ? 0 : 99
+rule name : CyclomaticComplexity line : 824
+source line/ message : [SRC]private getBlueHue(level) { [MSG]Violation in class None. The cyclomatic complexity for method [getBlueHue] is [21]
+rule name : UseConsistentReturnValue line : 899
+source line/ message : [SRC]return i as int [MSG]Use consistent return values.
+rule name : UseConsistentReturnValue line : 1088
+source line/ message : [SRC]return [r * 255, g * 255, b * 255]; [MSG]Use consistent return values.
+rule name : UseConsistentReturnValue line : 1104
+source line/ message : [SRC]return toHex(r) + toHex(g) + toHex(b) [MSG]Use consistent return values.
+rule name : UseConsistentReturnValue line : 1107
+source line/ message : [SRC]return rgbToHex(red, green, blue) [MSG]Use consistent return values.
+rule name : InvertedIfElse line : 896
+source line/ message : [SRC]if (!i) { [MSG]Testing the negative condition first can make an if statement confusing
+lines of code : 1120
+---Code Defect Rate---
+Reliability - 1.52%
+Security - 0.09%
+Maintainability - 0.63%
+---Violation Metrics---
+UseConsistentReturnValue : 8
+HandleNullValue : 2
+MethodCount : 1
+AtomicStateUsage : 1
+AtomicStateUpdateUsage : 5
+NoRestrictedMethodCalls : 1
+CyclomaticComplexity : [21]
+IfStatementCouldBeTernary : 5
+InvertedIfElse : 1
+ 
+FILENAME : ➥ HasBarkleyBeenFed.groovy
+lines of code : 75
+---Code Defect Rate---
+Reliability - 0.0%
+Security - 0.0%
+Maintainability - 0.0%
+---Violation Metrics---
+NONE
+ 
+FILENAME : ➥ ItsTooCold.groovy
+rule name : SpecificSubscription line : 46
+source line/ message : [SRC]subscribe(temperatureSensor1, "temperature", temperatureHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 51
+source line/ message : [SRC]subscribe(temperatureSensor1, "temperature", temperatureHandler) [MSG]Subscription must be specific to the Event you are interested in.
+lines of code : 101
+---Code Defect Rate---
+Reliability - 0.0%
+Security - 1.98%
+Maintainability - 0.0%
+---Violation Metrics---
+SpecificSubscription : 2
+ 
+FILENAME : ➥ KeepMeCozy.groovy
+rule name : SpecificSubscription line : 41
+source line/ message : [SRC]subscribe(thermostat, "heatingSetpoint", heatingSetpointHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 42
+source line/ message : [SRC]subscribe(thermostat, "coolingSetpoint", coolingSetpointHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 43
+source line/ message : [SRC]subscribe(thermostat, "temperature", temperatureHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 51
+source line/ message : [SRC]subscribe(thermostat, "heatingSetpoint", heatingSetpointHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 52
+source line/ message : [SRC]subscribe(thermostat, "coolingSetpoint", coolingSetpointHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 53
+source line/ message : [SRC]subscribe(thermostat, "temperature", temperatureHandler) [MSG]Subscription must be specific to the Event you are interested in.
+lines of code : 95
+---Code Defect Rate---
+Reliability - 0.0%
+Security - 6.32%
+Maintainability - 0.0%
+---Violation Metrics---
+SpecificSubscription : 6
+ 
+FILENAME : ➥ KeepMeCozy2.groovy
+rule name : SpecificSubscription line : 60
+source line/ message : [SRC]subscribe(sensor, "temperature", temperatureHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 61
+source line/ message : [SRC]subscribe(thermostat, "temperature", temperatureHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 62
+source line/ message : [SRC]subscribe(thermostat, "thermostatMode", temperatureHandler) [MSG]Subscription must be specific to the Event you are interested in.
+lines of code : 123
+---Code Defect Rate---
+Reliability - 0.0%
+Security - 2.44%
+Maintainability - 0.0%
+---Violation Metrics---
+SpecificSubscription : 3
+ 
+FILENAME : ➥ LaundryMonitor.groovy
+rule name : InvertedIfElse line : 95
+source line/ message : [SRC]if (!sensorStates.find{it.value == "active"}) { [MSG]Testing the negative condition first can make an if statement confusing
+lines of code : 182
+---Code Defect Rate---
+Reliability - 0.0%
+Security - 0.0%
+Maintainability - 0.55%
+---Violation Metrics---
+InvertedIfElse : 1
+ 
+FILENAME : ➥ Life360Connect.groovy
+rule name : DocumentExposedEndpoints line : 42
+source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
+rule name : DocumentExternalHTTPRequests line : 285
+source line/ message : [SRC]httpPost(uri: url, body: postBody, headers: ["Authorizat..{response -> [MSG]Document external HTTP requests.
+rule name : DocumentExternalHTTPRequests line : 321
+source line/ message : [SRC]httpGet(uri: url, headers: ["Authorization": "Bearer ${s..{response -> [MSG]Document external HTTP requests.
+rule name : DocumentExternalHTTPRequests line : 365
+source line/ message : [SRC]httpGet(uri: url, headers: ["Authorization": "Bearer ${s..{response -> [MSG]Document external HTTP requests.
+rule name : DocumentExternalHTTPRequests line : 407
+source line/ message : [SRC]httpGet(uri: url, headers: ["Authorization": "Bearer ${s..{response -> [MSG]Document external HTTP requests.
+rule name : DocumentExternalHTTPRequests line : 503
+source line/ message : [SRC]httpDelete (uri: deleteUrl, headers: ["Authorization": "..{response -> [MSG]Document external HTTP requests.
+rule name : DocumentExternalHTTPRequests line : 531
+source line/ message : [SRC]httpPost(uri: url, body: postBody, headers: ["Authorizat..{response -> [MSG]Document external HTTP requests.
+rule name : EmptyCatchBlock line : 696
+source line/ message : [SRC]catch (e) { [MSG]The catch block is empty
+rule name : EmptyMethod line : 702
+source line/ message : [SRC]def initialize() { [MSG]Violation in class None. The method initialize is both empty and not marked with @Override
+rule name : InvertedIfElse line : 69
+source line/ message : [SRC]if(!state.life360AccessToken) [MSG]Testing the negative condition first can make an if statement confusing
+rule name : MethodSize line : 551
+source line/ message : [MSG]Method "updated" is 101 lines
+rule name : InvertedIfElse line : 570
+source line/ message : [SRC]if (!deviceWrapper) { // device isn't there - so we need to create [MSG]Testing the negative condition first can make an if statement confusing
+rule name : ParameterReassignment line : 711
+source line/ message : [SRC]lat1 = Math.toRadians(lat1) [MSG]The method parameter [lat1] in class None was reassigned. Use a temporary variable instead.
+rule name : ParameterReassignment line : 712
+source line/ message : [SRC]lat2 = Math.toRadians(lat2) [MSG]The method parameter [lat2] in class None was reassigned. Use a temporary variable instead.
+lines of code : 755
+---Code Defect Rate---
+Reliability - 0.66%
+Security - 0.93%
+Maintainability - 0.26%
+---Violation Metrics---
+EmptyCatchBlock : 1
+EmptyMethod : 1
+ParameterReassignment : 2
+MethodSize : 1
+DocumentExternalHTTPRequests : 6
+DocumentExposedEndpoints : 1
+InvertedIfElse : 2
+ 
+FILENAME : ➥ MailArrived.groovy
+lines of code : 77
+---Code Defect Rate---
+Reliability - 0.0%
+Security - 0.0%
+Maintainability - 0.0%
+---Violation Metrics---
+NONE
+ 
+FILENAME : ➥ MedicineReminder.groovy
+rule name : MissingSwitchDefault line : 67
+source line/ message : [SRC]switch (index) { [MSG]Missing default: case statement in switch().
+lines of code : 124
+---Code Defect Rate---
+Reliability - 0.81%
+Security - 0.0%
+Maintainability - 0.0%
+---Violation Metrics---
+MissingSwitchDefault : 1
+ 
+FILENAME : ➥ MoodCube.groovy
+rule name : SpecificSubscription line : 143
+source line/ message : [SRC]subscribe cube, "threeAxis", positionHandler [MSG]Subscription must be specific to the Event you are interested in.
+lines of code : 341
+---Code Defect Rate---
+Reliability - 0.0%
+Security - 0.29%
+Maintainability - 0.0%
+---Violation Metrics---
+SpecificSubscription : 1
+ 
+FILENAME : ➥ NotifyMeWhen.groovy
+rule name : HandleNullValue line : 160
+source line/ message : [SRC]def name = location.name.toLowerCase() [MSG]Handle null values. Avoid NullPointerException by using the safe navigation (?) operator.
+lines of code : 163
+---Code Defect Rate---
+Reliability - 0.61%
+Security - 0.0%
+Maintainability - 0.0%
+---Violation Metrics---
+HandleNullValue : 1
+ 
+FILENAME : ➥ PhotoBurstWhen.groovy
+lines of code : 91
+---Code Defect Rate---
+Reliability - 0.0%
+Security - 0.0%
+Maintainability - 0.0%
+---Violation Metrics---
+NONE
+ 
+FILENAME : ➥ SevereWeatherAlert.groovy
+lines of code : 131
+---Code Defect Rate---
+Reliability - 0.0%
+Security - 0.0%
+Maintainability - 0.0%
+---Violation Metrics---
+NONE
+ 
+FILENAME : ➥ SleepyTime.groovy
+rule name : SpecificSubscription line : 56
+source line/ message : [SRC]subscribe (jawbone, "sleeping", jawboneHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 67
+source line/ message : [SRC]subscribe (jawbone, "sleeping", jawboneHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : EmptyMethod line : 72
+source line/ message : [SRC]def initialize() { [MSG]Violation in class None. The method initialize is both empty and not marked with @Override
+rule name : HandleNullValue line : 81
+source line/ message : [SRC]location.helloHome.execute(settings.sleepPhrase) [MSG]Handle null values. Avoid NullPointerException by using the safe navigation (?) operator.
+rule name : NoRestrictedMethodCalls line : 81
+source line/ message : [SRC]location.helloHome.execute(settings.sleepPhrase) [MSG]SmartThings restricted methods calls are not allowed.
+rule name : HandleNullValue line : 86
+source line/ message : [SRC]location.helloHome.execute(settings.wakePhrase) [MSG]Handle null values. Avoid NullPointerException by using the safe navigation (?) operator.
+rule name : NoRestrictedMethodCalls line : 86
+source line/ message : [SRC]location.helloHome.execute(settings.wakePhrase) [MSG]SmartThings restricted methods calls are not allowed.
+lines of code : 89
+---Code Defect Rate---
+Reliability - 3.37%
+Security - 4.49%
+Maintainability - 0.0%
+---Violation Metrics---
+HandleNullValue : 2
+EmptyMethod : 1
+SpecificSubscription : 2
+NoRestrictedMethodCalls : 2
+ 
+FILENAME : ➥ StepNotifier.groovy
+rule name : SpecificSubscription line : 162
+source line/ message : [SRC]subscribe (jawbone,"goal",goalHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 163
+source line/ message : [SRC]subscribe (jawbone,"steps",stepHandler) [MSG]Subscription must be specific to the Event you are interested in.
+lines of code : 366
+---Code Defect Rate---
+Reliability - 0.0%
+Security - 0.55%
+Maintainability - 0.0%
+---Violation Metrics---
+SpecificSubscription : 2
+ 
+FILENAME : ➥ VirtualThermostat.groovy
+rule name : SpecificSubscription line : 53
+source line/ message : [SRC]subscribe(sensor, "temperature", temperatureHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 55
+source line/ message : [SRC]subscribe(motion, "motion", motionHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 62
+source line/ message : [SRC]subscribe(sensor, "temperature", temperatureHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 64
+source line/ message : [SRC]subscribe(motion, "motion", motionHandler) [MSG]Subscription must be specific to the Event you are interested in.
+lines of code : 143
+---Code Defect Rate---
+Reliability - 0.0%
+Security - 2.8%
+Maintainability - 0.0%
+---Violation Metrics---
+SpecificSubscription : 4
+ 
+--app-end--
