@@ -42,7 +42,7 @@ Maintainability - 0.0%
 ---Violation Metrics---
 HandleNullValue : 1
 MissingSwitchDefault : 1
-MethodCount : 1
+MethodCount : 31
 SpecificSubscription : 1
 NoRestrictedMethodCalls : 1
  
@@ -155,7 +155,7 @@ Maintainability - 0.63%
 ---Violation Metrics---
 UseConsistentReturnValue : 8
 HandleNullValue : 2
-MethodCount : 1
+MethodCount : 76
 AtomicStateUsage : 1
 AtomicStateUpdateUsage : 5
 NoRestrictedMethodCalls : 1
@@ -270,7 +270,7 @@ Maintainability - 0.26%
 EmptyCatchBlock : 1
 EmptyMethod : 1
 ParameterReassignment : 2
-MethodSize : 1
+MethodSize : 101
 DocumentExternalHTTPRequests : 6
 DocumentExposedEndpoints : 1
 InvertedIfElse : 2

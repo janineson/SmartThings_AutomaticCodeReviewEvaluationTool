@@ -8,11 +8,8 @@ import org.jsoup.select.Elements
 
 class Parser{
 
-    int reliabilityViolationCount
-    int securityViolationCount
-    int maintainabilityViolationCount
-    def cyclomaticComplexity
-    def abcMetric
+    int reliabilityViolationCount, securityViolationCount, maintainabilityViolationCount
+    def cyclomaticComplexity, abcMetric, methodCount, methodSize
     Logger log
     ArrayList<String> ruleViolationList
 
@@ -55,7 +52,7 @@ class Parser{
 
     void process(String obj) {
         def ruleName, rulePriority, ruleLineNo, ruleSource, linesOfCode
-        String[] fileLOC, fileComplexity
+        String[] fileRuleSource
 
         Document doc = Jsoup.parse(obj)
 
@@ -76,8 +73,7 @@ class Parser{
                     rulePriority = tableIterator.next().text()
                     ruleLineNo = tableIterator.next().text()
                     ruleSource = tableIterator.next().text()
-                    fileLOC = ruleSource.split(" ")
-                    fileComplexity = ruleSource.split(" ")
+                    fileRuleSource = ruleSource.split(" ")
 
                     /* Checks the cyclomatic complexity for methods/classes. A method
                     (or "closure field") with a cyclomatic complexity value greater
@@ -86,17 +82,25 @@ class Parser{
                     value greater than the maxClassAverageMethodComplexity property (20) causes a violation.
                      */
                     if (ruleName == "CyclomaticComplexity")
-                        cyclomaticComplexity = fileComplexity[fileComplexity.length - 1] //position of the value in the source line message
+                        cyclomaticComplexity = fileRuleSource[fileRuleSource.length - 1] //position of the value in the source line message
                     /*Checks the ABC size metric for methods/classes. A method (or "closure field")
                      with an ABC score greater than the maxMethodAbcScore property (60) causes a violation.
                      Likewise, a class that has an (average method) ABC score greater than the
                      maxClassAverageMethodAbcScore property (60) causes a violation.*/
                     if (ruleName == "AbcMetric")
-                        abcMetric = fileComplexity[fileComplexity.length - 1]
-
+                        abcMetric = fileRuleSource[fileRuleSource.length - 1]
+                    /*A class with too many methods is probably a good suspect for refactoring,
+                    in order to reduce its complexity and find a way to have more fine grained
+                    objects.The maxMethods property (30) specifies the threshold.
+                     */
+                    if (ruleName == "MethodCount")
+                        methodCount = fileRuleSource[fileRuleSource.length - 2]
+                    //Checks if the size of a method exceeds the number of lines specified by the maxLines property (100).
+                    if (ruleName == "MethodSize")
+                        methodSize = fileRuleSource[fileRuleSource.length - 2]
 
                     if (ruleName == "TotalLinesOfCode")
-                        linesOfCode = fileLOC[fileLOC.length - 2] //position of the value in the source line message
+                        linesOfCode = fileRuleSource[fileRuleSource.length - 2]
                     else{
                         log.append("rule name : " + ruleName + " line : " + ruleLineNo)
                         log.append("source line/ message : " + ruleSource)
@@ -154,7 +158,12 @@ class Parser{
 
         for (String rule : reliabilityList) {
             if (ruleViolationList.count(rule) > 0){
-                log.append(rule + " : "  + ruleViolationList.count(rule))
+                if (rule == 'MethodCount')
+                    log.append(rule + " : "  + methodCount)
+                else if (rule == 'MethodSize')
+                    log.append(rule + " : "  + methodSize)
+                else
+                    log.append(rule + " : "  + ruleViolationList.count(rule))
                 noViolation = false
             }
         }
@@ -171,6 +180,8 @@ class Parser{
             if (ruleViolationList.count(rule) > 0){
                 if (rule == 'CyclomaticComplexity')
                     log.append(rule + " : "  + cyclomaticComplexity)
+                else if (rule == 'AbcMetric')
+                    log.append(rule + " : "  + abcMetric)
                 else
                     log.append(rule + " : "  + ruleViolationList.count(rule))
                 noViolation = false
