@@ -6,10 +6,13 @@ import org.jsoup.nodes.Document
 import org.jsoup.nodes.Element
 import org.jsoup.select.Elements
 
+import java.util.regex.Matcher
+import java.util.regex.Pattern
+
 class Parser{
 
     int reliabilityViolationCount, securityViolationCount, maintainabilityViolationCount
-    def cyclomaticComplexity, abcMetric, methodCount, methodSize
+    def cyclomaticComplexity, abcMetric, methodCount, methodSize, linesOfCode
     Logger log
     ArrayList<String> ruleViolationList
 
@@ -51,7 +54,7 @@ class Parser{
     );
 
     void process(String obj) {
-        def ruleName, rulePriority, ruleLineNo, ruleSource, linesOfCode
+        def ruleName, rulePriority, ruleLineNo, ruleSource
         String[] fileRuleSource
 
         Document doc = Jsoup.parse(obj)
@@ -81,14 +84,21 @@ class Parser{
                     Likewise, a class that has an (average method) cyclomatic complexity
                     value greater than the maxClassAverageMethodComplexity property (20) causes a violation.
                      */
-                    if (ruleName == "CyclomaticComplexity")
-                        cyclomaticComplexity = fileRuleSource[fileRuleSource.length - 1] //position of the value in the source line message
+
+                    if (ruleName == "CyclomaticComplexity") {
+                        cyclomaticComplexity = fileRuleSource[fileRuleSource.length - 1]//position of the value in the source line message
+                        cyclomaticComplexity=getBracketValue(cyclomaticComplexity)
+                    }
+
                     /*Checks the ABC size metric for methods/classes. A method (or "closure field")
                      with an ABC score greater than the maxMethodAbcScore property (60) causes a violation.
                      Likewise, a class that has an (average method) ABC score greater than the
                      maxClassAverageMethodAbcScore property (60) causes a violation.*/
-                    if (ruleName == "AbcMetric")
+                    if (ruleName == "AbcMetric") {
                         abcMetric = fileRuleSource[fileRuleSource.length - 1]
+                        abcMetric=getBracketValue(abcMetric)
+
+                    }
                     /*A class with too many methods is probably a good suspect for refactoring,
                     in order to reduce its complexity and find a way to have more fine grained
                     objects.The maxMethods property (30) specifies the threshold.
@@ -110,8 +120,7 @@ class Parser{
 
                 }
 
-                log.append("lines of code : " + linesOfCode)
-                displayQualityAttribute(linesOfCode)
+                displayQualityAttribute()
                 resetCount()
 
             }
@@ -119,6 +128,16 @@ class Parser{
         }
 
     }
+
+    def getBracketValue(def string){
+        Pattern p = Pattern.compile("\\[(.*?)\\]")
+        Matcher m = p.matcher(string)
+        while (m.find()) {
+            string = m.group(1)
+        }
+        return string
+    }
+
 
     void resetCount(){
         reliabilityViolationCount = 0
@@ -148,14 +167,15 @@ class Parser{
 
     }
 
-    Float calculateRate(int count, def linesOfCode){
-
-        return (count / Integer.parseInt(linesOfCode)) * 100
+    /*
+    Defect density is the number of defects found in the software product
+    per size of the code. It can be defined as the number of defects per 1,000 lines of code or function points.
+     */
+    Float calculateRate(int count){
+        return (count / Integer.parseInt(linesOfCode)) * 1000
     }
 
-    void metrics(){
-        boolean noViolation = true
-
+    void violations(){
         for (String rule : reliabilityList) {
             if (ruleViolationList.count(rule) > 0){
                 if (rule == 'MethodCount')
@@ -164,14 +184,14 @@ class Parser{
                     log.append(rule + " : "  + methodSize)
                 else
                     log.append(rule + " : "  + ruleViolationList.count(rule))
-                noViolation = false
+
             }
         }
 
         for (String rule : securityList) {
             if (ruleViolationList.count(rule) > 0){
                 log.append(rule + " : "  + ruleViolationList.count(rule))
-                noViolation = false
+
             }
 
         }
@@ -184,24 +204,26 @@ class Parser{
                     log.append(rule + " : "  + abcMetric)
                 else
                     log.append(rule + " : "  + ruleViolationList.count(rule))
-                noViolation = false
+
             }
         }
-
-        if (noViolation)
-            log.append("NONE")
+        log.append("Total Violations : " + ruleViolationList.size())
     }
 
-    void displayQualityAttribute(def linesOfCode){
-        log.append("---Code Defect Rate---")
+    void displayQualityAttribute(){
+        log.append("---Defect Density Metrics (by KLOC)---")
         defectCount()
 
-        log.append("Reliability - " + calculateRate(reliabilityViolationCount, linesOfCode).round(2) + "%")
-        log.append("Security - "  + calculateRate(securityViolationCount, linesOfCode).round(2)  + "%")
-        log.append("Maintainability - "  + calculateRate(maintainabilityViolationCount, linesOfCode).round(2)  + "%")
+        log.append("Reliability - " + calculateRate(reliabilityViolationCount).round(2))
+        log.append("Security - "  + calculateRate(securityViolationCount).round(2))
+        log.append("Maintainability - "  + calculateRate(maintainabilityViolationCount).round(2))
+        log.append("Total Defect Density - " + calculateRate(reliabilityViolationCount+
+                maintainabilityViolationCount+securityViolationCount).round(2))
 
-        log.append("---Violation Metrics---")
-        metrics()
+
+        log.append("---Breakdown of Violations and Other Metrics---")
+        log.append("Lines of Code : " + linesOfCode)
+        violations()
         log.append(" ")
     }
 
