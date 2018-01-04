@@ -2,8 +2,6 @@
 --app-start--
 processing CodeNarcAntReport.html
 FILENAME : ➥ AlfredWorkflow.groovy
-rule name : DocumentExposedEndpoints line : 19
-source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
 rule name : EmptyMethod line : 46
 source line/ message : [SRC]def installed() {} [MSG]Violation in class None. The method installed is both empty and not marked with @Override
 rule name : EmptyMethod line : 48
@@ -12,18 +10,17 @@ rule name : UseConsistentReturnValue line : 132
 source line/ message : [SRC]return type [MSG]Use consistent return values.
 rule name : InvertedIfElse line : 163
 source line/ message : [SRC]if (!device) { [MSG]Testing the negative condition first can make an if statement confusing
----Defect Density Metrics---
-Reliability - 20.69
-Security - 6.9
-Maintainability - 6.9
-Total Defect Density - 34.48
+---Defect Density Metrics (by KLOC)---
+Reliability - 21.28
+Security - 0.0
+Maintainability - 7.09
+Total Defect Density - 28.37
 ---Breakdown of Violations and Other Metrics---
-Lines of Code : 145
+Lines of Code : 141
 UseConsistentReturnValue : 1
 EmptyMethod : 2
-DocumentExposedEndpoints : 1
 InvertedIfElse : 1
-Total Violations : 5
+Total Violations : 4
  
 FILENAME : ➥ ButtonController.groovy
 rule name : MethodCount line : 1
@@ -36,7 +33,7 @@ rule name : HandleNullValue line : 208
 source line/ message : [SRC]if (phrase != null) location.helloHome.execute(phrase) [MSG]Handle null values. Avoid NullPointerException by using the safe navigation (?) operator.
 rule name : NoRestrictedMethodCalls line : 208
 source line/ message : [SRC]if (phrase != null) location.helloHome.execute(phrase) [MSG]SmartThings restricted methods calls are not allowed.
----Defect Density Metrics---
+---Defect Density Metrics (by KLOC)---
 Reliability - 10.99
 Security - 7.33
 Maintainability - 0.0
@@ -53,7 +50,7 @@ Total Violations : 5
 FILENAME : ➥ CarpoolNotifier.groovy
 rule name : IfStatementCouldBeTernary line : 71
 source line/ message : [SRC]if (minusFive > latestState.date) [MSG]The if statement in class None can be rewritten using the ternary operator: return (minusFive > latestState.date) ? true : false
----Defect Density Metrics---
+---Defect Density Metrics (by KLOC)---
 Reliability - 0.0
 Security - 0.0
 Maintainability - 15.63
@@ -64,7 +61,7 @@ IfStatementCouldBeTernary : 1
 Total Violations : 1
  
 FILENAME : ➥ DoubleTap.groovy
----Defect Density Metrics---
+---Defect Density Metrics (by KLOC)---
 Reliability - 0.0
 Security - 0.0
 Maintainability - 0.0
@@ -82,7 +79,7 @@ rule name : EmptyElseBlock line : 70
 source line/ message : [SRC]} else { [MSG]The else block is empty
 rule name : CouldBeElvis line : 45
 source line/ message : [SRC]if (!atomicState.lastValue) { [MSG]Code could use elvis operator: atomicState.lastValue = atomicState.lastValue ?: meterValue
----Defect Density Metrics---
+---Defect Density Metrics (by KLOC)---
 Reliability - 27.4
 Security - 13.7
 Maintainability - 13.7
@@ -97,7 +94,7 @@ Total Violations : 4
 FILENAME : ➥ EnergySaver.groovy
 rule name : SpecificSubscription line : 34
 source line/ message : [SRC]subscribe(meter, "power", meterHandler) [MSG]Subscription must be specific to the Event you are interested in.
----Defect Density Metrics---
+---Defect Density Metrics (by KLOC)---
 Reliability - 0.0
 Security - 25.64
 Maintainability - 0.0
@@ -158,7 +155,7 @@ rule name : UseConsistentReturnValue line : 1082
 source line/ message : [SRC]return rgbToHex(red, green, blue) [MSG]Use consistent return values.
 rule name : InvertedIfElse line : 871
 source line/ message : [SRC]if (!i) { [MSG]Testing the negative condition first can make an if statement confusing
----Defect Density Metrics---
+---Defect Density Metrics (by KLOC)---
 Reliability - 19.72
 Security - 1.16
 Maintainability - 8.12
@@ -177,7 +174,7 @@ InvertedIfElse : 1
 Total Violations : 25
  
 FILENAME : ➥ HasBarkleyBeenFed.groovy
----Defect Density Metrics---
+---Defect Density Metrics (by KLOC)---
 Reliability - 0.0
 Security - 0.0
 Maintainability - 0.0
@@ -191,7 +188,7 @@ rule name : SpecificSubscription line : 30
 source line/ message : [SRC]subscribe(temperatureSensor1, "temperature", temperatureHandler) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : SpecificSubscription line : 35
 source line/ message : [SRC]subscribe(temperatureSensor1, "temperature", temperatureHandler) [MSG]Subscription must be specific to the Event you are interested in.
----Defect Density Metrics---
+---Defect Density Metrics (by KLOC)---
 Reliability - 0.0
 Security - 28.17
 Maintainability - 0.0
@@ -214,7 +211,7 @@ rule name : SpecificSubscription line : 36
 source line/ message : [SRC]subscribe(thermostat, "coolingSetpoint", coolingSetpointHandler) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : SpecificSubscription line : 37
 source line/ message : [SRC]subscribe(thermostat, "temperature", temperatureHandler) [MSG]Subscription must be specific to the Event you are interested in.
----Defect Density Metrics---
+---Defect Density Metrics (by KLOC)---
 Reliability - 0.0
 Security - 89.55
 Maintainability - 0.0
@@ -231,7 +228,7 @@ rule name : SpecificSubscription line : 44
 source line/ message : [SRC]subscribe(thermostat, "temperature", temperatureHandler) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : SpecificSubscription line : 45
 source line/ message : [SRC]subscribe(thermostat, "thermostatMode", temperatureHandler) [MSG]Subscription must be specific to the Event you are interested in.
----Defect Density Metrics---
+---Defect Density Metrics (by KLOC)---
 Reliability - 0.0
 Security - 31.58
 Maintainability - 0.0
@@ -244,7 +241,7 @@ Total Violations : 3
 FILENAME : ➥ LaundryMonitor.groovy
 rule name : InvertedIfElse line : 74
 source line/ message : [SRC]if (!sensorStates.find{it.value == "active"}) { [MSG]Testing the negative condition first can make an if statement confusing
----Defect Density Metrics---
+---Defect Density Metrics (by KLOC)---
 Reliability - 0.0
 Security - 0.0
 Maintainability - 6.94
@@ -255,20 +252,6 @@ InvertedIfElse : 1
 Total Violations : 1
  
 FILENAME : ➥ Life360Connect.groovy
-rule name : DocumentExposedEndpoints line : 26
-source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
-rule name : DocumentExternalHTTPRequests line : 269
-source line/ message : [SRC]httpPost(uri: url, body: postBody, headers: ["Authorizat..{response -> [MSG]Document external HTTP requests.
-rule name : DocumentExternalHTTPRequests line : 305
-source line/ message : [SRC]httpGet(uri: url, headers: ["Authorization": "Bearer ${s..{response -> [MSG]Document external HTTP requests.
-rule name : DocumentExternalHTTPRequests line : 349
-source line/ message : [SRC]httpGet(uri: url, headers: ["Authorization": "Bearer ${s..{response -> [MSG]Document external HTTP requests.
-rule name : DocumentExternalHTTPRequests line : 391
-source line/ message : [SRC]httpGet(uri: url, headers: ["Authorization": "Bearer ${s..{response -> [MSG]Document external HTTP requests.
-rule name : DocumentExternalHTTPRequests line : 487
-source line/ message : [SRC]httpDelete (uri: deleteUrl, headers: ["Authorization": "..{response -> [MSG]Document external HTTP requests.
-rule name : DocumentExternalHTTPRequests line : 515
-source line/ message : [SRC]httpPost(uri: url, body: postBody, headers: ["Authorizat..{response -> [MSG]Document external HTTP requests.
 rule name : EmptyCatchBlock line : 680
 source line/ message : [SRC]catch (e) { [MSG]The catch block is empty
 rule name : EmptyMethod line : 686
@@ -283,24 +266,22 @@ rule name : ParameterReassignment line : 695
 source line/ message : [SRC]lat1 = Math.toRadians(lat1) [MSG]The method parameter [lat1] in class None was reassigned. Use a temporary variable instead.
 rule name : ParameterReassignment line : 696
 source line/ message : [SRC]lat2 = Math.toRadians(lat2) [MSG]The method parameter [lat2] in class None was reassigned. Use a temporary variable instead.
----Defect Density Metrics---
-Reliability - 11.44
-Security - 16.02
-Maintainability - 4.58
-Total Defect Density - 32.04
+---Defect Density Metrics (by KLOC)---
+Reliability - 11.93
+Security - 0.0
+Maintainability - 4.77
+Total Defect Density - 16.71
 ---Breakdown of Violations and Other Metrics---
-Lines of Code : 437
+Lines of Code : 419
 EmptyCatchBlock : 1
 EmptyMethod : 1
 ParameterReassignment : 2
 MethodSize : 101
-DocumentExternalHTTPRequests : 6
-DocumentExposedEndpoints : 1
 InvertedIfElse : 2
-Total Violations : 14
+Total Violations : 7
  
 FILENAME : ➥ MailArrived.groovy
----Defect Density Metrics---
+---Defect Density Metrics (by KLOC)---
 Reliability - 0.0
 Security - 0.0
 Maintainability - 0.0
@@ -312,7 +293,7 @@ Total Violations : 0
 FILENAME : ➥ MedicineReminder.groovy
 rule name : MissingSwitchDefault line : 50
 source line/ message : [SRC]switch (index) { [MSG]Missing default: case statement in switch().
----Defect Density Metrics---
+---Defect Density Metrics (by KLOC)---
 Reliability - 10.31
 Security - 0.0
 Maintainability - 0.0
@@ -325,20 +306,20 @@ Total Violations : 1
 FILENAME : ➥ MoodCube.groovy
 rule name : SpecificSubscription line : 124
 source line/ message : [SRC]subscribe cube, "threeAxis", positionHandler [MSG]Subscription must be specific to the Event you are interested in.
----Defect Density Metrics---
+---Defect Density Metrics (by KLOC)---
 Reliability - 0.0
-Security - 3.8
+Security - 3.86
 Maintainability - 0.0
-Total Defect Density - 3.8
+Total Defect Density - 3.86
 ---Breakdown of Violations and Other Metrics---
-Lines of Code : 263
+Lines of Code : 259
 SpecificSubscription : 1
 Total Violations : 1
  
 FILENAME : ➥ NotifyMeWhen.groovy
 rule name : HandleNullValue line : 139
 source line/ message : [SRC]def name = location.name.toLowerCase() [MSG]Handle null values. Avoid NullPointerException by using the safe navigation (?) operator.
----Defect Density Metrics---
+---Defect Density Metrics (by KLOC)---
 Reliability - 7.58
 Security - 0.0
 Maintainability - 0.0
@@ -349,7 +330,7 @@ HandleNullValue : 1
 Total Violations : 1
  
 FILENAME : ➥ PhotoBurstWhen.groovy
----Defect Density Metrics---
+---Defect Density Metrics (by KLOC)---
 Reliability - 0.0
 Security - 0.0
 Maintainability - 0.0
@@ -359,7 +340,7 @@ Lines of Code : 64
 Total Violations : 0
  
 FILENAME : ➥ SevereWeatherAlert.groovy
----Defect Density Metrics---
+---Defect Density Metrics (by KLOC)---
 Reliability - 0.0
 Security - 0.0
 Maintainability - 0.0
@@ -383,7 +364,7 @@ rule name : HandleNullValue line : 70
 source line/ message : [SRC]location.helloHome.execute(settings.wakePhrase) [MSG]Handle null values. Avoid NullPointerException by using the safe navigation (?) operator.
 rule name : NoRestrictedMethodCalls line : 70
 source line/ message : [SRC]location.helloHome.execute(settings.wakePhrase) [MSG]SmartThings restricted methods calls are not allowed.
----Defect Density Metrics---
+---Defect Density Metrics (by KLOC)---
 Reliability - 53.57
 Security - 71.43
 Maintainability - 0.0
@@ -401,7 +382,7 @@ rule name : SpecificSubscription line : 147
 source line/ message : [SRC]subscribe (jawbone,"goal",goalHandler) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : SpecificSubscription line : 148
 source line/ message : [SRC]subscribe (jawbone,"steps",stepHandler) [MSG]Subscription must be specific to the Event you are interested in.
----Defect Density Metrics---
+---Defect Density Metrics (by KLOC)---
 Reliability - 0.0
 Security - 8.1
 Maintainability - 0.0
@@ -420,7 +401,7 @@ rule name : SpecificSubscription line : 46
 source line/ message : [SRC]subscribe(sensor, "temperature", temperatureHandler) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : SpecificSubscription line : 48
 source line/ message : [SRC]subscribe(motion, "motion", motionHandler) [MSG]Subscription must be specific to the Event you are interested in.
----Defect Density Metrics---
+---Defect Density Metrics (by KLOC)---
 Reliability - 0.0
 Security - 34.19
 Maintainability - 0.0
@@ -433,8 +414,6 @@ Total Violations : 4
 FILENAME : ➥ AdvancedButtonController.groovy
 rule name : MethodCount line : 1
 source line/ message : [SRC]definition( [MSG]Class None has 48 methods
-rule name : DocumentExternalHTTPRequests line : 52
-source line/ message : [SRC]httpGet(params) { resp -> [MSG]Document external HTTP requests.
 rule name : UseConsistentReturnValue line : 61
 source line/ message : [SRC]return "https://cdn.rawgit.com/stephack/ABC/master/resou../update.png" [MSG]Use consistent return values.
 rule name : AbcMetric line : 118
@@ -517,32 +496,31 @@ rule name : MethodSize line : 118
 source line/ message : [MSG]Method "getButtonSections" is 117 lines
 rule name : InvertedIfElse line : 256
 source line/ message : [SRC]if(!preferenceNames){ [MSG]Testing the negative condition first can make an if statement confusing
----Defect Density Metrics---
-Reliability - 63.52
-Security - 5.44
-Maintainability - 9.07
-Total Defect Density - 78.04
+---Defect Density Metrics (by KLOC)---
+Reliability - 62.61
+Security - 3.58
+Maintainability - 8.94
+Total Defect Density - 75.13
 ---Breakdown of Violations and Other Metrics---
-Lines of Code : 551
+Lines of Code : 559
 UseConsistentReturnValue : 3
 HandleNullValue : 1
 MissingSwitchDefault : 4
 MethodSize : 117
 MethodCount : 48
 DeadCode : 25
-DocumentExternalHTTPRequests : 1
 SpecificSubscription : 1
 NoRestrictedMethodCalls : 1
 CyclomaticComplexity : 30
 AbcMetric : 150.0
 IfStatementCouldBeTernary : 1
 InvertedIfElse : 1
-Total Violations : 43
+Total Violations : 42
  
 FILENAME : ➥ AlexaHelper.groovy
 rule name : TernaryCouldBeElvis line : 163
 source line/ message : [SRC]def result = memoryCount ? memoryCount : 2 [MSG](memoryCount) ? memoryCount : 2 in class None can be simplified to memoryCount ?: 2
----Defect Density Metrics---
+---Defect Density Metrics (by KLOC)---
 Reliability - 0.0
 Security - 0.0
 Maintainability - 4.81
@@ -555,7 +533,7 @@ Total Violations : 1
 FILENAME : ➥ AlexaVirtualSwitchCreator.groovy
 rule name : EmptyMethod line : 82
 source line/ message : [SRC]def initialize() {} [MSG]Violation in class None. The method initialize is both empty and not marked with @Override
----Defect Density Metrics---
+---Defect Density Metrics (by KLOC)---
 Reliability - 7.46
 Security - 0.0
 Maintainability - 0.0
@@ -568,7 +546,7 @@ Total Violations : 1
 FILENAME : ➥ GoodnightSmartHome.groovy
 rule name : NoRestrictedMethodCalls line : 255
 source line/ message : [SRC]location.helloHome?.execute(phrase2) // ...execute the routine. [MSG]SmartThings restricted methods calls are not allowed.
----Defect Density Metrics---
+---Defect Density Metrics (by KLOC)---
 Reliability - 0.0
 Security - 5.92
 Maintainability - 0.0
@@ -593,7 +571,7 @@ rule name : MethodSize line : 290
 source line/ message : [MSG]Method "ThermostatAway" is 115 lines
 rule name : InvertedIfElse line : 660
 source line/ message : [SRC]if (!doorsOk){ [MSG]Testing the negative condition first can make an if statement confusing
----Defect Density Metrics---
+---Defect Density Metrics (by KLOC)---
 Reliability - 5.7
 Security - 1.42
 Maintainability - 2.85
@@ -677,13 +655,13 @@ rule name : MissingSwitchDefault line : 1126
 source line/ message : [SRC]public webCoRE_handler(evt){switch(evt.value){case 'pis..ta);break;}} [MSG]Missing default: case statement in switch().
 rule name : InvertedIfElse line : 1094
 source line/ message : [SRC]if(!d) { [MSG]Testing the negative condition first can make an if statement confusing
----Defect Density Metrics---
-Reliability - 5.08
-Security - 20.34
-Maintainability - 3.39
-Total Defect Density - 28.81
+---Defect Density Metrics (by KLOC)---
+Reliability - 5.23
+Security - 20.92
+Maintainability - 3.49
+Total Defect Density - 29.64
 ---Breakdown of Violations and Other Metrics---
-Lines of Code : 1180
+Lines of Code : 1147
 HandleNullValue : 3
 MissingSwitchDefault : 1
 MethodCount : 102
@@ -703,13 +681,13 @@ rule name : UseConsistentReturnValue line : 81
 source line/ message : [SRC]default: return value [MSG]Use consistent return values.
 rule name : UseConsistentReturnValue line : 89
 source line/ message : [SRC]default: return value [MSG]Use consistent return values.
----Defect Density Metrics---
-Reliability - 33.71
+---Defect Density Metrics (by KLOC)---
+Reliability - 34.09
 Security - 0.0
 Maintainability - 0.0
-Total Defect Density - 33.71
+Total Defect Density - 34.09
 ---Breakdown of Violations and Other Metrics---
-Lines of Code : 89
+Lines of Code : 88
 UseConsistentReturnValue : 3
 Total Violations : 3
  
@@ -724,13 +702,13 @@ rule name : MissingSwitchDefault line : 88
 source line/ message : [SRC]switch (evt.value) { [MSG]Missing default: case statement in switch().
 rule name : MissingSwitchDefault line : 114
 source line/ message : [SRC]switch (evt.value) { [MSG]Missing default: case statement in switch().
----Defect Density Metrics---
-Reliability - 27.27
-Security - 18.18
+---Defect Density Metrics (by KLOC)---
+Reliability - 30.0
+Security - 20.0
 Maintainability - 0.0
-Total Defect Density - 45.45
+Total Defect Density - 50.0
 ---Breakdown of Violations and Other Metrics---
-Lines of Code : 110
+Lines of Code : 100
 MissingSwitchDefault : 3
 SpecificSubscription : 2
 Total Violations : 5
@@ -780,7 +758,7 @@ rule name : ParameterReassignment line : 562
 source line/ message : [SRC]msg = alarmPresence ? msg.replace('%people%', "${getPres..eople%', "") [MSG]The method parameter [msg] in class None was reassigned. Use a temporary variable instead.
 rule name : ParameterReassignment line : 563
 source line/ message : [SRC]msg = "${msg} " [MSG]The method parameter [msg] in class None was reassigned. Use a temporary variable instead.
----Defect Density Metrics---
+---Defect Density Metrics (by KLOC)---
 Reliability - 13.29
 Security - 1.66
 Maintainability - 21.59
@@ -800,7 +778,7 @@ TernaryCouldBeElvis : 3
 Total Violations : 22
  
 FILENAME : ➥ TalkingAlarmClock-Parent.groovy
----Defect Density Metrics---
+---Defect Density Metrics (by KLOC)---
 Reliability - 0.0
 Security - 0.0
 Maintainability - 0.0
@@ -818,7 +796,7 @@ rule name : CyclomaticComplexity line : 318
 source line/ message : [SRC]def temperatureHandler(evt) { [MSG]Violation in class None. The cyclomatic complexity for method [temperatureHandler] is [22]
 rule name : InvertedIfElse line : 413
 source line/ message : [SRC]if (!doorsOk){ [MSG]Testing the negative condition first can make an if statement confusing
----Defect Density Metrics---
+---Defect Density Metrics (by KLOC)---
 Reliability - 2.07
 Security - 2.07
 Maintainability - 4.13
@@ -834,7 +812,7 @@ Total Violations : 4
 FILENAME : ➥ WindowOrDoorOpen.groovy
 rule name : MethodCount line : 1
 source line/ message : [SRC]definition( [MSG]Class None has 71 methods
----Defect Density Metrics---
+---Defect Density Metrics (by KLOC)---
 Reliability - 2.06
 Security - 0.0
 Maintainability - 0.0
