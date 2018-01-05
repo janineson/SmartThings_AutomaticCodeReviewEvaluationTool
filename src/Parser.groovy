@@ -12,9 +12,10 @@ import java.util.regex.Pattern
 class Parser{
 
     int reliabilityViolationCount, securityViolationCount, maintainabilityViolationCount
-    def cyclomaticComplexity, abcMetric, methodCount, methodSize, linesOfCode
+    def cyclomaticComplexity, abcMetric, methodCount, methodSize, linesOfCode, totalApps
     Logger log
     ArrayList<String> ruleViolationList
+    Map<String, Integer> combinedViolationList
 
     public Parser(Logger logger) {
 
@@ -25,6 +26,7 @@ class Parser{
          abcMetric= 0
          log = logger
          ruleViolationList = new ArrayList()
+         combinedViolationList=  new HashMap<>()
 
     }
 
@@ -61,13 +63,22 @@ class Parser{
 
         Elements divs = doc.select('div.summary');
 
+        boolean flag = true
         for (Element div : divs) {
+
             Iterator<Element> headerIterator = div.select("h3").iterator() //header
+            Iterator<Element> tableIterator = div.select("td").iterator()
+
+            if (flag){
+                def dummy = tableIterator.next().text()
+                totalApps = tableIterator.next().text()
+                flag = false
+            }
+
 
             while(headerIterator.hasNext()){
                 log.append("FILENAME : "+headerIterator.next().text())
 
-                Iterator<Element> tableIterator = div.select("td").iterator()
 
                 while (tableIterator.hasNext()) {
 
@@ -125,8 +136,27 @@ class Parser{
 
             }
 
-        }
 
+        }
+        log.append("Total SmartApps Analyzed : " + totalApps)
+        log.append("---Most Common Violations---")
+        for (String keys : sortByValues(combinedViolationList).keySet())
+        {
+            log.append(keys + ":"+ combinedViolationList.get(keys));
+        }
+    }
+
+     Map<String, Integer> sortByValues(Map<String, Integer> map) {
+        Comparator<String> valueComparator =  new Comparator<String>() {
+            int compare(String k1, String k2) {
+                int compare = map.get(k2).compareTo(map.get(k1))
+                if (compare == 0) return 1
+                else return compare;
+            }
+        }
+        Map<String, Integer> sortedByValues = new TreeMap<String, Integer>(valueComparator)
+        sortedByValues.putAll(map)
+        return sortedByValues
     }
 
     def getBracketValue(def string){
@@ -176,6 +206,7 @@ class Parser{
     }
 
     void violations(){
+
         for (String rule : reliabilityList) {
             if (ruleViolationList.count(rule) > 0){
                 if (rule == 'MethodCount')
@@ -185,13 +216,14 @@ class Parser{
                 else
                     log.append(rule + " : "  + ruleViolationList.count(rule))
 
+                setCombinedViolations(rule, ruleViolationList.count(rule))
             }
         }
 
         for (String rule : securityList) {
             if (ruleViolationList.count(rule) > 0){
                 log.append(rule + " : "  + ruleViolationList.count(rule))
-
+                setCombinedViolations(rule, ruleViolationList.count(rule))
             }
 
         }
@@ -204,11 +236,20 @@ class Parser{
                     log.append(rule + " : "  + abcMetric)
                 else
                     log.append(rule + " : "  + ruleViolationList.count(rule))
-
+                setCombinedViolations(rule, ruleViolationList.count(rule))
             }
         }
         log.append("Total Violations : " + ruleViolationList.size())
+
     }
+
+    void setCombinedViolations(String rule, int count){
+        if(combinedViolationList.containsKey(rule))
+            combinedViolationList.put(rule, combinedViolationList.get(rule) + count)
+        else
+            combinedViolationList.put(rule, count)
+    }
+
 
     void displayQualityAttribute(){
         log.append("---Defect Density Metrics (by KLOC)---")

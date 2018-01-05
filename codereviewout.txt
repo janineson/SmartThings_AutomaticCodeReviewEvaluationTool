@@ -822,4 +822,30 @@ Lines of Code : 485
 MethodCount : 71
 Total Violations : 1
  
+Total SmartApps Analyzed : 34
+---Most Common Violations---
+SpecificSubscription:34
+DeadCode:25
+NoRestrictedMethodCalls:19
+UseConsistentReturnValue:15
+CyclomaticComplexity:12
+MissingSwitchDefault:11
+HandleNullValue:11
+InvertedIfElse:10
+IfStatementCouldBeTernary:7
+MethodCount:7
+ParameterReassignment:7
+NoHardcodeSMS:6
+EmptyMethod:5
+AbcMetric:5
+AtomicStateUpdateUsage:5
+TernaryCouldBeElvis:4
+MethodSize:4
+EmptyElseBlock:2
+AvoidRecurringShortSchedules:2
+ConfusingTernary:1
+AtomicStateUsage:1
+CouldBeElvis:1
+NoMissingEventHandler:1
+EmptyCatchBlock:1
 --app-end--

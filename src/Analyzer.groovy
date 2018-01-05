@@ -16,6 +16,11 @@ class Analyzer {
         String sourceCodeDir = project_root + "/out/" + "dump_ast" //REPLACE with your dataset
         new File(sourceCodeDir).eachFile { file ->
             try {
+                File f = new File(outputfilename);
+                if(f.exists() && !f.isDirectory()) {
+                    f.delete()
+                }
+
                 println "processing ${file.getName()}"
 
                 log.append "--app-start--"
