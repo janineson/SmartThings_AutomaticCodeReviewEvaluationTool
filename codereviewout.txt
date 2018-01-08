@@ -26,20 +26,17 @@ rule name : SpecificSubscription line : 143
 source line/ message : [SRC]subscribe(buttonDevice, "button", buttonEvent) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : MissingSwitchDefault line : 172
 source line/ message : [SRC]switch(buttonNumber) { [MSG]Missing default: case statement in switch().
-rule name : HandleNullValue line : 208
-source line/ message : [SRC]if (phrase != null) location.helloHome.execute(phrase) [MSG]Handle null values. Avoid NullPointerException by using the safe navigation (?) operator.
 ---Defect Density Metrics (by KLOC)---
-Reliability - 10.99
+Reliability - 7.33
 Security - 3.66
 Maintainability - 0.0
-Total Defect Density - 14.65
+Total Defect Density - 10.99
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 273
-HandleNullValue : 1
 MissingSwitchDefault : 1
 MethodCount : 31
 SpecificSubscription : 1
-Total Violations : 4
+Total Violations : 3
  
 FILENAME : ➥ CarpoolNotifier.groovy
 rule name : IfStatementCouldBeTernary line : 71
@@ -107,14 +104,8 @@ rule name : IfStatementCouldBeTernary line : 147
 source line/ message : [SRC]if (usesOldSettings() && direction && direction == "Down") { [MSG]The if statement in class None can be rewritten using the ternary operator: return ((this.usesOldSettings() && direction) && (direction == Down)) ? 0 : 99
 rule name : IfStatementCouldBeTernary line : 155
 source line/ message : [SRC]if (direction && direction == "Down") { // 99 -> 1 [MSG]The if statement in class None can be rewritten using the ternary operator: return (direction && (direction == Down)) ? '99%' : '0%'
-rule name : UseConsistentReturnValue line : 160
-source line/ message : [SRC]return hasStartLevel() ? "${startLevel}%" : "Current Level" [MSG]Use consistent return values.
 rule name : IfStatementCouldBeTernary line : 165
 source line/ message : [SRC]if (direction && direction == "Down") { // 99 -> 1 [MSG]The if statement in class None can be rewritten using the ternary operator: return (direction && (direction == Down)) ? '0%' : '99%'
-rule name : UseConsistentReturnValue line : 170
-source line/ message : [SRC]return "${endLevel}%" [MSG]Use consistent return values.
-rule name : HandleNullValue line : 225
-source line/ message : [SRC]input(name: "completionPhrase", type: "enum", title: "Ex..ses().label) [MSG]Handle null values. Avoid NullPointerException by using the safe navigation (?) operator.
 rule name : AtomicStateUpdateUsage line : 384
 source line/ message : [SRC]def eventData = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
 rule name : AtomicStateUpdateUsage line : 407
@@ -125,14 +116,8 @@ rule name : AtomicStateUpdateUsage line : 457
 source line/ message : [SRC]def timeRemainingEventData = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
 rule name : AtomicStateUsage line : 474
 source line/ message : [SRC]def dni = state.controllerDni [MSG]Avoid using atomicState and state in the same SmartApp.
-rule name : HandleNullValue line : 645
-source line/ message : [SRC]location.helloHome.execute(completionPhrase) [MSG]Handle null values. Avoid NullPointerException by using the safe navigation (?) operator.
 rule name : AtomicStateUpdateUsage line : 677
 source line/ message : [SRC]def startLevels = [:] [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
-rule name : UseConsistentReturnValue line : 752
-source line/ message : [SRC]return "${minutes}:00" [MSG]Use consistent return values.
-rule name : UseConsistentReturnValue line : 756
-source line/ message : [SRC]return "${minutes}:${seconds}" [MSG]Use consistent return values.
 rule name : IfStatementCouldBeTernary line : 773
 source line/ message : [SRC]if (direction && direction == "Down") { [MSG]The if statement in class None can be rewritten using the ternary operator: return (direction && (direction == Down)) ? 0 : 99
 rule name : CyclomaticComplexity line : 799
@@ -148,21 +133,20 @@ source line/ message : [SRC]return rgbToHex(red, green, blue) [MSG]Use consisten
 rule name : InvertedIfElse line : 871
 source line/ message : [SRC]if (!i) { [MSG]Testing the negative condition first can make an if statement confusing
 ---Defect Density Metrics (by KLOC)---
-Reliability - 19.72
+Reliability - 12.76
 Security - 0.0
 Maintainability - 8.12
-Total Defect Density - 27.84
+Total Defect Density - 20.88
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 862
-UseConsistentReturnValue : 8
-HandleNullValue : 2
+UseConsistentReturnValue : 4
 MethodCount : 76
 AtomicStateUsage : 1
 AtomicStateUpdateUsage : 5
 CyclomaticComplexity : 21
 IfStatementCouldBeTernary : 5
 InvertedIfElse : 1
-Total Violations : 24
+Total Violations : 18
  
 FILENAME : ➥ HasBarkleyBeenFed.groovy
 ---Defect Density Metrics (by KLOC)---
@@ -347,21 +331,16 @@ rule name : SpecificSubscription line : 51
 source line/ message : [SRC]subscribe (jawbone, "sleeping", jawboneHandler) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : EmptyMethod line : 56
 source line/ message : [SRC]def initialize() { [MSG]Violation in class None. The method initialize is both empty and not marked with @Override
-rule name : HandleNullValue line : 65
-source line/ message : [SRC]location.helloHome.execute(settings.sleepPhrase) [MSG]Handle null values. Avoid NullPointerException by using the safe navigation (?) operator.
-rule name : HandleNullValue line : 70
-source line/ message : [SRC]location.helloHome.execute(settings.wakePhrase) [MSG]Handle null values. Avoid NullPointerException by using the safe navigation (?) operator.
 ---Defect Density Metrics (by KLOC)---
-Reliability - 53.57
+Reliability - 17.86
 Security - 35.71
 Maintainability - 0.0
-Total Defect Density - 89.29
+Total Defect Density - 53.57
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 56
-HandleNullValue : 2
 EmptyMethod : 1
 SpecificSubscription : 2
-Total Violations : 5
+Total Violations : 3
  
 FILENAME : ➥ StepNotifier.groovy
 rule name : SpecificSubscription line : 147
@@ -412,8 +391,6 @@ rule name : UseConsistentReturnValue line : 243
 source line/ message : [SRC]return true [MSG]Use consistent return values.
 rule name : SpecificSubscription line : 293
 source line/ message : [SRC]subscribe(buttonDevice, "button", buttonEvent) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : HandleNullValue line : 440
-source line/ message : [SRC]location.helloHome.execute(rout) [MSG]Handle null values. Avoid NullPointerException by using the safe navigation (?) operator.
 rule name : CyclomaticComplexity line : 570
 source line/ message : [SRC]def getSpecText(){ [MSG]Violation in class None. The cyclomatic complexity for method [getSpecText] is [30]
 rule name : MissingSwitchDefault line : 572
@@ -479,14 +456,13 @@ source line/ message : [MSG]Method "getButtonSections" is 117 lines
 rule name : InvertedIfElse line : 256
 source line/ message : [SRC]if(!preferenceNames){ [MSG]Testing the negative condition first can make an if statement confusing
 ---Defect Density Metrics (by KLOC)---
-Reliability - 60.82
+Reliability - 59.03
 Security - 1.79
 Maintainability - 8.94
-Total Defect Density - 71.56
+Total Defect Density - 69.77
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 559
 UseConsistentReturnValue : 2
-HandleNullValue : 1
 MissingSwitchDefault : 4
 MethodSize : 117
 MethodCount : 48
@@ -496,7 +472,7 @@ CyclomaticComplexity : 30
 AbcMetric : 150.0
 IfStatementCouldBeTernary : 1
 InvertedIfElse : 1
-Total Violations : 40
+Total Violations : 39
  
 FILENAME : ➥ AlexaHelper.groovy
 rule name : TernaryCouldBeElvis line : 163
@@ -670,8 +646,6 @@ rule name : AbcMetric line : 185
 source line/ message : [SRC]def alarmHandler(evt) { [MSG]Violation in class None. The ABC score for method [alarmHandler] is [90.1]
 rule name : CyclomaticComplexity line : 185
 source line/ message : [SRC]def alarmHandler(evt) { [MSG]Violation in class None. The cyclomatic complexity for method [alarmHandler] is [61]
-rule name : HandleNullValue line : 208
-source line/ message : [SRC]if (triggerPhrase) {location.helloHome.execute(triggerPhrase)} [MSG]Handle null values. Avoid NullPointerException by using the safe navigation (?) operator.
 rule name : AbcMetric line : 253
 source line/ message : [SRC]def getAlarmDesc() { [MSG]Violation in class None. The ABC score for method [getAlarmDesc] is [70.5]
 rule name : CyclomaticComplexity line : 253
@@ -703,13 +677,12 @@ source line/ message : [SRC]msg = alarmPresence ? msg.replace('%people%', "${get
 rule name : ParameterReassignment line : 563
 source line/ message : [SRC]msg = "${msg} " [MSG]The method parameter [msg] in class None was reassigned. Use a temporary variable instead.
 ---Defect Density Metrics (by KLOC)---
-Reliability - 13.29
+Reliability - 11.63
 Security - 0.0
 Maintainability - 21.59
-Total Defect Density - 34.88
+Total Defect Density - 33.22
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 602
-HandleNullValue : 1
 MissingSwitchDefault : 1
 ParameterReassignment : 5
 MethodCount : 41
@@ -718,7 +691,7 @@ AbcMetric : 70.5
 ConfusingTernary : 1
 InvertedIfElse : 1
 TernaryCouldBeElvis : 3
-Total Violations : 21
+Total Violations : 20
  
 FILENAME : ➥ TalkingAlarmClock-Parent.groovy
 ---Defect Density Metrics (by KLOC)---
@@ -772,18 +745,18 @@ SpecificSubscription:34
 DeadCode:25
 CyclomaticComplexity:12
 MissingSwitchDefault:11
-HandleNullValue:11
-UseConsistentReturnValue:10
 InvertedIfElse:10
 IfStatementCouldBeTernary:7
 MethodCount:7
 ParameterReassignment:7
 NoHardcodeSMS:6
+UseConsistentReturnValue:6
 EmptyMethod:5
 AbcMetric:5
 AtomicStateUpdateUsage:5
 TernaryCouldBeElvis:4
 MethodSize:4
+HandleNullValue:4
 EmptyElseBlock:2
 AvoidRecurringShortSchedules:2
 ConfusingTernary:1
