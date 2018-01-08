@@ -6,21 +6,18 @@ rule name : EmptyMethod line : 46
 source line/ message : [SRC]def installed() {} [MSG]Violation in class None. The method installed is both empty and not marked with @Override
 rule name : EmptyMethod line : 48
 source line/ message : [SRC]def updated() {} [MSG]Violation in class None. The method updated is both empty and not marked with @Override
-rule name : UseConsistentReturnValue line : 132
-source line/ message : [SRC]return type [MSG]Use consistent return values.
 rule name : InvertedIfElse line : 163
 source line/ message : [SRC]if (!device) { [MSG]Testing the negative condition first can make an if statement confusing
 ---Defect Density Metrics (by KLOC)---
-Reliability - 21.28
+Reliability - 14.18
 Security - 0.0
 Maintainability - 7.09
-Total Defect Density - 28.37
+Total Defect Density - 21.28
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 141
-UseConsistentReturnValue : 1
 EmptyMethod : 2
 InvertedIfElse : 1
-Total Violations : 4
+Total Violations : 3
  
 FILENAME : ➥ ButtonController.groovy
 rule name : MethodCount line : 1
@@ -31,21 +28,18 @@ rule name : MissingSwitchDefault line : 172
 source line/ message : [SRC]switch(buttonNumber) { [MSG]Missing default: case statement in switch().
 rule name : HandleNullValue line : 208
 source line/ message : [SRC]if (phrase != null) location.helloHome.execute(phrase) [MSG]Handle null values. Avoid NullPointerException by using the safe navigation (?) operator.
-rule name : NoRestrictedMethodCalls line : 208
-source line/ message : [SRC]if (phrase != null) location.helloHome.execute(phrase) [MSG]SmartThings restricted methods calls are not allowed.
 ---Defect Density Metrics (by KLOC)---
 Reliability - 10.99
-Security - 7.33
+Security - 3.66
 Maintainability - 0.0
-Total Defect Density - 18.32
+Total Defect Density - 14.65
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 273
 HandleNullValue : 1
 MissingSwitchDefault : 1
 MethodCount : 31
 SpecificSubscription : 1
-NoRestrictedMethodCalls : 1
-Total Violations : 5
+Total Violations : 4
  
 FILENAME : ➥ CarpoolNotifier.groovy
 rule name : IfStatementCouldBeTernary line : 71
@@ -133,8 +127,6 @@ rule name : AtomicStateUsage line : 474
 source line/ message : [SRC]def dni = state.controllerDni [MSG]Avoid using atomicState and state in the same SmartApp.
 rule name : HandleNullValue line : 645
 source line/ message : [SRC]location.helloHome.execute(completionPhrase) [MSG]Handle null values. Avoid NullPointerException by using the safe navigation (?) operator.
-rule name : NoRestrictedMethodCalls line : 645
-source line/ message : [SRC]location.helloHome.execute(completionPhrase) [MSG]SmartThings restricted methods calls are not allowed.
 rule name : AtomicStateUpdateUsage line : 677
 source line/ message : [SRC]def startLevels = [:] [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
 rule name : UseConsistentReturnValue line : 752
@@ -157,9 +149,9 @@ rule name : InvertedIfElse line : 871
 source line/ message : [SRC]if (!i) { [MSG]Testing the negative condition first can make an if statement confusing
 ---Defect Density Metrics (by KLOC)---
 Reliability - 19.72
-Security - 1.16
+Security - 0.0
 Maintainability - 8.12
-Total Defect Density - 29.0
+Total Defect Density - 27.84
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 862
 UseConsistentReturnValue : 8
@@ -167,11 +159,10 @@ HandleNullValue : 2
 MethodCount : 76
 AtomicStateUsage : 1
 AtomicStateUpdateUsage : 5
-NoRestrictedMethodCalls : 1
 CyclomaticComplexity : 21
 IfStatementCouldBeTernary : 5
 InvertedIfElse : 1
-Total Violations : 25
+Total Violations : 24
  
 FILENAME : ➥ HasBarkleyBeenFed.groovy
 ---Defect Density Metrics (by KLOC)---
@@ -358,24 +349,19 @@ rule name : EmptyMethod line : 56
 source line/ message : [SRC]def initialize() { [MSG]Violation in class None. The method initialize is both empty and not marked with @Override
 rule name : HandleNullValue line : 65
 source line/ message : [SRC]location.helloHome.execute(settings.sleepPhrase) [MSG]Handle null values. Avoid NullPointerException by using the safe navigation (?) operator.
-rule name : NoRestrictedMethodCalls line : 65
-source line/ message : [SRC]location.helloHome.execute(settings.sleepPhrase) [MSG]SmartThings restricted methods calls are not allowed.
 rule name : HandleNullValue line : 70
 source line/ message : [SRC]location.helloHome.execute(settings.wakePhrase) [MSG]Handle null values. Avoid NullPointerException by using the safe navigation (?) operator.
-rule name : NoRestrictedMethodCalls line : 70
-source line/ message : [SRC]location.helloHome.execute(settings.wakePhrase) [MSG]SmartThings restricted methods calls are not allowed.
 ---Defect Density Metrics (by KLOC)---
 Reliability - 53.57
-Security - 71.43
+Security - 35.71
 Maintainability - 0.0
-Total Defect Density - 125.0
+Total Defect Density - 89.29
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 56
 HandleNullValue : 2
 EmptyMethod : 1
 SpecificSubscription : 2
-NoRestrictedMethodCalls : 2
-Total Violations : 7
+Total Violations : 5
  
 FILENAME : ➥ StepNotifier.groovy
 rule name : SpecificSubscription line : 147
@@ -424,14 +410,10 @@ rule name : IfStatementCouldBeTernary line : 237
 source line/ message : [SRC]if(state.buttonType.contains("100+ ")) return false [MSG]The if statement in class None can be rewritten using the ternary operator: return state.buttonType.contains(100+ ) ? false : true
 rule name : UseConsistentReturnValue line : 243
 source line/ message : [SRC]return true [MSG]Use consistent return values.
-rule name : UseConsistentReturnValue line : 269
-source line/ message : [SRC]return formattedPage [MSG]Use consistent return values.
 rule name : SpecificSubscription line : 293
 source line/ message : [SRC]subscribe(buttonDevice, "button", buttonEvent) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : HandleNullValue line : 440
 source line/ message : [SRC]location.helloHome.execute(rout) [MSG]Handle null values. Avoid NullPointerException by using the safe navigation (?) operator.
-rule name : NoRestrictedMethodCalls line : 440
-source line/ message : [SRC]location.helloHome.execute(rout) [MSG]SmartThings restricted methods calls are not allowed.
 rule name : CyclomaticComplexity line : 570
 source line/ message : [SRC]def getSpecText(){ [MSG]Violation in class None. The cyclomatic complexity for method [getSpecText] is [30]
 rule name : MissingSwitchDefault line : 572
@@ -497,25 +479,24 @@ source line/ message : [MSG]Method "getButtonSections" is 117 lines
 rule name : InvertedIfElse line : 256
 source line/ message : [SRC]if(!preferenceNames){ [MSG]Testing the negative condition first can make an if statement confusing
 ---Defect Density Metrics (by KLOC)---
-Reliability - 62.61
-Security - 3.58
+Reliability - 60.82
+Security - 1.79
 Maintainability - 8.94
-Total Defect Density - 75.13
+Total Defect Density - 71.56
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 559
-UseConsistentReturnValue : 3
+UseConsistentReturnValue : 2
 HandleNullValue : 1
 MissingSwitchDefault : 4
 MethodSize : 117
 MethodCount : 48
 DeadCode : 25
 SpecificSubscription : 1
-NoRestrictedMethodCalls : 1
 CyclomaticComplexity : 30
 AbcMetric : 150.0
 IfStatementCouldBeTernary : 1
 InvertedIfElse : 1
-Total Violations : 42
+Total Violations : 40
  
 FILENAME : ➥ AlexaHelper.groovy
 rule name : TernaryCouldBeElvis line : 163
@@ -544,17 +525,14 @@ EmptyMethod : 1
 Total Violations : 1
  
 FILENAME : ➥ GoodnightSmartHome.groovy
-rule name : NoRestrictedMethodCalls line : 255
-source line/ message : [SRC]location.helloHome?.execute(phrase2) // ...execute the routine. [MSG]SmartThings restricted methods calls are not allowed.
 ---Defect Density Metrics (by KLOC)---
 Reliability - 0.0
-Security - 5.92
+Security - 0.0
 Maintainability - 0.0
-Total Defect Density - 5.92
+Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 169
-NoRestrictedMethodCalls : 1
-Total Violations : 1
+Total Violations : 0
  
 FILENAME : ➥ HoneywellThermostatDirector.groovy
 rule name : MethodCount line : 1
@@ -613,32 +591,8 @@ rule name : SpecificSubscription line : 455
 source line/ message : [SRC]if (mKeypad) { subscribe (mKeypad, "codeEntered", codeEntryHandler) } [MSG]Subscription must be specific to the Event you are interested in.
 rule name : CyclomaticComplexity line : 460
 source line/ message : [SRC]def codeEntryHandler(evt) { [MSG]Violation in class None. The cyclomatic complexity for method [codeEntryHandler] is [30]
-rule name : NoRestrictedMethodCalls line : 505
-source line/ message : [SRC]location.helloHome?.execute(vpRoutine) [MSG]SmartThings restricted methods calls are not allowed.
-rule name : NoRestrictedMethodCalls line : 511
-source line/ message : [SRC]location.helloHome?.execute(vpRoutineD) [MSG]SmartThings restricted methods calls are not allowed.
-rule name : NoRestrictedMethodCalls line : 525
-source line/ message : [SRC]location.helloHome?.execute(settings.pRoutine) [MSG]SmartThings restricted methods calls are not allowed.
 rule name : CyclomaticComplexity line : 558
 source line/ message : [SRC]private pGarage(data, codeEntered, evt) { [MSG]Violation in class None. The cyclomatic complexity for method [pGarage] is [21]
-rule name : NoRestrictedMethodCalls line : 565
-source line/ message : [SRC]location.helloHome?.execute(gd1CloseRoutines) [MSG]SmartThings restricted methods calls are not allowed.
-rule name : NoRestrictedMethodCalls line : 573
-source line/ message : [SRC]location.helloHome?.execute(gd2CloseRoutines) [MSG]SmartThings restricted methods calls are not allowed.
-rule name : NoRestrictedMethodCalls line : 581
-source line/ message : [SRC]location.helloHome?.execute(gd3CloseRoutines) [MSG]SmartThings restricted methods calls are not allowed.
-rule name : NoRestrictedMethodCalls line : 592
-source line/ message : [SRC]location.helloHome?.execute(gd1OpenRoutines) [MSG]SmartThings restricted methods calls are not allowed.
-rule name : NoRestrictedMethodCalls line : 600
-source line/ message : [SRC]location.helloHome?.execute(gd2OpenRoutines) [MSG]SmartThings restricted methods calls are not allowed.
-rule name : NoRestrictedMethodCalls line : 608
-source line/ message : [SRC]location.helloHome?.execute(gd3OpenRoutines) [MSG]SmartThings restricted methods calls are not allowed.
-rule name : NoRestrictedMethodCalls line : 675
-source line/ message : [SRC]location.helloHome?.execute(armRoutine) [MSG]SmartThings restricted methods calls are not allowed.
-rule name : NoRestrictedMethodCalls line : 681
-source line/ message : [SRC]location.helloHome?.execute(stayRoutine) [MSG]SmartThings restricted methods calls are not allowed.
-rule name : NoRestrictedMethodCalls line : 687
-source line/ message : [SRC]location.helloHome?.execute(disarmRoutine) [MSG]SmartThings restricted methods calls are not allowed.
 rule name : NoHardcodeSMS line : 771
 source line/ message : [SRC]sendNotificationToContacts(panicText, recipients) [MSG]Do not hard-code SMS messages.
 rule name : NoHardcodeSMS line : 786
@@ -657,9 +611,9 @@ rule name : InvertedIfElse line : 1094
 source line/ message : [SRC]if(!d) { [MSG]Testing the negative condition first can make an if statement confusing
 ---Defect Density Metrics (by KLOC)---
 Reliability - 5.23
-Security - 20.92
+Security - 10.46
 Maintainability - 3.49
-Total Defect Density - 29.64
+Total Defect Density - 19.18
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 1147
 HandleNullValue : 3
@@ -668,28 +622,20 @@ MethodCount : 102
 NoMissingEventHandler : 1
 SpecificSubscription : 6
 NoHardcodeSMS : 6
-NoRestrictedMethodCalls : 12
 CyclomaticComplexity : 21
 AbcMetric : 66.0
 InvertedIfElse : 1
-Total Violations : 34
+Total Violations : 22
  
 FILENAME : ➥ KeypadCoordinator-DH.groovy
-rule name : UseConsistentReturnValue line : 71
-source line/ message : [SRC]default: return description [MSG]Use consistent return values.
-rule name : UseConsistentReturnValue line : 81
-source line/ message : [SRC]default: return value [MSG]Use consistent return values.
-rule name : UseConsistentReturnValue line : 89
-source line/ message : [SRC]default: return value [MSG]Use consistent return values.
 ---Defect Density Metrics (by KLOC)---
-Reliability - 34.09
+Reliability - 0.0
 Security - 0.0
 Maintainability - 0.0
-Total Defect Density - 34.09
+Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 88
-UseConsistentReturnValue : 3
-Total Violations : 3
+Total Violations : 0
  
 FILENAME : ➥ KeypadCoordinator-Parent.groovy
 rule name : SpecificSubscription line : 62
@@ -726,8 +672,6 @@ rule name : CyclomaticComplexity line : 185
 source line/ message : [SRC]def alarmHandler(evt) { [MSG]Violation in class None. The cyclomatic complexity for method [alarmHandler] is [61]
 rule name : HandleNullValue line : 208
 source line/ message : [SRC]if (triggerPhrase) {location.helloHome.execute(triggerPhrase)} [MSG]Handle null values. Avoid NullPointerException by using the safe navigation (?) operator.
-rule name : NoRestrictedMethodCalls line : 208
-source line/ message : [SRC]if (triggerPhrase) {location.helloHome.execute(triggerPhrase)} [MSG]SmartThings restricted methods calls are not allowed.
 rule name : AbcMetric line : 253
 source line/ message : [SRC]def getAlarmDesc() { [MSG]Violation in class None. The ABC score for method [getAlarmDesc] is [70.5]
 rule name : CyclomaticComplexity line : 253
@@ -760,22 +704,21 @@ rule name : ParameterReassignment line : 563
 source line/ message : [SRC]msg = "${msg} " [MSG]The method parameter [msg] in class None was reassigned. Use a temporary variable instead.
 ---Defect Density Metrics (by KLOC)---
 Reliability - 13.29
-Security - 1.66
+Security - 0.0
 Maintainability - 21.59
-Total Defect Density - 36.54
+Total Defect Density - 34.88
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 602
 HandleNullValue : 1
 MissingSwitchDefault : 1
 ParameterReassignment : 5
 MethodCount : 41
-NoRestrictedMethodCalls : 1
 CyclomaticComplexity : 22
 AbcMetric : 70.5
 ConfusingTernary : 1
 InvertedIfElse : 1
 TernaryCouldBeElvis : 3
-Total Violations : 22
+Total Violations : 21
  
 FILENAME : ➥ TalkingAlarmClock-Parent.groovy
 ---Defect Density Metrics (by KLOC)---
@@ -823,15 +766,14 @@ MethodCount : 71
 Total Violations : 1
  
 Total SmartApps Analyzed : 34
-Total SmartApps with Violations : 28
+Total SmartApps with Violations : 26
 ---Most Common Violations---
 SpecificSubscription:34
 DeadCode:25
-NoRestrictedMethodCalls:19
-UseConsistentReturnValue:15
 CyclomaticComplexity:12
 MissingSwitchDefault:11
 HandleNullValue:11
+UseConsistentReturnValue:10
 InvertedIfElse:10
 IfStatementCouldBeTernary:7
 MethodCount:7
