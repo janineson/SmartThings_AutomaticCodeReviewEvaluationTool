@@ -11,7 +11,7 @@ import java.util.regex.Pattern
 
 class Parser{
 
-    int reliabilityViolationCount, securityViolationCount, maintainabilityViolationCount
+    int reliabilityViolationCount, securityViolationCount, maintainabilityViolationCount, noViolationsCount
     def cyclomaticComplexity, abcMetric, methodCount, methodSize, linesOfCode, totalApps
     Logger log
     ArrayList<String> ruleViolationList
@@ -24,6 +24,7 @@ class Parser{
          maintainabilityViolationCount= 0
          cyclomaticComplexity= 0
          abcMetric= 0
+         noViolationsCount = 0
          log = logger
          ruleViolationList = new ArrayList()
          combinedViolationList=  new HashMap<>()
@@ -139,10 +140,11 @@ class Parser{
 
         }
         log.append("Total SmartApps Analyzed : " + totalApps)
+        log.append("Total SmartApps with Violations : " + (Integer.parseInt((String)totalApps)-noViolationsCount))
         log.append("---Most Common Violations---")
         for (String keys : sortByValues(combinedViolationList).keySet())
         {
-            log.append(keys + ":"+ combinedViolationList.get(keys));
+            log.append(keys + ":"+ combinedViolationList.get(keys))
         }
     }
 
@@ -240,7 +242,7 @@ class Parser{
             }
         }
         log.append("Total Violations : " + ruleViolationList.size())
-
+        if (ruleViolationList.size() == 0) noViolationsCount++
     }
 
     void setCombinedViolations(String rule, int count){

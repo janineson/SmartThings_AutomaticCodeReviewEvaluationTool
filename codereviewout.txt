@@ -823,6 +823,7 @@ MethodCount : 71
 Total Violations : 1
  
 Total SmartApps Analyzed : 34
+Total SmartApps with Violations : 28
 ---Most Common Violations---
 SpecificSubscription:34
 DeadCode:25
