@@ -122,8 +122,6 @@ rule name : IfStatementCouldBeTernary line : 773
 source line/ message : [SRC]if (direction && direction == "Down") { [MSG]The if statement in class None can be rewritten using the ternary operator: return (direction && (direction == Down)) ? 0 : 99
 rule name : CyclomaticComplexity line : 799
 source line/ message : [SRC]private getBlueHue(level) { [MSG]Violation in class None. The cyclomatic complexity for method [getBlueHue] is [21]
-rule name : UseConsistentReturnValue line : 874
-source line/ message : [SRC]return i as int [MSG]Use consistent return values.
 rule name : UseConsistentReturnValue line : 1063
 source line/ message : [SRC]return [r * 255, g * 255, b * 255]; [MSG]Use consistent return values.
 rule name : UseConsistentReturnValue line : 1079
@@ -133,20 +131,20 @@ source line/ message : [SRC]return rgbToHex(red, green, blue) [MSG]Use consisten
 rule name : InvertedIfElse line : 871
 source line/ message : [SRC]if (!i) { [MSG]Testing the negative condition first can make an if statement confusing
 ---Defect Density Metrics (by KLOC)---
-Reliability - 12.76
+Reliability - 11.6
 Security - 0.0
 Maintainability - 8.12
-Total Defect Density - 20.88
+Total Defect Density - 19.72
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 862
-UseConsistentReturnValue : 4
+UseConsistentReturnValue : 3
 MethodCount : 76
 AtomicStateUsage : 1
 AtomicStateUpdateUsage : 5
 CyclomaticComplexity : 21
 IfStatementCouldBeTernary : 5
 InvertedIfElse : 1
-Total Violations : 18
+Total Violations : 17
  
 FILENAME : ➥ HasBarkleyBeenFed.groovy
 ---Defect Density Metrics (by KLOC)---
@@ -750,8 +748,8 @@ IfStatementCouldBeTernary:7
 MethodCount:7
 ParameterReassignment:7
 NoHardcodeSMS:6
-UseConsistentReturnValue:6
 EmptyMethod:5
+UseConsistentReturnValue:5
 AbcMetric:5
 AtomicStateUpdateUsage:5
 TernaryCouldBeElvis:4
