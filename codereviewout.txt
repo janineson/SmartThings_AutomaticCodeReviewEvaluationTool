@@ -1,396 +1,272 @@
 
 --app-start--
 processing CodeNarcAntReport.html
-FILENAME : ➥ AlfredWorkflow.groovy
-rule name : EmptyMethod line : 46
-source line/ message : [SRC]def installed() {} [MSG]Violation in class None. The method installed is both empty and not marked with @Override
-rule name : EmptyMethod line : 48
-source line/ message : [SRC]def updated() {} [MSG]Violation in class None. The method updated is both empty and not marked with @Override
-rule name : InvertedIfElse line : 163
-source line/ message : [SRC]if (!device) { [MSG]Testing the negative condition first can make an if statement confusing
----Defect Density Metrics (by KLOC)---
-Reliability - 14.18
-Security - 0.0
-Maintainability - 7.09
-Total Defect Density - 21.28
----Breakdown of Violations and Other Metrics---
-Lines of Code : 141
-EmptyMethod : 2
-InvertedIfElse : 1
-Total Violations : 3
- 
-FILENAME : ➥ ButtonController.groovy
-rule name : MethodCount line : 1
-source line/ message : [SRC]definition( [MSG]Class None has 31 methods
-rule name : SpecificSubscription line : 143
-source line/ message : [SRC]subscribe(buttonDevice, "button", buttonEvent) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : MissingSwitchDefault line : 172
-source line/ message : [SRC]switch(buttonNumber) { [MSG]Missing default: case statement in switch().
----Defect Density Metrics (by KLOC)---
-Reliability - 7.33
-Security - 3.66
-Maintainability - 0.0
-Total Defect Density - 10.99
----Breakdown of Violations and Other Metrics---
-Lines of Code : 273
-MissingSwitchDefault : 1
-MethodCount : 31
-SpecificSubscription : 1
-Total Violations : 3
- 
-FILENAME : ➥ CarpoolNotifier.groovy
-rule name : IfStatementCouldBeTernary line : 71
-source line/ message : [SRC]if (minusFive > latestState.date) [MSG]The if statement in class None can be rewritten using the ternary operator: return (minusFive > latestState.date) ? true : false
+FILENAME : ➥ AlexaHelper.groovy
+rule name : TernaryCouldBeElvis line : 163
+source line/ message : [SRC]def result = memoryCount ? memoryCount : 2 [MSG](memoryCount) ? memoryCount : 2 in class None can be simplified to memoryCount ?: 2
 ---Defect Density Metrics (by KLOC)---
 Reliability - 0.0
 Security - 0.0
-Maintainability - 15.63
-Total Defect Density - 15.63
+Maintainability - 4.81
+Total Defect Density - 4.81
 ---Breakdown of Violations and Other Metrics---
-Lines of Code : 64
-IfStatementCouldBeTernary : 1
+Lines of Code : 208
+TernaryCouldBeElvis : 1
 Total Violations : 1
  
-FILENAME : ➥ DoubleTap.groovy
+FILENAME : ➥ AlexaVirtualSwitchCreator.groovy
+rule name : EmptyMethod line : 82
+source line/ message : [SRC]def initialize() {} [MSG]Violation in class None. The method initialize is both empty and not marked with @Override
 ---Defect Density Metrics (by KLOC)---
-Reliability - 0.0
+Reliability - 7.46
 Security - 0.0
 Maintainability - 0.0
-Total Defect Density - 0.0
+Total Defect Density - 7.46
 ---Breakdown of Violations and Other Metrics---
-Lines of Code : 71
-Total Violations : 0
- 
-FILENAME : ➥ EnergyAlerts.groovy
-rule name : SpecificSubscription line : 38
-source line/ message : [SRC]subscribe(meter, "power", meterHandler) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : EmptyElseBlock line : 59
-source line/ message : [SRC]} else { [MSG]The else block is empty
-rule name : EmptyElseBlock line : 70
-source line/ message : [SRC]} else { [MSG]The else block is empty
-rule name : CouldBeElvis line : 45
-source line/ message : [SRC]if (!atomicState.lastValue) { [MSG]Code could use elvis operator: atomicState.lastValue = atomicState.lastValue ?: meterValue
----Defect Density Metrics (by KLOC)---
-Reliability - 27.4
-Security - 13.7
-Maintainability - 13.7
-Total Defect Density - 54.79
----Breakdown of Violations and Other Metrics---
-Lines of Code : 73
-EmptyElseBlock : 2
-SpecificSubscription : 1
-CouldBeElvis : 1
-Total Violations : 4
- 
-FILENAME : ➥ EnergySaver.groovy
-rule name : SpecificSubscription line : 34
-source line/ message : [SRC]subscribe(meter, "power", meterHandler) [MSG]Subscription must be specific to the Event you are interested in.
----Defect Density Metrics (by KLOC)---
-Reliability - 0.0
-Security - 25.64
-Maintainability - 0.0
-Total Defect Density - 25.64
----Breakdown of Violations and Other Metrics---
-Lines of Code : 39
-SpecificSubscription : 1
-Total Violations : 1
- 
-FILENAME : ➥ GentleWakeUp.groovy
-rule name : MethodCount line : 1
-source line/ message : [SRC]definition( [MSG]Class None has 76 methods
-rule name : IfStatementCouldBeTernary line : 140
-source line/ message : [SRC]if (usesOldSettings() && direction && direction == "Down") { [MSG]The if statement in class None can be rewritten using the ternary operator: return ((this.usesOldSettings() && direction) && (direction == Down)) ? 99 : 0
-rule name : IfStatementCouldBeTernary line : 147
-source line/ message : [SRC]if (usesOldSettings() && direction && direction == "Down") { [MSG]The if statement in class None can be rewritten using the ternary operator: return ((this.usesOldSettings() && direction) && (direction == Down)) ? 0 : 99
-rule name : IfStatementCouldBeTernary line : 155
-source line/ message : [SRC]if (direction && direction == "Down") { // 99 -> 1 [MSG]The if statement in class None can be rewritten using the ternary operator: return (direction && (direction == Down)) ? '99%' : '0%'
-rule name : IfStatementCouldBeTernary line : 165
-source line/ message : [SRC]if (direction && direction == "Down") { // 99 -> 1 [MSG]The if statement in class None can be rewritten using the ternary operator: return (direction && (direction == Down)) ? '0%' : '99%'
-rule name : AtomicStateUpdateUsage line : 384
-source line/ message : [SRC]def eventData = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
-rule name : AtomicStateUpdateUsage line : 407
-source line/ message : [SRC]def eventData = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
-rule name : AtomicStateUpdateUsage line : 447
-source line/ message : [SRC]def percentCompleteEventData = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
-rule name : AtomicStateUpdateUsage line : 457
-source line/ message : [SRC]def timeRemainingEventData = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
-rule name : AtomicStateUsage line : 474
-source line/ message : [SRC]def dni = state.controllerDni [MSG]Avoid using atomicState and state in the same SmartApp.
-rule name : AtomicStateUpdateUsage line : 677
-source line/ message : [SRC]def startLevels = [:] [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
-rule name : IfStatementCouldBeTernary line : 773
-source line/ message : [SRC]if (direction && direction == "Down") { [MSG]The if statement in class None can be rewritten using the ternary operator: return (direction && (direction == Down)) ? 0 : 99
-rule name : CyclomaticComplexity line : 799
-source line/ message : [SRC]private getBlueHue(level) { [MSG]Violation in class None. The cyclomatic complexity for method [getBlueHue] is [21]
-rule name : UseConsistentReturnValue line : 1063
-source line/ message : [SRC]return [r * 255, g * 255, b * 255]; [MSG]Use consistent return values.
-rule name : UseConsistentReturnValue line : 1079
-source line/ message : [SRC]return toHex(r) + toHex(g) + toHex(b) [MSG]Use consistent return values.
-rule name : UseConsistentReturnValue line : 1082
-source line/ message : [SRC]return rgbToHex(red, green, blue) [MSG]Use consistent return values.
-rule name : InvertedIfElse line : 871
-source line/ message : [SRC]if (!i) { [MSG]Testing the negative condition first can make an if statement confusing
----Defect Density Metrics (by KLOC)---
-Reliability - 11.6
-Security - 0.0
-Maintainability - 8.12
-Total Defect Density - 19.72
----Breakdown of Violations and Other Metrics---
-Lines of Code : 862
-UseConsistentReturnValue : 3
-MethodCount : 76
-AtomicStateUsage : 1
-AtomicStateUpdateUsage : 5
-CyclomaticComplexity : 21
-IfStatementCouldBeTernary : 5
-InvertedIfElse : 1
-Total Violations : 17
- 
-FILENAME : ➥ HasBarkleyBeenFed.groovy
----Defect Density Metrics (by KLOC)---
-Reliability - 0.0
-Security - 0.0
-Maintainability - 0.0
-Total Defect Density - 0.0
----Breakdown of Violations and Other Metrics---
-Lines of Code : 53
-Total Violations : 0
- 
-FILENAME : ➥ ItsTooCold.groovy
-rule name : SpecificSubscription line : 30
-source line/ message : [SRC]subscribe(temperatureSensor1, "temperature", temperatureHandler) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 35
-source line/ message : [SRC]subscribe(temperatureSensor1, "temperature", temperatureHandler) [MSG]Subscription must be specific to the Event you are interested in.
----Defect Density Metrics (by KLOC)---
-Reliability - 0.0
-Security - 28.17
-Maintainability - 0.0
-Total Defect Density - 28.17
----Breakdown of Violations and Other Metrics---
-Lines of Code : 71
-SpecificSubscription : 2
-Total Violations : 2
- 
-FILENAME : ➥ KeepMeCozy.groovy
-rule name : SpecificSubscription line : 25
-source line/ message : [SRC]subscribe(thermostat, "heatingSetpoint", heatingSetpointHandler) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 26
-source line/ message : [SRC]subscribe(thermostat, "coolingSetpoint", coolingSetpointHandler) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 27
-source line/ message : [SRC]subscribe(thermostat, "temperature", temperatureHandler) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 35
-source line/ message : [SRC]subscribe(thermostat, "heatingSetpoint", heatingSetpointHandler) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 36
-source line/ message : [SRC]subscribe(thermostat, "coolingSetpoint", coolingSetpointHandler) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 37
-source line/ message : [SRC]subscribe(thermostat, "temperature", temperatureHandler) [MSG]Subscription must be specific to the Event you are interested in.
----Defect Density Metrics (by KLOC)---
-Reliability - 0.0
-Security - 89.55
-Maintainability - 0.0
-Total Defect Density - 89.55
----Breakdown of Violations and Other Metrics---
-Lines of Code : 67
-SpecificSubscription : 6
-Total Violations : 6
- 
-FILENAME : ➥ KeepMeCozy2.groovy
-rule name : SpecificSubscription line : 43
-source line/ message : [SRC]subscribe(sensor, "temperature", temperatureHandler) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 44
-source line/ message : [SRC]subscribe(thermostat, "temperature", temperatureHandler) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 45
-source line/ message : [SRC]subscribe(thermostat, "thermostatMode", temperatureHandler) [MSG]Subscription must be specific to the Event you are interested in.
----Defect Density Metrics (by KLOC)---
-Reliability - 0.0
-Security - 31.58
-Maintainability - 0.0
-Total Defect Density - 31.58
----Breakdown of Violations and Other Metrics---
-Lines of Code : 95
-SpecificSubscription : 3
-Total Violations : 3
- 
-FILENAME : ➥ LaundryMonitor.groovy
-rule name : InvertedIfElse line : 74
-source line/ message : [SRC]if (!sensorStates.find{it.value == "active"}) { [MSG]Testing the negative condition first can make an if statement confusing
----Defect Density Metrics (by KLOC)---
-Reliability - 0.0
-Security - 0.0
-Maintainability - 6.94
-Total Defect Density - 6.94
----Breakdown of Violations and Other Metrics---
-Lines of Code : 144
-InvertedIfElse : 1
-Total Violations : 1
- 
-FILENAME : ➥ Life360Connect.groovy
-rule name : EmptyCatchBlock line : 680
-source line/ message : [SRC]catch (e) { [MSG]The catch block is empty
-rule name : EmptyMethod line : 686
-source line/ message : [SRC]def initialize() { [MSG]Violation in class None. The method initialize is both empty and not marked with @Override
-rule name : InvertedIfElse line : 53
-source line/ message : [SRC]if(!state.life360AccessToken) [MSG]Testing the negative condition first can make an if statement confusing
-rule name : MethodSize line : 535
-source line/ message : [MSG]Method "updated" is 101 lines
-rule name : InvertedIfElse line : 554
-source line/ message : [SRC]if (!deviceWrapper) { // device isn't there - so we need to create [MSG]Testing the negative condition first can make an if statement confusing
-rule name : ParameterReassignment line : 695
-source line/ message : [SRC]lat1 = Math.toRadians(lat1) [MSG]The method parameter [lat1] in class None was reassigned. Use a temporary variable instead.
-rule name : ParameterReassignment line : 696
-source line/ message : [SRC]lat2 = Math.toRadians(lat2) [MSG]The method parameter [lat2] in class None was reassigned. Use a temporary variable instead.
----Defect Density Metrics (by KLOC)---
-Reliability - 11.93
-Security - 0.0
-Maintainability - 4.77
-Total Defect Density - 16.71
----Breakdown of Violations and Other Metrics---
-Lines of Code : 419
-EmptyCatchBlock : 1
+Lines of Code : 134
 EmptyMethod : 1
-ParameterReassignment : 2
-MethodSize : 101
-InvertedIfElse : 2
+Total Violations : 1
+ 
+FILENAME : ➥ GoodnightSmartHome.groovy
+---Defect Density Metrics (by KLOC)---
+Reliability - 0.0
+Security - 0.0
+Maintainability - 0.0
+Total Defect Density - 0.0
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 169
+Total Violations : 0
+ 
+FILENAME : ➥ HoneywellThermostatDirector.groovy
+rule name : MethodCount line : 1
+source line/ message : [SRC]definition( [MSG]Class None has 34 methods
+rule name : AvoidRecurringShortSchedules line : 480
+source line/ message : [SRC]runIn(60, "temperatureHandler") [MSG]Avoid recurring short schedules unless there is a good reason for it.
+rule name : SpecificSubscription line : 481
+source line/ message : [SRC]subscribe(sensor, "temperature", temperatureHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : CyclomaticComplexity line : 494
+source line/ message : [SRC]def temperatureHandler(evt) { [MSG]Violation in class None. The cyclomatic complexity for method [temperatureHandler] is [30]
+rule name : MethodSize line : 47
+source line/ message : [MSG]Method "TemperatureSettings" is 117 lines
+rule name : MethodSize line : 290
+source line/ message : [MSG]Method "ThermostatAway" is 115 lines
+rule name : InvertedIfElse line : 660
+source line/ message : [SRC]if (!doorsOk){ [MSG]Testing the negative condition first can make an if statement confusing
+---Defect Density Metrics (by KLOC)---
+Reliability - 5.7
+Security - 1.42
+Maintainability - 2.85
+Total Defect Density - 9.97
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 702
+AvoidRecurringShortSchedules : 1
+MethodSize : 115
+MethodCount : 34
+SpecificSubscription : 1
+CyclomaticComplexity : 30
+InvertedIfElse : 1
 Total Violations : 7
  
-FILENAME : ➥ MailArrived.groovy
+FILENAME : ➥ KeypadCoordinator-Child.groovy
+rule name : MethodCount line : 1
+source line/ message : [SRC]definition( [MSG]Class None has 102 methods
+rule name : AbcMetric line : 31
+source line/ message : [SRC]def mainProfilePage() { [MSG]Violation in class None. The ABC score for method [mainProfilePage] is [66.0]
+rule name : HandleNullValue line : 303
+source line/ message : [SRC]input "vpMode", "enum", title: "Choose Mode to change to..uired: false [MSG]Handle null values. Avoid NullPointerException by using the safe navigation (?) operator.
+rule name : HandleNullValue line : 316
+source line/ message : [SRC]input "vpModeD", "enum", title: "Choose Mode to change t..uired: false [MSG]Handle null values. Avoid NullPointerException by using the safe navigation (?) operator.
+rule name : HandleNullValue line : 336
+source line/ message : [SRC]input "pMode", "enum", title: "Choose Mode to change to...uired: false [MSG]Handle null values. Avoid NullPointerException by using the safe navigation (?) operator.
+rule name : SpecificSubscription line : 447
+source line/ message : [SRC]if (sLocksVP) { subscribe(sLocksVP, "codeEntered", codeEntryHandler) } [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 448
+source line/ message : [SRC]if (sLocksGarage) { subscribe(sLocksGarage, "codeEntered..ryHandler) } [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 449
+source line/ message : [SRC]if (tempKeypad) { subscribe(tempKeypad, "codeEntered", tempHandler) } [MSG]Subscription must be specific to the Event you are interested in.
+rule name : NoMissingEventHandler line : 451
+source line/ message : [SRC]if (panicKeypad) { subscribe (panicKeypad, "contact.open..icHandler) } [MSG]Event handler not found. Declare an event handler when subscribing to an event.
+rule name : SpecificSubscription line : 452
+source line/ message : [SRC]if (actionsKeypad) { subscribe (actionsKeypad, "codeEnte..ryHandler) } [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 453
+source line/ message : [SRC]if (switchKeypad) { subscribe (switchKeypad, "codeEntere..ryHandler) } [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 455
+source line/ message : [SRC]if (mKeypad) { subscribe (mKeypad, "codeEntered", codeEntryHandler) } [MSG]Subscription must be specific to the Event you are interested in.
+rule name : CyclomaticComplexity line : 460
+source line/ message : [SRC]def codeEntryHandler(evt) { [MSG]Violation in class None. The cyclomatic complexity for method [codeEntryHandler] is [30]
+rule name : CyclomaticComplexity line : 558
+source line/ message : [SRC]private pGarage(data, codeEntered, evt) { [MSG]Violation in class None. The cyclomatic complexity for method [pGarage] is [21]
+rule name : MissingSwitchDefault line : 1126
+source line/ message : [SRC]public webCoRE_handler(evt){switch(evt.value){case 'pis..ta);break;}} [MSG]Missing default: case statement in switch().
+rule name : InvertedIfElse line : 1094
+source line/ message : [SRC]if(!d) { [MSG]Testing the negative condition first can make an if statement confusing
 ---Defect Density Metrics (by KLOC)---
-Reliability - 0.0
-Security - 0.0
-Maintainability - 0.0
-Total Defect Density - 0.0
+Reliability - 5.23
+Security - 5.23
+Maintainability - 3.49
+Total Defect Density - 13.95
 ---Breakdown of Violations and Other Metrics---
-Lines of Code : 54
-Total Violations : 0
- 
-FILENAME : ➥ MedicineReminder.groovy
-rule name : MissingSwitchDefault line : 50
-source line/ message : [SRC]switch (index) { [MSG]Missing default: case statement in switch().
----Defect Density Metrics (by KLOC)---
-Reliability - 10.31
-Security - 0.0
-Maintainability - 0.0
-Total Defect Density - 10.31
----Breakdown of Violations and Other Metrics---
-Lines of Code : 97
+Lines of Code : 1147
+HandleNullValue : 3
 MissingSwitchDefault : 1
-Total Violations : 1
+MethodCount : 102
+NoMissingEventHandler : 1
+SpecificSubscription : 6
+CyclomaticComplexity : 21
+AbcMetric : 66.0
+InvertedIfElse : 1
+Total Violations : 16
  
-FILENAME : ➥ MoodCube.groovy
-rule name : SpecificSubscription line : 124
-source line/ message : [SRC]subscribe cube, "threeAxis", positionHandler [MSG]Subscription must be specific to the Event you are interested in.
+FILENAME : ➥ KeypadCoordinator-DH.groovy
 ---Defect Density Metrics (by KLOC)---
 Reliability - 0.0
-Security - 3.86
+Security - 0.0
 Maintainability - 0.0
-Total Defect Density - 3.86
+Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
-Lines of Code : 259
+Lines of Code : 88
+Total Violations : 0
+ 
+FILENAME : ➥ KeypadCoordinator-Parent.groovy
+rule name : SpecificSubscription line : 62
+source line/ message : [SRC]subscribe(location, "askAlexaMQ", askAlexaMQHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 65
+source line/ message : [SRC]subscribe(location, "echoSistant", echoSistantHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : MissingSwitchDefault line : 82
+source line/ message : [SRC]public webCoRE_handler(evt){switch(evt.value){case 'pis..ta);break;}} [MSG]Missing default: case statement in switch().
+rule name : MissingSwitchDefault line : 88
+source line/ message : [SRC]switch (evt.value) { [MSG]Missing default: case statement in switch().
+rule name : MissingSwitchDefault line : 114
+source line/ message : [SRC]switch (evt.value) { [MSG]Missing default: case statement in switch().
+---Defect Density Metrics (by KLOC)---
+Reliability - 30.0
+Security - 20.0
+Maintainability - 0.0
+Total Defect Density - 50.0
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 100
+MissingSwitchDefault : 3
+SpecificSubscription : 2
+Total Violations : 5
+ 
+FILENAME : ➥ TalkingAlarmClock-Child.groovy
+rule name : MethodCount line : 1
+source line/ message : [SRC]definition( [MSG]Class None has 41 methods
+rule name : AbcMetric line : 19
+source line/ message : [SRC]def pageSetup() { [MSG]Violation in class None. The ABC score for method [pageSetup] is [61.6]
+rule name : CyclomaticComplexity line : 19
+source line/ message : [SRC]def pageSetup() { [MSG]Violation in class None. The cyclomatic complexity for method [pageSetup] is [37]
+rule name : AbcMetric line : 185
+source line/ message : [SRC]def alarmHandler(evt) { [MSG]Violation in class None. The ABC score for method [alarmHandler] is [90.1]
+rule name : CyclomaticComplexity line : 185
+source line/ message : [SRC]def alarmHandler(evt) { [MSG]Violation in class None. The cyclomatic complexity for method [alarmHandler] is [61]
+rule name : AbcMetric line : 253
+source line/ message : [SRC]def getAlarmDesc() { [MSG]Violation in class None. The ABC score for method [getAlarmDesc] is [70.5]
+rule name : CyclomaticComplexity line : 253
+source line/ message : [SRC]def getAlarmDesc() { [MSG]Violation in class None. The cyclomatic complexity for method [getAlarmDesc] is [41]
+rule name : CyclomaticComplexity line : 375
+source line/ message : [SRC]def getRestrictionDesc(){ [MSG]Violation in class None. The cyclomatic complexity for method [getRestrictionDesc] is [26]
+rule name : CyclomaticComplexity line : 501
+source line/ message : [SRC]private alarmSoundUri(){ [MSG]Violation in class None. The cyclomatic complexity for method [alarmSoundUri] is [22]
+rule name : MissingSwitchDefault line : 503
+source line/ message : [SRC]switch(soundAlarm) { [MSG]Missing default: case statement in switch().
+rule name : TernaryCouldBeElvis line : 347
+source line/ message : [SRC]desc = desc ? desc : "Tap to setup weather reporting options" [MSG](desc) ? desc : Tap to setup weather reporting options in class None can be simplified to desc ?: Tap to setup weather reporting options
+rule name : TernaryCouldBeElvis line : 373
+source line/ message : [SRC]result = result ? result : "Tap to configure alarm triggers" [MSG](result) ? result : Tap to configure alarm triggers in class None can be simplified to result ?: Tap to configure alarm triggers
+rule name : ConfusingTernary line : 378
+source line/ message : [SRC]result += getTimeLabel(timeStart, timeEnd) != "Tap to se..imeEnd) : "" [MSG](this.getTimeLabel(timeStart, timeEnd) != Tap to set) is a confusing negation in a ternary expression. Rewrite as (this.getTimeLabel(timeStart, timeEnd) == Tap to set) and invert the conditions.
+rule name : TernaryCouldBeElvis line : 389
+source line/ message : [SRC]result = result ? result : "Tap to configure alarm restrictions" [MSG](result) ? result : Tap to configure alarm restrictions in class None can be simplified to result ?: Tap to configure alarm restrictions
+rule name : InvertedIfElse line : 400
+source line/ message : [SRC]if (!param){ [MSG]Testing the negative condition first can make an if statement confusing
+rule name : ParameterReassignment line : 559
+source line/ message : [SRC]msg = msg.replace('%day%', day) [MSG]The method parameter [msg] in class None was reassigned. Use a temporary variable instead.
+rule name : ParameterReassignment line : 560
+source line/ message : [SRC]msg = msg.replace('%date%', "${month} ${dayNum}, ${year}") [MSG]The method parameter [msg] in class None was reassigned. Use a temporary variable instead.
+rule name : ParameterReassignment line : 561
+source line/ message : [SRC]msg = msg.replace('%time%', "${time}") [MSG]The method parameter [msg] in class None was reassigned. Use a temporary variable instead.
+rule name : ParameterReassignment line : 562
+source line/ message : [SRC]msg = alarmPresence ? msg.replace('%people%', "${getPres..eople%', "") [MSG]The method parameter [msg] in class None was reassigned. Use a temporary variable instead.
+rule name : ParameterReassignment line : 563
+source line/ message : [SRC]msg = "${msg} " [MSG]The method parameter [msg] in class None was reassigned. Use a temporary variable instead.
+---Defect Density Metrics (by KLOC)---
+Reliability - 11.63
+Security - 0.0
+Maintainability - 21.59
+Total Defect Density - 33.22
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 602
+MissingSwitchDefault : 1
+ParameterReassignment : 5
+MethodCount : 41
+CyclomaticComplexity : 22
+AbcMetric : 70.5
+ConfusingTernary : 1
+InvertedIfElse : 1
+TernaryCouldBeElvis : 3
+Total Violations : 20
+ 
+FILENAME : ➥ TalkingAlarmClock-Parent.groovy
+---Defect Density Metrics (by KLOC)---
+Reliability - 0.0
+Security - 0.0
+Maintainability - 0.0
+Total Defect Density - 0.0
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 159
+Total Violations : 0
+ 
+FILENAME : ➥ WindowACUnitDirector.groovy
+rule name : AvoidRecurringShortSchedules line : 307
+source line/ message : [SRC]runIn(60, "temperatureHandler") [MSG]Avoid recurring short schedules unless there is a good reason for it.
+rule name : SpecificSubscription line : 308
+source line/ message : [SRC]subscribe(sensor, "temperature", temperatureHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : CyclomaticComplexity line : 318
+source line/ message : [SRC]def temperatureHandler(evt) { [MSG]Violation in class None. The cyclomatic complexity for method [temperatureHandler] is [22]
+rule name : InvertedIfElse line : 413
+source line/ message : [SRC]if (!doorsOk){ [MSG]Testing the negative condition first can make an if statement confusing
+---Defect Density Metrics (by KLOC)---
+Reliability - 2.07
+Security - 2.07
+Maintainability - 4.13
+Total Defect Density - 8.26
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 484
+AvoidRecurringShortSchedules : 1
 SpecificSubscription : 1
-Total Violations : 1
- 
-FILENAME : ➥ NotifyMeWhen.groovy
-rule name : HandleNullValue line : 139
-source line/ message : [SRC]def name = location.name.toLowerCase() [MSG]Handle null values. Avoid NullPointerException by using the safe navigation (?) operator.
----Defect Density Metrics (by KLOC)---
-Reliability - 7.58
-Security - 0.0
-Maintainability - 0.0
-Total Defect Density - 7.58
----Breakdown of Violations and Other Metrics---
-Lines of Code : 132
-HandleNullValue : 1
-Total Violations : 1
- 
-FILENAME : ➥ PhotoBurstWhen.groovy
----Defect Density Metrics (by KLOC)---
-Reliability - 0.0
-Security - 0.0
-Maintainability - 0.0
-Total Defect Density - 0.0
----Breakdown of Violations and Other Metrics---
-Lines of Code : 64
-Total Violations : 0
- 
-FILENAME : ➥ SevereWeatherAlert.groovy
----Defect Density Metrics (by KLOC)---
-Reliability - 0.0
-Security - 0.0
-Maintainability - 0.0
-Total Defect Density - 0.0
----Breakdown of Violations and Other Metrics---
-Lines of Code : 97
-Total Violations : 0
- 
-FILENAME : ➥ SleepyTime.groovy
-rule name : SpecificSubscription line : 40
-source line/ message : [SRC]subscribe (jawbone, "sleeping", jawboneHandler) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 51
-source line/ message : [SRC]subscribe (jawbone, "sleeping", jawboneHandler) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : EmptyMethod line : 56
-source line/ message : [SRC]def initialize() { [MSG]Violation in class None. The method initialize is both empty and not marked with @Override
----Defect Density Metrics (by KLOC)---
-Reliability - 17.86
-Security - 35.71
-Maintainability - 0.0
-Total Defect Density - 53.57
----Breakdown of Violations and Other Metrics---
-Lines of Code : 56
-EmptyMethod : 1
-SpecificSubscription : 2
-Total Violations : 3
- 
-FILENAME : ➥ StepNotifier.groovy
-rule name : SpecificSubscription line : 147
-source line/ message : [SRC]subscribe (jawbone,"goal",goalHandler) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 148
-source line/ message : [SRC]subscribe (jawbone,"steps",stepHandler) [MSG]Subscription must be specific to the Event you are interested in.
----Defect Density Metrics (by KLOC)---
-Reliability - 0.0
-Security - 8.1
-Maintainability - 0.0
-Total Defect Density - 8.1
----Breakdown of Violations and Other Metrics---
-Lines of Code : 247
-SpecificSubscription : 2
-Total Violations : 2
- 
-FILENAME : ➥ VirtualThermostat.groovy
-rule name : SpecificSubscription line : 37
-source line/ message : [SRC]subscribe(sensor, "temperature", temperatureHandler) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 39
-source line/ message : [SRC]subscribe(motion, "motion", motionHandler) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 46
-source line/ message : [SRC]subscribe(sensor, "temperature", temperatureHandler) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 48
-source line/ message : [SRC]subscribe(motion, "motion", motionHandler) [MSG]Subscription must be specific to the Event you are interested in.
----Defect Density Metrics (by KLOC)---
-Reliability - 0.0
-Security - 34.19
-Maintainability - 0.0
-Total Defect Density - 34.19
----Breakdown of Violations and Other Metrics---
-Lines of Code : 117
-SpecificSubscription : 4
+CyclomaticComplexity : 22
+InvertedIfElse : 1
 Total Violations : 4
  
-Total SmartApps Analyzed : 22
-Total SmartApps with Violations : 17
+FILENAME : ➥ WindowOrDoorOpen.groovy
+rule name : MethodCount line : 1
+source line/ message : [SRC]definition( [MSG]Class None has 71 methods
+---Defect Density Metrics (by KLOC)---
+Reliability - 2.06
+Security - 0.0
+Maintainability - 0.0
+Total Defect Density - 2.06
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 485
+MethodCount : 71
+Total Violations : 1
+ 
+Total SmartApps Analyzed : 11
+Total SmartApps with Violations : 8
 ---Most Common Violations---
-SpecificSubscription:23
-IfStatementCouldBeTernary:6
-AtomicStateUpdateUsage:5
-InvertedIfElse:5
-EmptyMethod:4
-UseConsistentReturnValue:3
-EmptyElseBlock:2
-MethodCount:2
-MissingSwitchDefault:2
-ParameterReassignment:2
-CyclomaticComplexity:1
-AtomicStateUsage:1
-CouldBeElvis:1
-MethodSize:1
-HandleNullValue:1
-EmptyCatchBlock:1
+SpecificSubscription:10
+CyclomaticComplexity:9
+MissingSwitchDefault:5
+ParameterReassignment:5
+TernaryCouldBeElvis:4
+MethodCount:4
+AbcMetric:4
+InvertedIfElse:4
+HandleNullValue:3
+AvoidRecurringShortSchedules:2
+MethodSize:2
+ConfusingTernary:1
+EmptyMethod:1
+NoMissingEventHandler:1
 --app-end--
