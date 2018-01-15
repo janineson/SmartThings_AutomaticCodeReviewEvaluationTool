@@ -127,7 +127,21 @@ class Parser{
                         log.append("rule name : " + ruleName + " line : " + ruleLineNo)
                         log.append("source line/ message : " + ruleSource)
 
-                        ruleViolationList.add(ruleName)
+
+                        /*
+                        Never use both Atomic State and State in the same SmartApp.
+                        This can’t be emphasized enough - doing so may result in data inconsistency, data corruption, or even data loss.
+                        http://docs.smartthings.com/en/latest/smartapp-developers-guide/state.html#choosing-between-state-atomicstate
+                        Condition below is added to record only 1 error per file because the warning is:
+                        "[MSG]Avoid using atomicState and state in the same SmartApp."
+                        One violation message is enough for the app. If removed, it will result to redundant messages every encounter of 'state'.
+                         */
+                        if (ruleName =='AtomicStateUsage'){
+                            if(!ruleViolationList.contains('AtomicStateUsage'))
+                                ruleViolationList.add(ruleName)
+                        }else
+                            ruleViolationList.add(ruleName)
+
                     }
 
                 }
