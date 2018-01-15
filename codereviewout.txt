@@ -230,19 +230,19 @@ source line/ message : [SRC]if (!oauthTokenProvided) { [MSG]Testing the negative
 rule name : InvertedIfElse line : 408
 source line/ message : [SRC]if(!existingDevice) { [MSG]Testing the negative condition first can make an if statement confusing
 ---Defect Density Metrics (KLOC)---
-Reliability - 11.06
+Reliability - 28.76
 Security - 0.0
 Maintainability - 6.64
-Total Defect Density - 17.7
+Total Defect Density - 35.4
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 452
 HandleNullValue : 1
 MissingSwitchDefault : 2
 MethodCount : 37
-AtomicStateUsage : 1
+AtomicStateUsage : 9
 CyclomaticComplexity : 23
 InvertedIfElse : 2
-Total Violations : 8
+Total Violations : 16
  
 FILENAME : ➥ thermostat-auto-off.groovy
 rule name : SpecificSubscription line : 47
@@ -479,19 +479,19 @@ source line/ message : [SRC]if (!realTimeInfo) { [MSG]Code could use elvis opera
 rule name : InvertedIfElse line : 982
 source line/ message : [SRC]if (!realTimeInfo) { [MSG]Testing the negative condition first can make an if statement confusing
 ---Defect Density Metrics (KLOC)---
-Reliability - 7.65
+Reliability - 99.43
 Security - 0.0
 Maintainability - 17.21
-Total Defect Density - 24.86
+Total Defect Density - 116.63
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 523
 MethodSize : 520
-AtomicStateUsage : 1
+AtomicStateUsage : 49
 CyclomaticComplexity : 45
 AbcMetric : 235.0
 CouldBeElvis : 1
 InvertedIfElse : 5
-Total Violations : 13
+Total Violations : 61
  
 FILENAME : ➥ gideon.groovy
 rule name : SpecificSubscription line : 64
@@ -1376,17 +1376,17 @@ source line/ message : [SRC]if (!anySensors()) { [MSG]Testing the negative condi
 rule name : MethodSize line : 2396
 source line/ message : [MSG]Method "createDPWMap" is 172 lines
 ---Defect Density Metrics (KLOC)---
-Reliability - 19.17
+Reliability - 66.39
 Security - 0.0
 Maintainability - 18.23
-Total Defect Density - 37.4
+Total Defect Density - 84.62
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 2139
 AvoidRecurringShortSchedules : 9
 UseConsistentReturnValue : 16
 MethodSize : 172
 MethodCount : 100
-AtomicStateUsage : 1
+AtomicStateUsage : 102
 AtomicStateUpdateUsage : 3
 DeadCode : 6
 CyclomaticComplexity : 43
@@ -1395,7 +1395,7 @@ AbcMetric : 103.0
 CouldBeElvis : 8
 IfStatementCouldBeTernary : 6
 InvertedIfElse : 6
-Total Violations : 80
+Total Violations : 181
  
 FILENAME : ➥ smart-light-timer-x-minutes-unless-already-on.groovy
 rule name : SpecificSubscription line : 52
@@ -1782,21 +1782,21 @@ source line/ message : [MSG]Method "pageNotifications" is 231 lines
 rule name : MethodSize line : 852
 source line/ message : [MSG]Method "pageRemoteOptions" is 109 lines
 ---Defect Density Metrics (KLOC)---
-Reliability - 5.35
+Reliability - 54.14
 Security - 0.67
 Maintainability - 1.34
-Total Defect Density - 7.35
+Total Defect Density - 56.15
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 1496
 MissingSwitchDefault : 2
 EmptyMethod : 2
 MethodSize : 109
 MethodCount : 62
-AtomicStateUsage : 1
+AtomicStateUsage : 74
 SpecificSubscription : 1
 CyclomaticComplexity : 24
 AbcMetric : 70.1
-Total Violations : 11
+Total Violations : 84
  
 FILENAME : ➥ hello-home-phrase-director.groovy
 rule name : SpecificSubscription line : 88
@@ -2142,18 +2142,18 @@ source line/ message : [SRC]def qParams = [ [MSG]Modifying collections in Atomic
 rule name : InvertedIfElse line : 120
 source line/ message : [SRC]if(!d) { [MSG]Testing the negative condition first can make an if statement confusing
 ---Defect Density Metrics (KLOC)---
-Reliability - 41.21
+Reliability - 47.72
 Security - 0.0
 Maintainability - 4.34
-Total Defect Density - 45.55
+Total Defect Density - 52.06
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 461
 EmptyMethod : 1
-AtomicStateUsage : 1
+AtomicStateUsage : 4
 AtomicStateUpdateUsage : 17
 CyclomaticComplexity : 21
 InvertedIfElse : 1
-Total Violations : 21
+Total Violations : 24
  
 FILENAME : ➥ weatherbug-home.groovy
 rule name : IfStatementCouldBeTernary line : 100
@@ -2186,6 +2186,7 @@ Total Violations : 8
 Total SmartApps Analyzed : 74
 Total SmartApps with Violations : 57
 ---Most Common Violations---
+AtomicStateUsage:239
 SpecificSubscription:145
 InvertedIfElse:39
 NestedBlockDepth:23
@@ -2201,7 +2202,6 @@ AbcMetric:11
 IfStatementCouldBeTernary:10
 EmptyMethod:10
 MethodCount:8
-AtomicStateUsage:6
 DeadCode:6
 HandleNullValue:5
 ConfusingTernary:4
