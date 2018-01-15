@@ -254,7 +254,7 @@ class Parser{
 
 
     void displayQualityAttribute(){
-        log.append("---Defect Density Metrics (by KLOC)---")
+        log.append("---Defect Density Metrics (KLOC)---")
         defectCount()
 
         log.append("Reliability - " + calculateRate(reliabilityViolationCount).round(2))
