@@ -1,2 +1,1 @@
-*.C linguist-language=Groovy
-*.H linguist-language=Groovy
+*.HTML linguist-language=Groovy
