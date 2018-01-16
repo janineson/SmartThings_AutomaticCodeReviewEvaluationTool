@@ -15,3 +15,10 @@ Place the HTML file under out/dump_html folder.<br/>
 Run the program.<br/>
 A text file will be generated in the root folder of the source program.<br/>
 <img src="https://github.com/janineson/SmartThings_CodeReviewMetricsTool/blob/master/out/ss.PNG"> 
+
+# Required Libraries
+And by the way, you need the following libraries to make this run!<br/>
+jsoup-1.11.1.jar<br/>
+java jdk 1.8<br/>
+groovy 2.4.7<br/>
+
