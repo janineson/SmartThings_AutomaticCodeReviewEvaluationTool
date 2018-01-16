@@ -1,1 +1,2 @@
-*.HTML linguist-language=Groovy
+* linguist-vendored
+*.groovy linguist-vendored=false
