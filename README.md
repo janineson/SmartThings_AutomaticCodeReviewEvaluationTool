@@ -11,7 +11,7 @@ To generate the HTML report, you would need to do a few things.<br/>
 You need to run another program located in a different repository (CodenarcPluginRunTest).<br/>
 It is a program that contains groovy SmartApps and they are run using CodeNarc Plugin for IntellijIDEA IDE. <br/>
 You need to run an ANT build file that is configured for CodeNarc and it will generate an HTML report after analyzing a bunch of SmartApps all at once.<br/>
-Place the HTML file under out/dump_ast folder.<br/>
+Place the HTML file under out/dump_html folder.<br/>
 Run the program.<br/>
 A text file will be generated in the root folder of the source program.<br/>
 <img src="https://github.com/janineson/SmartThings_CodeReviewMetricsTool/blob/master/out/ss.PNG"> 
