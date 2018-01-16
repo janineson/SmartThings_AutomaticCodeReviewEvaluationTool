@@ -2186,27 +2186,27 @@ Total Violations : 8
 Total SmartApps Analyzed : 74
 Total SmartApps with Violations : 57
 ---Most Common Violations---
-AtomicStateUsage:239
-SpecificSubscription:145
-InvertedIfElse:39
-NestedBlockDepth:23
-CyclomaticComplexity:23
-AtomicStateUpdateUsage:22
-MethodSize:19
-UseConsistentReturnValue:18
-AvoidRecurringShortSchedules:16
-CouldBeElvis:15
-VerifyArrayIndex:15
-MissingSwitchDefault:14
-AbcMetric:11
-IfStatementCouldBeTernary:10
-EmptyMethod:10
+SpecificSubscription:38
+InvertedIfElse:15
+CyclomaticComplexity:13
 MethodCount:8
-DeadCode:6
+CouldBeElvis:8
+EmptyMethod:7
+MissingSwitchDefault:7
+AvoidRecurringShortSchedules:6
+AtomicStateUsage:6
+MethodSize:6
+NestedBlockDepth:5
 HandleNullValue:5
-ConfusingTernary:4
+AbcMetric:4
+ConfusingTernary:3
+IfStatementCouldBeTernary:3
+VerifyArrayIndex:3
+AtomicStateUpdateUsage:3
+UseConsistentReturnValue:2
 ParameterReassignment:2
 EmptyElseBlock:1
 ClearSubscription:1
 EmptyIfStatement:1
+DeadCode:1
 --app-end--

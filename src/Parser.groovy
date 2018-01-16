@@ -220,14 +220,14 @@ class Parser{
                 else
                     log.append(rule + " : "  + ruleViolationList.count(rule))
 
-                setCombinedViolations(rule, ruleViolationList.count(rule))
+                setCombinedViolations(rule, 1)
             }
         }
 
         for (String rule : securityList) {
             if (ruleViolationList.count(rule) > 0){
                 log.append(rule + " : "  + ruleViolationList.count(rule))
-                setCombinedViolations(rule, ruleViolationList.count(rule))
+                setCombinedViolations(rule, 1)
             }
 
         }
@@ -240,7 +240,7 @@ class Parser{
                     log.append(rule + " : "  + abcMetric)
                 else
                     log.append(rule + " : "  + ruleViolationList.count(rule))
-                setCombinedViolations(rule, ruleViolationList.count(rule))
+                setCombinedViolations(rule, 1)
             }
         }
         log.append("Total Violations : " + ruleViolationList.size())

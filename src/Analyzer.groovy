@@ -13,7 +13,7 @@ class Analyzer {
 
         def outputfilename = project_root + "/" + "codereviewout.txt"
         Logger log = new Logger(outputfilename)
-        String sourceCodeDir = project_root + "/out/" + "dump_ast" //REPLACE with your dataset
+        String sourceCodeDir = project_root + "/out/" + "dump_html" //REPLACE with your dataset
         new File(sourceCodeDir).eachFile { file ->
             try {
                 File f = new File(outputfilename);
