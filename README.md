@@ -14,7 +14,7 @@ You need to run an ANT build file that is configured for CodeNarc and it will ge
 Place the HTML file under out/dump_html folder.<br/>
 Run the program.<br/>
 A text file will be generated in the root folder of the source program.<br/>
-<img src="https://github.com/janineson/SmartThings_CodeReviewMetricsTool/blob/master/out/ss.PNG"> 
+<img src="https://github.com/janineson/SmartThings_CodeReviewMetricsTool/blob/master/out/scrnshot.PNG"> 
 
 # Required Libraries
 And by the way, you need the following libraries to make this run!<br/>
