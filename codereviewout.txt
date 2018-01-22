@@ -70,53 +70,65 @@ Lines of Code : 53
 Total Violations : 0
  
 FILENAME : ➥ goodnight-ubi.groovy
+rule name : DocumentExternalHTTPRequests line : 99
+source line/ message : [SRC]httpGet("https://portal.theubi.com/webapi/behaviour?acce..=${phrase}") [MSG]Document external HTTP requests.
 rule name : EmptyIfStatement line : 113
 source line/ message : [SRC]if (theSwitches == "") {} else { // If the user d..o nothing... [MSG]The if statement is empty
 ---Defect Density Metrics (KLOC)---
 Reliability - 13.33
-Security - 0.0
+Security - 13.33
 Maintainability - 0.0
-Total Defect Density - 13.33
+Total Defect Density - 26.67
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 75
 EmptyIfStatement : 1
-Total Violations : 1
+DocumentExternalHTTPRequests : 1
+Total Violations : 2
  
 FILENAME : ➥ jenkins-notifier.groovy
+rule name : DocumentExternalHTTPRequests line : 118
+source line/ message : [SRC]httpGet(uri: host, headers: ["Authorization": "${basicAu..]) { resp -> [MSG]Document external HTTP requests.
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
-Security - 0.0
+Security - 21.28
 Maintainability - 0.0
-Total Defect Density - 0.0
+Total Defect Density - 21.28
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 47
-Total Violations : 0
+DocumentExternalHTTPRequests : 1
+Total Violations : 1
  
 FILENAME : ➥ gidjit-hub.groovy
+rule name : DocumentExposedEndpoints line : 45
+source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
 rule name : EmptyMethod line : 100
 source line/ message : [SRC]def initialize() { [MSG]Violation in class None. The method initialize is both empty and not marked with @Override
 ---Defect Density Metrics (KLOC)---
 Reliability - 5.49
-Security - 0.0
+Security - 5.49
 Maintainability - 0.0
-Total Defect Density - 5.49
+Total Defect Density - 10.99
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 182
 EmptyMethod : 1
-Total Violations : 1
+DocumentExposedEndpoints : 1
+Total Violations : 2
  
 FILENAME : ➥ beaconthings-manager.groovy
 rule name : EmptyMethod line : 40
 source line/ message : [SRC]def initialize() { [MSG]Violation in class None. The method initialize is both empty and not marked with @Override
+rule name : DocumentExposedEndpoints line : 47
+source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
 ---Defect Density Metrics (KLOC)---
 Reliability - 9.8
-Security - 0.0
+Security - 9.8
 Maintainability - 0.0
-Total Defect Density - 9.8
+Total Defect Density - 19.61
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 102
 EmptyMethod : 1
-Total Violations : 1
+DocumentExposedEndpoints : 1
+Total Violations : 2
  
 FILENAME : ➥ obything-music-connect.groovy
 rule name : EmptyMethod line : 43
@@ -145,16 +157,21 @@ Lines of Code : 93
 Total Violations : 0
  
 FILENAME : ➥ vinli-home-connect.groovy
+rule name : DocumentExposedEndpoints line : 25
+source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
-Security - 0.0
+Security - 7.19
 Maintainability - 0.0
-Total Defect Density - 0.0
+Total Defect Density - 7.19
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 139
-Total Violations : 0
+DocumentExposedEndpoints : 1
+Total Violations : 1
  
 FILENAME : ➥ curb-control.groovy
+rule name : DocumentExposedEndpoints line : 24
+source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
 rule name : EmptyMethod line : 44
 source line/ message : [SRC]def installed() {} [MSG]Violation in class None. The method installed is both empty and not marked with @Override
 rule name : EmptyMethod line : 46
@@ -165,40 +182,57 @@ rule name : InvertedIfElse line : 105
 source line/ message : [SRC]if (!d) { [MSG]Testing the negative condition first can make an if statement confusing
 ---Defect Density Metrics (KLOC)---
 Reliability - 19.61
-Security - 0.0
+Security - 9.8
 Maintainability - 19.61
-Total Defect Density - 39.22
+Total Defect Density - 49.02
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 102
 EmptyMethod : 2
+DocumentExposedEndpoints : 1
 InvertedIfElse : 2
-Total Violations : 4
+Total Violations : 5
  
 FILENAME : ➥ curb-energy-monitor.groovy
 rule name : MethodCount line : 17
 source line/ message : [SRC]include 'asynchttp_v1' [MSG]Class None has 32 methods
+rule name : DocumentExposedEndpoints line : 43
+source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
 rule name : AvoidRecurringShortSchedules line : 69
 source line/ message : [SRC]runEvery1Minute(getAllData) [MSG]Avoid recurring short schedules unless there is a good reason for it.
+rule name : DocumentExternalHTTPRequests line : 129
+source line/ message : [SRC]httpPostJson([uri: curbTokenUrl, body: tokenParams]) { [MSG]Document external HTTP requests.
+rule name : DocumentExternalHTTPRequests line : 160
+source line/ message : [SRC]httpGet(params) { [MSG]Document external HTTP requests.
+rule name : DocumentExternalHTTPRequests line : 339
+source line/ message : [SRC]httpPostJson([uri: curbTokenUrl, body: tokenParams]) { [MSG]Document external HTTP requests.
 rule name : CouldBeElvis line : 78
 source line/ message : [SRC]if (!atomicState.accessToken) { [MSG]Code could use elvis operator: atomicState.accessToken = atomicState.accessToken ?: this.createAccessToken()
 rule name : InvertedIfElse line : 329
 source line/ message : [SRC]if (!atomicState.refreshToken) { [MSG]Testing the negative condition first can make an if statement confusing
 ---Defect Density Metrics (KLOC)---
 Reliability - 4.99
-Security - 0.0
+Security - 9.98
 Maintainability - 4.99
-Total Defect Density - 9.98
+Total Defect Density - 19.95
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 401
 AvoidRecurringShortSchedules : 1
 MethodCount : 32
+DocumentExternalHTTPRequests : 3
+DocumentExposedEndpoints : 1
 CouldBeElvis : 1
 InvertedIfElse : 1
-Total Violations : 4
+Total Violations : 8
  
 FILENAME : ➥ netatmo-connect.groovy
 rule name : MethodCount line : 18
 source line/ message : [SRC]definition( [MSG]Class None has 37 methods
+rule name : DocumentExposedEndpoints line : 39
+source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
+rule name : DocumentExternalHTTPRequests line : 145
+source line/ message : [SRC]httpPost(requestTokenParams) { resp -> [MSG]Document external HTTP requests.
+rule name : DocumentExternalHTTPRequests line : 281
+source line/ message : [SRC]httpPost(requestOauthParams) { resp -> [MSG]Document external HTTP requests.
 rule name : AtomicStateUsage line : 326
 source line/ message : [SRC]def detail = state?.deviceDetail[deviceId] [MSG]Avoid using atomicState and state in the same SmartApp.
 rule name : MissingSwitchDefault line : 329
@@ -215,6 +249,8 @@ rule name : AtomicStateUsage line : 385
 source line/ message : [SRC]state.deviceDetail[key2] = value2 [MSG]Avoid using atomicState and state in the same SmartApp.
 rule name : AtomicStateUsage line : 386
 source line/ message : [SRC]state.deviceState[key2] = value2.dashboard_data [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : DocumentExternalHTTPRequests line : 457
+source line/ message : [SRC]httpGet(apiGetParams) { resp -> [MSG]Document external HTTP requests.
 rule name : CyclomaticComplexity line : 474
 source line/ message : [SRC]def poll() { [MSG]Violation in class None. The cyclomatic complexity for method [poll] is [23]
 rule name : AtomicStateUsage line : 483
@@ -231,18 +267,20 @@ rule name : InvertedIfElse line : 408
 source line/ message : [SRC]if(!existingDevice) { [MSG]Testing the negative condition first can make an if statement confusing
 ---Defect Density Metrics (KLOC)---
 Reliability - 28.76
-Security - 0.0
+Security - 8.85
 Maintainability - 6.64
-Total Defect Density - 35.4
+Total Defect Density - 44.25
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 452
 HandleNullValue : 1
 MissingSwitchDefault : 2
 MethodCount : 37
 AtomicStateUsage : 9
+DocumentExternalHTTPRequests : 3
+DocumentExposedEndpoints : 1
 CyclomaticComplexity : 23
 InvertedIfElse : 2
-Total Violations : 16
+Total Violations : 20
  
 FILENAME : ➥ thermostat-auto-off.groovy
 rule name : SpecificSubscription line : 47
@@ -356,6 +394,8 @@ InvertedIfElse : 2
 Total Violations : 5
  
 FILENAME : ➥ smart-energy-service.groovy
+rule name : DocumentExposedEndpoints line : 62
+source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
 rule name : AbcMetric line : 76
 source line/ message : [SRC]def checkAccessToken() { [MSG]Violation in class None. The ABC score for method [checkAccessToken] is [94.2]
 rule name : AtomicStateUsage line : 92
@@ -410,6 +450,10 @@ rule name : AtomicStateUsage line : 425
 source line/ message : [SRC]state.languageString = [MSG]Avoid using atomicState and state in the same SmartApp.
 rule name : AtomicStateUsage line : 562
 source line/ message : [SRC]def url = "https://graph.api.smartthings.com/api/token/$..appingPath}" [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : DocumentExternalHTTPRequests line : 738
+source line/ message : [SRC]httpPost(param) { resp -> [MSG]Document external HTTP requests.
+rule name : DocumentExternalHTTPRequests line : 753
+source line/ message : [SRC]httpGet(param) { resp -> [MSG]Document external HTTP requests.
 rule name : AbcMetric line : 795
 source line/ message : [SRC]def getHtml() { [MSG]Violation in class None. The ABC score for method [getHtml] is [235.0]
 rule name : CyclomaticComplexity line : 795
@@ -480,24 +524,28 @@ rule name : InvertedIfElse line : 982
 source line/ message : [SRC]if (!realTimeInfo) { [MSG]Testing the negative condition first can make an if statement confusing
 ---Defect Density Metrics (KLOC)---
 Reliability - 99.43
-Security - 0.0
+Security - 5.74
 Maintainability - 17.21
-Total Defect Density - 116.63
+Total Defect Density - 122.37
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 523
 MethodSize : 520
 AtomicStateUsage : 49
+DocumentExternalHTTPRequests : 2
+DocumentExposedEndpoints : 1
 CyclomaticComplexity : 45
 AbcMetric : 235.0
 CouldBeElvis : 1
 InvertedIfElse : 5
-Total Violations : 61
+Total Violations : 64
  
 FILENAME : ➥ gideon.groovy
 rule name : SpecificSubscription line : 64
 source line/ message : [SRC]subscribe(outlet, "energy", outletHandler) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : SpecificSubscription line : 65
 source line/ message : [SRC]subscribe(outlet, "switch", outletHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : DocumentExposedEndpoints line : 80
+source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
 rule name : InvertedIfElse line : 142
 source line/ message : [SRC]if (!device) { [MSG]Testing the negative condition first can make an if statement confusing
 rule name : InvertedIfElse line : 153
@@ -516,14 +564,15 @@ rule name : InvertedIfElse line : 248
 source line/ message : [SRC]if (!device) { [MSG]Testing the negative condition first can make an if statement confusing
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
-Security - 10.05
+Security - 15.08
 Maintainability - 40.2
-Total Defect Density - 50.25
+Total Defect Density - 55.28
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 199
+DocumentExposedEndpoints : 1
 SpecificSubscription : 2
 InvertedIfElse : 8
-Total Violations : 10
+Total Violations : 11
  
 FILENAME : ➥ coffee-after-shower.groovy
 rule name : SpecificSubscription line : 42
@@ -628,6 +677,8 @@ SpecificSubscription : 2
 Total Violations : 2
  
 FILENAME : ➥ initial-state-event-streamer.groovy
+rule name : DocumentExposedEndpoints line : 65
+source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
 rule name : CyclomaticComplexity line : 136
 source line/ message : [SRC]def subscribeToEvents() { [MSG]Violation in class None. The cyclomatic complexity for method [subscribeToEvents] is [26]
 rule name : SpecificSubscription line : 138
@@ -708,22 +759,28 @@ rule name : SpecificSubscription line : 224
 source line/ message : [SRC]subscribe(waterSensors, "water", genericHandler) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : AtomicStateUpdateUsage line : 287
 source line/ message : [SRC]def bucketCreatePost = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
+rule name : DocumentExternalHTTPRequests line : 300
+source line/ message : [SRC]httpPostJson(bucketCreatePost) { resp -> [MSG]Document external HTTP requests.
 rule name : AtomicStateUpdateUsage line : 353
 source line/ message : [SRC]def eventPost = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
+rule name : DocumentExternalHTTPRequests line : 366
+source line/ message : [SRC]httpPostJson(eventPost) { resp -> [MSG]Document external HTTP requests.
 rule name : CouldBeElvis line : 275
 source line/ message : [SRC]if (!atomicState.bucketName) { [MSG]Code could use elvis operator: atomicState.bucketName = atomicState.bucketName ?: atomicState.bucketKey
 ---Defect Density Metrics (KLOC)---
 Reliability - 6.58
-Security - 125.0
+Security - 134.87
 Maintainability - 6.58
-Total Defect Density - 138.16
+Total Defect Density - 148.03
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 304
 AtomicStateUpdateUsage : 2
+DocumentExternalHTTPRequests : 2
+DocumentExposedEndpoints : 1
 SpecificSubscription : 38
 CyclomaticComplexity : 26
 CouldBeElvis : 1
-Total Violations : 42
+Total Violations : 45
  
 FILENAME : ➥ my-light-toggle.groovy
 rule name : SpecificSubscription line : 55
@@ -796,20 +853,40 @@ SpecificSubscription : 1
 Total Violations : 1
  
 FILENAME : ➥ jawbone-up-connect.groovy
+rule name : DocumentExposedEndpoints line : 30
+source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
+rule name : DocumentExternalHTTPRequests line : 114
+source line/ message : [SRC]httpGet(params) { response -> [MSG]Document external HTTP requests.
+rule name : DocumentExternalHTTPRequests line : 238
+source line/ message : [SRC]httpPost(uri: url, headers: ["Authorization": "Bearer ${..{response -> [MSG]Document external HTTP requests.
+rule name : DocumentExternalHTTPRequests line : 254
+source line/ message : [SRC]httpGet(params) { refreshResponse -> [MSG]Document external HTTP requests.
 rule name : NestedBlockDepth line : 258
 source line/ message : [SRC]if (data.error == "access_denied") { [MSG]The nested block depth is 6
+rule name : DocumentExternalHTTPRequests line : 282
+source line/ message : [SRC]httpPost(uri: webhook, headers: ["Authorization": "Beare..ssToken}" ]) [MSG]Document external HTTP requests.
+rule name : DocumentExternalHTTPRequests line : 292
+source line/ message : [SRC]httpGet(uri: urlmember, headers: ["Authorization": "Bear..{response -> [MSG]Document external HTTP requests.
+rule name : DocumentExternalHTTPRequests line : 346
+source line/ message : [SRC]httpDelete(uri: "https://jawbone.com/nudge/api/v.1.0/use.. response -> [MSG]Document external HTTP requests.
 rule name : MissingSwitchDefault line : 452
 source line/ message : [SRC]switch (json_action) { [MSG]Missing default: case statement in switch().
+rule name : DocumentExternalHTTPRequests line : 467
+source line/ message : [SRC]httpGet(uri: urlgoals, headers: ["Authorization": "Beare..{response -> [MSG]Document external HTTP requests.
+rule name : DocumentExternalHTTPRequests line : 470
+source line/ message : [SRC]httpGet(uri: urlmoves, headers: ["Authorization": "Beare..{response -> [MSG]Document external HTTP requests.
 ---Defect Density Metrics (KLOC)---
 Reliability - 2.49
-Security - 0.0
+Security - 22.44
 Maintainability - 2.49
-Total Defect Density - 4.99
+Total Defect Density - 27.43
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 401
 MissingSwitchDefault : 1
+DocumentExternalHTTPRequests : 8
+DocumentExposedEndpoints : 1
 NestedBlockDepth : 1
-Total Violations : 2
+Total Violations : 11
  
 FILENAME : ➥ turn-off-with-motion.groovy
 rule name : SpecificSubscription line : 42
@@ -840,14 +917,17 @@ Lines of Code : 105
 Total Violations : 0
  
 FILENAME : ➥ weather-underground-pws-connect.groovy
+rule name : DocumentExternalHTTPRequests line : 98
+source line/ message : [SRC]httpGet(params) { resp -> // This is how we define the "..lso use $it. [MSG]Document external HTTP requests.
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
-Security - 0.0
+Security - 15.15
 Maintainability - 0.0
-Total Defect Density - 0.0
+Total Defect Density - 15.15
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 66
-Total Violations : 0
+DocumentExternalHTTPRequests : 1
+Total Violations : 1
  
 FILENAME : ➥ medicine-management-contact-sensor.groovy
 rule name : SpecificSubscription line : 68
@@ -964,35 +1044,50 @@ InvertedIfElse : 1
 Total Violations : 5
  
 FILENAME : ➥ opent2t-smartapp-test.groovy
+rule name : DocumentExposedEndpoints line : 72
+source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
 rule name : CyclomaticComplexity line : 574
 source line/ message : [SRC]private mapDeviceCommands(command, value) { [MSG]Violation in class None. The cyclomatic complexity for method [mapDeviceCommands] is [26]
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
-Security - 0.0
+Security - 5.88
 Maintainability - 5.88
-Total Defect Density - 5.88
+Total Defect Density - 11.76
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 170
+DocumentExposedEndpoints : 1
 CyclomaticComplexity : 26
-Total Violations : 1
+Total Violations : 2
  
 FILENAME : ➥ plantlink-connector.groovy
+rule name : DocumentExposedEndpoints line : 46
+source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
 rule name : AtomicStateUsage line : 57
 source line/ message : [SRC]atomicState.accessToken = state.accessToken [MSG]Avoid using atomicState and state in the same SmartApp.
 rule name : SpecificSubscription line : 111
 source line/ message : [SRC]subscribe(plantlinksensors, "moisture_status", moistureHandler) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : SpecificSubscription line : 112
 source line/ message : [SRC]subscribe(plantlinksensors, "battery_status", batteryHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : DocumentExternalHTTPRequests line : 141
+source line/ message : [SRC]httpPost(docking_params) { docking_response -> [MSG]Document external HTTP requests.
 rule name : NestedBlockDepth line : 150
 source line/ message : [SRC]httpPost(plant_post_params) { plant_post_response -> [MSG]The nested block depth is 6
 rule name : NestedBlockDepth line : 151
 source line/ message : [SRC]if(parse_api_response(plant_post_response, 'creating plant')){ [MSG]The nested block depth is 7
+rule name : DocumentExternalHTTPRequests line : 214
+source line/ message : [SRC]httpPost(measurement_post_params) { measurement_post_response -> [MSG]Document external HTTP requests.
 rule name : NestedBlockDepth line : 222
 source line/ message : [SRC]if (sensor_device.id == event.deviceId){ [MSG]The nested block depth is 6
 rule name : NestedBlockDepth line : 224
 source line/ message : [SRC]if (plant.last_measurements && plant.last_measurements[0].moisture){ [MSG]The nested block depth is 7
 rule name : NestedBlockDepth line : 227
 source line/ message : [SRC]if (plant.last_measurements && plant.last_measurements[0].battery){ [MSG]The nested block depth is 7
+rule name : DocumentExternalHTTPRequests line : 255
+source line/ message : [SRC]httpPost(measurement_post_params) { measurement_post_response -> [MSG]Document external HTTP requests.
+rule name : DocumentExternalHTTPRequests line : 299
+source line/ message : [SRC]httpPost(postParams) { resp -> [MSG]Document external HTTP requests.
+rule name : DocumentExternalHTTPRequests line : 358
+source line/ message : [SRC]httpPost(refreshParams) { resp -> [MSG]Document external HTTP requests.
 rule name : InvertedIfElse line : 68
 source line/ message : [SRC]if (!oauthTokenProvided) { [MSG]Testing the negative condition first can make an if statement confusing
 rule name : InvertedIfElse line : 203
@@ -1001,16 +1096,18 @@ rule name : InvertedIfElse line : 244
 source line/ message : [SRC]if (!atomicState.attached_sensors.containsKey(device_serial)){ [MSG]Testing the negative condition first can make an if statement confusing
 ---Defect Density Metrics (KLOC)---
 Reliability - 2.73
-Security - 5.46
+Security - 21.86
 Maintainability - 21.86
-Total Defect Density - 30.05
+Total Defect Density - 46.45
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 366
 AtomicStateUsage : 1
+DocumentExternalHTTPRequests : 5
+DocumentExposedEndpoints : 1
 SpecificSubscription : 2
 NestedBlockDepth : 5
 InvertedIfElse : 3
-Total Violations : 11
+Total Violations : 17
  
 FILENAME : ➥ spruce-scheduler.groovy
 rule name : MethodCount line : 30
@@ -1478,6 +1575,8 @@ Total Violations : 1
 FILENAME : ➥ simple-control.groovy
 rule name : MethodCount line : 9
 source line/ message : [SRC]definition( [MSG]Class None has 39 methods
+rule name : DocumentExposedEndpoints line : 38
+source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
 rule name : MissingSwitchDefault line : 131
 source line/ message : [SRC]switch (statusCode) [MSG]Missing default: case statement in switch().
 rule name : MissingSwitchDefault line : 210
@@ -1512,9 +1611,9 @@ rule name : ParameterReassignment line : 633
 source line/ message : [SRC]part = part.trim() [MSG]The method parameter [part] in class None was reassigned. Use a temporary variable instead.
 ---Defect Density Metrics (KLOC)---
 Reliability - 15.8
-Security - 1.58
+Security - 3.16
 Maintainability - 9.48
-Total Defect Density - 26.86
+Total Defect Density - 28.44
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 633
 VerifyArrayIndex : 5
@@ -1522,15 +1621,18 @@ HandleNullValue : 1
 MissingSwitchDefault : 2
 ParameterReassignment : 1
 MethodCount : 39
+DocumentExposedEndpoints : 1
 ClearSubscription : 1
 ConfusingTernary : 2
 CouldBeElvis : 1
 InvertedIfElse : 3
-Total Violations : 17
+Total Violations : 18
  
 FILENAME : ➥ shabbat-and-holiday-modes.groovy
 rule name : VerifyArrayIndex line : 101
 source line/ message : [SRC]if(hebcal_date[i].split("T")[0]==today) [MSG]Verify array index.
+rule name : DocumentExternalHTTPRequests line : 130
+source line/ message : [SRC]httpGet(urlRequest, hebcal); [MSG]Document external HTTP requests.
 rule name : VerifyArrayIndex line : 136
 source line/ message : [SRC]def returnTime = hebcal_title.split(":")[1] + ":" + hebc..:")[2] + " " [MSG]Verify array index.
 rule name : VerifyArrayIndex line : 136
@@ -1541,13 +1643,14 @@ rule name : VerifyArrayIndex line : 143
 source line/ message : [SRC]returnTime = returnTime.split("-")[0] [MSG]Verify array index.
 ---Defect Density Metrics (KLOC)---
 Reliability - 37.31
-Security - 0.0
+Security - 7.46
 Maintainability - 0.0
-Total Defect Density - 37.31
+Total Defect Density - 44.78
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 134
 VerifyArrayIndex : 5
-Total Violations : 5
+DocumentExternalHTTPRequests : 1
+Total Violations : 6
  
 FILENAME : ➥ smart-humidifier.groovy
 rule name : SpecificSubscription line : 47
@@ -1615,6 +1718,8 @@ Total Violations : 0
 FILENAME : ➥ smart-alarm.groovy
 rule name : MethodCount line : 35
 source line/ message : [SRC]definition( [MSG]Class None has 62 methods
+rule name : DocumentExposedEndpoints line : 64
+source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
 rule name : AtomicStateUsage line : 1020
 source line/ message : [SRC]paragraph "Access Token:\n${state.accessToken}" [MSG]Avoid using atomicState and state in the same SmartApp.
 rule name : AtomicStateUsage line : 1030
@@ -1783,9 +1888,9 @@ rule name : MethodSize line : 852
 source line/ message : [MSG]Method "pageRemoteOptions" is 109 lines
 ---Defect Density Metrics (KLOC)---
 Reliability - 54.14
-Security - 0.67
+Security - 1.34
 Maintainability - 1.34
-Total Defect Density - 56.15
+Total Defect Density - 56.82
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 1496
 MissingSwitchDefault : 2
@@ -1793,10 +1898,11 @@ EmptyMethod : 2
 MethodSize : 109
 MethodCount : 62
 AtomicStateUsage : 74
+DocumentExposedEndpoints : 1
 SpecificSubscription : 1
 CyclomaticComplexity : 24
 AbcMetric : 70.1
-Total Violations : 84
+Total Violations : 85
  
 FILENAME : ➥ hello-home-phrase-director.groovy
 rule name : SpecificSubscription line : 88
@@ -1973,6 +2079,8 @@ Lines of Code : 65
 Total Violations : 0
  
 FILENAME : ➥ alfred-workflow.groovy
+rule name : DocumentExposedEndpoints line : 36
+source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
 rule name : EmptyMethod line : 63
 source line/ message : [SRC]def installed() {} [MSG]Violation in class None. The method installed is both empty and not marked with @Override
 rule name : EmptyMethod line : 65
@@ -1981,24 +2089,28 @@ rule name : InvertedIfElse line : 180
 source line/ message : [SRC]if (!device) { [MSG]Testing the negative condition first can make an if statement confusing
 ---Defect Density Metrics (KLOC)---
 Reliability - 14.18
-Security - 0.0
+Security - 7.09
 Maintainability - 7.09
-Total Defect Density - 21.28
+Total Defect Density - 28.37
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 141
 EmptyMethod : 2
+DocumentExposedEndpoints : 1
 InvertedIfElse : 1
-Total Violations : 3
+Total Violations : 4
  
 FILENAME : ➥ smartblock-chat-sender.groovy
+rule name : DocumentExternalHTTPRequests line : 82
+source line/ message : [SRC]httpPost(url, "foo=bar") { response -> [MSG]Document external HTTP requests.
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
-Security - 0.0
+Security - 18.18
 Maintainability - 0.0
-Total Defect Density - 0.0
+Total Defect Density - 18.18
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 55
-Total Violations : 0
+DocumentExternalHTTPRequests : 1
+Total Violations : 1
  
 FILENAME : ➥ smartblock-linker.groovy
 rule name : SpecificSubscription line : 119
@@ -2020,14 +2132,17 @@ SpecificSubscription : 4
 Total Violations : 4
  
 FILENAME : ➥ smartblock-manager.groovy
+rule name : DocumentExposedEndpoints line : 161
+source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
-Security - 0.0
+Security - 4.59
 Maintainability - 0.0
-Total Defect Density - 0.0
+Total Defect Density - 4.59
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 218
-Total Violations : 0
+DocumentExposedEndpoints : 1
+Total Violations : 1
  
 FILENAME : ➥ smartblock-notifier.groovy
 rule name : MethodCount line : 20
@@ -2040,6 +2155,8 @@ rule name : IfStatementCouldBeTernary line : 209
 source line/ message : [SRC]if (app."${pageName}ClosestPlayer") return true [MSG]The if statement in class None can be rewritten using the ternary operator: return app.$pageNameClosestPlayer ? true : false
 rule name : SpecificSubscription line : 233
 source line/ message : [SRC]subscribe(smartBlock, "redstoneSignalStrength", redstone..ngthHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : DocumentExternalHTTPRequests line : 381
+source line/ message : [SRC]httpPost(url, "foo=bar") {} [MSG]Document external HTTP requests.
 rule name : UseConsistentReturnValue line : 450
 source line/ message : [SRC]return null [MSG]Use consistent return values.
 rule name : UseConsistentReturnValue line : 501
@@ -2048,165 +2165,40 @@ rule name : MethodSize line : 532
 source line/ message : [MSG]Method "allBlocks" is 458 lines
 ---Defect Density Metrics (KLOC)---
 Reliability - 4.66
-Security - 1.17
+Security - 2.33
 Maintainability - 3.5
-Total Defect Density - 9.32
+Total Defect Density - 10.49
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 858
 UseConsistentReturnValue : 2
 MethodSize : 458
 MethodCount : 36
+DocumentExternalHTTPRequests : 1
 SpecificSubscription : 1
 IfStatementCouldBeTernary : 3
-Total Violations : 8
+Total Violations : 9
  
 FILENAME : ➥ quirky-connect.groovy
 rule name : MethodCount line : 54
 source line/ message : [SRC]definition( [MSG]Class None has 55 methods
+rule name : DocumentExposedEndpoints line : 74
+source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
+rule name : DocumentExternalHTTPRequests line : 159
+source line/ message : [SRC]httpPost(params) { response -> [MSG]Document external HTTP requests.
 rule name : MissingSwitchDefault line : 344
 source line/ message : [SRC]switch(it.type) { [MSG]Missing default: case statement in switch().
+rule name : DocumentExternalHTTPRequests line : 502
+source line/ message : [SRC]httpPostJson([ [MSG]Document external HTTP requests.
+rule name : DocumentExternalHTTPRequests line : 517
+source line/ message : [SRC]httpDelete([ [MSG]Document external HTTP requests.
 rule name : NestedBlockDepth line : 538
 source line/ message : [SRC]if ( it.subscription_id ) { [MSG]The nested block depth is 6
+rule name : DocumentExternalHTTPRequests line : 594
+source line/ message : [SRC]httpGet([ [MSG]Document external HTTP requests.
+rule name : DocumentExternalHTTPRequests line : 607
+source line/ message : [SRC]httpPutJson([ [MSG]Document external HTTP requests.
 rule name : MissingSwitchDefault line : 659
 source line/ message : [SRC]switch(deviceType) { //outlets are polled in unique method not here [MSG]Missing default: case statement in switch().
 rule name : CyclomaticComplexity line : 763
 source line/ message : [SRC]def pollNimbus(dni) [MSG]Violation in class None. The cyclomatic complexity for method [pollNimbus] is [27]
 rule name : MissingSwitchDefault line : 791
-source line/ message : [SRC]switch(it.name) { [MSG]Missing default: case statement in switch().
-rule name : HandleNullValue line : 1116
-source line/ message : [SRC]return location.hubs*.firmwareVersionString.findAll { it } [MSG]Handle null values. Avoid NullPointerException by using the safe navigation (?) operator.
-rule name : InvertedIfElse line : 564
-source line/ message : [SRC]if(!existingDevice) { [MSG]Testing the negative condition first can make an if statement confusing
----Defect Density Metrics (KLOC)---
-Reliability - 6.88
-Security - 0.0
-Maintainability - 4.13
-Total Defect Density - 11.0
----Breakdown of Violations and Other Metrics---
-Lines of Code : 727
-HandleNullValue : 1
-MissingSwitchDefault : 3
-MethodCount : 55
-CyclomaticComplexity : 27
-NestedBlockDepth : 1
-InvertedIfElse : 1
-Total Violations : 8
- 
-FILENAME : ➥ tcp-bulbs-connect.groovy
-rule name : CyclomaticComplexity line : 174
-source line/ message : [SRC]def deviceDiscovery() { [MSG]Violation in class None. The cyclomatic complexity for method [deviceDiscovery] is [21]
-rule name : AtomicStateUpdateUsage line : 177
-source line/ message : [SRC]def Params = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
-rule name : AtomicStateUpdateUsage line : 207
-source line/ message : [SRC]deviceList += ["name" : "${roomName} ${it?.name}", "did"..e" : "bulb"] [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
-rule name : AtomicStateUpdateUsage line : 211
-source line/ message : [SRC]deviceList += ["name" : "${roomName} ${it?.name}", "did"..e" : "bulb"] [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
-rule name : AtomicStateUpdateUsage line : 223
-source line/ message : [SRC]deviceList += ["name" : "${roomName} ${it?.name}", "did"..e" : "bulb"] [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
-rule name : AtomicStateUpdateUsage line : 227
-source line/ message : [SRC]deviceList += ["name" : "${roomName} ${devices?.name}", ..e" : "bulb"] [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
-rule name : AtomicStateUpdateUsage line : 231
-source line/ message : [SRC]devices = ["devices" : deviceList] [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
-rule name : AtomicStateUsage line : 232
-source line/ message : [SRC]state.devices = devices.devices [MSG]Avoid using atomicState and state in the same SmartApp.
-rule name : AtomicStateUsage line : 236
-source line/ message : [SRC]def devices = state.devices [MSG]Avoid using atomicState and state in the same SmartApp.
-rule name : AtomicStateUpdateUsage line : 237
-source line/ message : [SRC]def map = [:] [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
-rule name : AtomicStateUpdateUsage line : 259
-source line/ message : [SRC]def qParams = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
-rule name : AtomicStateUpdateUsage line : 282
-source line/ message : [SRC]def qParams = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
-rule name : AtomicStateUpdateUsage line : 311
-source line/ message : [SRC]def params = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
-rule name : AtomicStateUpdateUsage line : 383
-source line/ message : [SRC]def qParams = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
-rule name : AtomicStateUsage line : 426
-source line/ message : [SRC]def device = state.devices.find() {(( it.type == 'room').. "${dni}"))} [MSG]Avoid using atomicState and state in the same SmartApp.
-rule name : AtomicStateUsage line : 430
-source line/ message : [SRC]def device = state.devices.find() {(( it.type == 'bulb').. "${dni}"))} [MSG]Avoid using atomicState and state in the same SmartApp.
-rule name : AtomicStateUpdateUsage line : 435
-source line/ message : [SRC]def results = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
-rule name : EmptyMethod line : 445
-source line/ message : [SRC]def debugOut(msg) { [MSG]Violation in class None. The method debugOut is both empty and not marked with @Override
-rule name : AtomicStateUpdateUsage line : 469
-source line/ message : [SRC]def qParams = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
-rule name : AtomicStateUpdateUsage line : 500
-source line/ message : [SRC]def qParams = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
-rule name : AtomicStateUpdateUsage line : 531
-source line/ message : [SRC]def qParams = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
-rule name : AtomicStateUpdateUsage line : 557
-source line/ message : [SRC]def qParams = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
-rule name : AtomicStateUpdateUsage line : 623
-source line/ message : [SRC]def qParams = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
-rule name : InvertedIfElse line : 120
-source line/ message : [SRC]if(!d) { [MSG]Testing the negative condition first can make an if statement confusing
----Defect Density Metrics (KLOC)---
-Reliability - 47.72
-Security - 0.0
-Maintainability - 4.34
-Total Defect Density - 52.06
----Breakdown of Violations and Other Metrics---
-Lines of Code : 461
-EmptyMethod : 1
-AtomicStateUsage : 4
-AtomicStateUpdateUsage : 17
-CyclomaticComplexity : 21
-InvertedIfElse : 1
-Total Violations : 24
- 
-FILENAME : ➥ weatherbug-home.groovy
-rule name : IfStatementCouldBeTernary line : 100
-source line/ message : [SRC]if(device == null) [MSG]The if statement in class None can be rewritten using the ternary operator: return (device == null) ? [Id:UUID.randomUUID().toString(), Code:404, ErrorMessage:(Device not found. id= + params.id), Result:null] : [Id:UUID.randomUUID().toString(), Code:200, ErrorMessage:null, Result:[DeviceId:device.id, LocationId:location.id, ReportType:2, ReportList:[[Key:Temperature, Value:this.GetOrDefault(device, temperature)], [Key:ThermostatSetpoint, Value:this.GetOrDefault(device, thermostatSetpoint)], [Key:CoolingSetpoint, Value:this.GetOrDefault(device, coolingSetpoint)], [Key:HeatingSetpoint, Value:this.GetOrDefault(device, heatingSetpoint)], [Key:ThermostatMode, Value:this.GetOrDefault(device, thermostatMode)], [Key:ThermostatFanMode, Value:this.GetOrDefault(device, thermostatFanMode)], [Key:ThermostatOperatingState, Value:this.GetOrDefault(device, thermostatOperatingState)]], ... ]]
-rule name : SpecificSubscription line : 205
-source line/ message : [SRC]subscribe(thermostatDevice, "heatingSetpoint", pushLatest) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 206
-source line/ message : [SRC]subscribe(thermostatDevice, "coolingSetpoint", pushLatest) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 207
-source line/ message : [SRC]subscribe(thermostatDevice, "thermostatSetpoint", pushLatest) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 208
-source line/ message : [SRC]subscribe(thermostatDevice, "thermostatMode", pushLatest) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 209
-source line/ message : [SRC]subscribe(thermostatDevice, "thermostatFanMode", pushLatest) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 210
-source line/ message : [SRC]subscribe(thermostatDevice, "thermostatOperatingState", pushLatest) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 211
-source line/ message : [SRC]subscribe(thermostatDevice, "temperature", pushLatest) [MSG]Subscription must be specific to the Event you are interested in.
----Defect Density Metrics (KLOC)---
-Reliability - 0.0
-Security - 35.71
-Maintainability - 5.1
-Total Defect Density - 40.82
----Breakdown of Violations and Other Metrics---
-Lines of Code : 196
-SpecificSubscription : 7
-IfStatementCouldBeTernary : 1
-Total Violations : 8
- 
-Total SmartApps Analyzed : 74
-Total SmartApps with Violations : 57
----Most Common Violations---
-SpecificSubscription:38
-InvertedIfElse:15
-CyclomaticComplexity:13
-MethodCount:8
-CouldBeElvis:8
-EmptyMethod:7
-MissingSwitchDefault:7
-AvoidRecurringShortSchedules:6
-AtomicStateUsage:6
-MethodSize:6
-NestedBlockDepth:5
-HandleNullValue:5
-AbcMetric:4
-ConfusingTernary:3
-IfStatementCouldBeTernary:3
-VerifyArrayIndex:3
-AtomicStateUpdateUsage:3
-UseConsistentReturnValue:2
-ParameterReassignment:2
-EmptyElseBlock:1
-ClearSubscription:1
-EmptyIfStatement:1
-DeadCode:1
---app-end--
