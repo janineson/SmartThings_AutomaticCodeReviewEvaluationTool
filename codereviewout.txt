@@ -2202,3 +2202,154 @@ source line/ message : [SRC]switch(deviceType) { //outlets are polled in unique 
 rule name : CyclomaticComplexity line : 763
 source line/ message : [SRC]def pollNimbus(dni) [MSG]Violation in class None. The cyclomatic complexity for method [pollNimbus] is [27]
 rule name : MissingSwitchDefault line : 791
+source line/ message : [SRC]switch(it.name) { [MSG]Missing default: case statement in switch().
+rule name : HandleNullValue line : 1116
+source line/ message : [SRC]return location.hubs*.firmwareVersionString.findAll { it } [MSG]Handle null values. Avoid NullPointerException by using the safe navigation (?) operator.
+rule name : InvertedIfElse line : 564
+source line/ message : [SRC]if(!existingDevice) { [MSG]Testing the negative condition first can make an if statement confusing
+---Defect Density Metrics (KLOC)---
+Reliability - 6.88
+Security - 8.25
+Maintainability - 4.13
+Total Defect Density - 19.26
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 727
+HandleNullValue : 1
+MissingSwitchDefault : 3
+MethodCount : 55
+DocumentExternalHTTPRequests : 5
+DocumentExposedEndpoints : 1
+CyclomaticComplexity : 27
+NestedBlockDepth : 1
+InvertedIfElse : 1
+Total Violations : 14
+ 
+FILENAME : ➥ tcp-bulbs-connect.groovy
+rule name : CyclomaticComplexity line : 174
+source line/ message : [SRC]def deviceDiscovery() { [MSG]Violation in class None. The cyclomatic complexity for method [deviceDiscovery] is [21]
+rule name : AtomicStateUpdateUsage line : 177
+source line/ message : [SRC]def Params = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
+rule name : AtomicStateUpdateUsage line : 207
+source line/ message : [SRC]deviceList += ["name" : "${roomName} ${it?.name}", "did"..e" : "bulb"] [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
+rule name : AtomicStateUpdateUsage line : 211
+source line/ message : [SRC]deviceList += ["name" : "${roomName} ${it?.name}", "did"..e" : "bulb"] [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
+rule name : AtomicStateUpdateUsage line : 223
+source line/ message : [SRC]deviceList += ["name" : "${roomName} ${it?.name}", "did"..e" : "bulb"] [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
+rule name : AtomicStateUpdateUsage line : 227
+source line/ message : [SRC]deviceList += ["name" : "${roomName} ${devices?.name}", ..e" : "bulb"] [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
+rule name : AtomicStateUpdateUsage line : 231
+source line/ message : [SRC]devices = ["devices" : deviceList] [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
+rule name : AtomicStateUsage line : 232
+source line/ message : [SRC]state.devices = devices.devices [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 236
+source line/ message : [SRC]def devices = state.devices [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUpdateUsage line : 237
+source line/ message : [SRC]def map = [:] [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
+rule name : AtomicStateUpdateUsage line : 259
+source line/ message : [SRC]def qParams = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
+rule name : AtomicStateUpdateUsage line : 282
+source line/ message : [SRC]def qParams = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
+rule name : AtomicStateUpdateUsage line : 311
+source line/ message : [SRC]def params = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
+rule name : DocumentExternalHTTPRequests line : 316
+source line/ message : [SRC]httpPost(params) { [MSG]Document external HTTP requests.
+rule name : AtomicStateUpdateUsage line : 383
+source line/ message : [SRC]def qParams = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
+rule name : AtomicStateUsage line : 426
+source line/ message : [SRC]def device = state.devices.find() {(( it.type == 'room').. "${dni}"))} [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 430
+source line/ message : [SRC]def device = state.devices.find() {(( it.type == 'bulb').. "${dni}"))} [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUpdateUsage line : 435
+source line/ message : [SRC]def results = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
+rule name : EmptyMethod line : 445
+source line/ message : [SRC]def debugOut(msg) { [MSG]Violation in class None. The method debugOut is both empty and not marked with @Override
+rule name : AtomicStateUpdateUsage line : 469
+source line/ message : [SRC]def qParams = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
+rule name : AtomicStateUpdateUsage line : 500
+source line/ message : [SRC]def qParams = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
+rule name : AtomicStateUpdateUsage line : 531
+source line/ message : [SRC]def qParams = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
+rule name : AtomicStateUpdateUsage line : 557
+source line/ message : [SRC]def qParams = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
+rule name : AtomicStateUpdateUsage line : 623
+source line/ message : [SRC]def qParams = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
+rule name : InvertedIfElse line : 120
+source line/ message : [SRC]if(!d) { [MSG]Testing the negative condition first can make an if statement confusing
+---Defect Density Metrics (KLOC)---
+Reliability - 47.72
+Security - 2.17
+Maintainability - 4.34
+Total Defect Density - 54.23
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 461
+EmptyMethod : 1
+AtomicStateUsage : 4
+AtomicStateUpdateUsage : 17
+DocumentExternalHTTPRequests : 1
+CyclomaticComplexity : 21
+InvertedIfElse : 1
+Total Violations : 25
+ 
+FILENAME : ➥ weatherbug-home.groovy
+rule name : DocumentExposedEndpoints line : 25
+source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
+rule name : IfStatementCouldBeTernary line : 100
+source line/ message : [SRC]if(device == null) [MSG]The if statement in class None can be rewritten using the ternary operator: return (device == null) ? [Id:UUID.randomUUID().toString(), Code:404, ErrorMessage:(Device not found. id= + params.id), Result:null] : [Id:UUID.randomUUID().toString(), Code:200, ErrorMessage:null, Result:[DeviceId:device.id, LocationId:location.id, ReportType:2, ReportList:[[Key:Temperature, Value:this.GetOrDefault(device, temperature)], [Key:ThermostatSetpoint, Value:this.GetOrDefault(device, thermostatSetpoint)], [Key:CoolingSetpoint, Value:this.GetOrDefault(device, coolingSetpoint)], [Key:HeatingSetpoint, Value:this.GetOrDefault(device, heatingSetpoint)], [Key:ThermostatMode, Value:this.GetOrDefault(device, thermostatMode)], [Key:ThermostatFanMode, Value:this.GetOrDefault(device, thermostatFanMode)], [Key:ThermostatOperatingState, Value:this.GetOrDefault(device, thermostatOperatingState)]], ... ]]
+rule name : SpecificSubscription line : 205
+source line/ message : [SRC]subscribe(thermostatDevice, "heatingSetpoint", pushLatest) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 206
+source line/ message : [SRC]subscribe(thermostatDevice, "coolingSetpoint", pushLatest) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 207
+source line/ message : [SRC]subscribe(thermostatDevice, "thermostatSetpoint", pushLatest) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 208
+source line/ message : [SRC]subscribe(thermostatDevice, "thermostatMode", pushLatest) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 209
+source line/ message : [SRC]subscribe(thermostatDevice, "thermostatFanMode", pushLatest) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 210
+source line/ message : [SRC]subscribe(thermostatDevice, "thermostatOperatingState", pushLatest) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 211
+source line/ message : [SRC]subscribe(thermostatDevice, "temperature", pushLatest) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : DocumentExternalHTTPRequests line : 294
+source line/ message : [SRC]httpPostJson(postParams) { resp -> [MSG]Document external HTTP requests.
+---Defect Density Metrics (KLOC)---
+Reliability - 0.0
+Security - 45.92
+Maintainability - 5.1
+Total Defect Density - 51.02
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 196
+DocumentExternalHTTPRequests : 1
+DocumentExposedEndpoints : 1
+SpecificSubscription : 7
+IfStatementCouldBeTernary : 1
+Total Violations : 10
+ 
+Total SmartApps Analyzed : 74
+Total SmartApps with Violations : 62
+---Most Common Violations---
+SpecificSubscription:38
+DocumentExposedEndpoints:18
+DocumentExternalHTTPRequests:15
+InvertedIfElse:15
+CyclomaticComplexity:13
+MethodCount:8
+CouldBeElvis:8
+MissingSwitchDefault:7
+EmptyMethod:7
+AtomicStateUsage:6
+MethodSize:6
+AvoidRecurringShortSchedules:6
+NestedBlockDepth:5
+HandleNullValue:5
+AbcMetric:4
+ConfusingTernary:3
+IfStatementCouldBeTernary:3
+AtomicStateUpdateUsage:3
+VerifyArrayIndex:3
+ParameterReassignment:2
+UseConsistentReturnValue:2
+EmptyElseBlock:1
+EmptyIfStatement:1
+DeadCode:1
+ClearSubscription:1
+--app-end--
