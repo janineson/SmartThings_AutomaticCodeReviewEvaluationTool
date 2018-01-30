@@ -1,0 +1,2354 @@
+﻿--app-start--
+processing CodeNarcAntReport.html
+FILENAME : ➥ bright-when-dark-and-or-bright-after-sunset.groovy
+rule name : AbcMetric line : 49
+source line/ message : [SRC]def options() [MSG]Violation in class None. The ABC score for method [options] is [60.7]
+rule name : AbcMetric line : 191
+source line/ message : [SRC]def initialize() [MSG]Violation in class None. The ABC score for method [initialize] is [71.7]
+rule name : CyclomaticComplexity line : 191
+source line/ message : [SRC]def initialize() [MSG]Violation in class None. The cyclomatic complexity for method [initialize] is [35]
+rule name : SpecificSubscription line : 193
+source line/ message : [SRC]subscribe(motionSensor, "motion", motionHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 197
+source line/ message : [SRC]subscribe(lights, "switch", lightsHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 199
+source line/ message : [SRC]subscribe(dimmers, "switch", dimmersHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 209
+source line/ message : [SRC]subscribe(location, "position", locationPositionChange) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 210
+source line/ message : [SRC]subscribe(location, "sunriseTime", sunriseSunsetTimeHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 211
+source line/ message : [SRC]subscribe(location, "sunsetTime", sunriseSunsetTimeHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 221
+source line/ message : [SRC]subscribe(lights, "switch", lightsHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 231
+source line/ message : [SRC]subscribe(location, "position", locationPositionChange) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 232
+source line/ message : [SRC]subscribe(location, "sunriseTime", sunriseSunsetTimeHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 233
+source line/ message : [SRC]subscribe(location, "sunsetTime", sunriseSunsetTimeHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 243
+source line/ message : [SRC]subscribe(dimmers, "switch", dimmersHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 253
+source line/ message : [SRC]subscribe(location, "position", locationPositionChange) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 254
+source line/ message : [SRC]subscribe(location, "sunriseTime", sunriseSunsetTimeHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 255
+source line/ message : [SRC]subscribe(location, "sunsetTime", sunriseSunsetTimeHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : AbcMetric line : 312
+source line/ message : [SRC]def motionHandler(evt) [MSG]Violation in class None. The ABC score for method [motionHandler] is [109.5]
+rule name : CyclomaticComplexity line : 312
+source line/ message : [SRC]def motionHandler(evt) [MSG]Violation in class None. The cyclomatic complexity for method [motionHandler] is [72]
+rule name : MethodSize line : 49
+source line/ message : [MSG]Method "options" is 127 lines
+rule name : MethodSize line : 191
+source line/ message : [MSG]Method "initialize" is 107 lines
+rule name : MethodSize line : 312
+source line/ message : [MSG]Method "motionHandler" is 191 lines
+---Defect Density Metrics (KLOC)---
+Reliability - 4.1
+Security - 19.13
+Maintainability - 6.83
+Total Defect Density - 30.05
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 732
+MethodSize : 191
+SpecificSubscription : 14
+CyclomaticComplexity : 72
+AbcMetric : 109.5
+Total Violations : 22
+ 
+FILENAME : ➥ good-night-house.groovy
+---Defect Density Metrics (KLOC)---
+Reliability - 0.0
+Security - 0.0
+Maintainability - 0.0
+Total Defect Density - 0.0
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 53
+Total Violations : 0
+ 
+FILENAME : ➥ goodnight-ubi.groovy
+rule name : DocumentExternalHTTPRequests line : 99
+source line/ message : [SRC]httpGet("https://portal.theubi.com/webapi/behaviour?acce..=${phrase}") [MSG]Document external HTTP requests.
+rule name : EmptyIfStatement line : 113
+source line/ message : [SRC]if (theSwitches == "") {} else { // If the user d..o nothing... [MSG]The if statement is empty
+---Defect Density Metrics (KLOC)---
+Reliability - 13.33
+Security - 13.33
+Maintainability - 0.0
+Total Defect Density - 26.67
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 75
+EmptyIfStatement : 1
+DocumentExternalHTTPRequests : 1
+Total Violations : 2
+ 
+FILENAME : ➥ jenkins-notifier.groovy
+rule name : DocumentExternalHTTPRequests line : 118
+source line/ message : [SRC]httpGet(uri: host, headers: ["Authorization": "${basicAu..]) { resp -> [MSG]Document external HTTP requests.
+---Defect Density Metrics (KLOC)---
+Reliability - 0.0
+Security - 21.28
+Maintainability - 0.0
+Total Defect Density - 21.28
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 47
+DocumentExternalHTTPRequests : 1
+Total Violations : 1
+ 
+FILENAME : ➥ gidjit-hub.groovy
+rule name : DocumentExposedEndpoints line : 45
+source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
+rule name : EmptyMethod line : 100
+source line/ message : [SRC]def initialize() { [MSG]Violation in class None. The method initialize is both empty and not marked with @Override
+---Defect Density Metrics (KLOC)---
+Reliability - 5.49
+Security - 5.49
+Maintainability - 0.0
+Total Defect Density - 10.99
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 182
+EmptyMethod : 1
+DocumentExposedEndpoints : 1
+Total Violations : 2
+ 
+FILENAME : ➥ beaconthings-manager.groovy
+rule name : EmptyMethod line : 40
+source line/ message : [SRC]def initialize() { [MSG]Violation in class None. The method initialize is both empty and not marked with @Override
+rule name : DocumentExposedEndpoints line : 47
+source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
+---Defect Density Metrics (KLOC)---
+Reliability - 9.8
+Security - 9.8
+Maintainability - 0.0
+Total Defect Density - 19.61
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 102
+EmptyMethod : 1
+DocumentExposedEndpoints : 1
+Total Violations : 2
+ 
+FILENAME : ➥ obything-music-connect.groovy
+rule name : EmptyMethod line : 43
+source line/ message : [SRC]def updated() { [MSG]Violation in class None. The method updated is both empty and not marked with @Override
+rule name : HandleNullValue line : 63
+source line/ message : [SRC]def hubNames = location.hubs*.name.findAll { it } [MSG]Handle null values. Avoid NullPointerException by using the safe navigation (?) operator.
+---Defect Density Metrics (KLOC)---
+Reliability - 50.0
+Security - 0.0
+Maintainability - 0.0
+Total Defect Density - 50.0
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 40
+HandleNullValue : 1
+EmptyMethod : 1
+Total Violations : 2
+ 
+FILENAME : ➥ working-from-home.groovy
+---Defect Density Metrics (KLOC)---
+Reliability - 0.0
+Security - 0.0
+Maintainability - 0.0
+Total Defect Density - 0.0
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 93
+Total Violations : 0
+ 
+FILENAME : ➥ vinli-home-connect.groovy
+rule name : DocumentExposedEndpoints line : 25
+source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
+---Defect Density Metrics (KLOC)---
+Reliability - 0.0
+Security - 7.19
+Maintainability - 0.0
+Total Defect Density - 7.19
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 139
+DocumentExposedEndpoints : 1
+Total Violations : 1
+ 
+FILENAME : ➥ curb-control.groovy
+rule name : DocumentExposedEndpoints line : 24
+source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
+rule name : EmptyMethod line : 44
+source line/ message : [SRC]def installed() {} [MSG]Violation in class None. The method installed is both empty and not marked with @Override
+rule name : EmptyMethod line : 46
+source line/ message : [SRC]def updated() {} [MSG]Violation in class None. The method updated is both empty and not marked with @Override
+rule name : InvertedIfElse line : 86
+source line/ message : [SRC]if (!device) { [MSG]Testing the negative condition first can make an if statement confusing
+rule name : InvertedIfElse line : 105
+source line/ message : [SRC]if (!d) { [MSG]Testing the negative condition first can make an if statement confusing
+---Defect Density Metrics (KLOC)---
+Reliability - 19.61
+Security - 9.8
+Maintainability - 19.61
+Total Defect Density - 49.02
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 102
+EmptyMethod : 2
+DocumentExposedEndpoints : 1
+InvertedIfElse : 2
+Total Violations : 5
+ 
+FILENAME : ➥ curb-energy-monitor.groovy
+rule name : MethodCount line : 17
+source line/ message : [SRC]include 'asynchttp_v1' [MSG]Class None has 32 methods
+rule name : DocumentExposedEndpoints line : 43
+source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
+rule name : AvoidRecurringShortSchedules line : 69
+source line/ message : [SRC]runEvery1Minute(getAllData) [MSG]Avoid recurring short schedules unless there is a good reason for it.
+rule name : DocumentExternalHTTPRequests line : 129
+source line/ message : [SRC]httpPostJson([uri: curbTokenUrl, body: tokenParams]) { [MSG]Document external HTTP requests.
+rule name : DocumentExternalHTTPRequests line : 160
+source line/ message : [SRC]httpGet(params) { [MSG]Document external HTTP requests.
+rule name : DocumentExternalHTTPRequests line : 339
+source line/ message : [SRC]httpPostJson([uri: curbTokenUrl, body: tokenParams]) { [MSG]Document external HTTP requests.
+rule name : CouldBeElvis line : 78
+source line/ message : [SRC]if (!atomicState.accessToken) { [MSG]Code could use elvis operator: atomicState.accessToken = atomicState.accessToken ?: this.createAccessToken()
+rule name : InvertedIfElse line : 329
+source line/ message : [SRC]if (!atomicState.refreshToken) { [MSG]Testing the negative condition first can make an if statement confusing
+---Defect Density Metrics (KLOC)---
+Reliability - 4.99
+Security - 9.98
+Maintainability - 4.99
+Total Defect Density - 19.95
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 401
+AvoidRecurringShortSchedules : 1
+MethodCount : 32
+DocumentExternalHTTPRequests : 3
+DocumentExposedEndpoints : 1
+CouldBeElvis : 1
+InvertedIfElse : 1
+Total Violations : 8
+ 
+FILENAME : ➥ netatmo-connect.groovy
+rule name : MethodCount line : 18
+source line/ message : [SRC]definition( [MSG]Class None has 37 methods
+rule name : DocumentExposedEndpoints line : 39
+source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
+rule name : DocumentExternalHTTPRequests line : 145
+source line/ message : [SRC]httpPost(requestTokenParams) { resp -> [MSG]Document external HTTP requests.
+rule name : DocumentExternalHTTPRequests line : 281
+source line/ message : [SRC]httpPost(requestOauthParams) { resp -> [MSG]Document external HTTP requests.
+rule name : AtomicStateUsage line : 326
+source line/ message : [SRC]def detail = state?.deviceDetail[deviceId] [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : MissingSwitchDefault line : 329
+source line/ message : [SRC]switch(detail?.type) { [MSG]Missing default: case statement in switch().
+rule name : AtomicStateUsage line : 373
+source line/ message : [SRC]state.deviceDetail = [:] [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 374
+source line/ message : [SRC]state.deviceState = [:] [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 380
+source line/ message : [SRC]state.deviceDetail[key] = value [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 381
+source line/ message : [SRC]state.deviceState[key] = value.dashboard_data [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 385
+source line/ message : [SRC]state.deviceDetail[key2] = value2 [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 386
+source line/ message : [SRC]state.deviceState[key2] = value2.dashboard_data [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : DocumentExternalHTTPRequests line : 457
+source line/ message : [SRC]httpGet(apiGetParams) { resp -> [MSG]Document external HTTP requests.
+rule name : CyclomaticComplexity line : 474
+source line/ message : [SRC]def poll() { [MSG]Violation in class None. The cyclomatic complexity for method [poll] is [23]
+rule name : AtomicStateUsage line : 483
+source line/ message : [SRC]def detail = state?.deviceDetail[deviceId] [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 484
+source line/ message : [SRC]def data = state?.deviceState[deviceId] [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : MissingSwitchDefault line : 488
+source line/ message : [SRC]switch(detail?.type) { [MSG]Missing default: case statement in switch().
+rule name : HandleNullValue line : 554
+source line/ message : [SRC]return location.hubs*.firmwareVersionString.findAll { it } [MSG]Handle null values. Avoid NullPointerException by using the safe navigation (?) operator.
+rule name : InvertedIfElse line : 70
+source line/ message : [SRC]if (!oauthTokenProvided) { [MSG]Testing the negative condition first can make an if statement confusing
+rule name : InvertedIfElse line : 408
+source line/ message : [SRC]if(!existingDevice) { [MSG]Testing the negative condition first can make an if statement confusing
+---Defect Density Metrics (KLOC)---
+Reliability - 28.76
+Security - 8.85
+Maintainability - 6.64
+Total Defect Density - 44.25
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 452
+HandleNullValue : 1
+MissingSwitchDefault : 2
+MethodCount : 37
+AtomicStateUsage : 9
+DocumentExternalHTTPRequests : 3
+DocumentExposedEndpoints : 1
+CyclomaticComplexity : 23
+InvertedIfElse : 2
+Total Violations : 20
+ 
+FILENAME : ➥ thermostat-auto-off.groovy
+rule name : SpecificSubscription line : 47
+source line/ message : [SRC]subscribe(sensors, 'contact', "sensorChange") [MSG]Subscription must be specific to the Event you are interested in.
+---Defect Density Metrics (KLOC)---
+Reliability - 0.0
+Security - 15.87
+Maintainability - 0.0
+Total Defect Density - 15.87
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 63
+SpecificSubscription : 1
+Total Violations : 1
+ 
+FILENAME : ➥ whole-house-fan.groovy
+rule name : SpecificSubscription line : 65
+source line/ message : [SRC]subscribe(outTemp, "temperature", "checkThings"); [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 66
+source line/ message : [SRC]subscribe(inTemp, "temperature", "checkThings"); [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 67
+source line/ message : [SRC]subscribe(thermostat, "thermostatMode", "checkThings"); [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 68
+source line/ message : [SRC]subscribe(contacts, "contact", "checkThings"); [MSG]Subscription must be specific to the Event you are interested in.
+---Defect Density Metrics (KLOC)---
+Reliability - 0.0
+Security - 54.05
+Maintainability - 0.0
+Total Defect Density - 54.05
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 74
+SpecificSubscription : 4
+Total Violations : 4
+ 
+FILENAME : ➥ humidity-alert.groovy
+rule name : SpecificSubscription line : 47
+source line/ message : [SRC]subscribe(humiditySensor1, "humidity", humidityHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 52
+source line/ message : [SRC]subscribe(humiditySensor1, "humidity", humidityHandler) [MSG]Subscription must be specific to the Event you are interested in.
+---Defect Density Metrics (KLOC)---
+Reliability - 0.0
+Security - 25.64
+Maintainability - 0.0
+Total Defect Density - 25.64
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 78
+SpecificSubscription : 2
+Total Violations : 2
+ 
+FILENAME : ➥ let-there-be-dark.groovy
+rule name : SpecificSubscription line : 27
+source line/ message : [SRC]subscribe(contact1, "contact", contactHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 32
+source line/ message : [SRC]subscribe(contact1, "contact", contactHandler) [MSG]Subscription must be specific to the Event you are interested in.
+---Defect Density Metrics (KLOC)---
+Reliability - 0.0
+Security - 58.82
+Maintainability - 0.0
+Total Defect Density - 58.82
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 34
+SpecificSubscription : 2
+Total Violations : 2
+ 
+FILENAME : ➥ smart-windows.groovy
+rule name : SpecificSubscription line : 61
+source line/ message : [SRC]subscribe( inTemp, "temperature", temperatureHandler ) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 67
+source line/ message : [SRC]subscribe( inTemp, "temperature", temperatureHandler ) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : CyclomaticComplexity line : 71
+source line/ message : [SRC]def temperatureHandler(evt) { [MSG]Violation in class None. The cyclomatic complexity for method [temperatureHandler] is [21]
+rule name : CouldBeElvis line : 88
+source line/ message : [SRC]if (!retryPeriod) { [MSG]Code could use elvis operator: retryPeriod = retryPeriod ?: 30
+rule name : InvertedIfElse line : 104
+source line/ message : [SRC]if ( !alreadyNotified ) { [MSG]Testing the negative condition first can make an if statement confusing
+rule name : InvertedIfElse line : 120
+source line/ message : [SRC]if ( !alreadyNotified ) { [MSG]Testing the negative condition first can make an if statement confusing
+---Defect Density Metrics (KLOC)---
+Reliability - 0.0
+Security - 17.24
+Maintainability - 34.48
+Total Defect Density - 51.72
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 116
+SpecificSubscription : 2
+CyclomaticComplexity : 21
+CouldBeElvis : 1
+InvertedIfElse : 2
+Total Violations : 6
+ 
+FILENAME : ➥ weather-windows.groovy
+rule name : SpecificSubscription line : 55
+source line/ message : [SRC]subscribe( inTemp, "temperature", temperatureHandler ) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 61
+source line/ message : [SRC]subscribe( inTemp, "temperature", temperatureHandler ) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : CyclomaticComplexity line : 65
+source line/ message : [SRC]def temperatureHandler(evt) { [MSG]Violation in class None. The cyclomatic complexity for method [temperatureHandler] is [21]
+rule name : InvertedIfElse line : 96
+source line/ message : [SRC]if ( !alreadyNotified ) { [MSG]Testing the negative condition first can make an if statement confusing
+rule name : InvertedIfElse line : 112
+source line/ message : [SRC]if ( !alreadyNotified ) { [MSG]Testing the negative condition first can make an if statement confusing
+---Defect Density Metrics (KLOC)---
+Reliability - 0.0
+Security - 18.52
+Maintainability - 27.78
+Total Defect Density - 46.3
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 108
+SpecificSubscription : 2
+CyclomaticComplexity : 21
+InvertedIfElse : 2
+Total Violations : 5
+ 
+FILENAME : ➥ smart-energy-service.groovy
+rule name : DocumentExposedEndpoints line : 62
+source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
+rule name : AbcMetric line : 76
+source line/ message : [SRC]def checkAccessToken() { [MSG]Violation in class None. The ABC score for method [checkAccessToken] is [94.2]
+rule name : AtomicStateUsage line : 92
+source line/ message : [SRC]if (!state.languageString) { [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 100
+source line/ message : [SRC]if (!state.accessToken) { /*if smartThings' access token..not exitst*/ [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 115
+source line/ message : [SRC]paragraph state.languageString."${atomicState.language}".desc1 [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 116
+source line/ message : [SRC]href(title: state.languageString."${atomicState.language}".main, [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 117
+source line/ message : [SRC]description: state.languageString."${atomicState.language}".desc2, [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 126
+source line/ message : [SRC]section(title:state.languageString."${atomicState.language}".title6) { [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 132
+source line/ message : [SRC]title: state.languageString."${atomicState.language}".title1, [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 142
+source line/ message : [SRC]title: state.languageString."${atomicState.language}".title2, [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 143
+source line/ message : [SRC]description : state.languageString."${atomicState.langua..".subTitle1, [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 144
+source line/ message : [SRC]defaultValue: state.languageString.energyPlan, [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 155
+source line/ message : [SRC]title: state.languageString."${atomicState.language}".title3, [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 156
+source line/ message : [SRC]defaultValue : state.languageString."${atomicState.langu..es.default1, [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 159
+source line/ message : [SRC]options: state.languageString."${atomicState.language}".displayUnits [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 166
+source line/ message : [SRC]title: state.languageString."${atomicState.language}".title4, [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 167
+source line/ message : [SRC]defaultValue: state.languageString."${atomicState.langua..es.default2, [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 170
+source line/ message : [SRC]options: state.languageString."${atomicState.language}".meteringDays [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 177
+source line/ message : [SRC]title: state.languageString."${atomicState.language}".title5, [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 178
+source line/ message : [SRC]defaultValue: state.languageString."${atomicState.langua..es.default3, [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 181
+source line/ message : [SRC]options: state.languageString."${atomicState.language}".contractTypes) [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 299
+source line/ message : [SRC]def changeToUsageParam = makeGetParams("${state.domains...nergyPlan}", [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 309
+source line/ message : [SRC]def configurationParam = makePostParams("${state.domains..}"}/1.2/me", [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 329
+source line/ message : [SRC]def pushParams = makePostParams("${state.domains."${atom..vents/push", [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 331
+source line/ message : [SRC][type: "REST", regId:"${state.accessToken}__${app.id}"]) [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 421
+source line/ message : [SRC]state.domains = [ [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 425
+source line/ message : [SRC]state.languageString = [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 562
+source line/ message : [SRC]def url = "https://graph.api.smartthings.com/api/token/$..appingPath}" [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : DocumentExternalHTTPRequests line : 738
+source line/ message : [SRC]httpPost(param) { resp -> [MSG]Document external HTTP requests.
+rule name : DocumentExternalHTTPRequests line : 753
+source line/ message : [SRC]httpGet(param) { resp -> [MSG]Document external HTTP requests.
+rule name : AbcMetric line : 795
+source line/ message : [SRC]def getHtml() { [MSG]Violation in class None. The ABC score for method [getHtml] is [235.0]
+rule name : CyclomaticComplexity line : 795
+source line/ message : [SRC]def getHtml() { [MSG]Violation in class None. The cyclomatic complexity for method [getHtml] is [45]
+rule name : AtomicStateUsage line : 856
+source line/ message : [SRC]def deviceStatusParam = makeGetParams( "${state.domains...id}/status", [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 864
+source line/ message : [SRC]def standbyParam = makeGetParams( "${state.domains."${at..andbyPower", [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 873
+source line/ message : [SRC]def meParam = makeGetParams( "${state.domains."${atomicS..}"}/1.2/me", [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 881
+source line/ message : [SRC]def meteringParam = makeGetParams( "${state.domains."${a..eringUsage", [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 889
+source line/ message : [SRC]def rankingParam = makeGetParams( "${state.domains."${at..od=monthly", [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 959
+source line/ message : [SRC]def lastMonthParam = makeGetParams( "${state.domains."${..end=${end}", [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 978
+source line/ message : [SRC]def realTimeParam = makeGetParams("${state.domains."${at..ltimeUsage", [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 998
+source line/ message : [SRC]d?.sendEvent(name: "month", value : "\n ${state.language..er} \n\n " + [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 999
+source line/ message : [SRC]"${state.languageString."${atomicState.language}".messag..ody1} \n " + [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1000
+source line/ message : [SRC]"${state.languageString."${atomicState.language}".messag..ody2} \n " + [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1001
+source line/ message : [SRC]"${state.languageString."${atomicState.language}".message4.body3}") [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1250
+source line/ message : [SRC]d?.sendEvent(name: "month", value : "\n ${state.language..ge3.body2}") [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1250
+source line/ message : [SRC]d?.sendEvent(name: "month", value : "\n ${state.language..ge3.body2}") [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1250
+source line/ message : [SRC]d?.sendEvent(name: "month", value : "\n ${state.language..ge3.body2}") [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1253
+source line/ message : [SRC]if (state.language == "ko") { [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1268
+source line/ message : [SRC]<p class="st-pairing-card-header" align="center">${state...header}</p> [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1269
+source line/ message : [SRC]<p class="st-pairing-card-body" align="center"> ${state...3.body2}</p> [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1269
+source line/ message : [SRC]<p class="st-pairing-card-body" align="center"> ${state...3.body2}</p> [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1279
+source line/ message : [SRC]<p class="value last">${state.languageString."${atomicSt..button2}</p> [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1291
+source line/ message : [SRC]\$("#st-deep-link-container").html("<a id=\'st-deep-link..}</p></a>"); [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1291
+source line/ message : [SRC]\$("#st-deep-link-container").html("<a id=\'st-deep-link..}</p></a>"); [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1293
+source line/ message : [SRC]\$("#st-deep-link-container").html("<a id=\'st-deep-link..}</p></a>"); [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1293
+source line/ message : [SRC]\$("#st-deep-link-container").html("<a id=\'st-deep-link..}</p></a>"); [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : MethodSize line : 76
+source line/ message : [MSG]Method "checkAccessToken" is 111 lines
+rule name : InvertedIfElse line : 96
+source line/ message : [SRC]if (!atomicState.encoredAccessToken) { /*check if Encore..oes exist.*/ [MSG]Testing the negative condition first can make an if statement confusing
+rule name : InvertedIfElse line : 343
+source line/ message : [SRC]if(!d) { [MSG]Testing the negative condition first can make an if statement confusing
+rule name : MethodSize line : 420
+source line/ message : [MSG]Method "createLocaleStrings" is 138 lines
+rule name : InvertedIfElse line : 702
+source line/ message : [SRC]if(!atomicState.encoredRefreshToken) { [MSG]Testing the negative condition first can make an if statement confusing
+rule name : MethodSize line : 795
+source line/ message : [MSG]Method "getHtml" is 520 lines
+rule name : InvertedIfElse line : 852
+source line/ message : [SRC]if (!atomicState.notPaired) { [MSG]Testing the negative condition first can make an if statement confusing
+rule name : CouldBeElvis line : 982
+source line/ message : [SRC]if (!realTimeInfo) { [MSG]Code could use elvis operator: realTimeInfo = realTimeInfo ?: 0
+rule name : InvertedIfElse line : 982
+source line/ message : [SRC]if (!realTimeInfo) { [MSG]Testing the negative condition first can make an if statement confusing
+---Defect Density Metrics (KLOC)---
+Reliability - 99.43
+Security - 5.74
+Maintainability - 17.21
+Total Defect Density - 122.37
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 523
+MethodSize : 520
+AtomicStateUsage : 49
+DocumentExternalHTTPRequests : 2
+DocumentExposedEndpoints : 1
+CyclomaticComplexity : 45
+AbcMetric : 235.0
+CouldBeElvis : 1
+InvertedIfElse : 5
+Total Violations : 64
+ 
+FILENAME : ➥ gideon.groovy
+rule name : SpecificSubscription line : 64
+source line/ message : [SRC]subscribe(outlet, "energy", outletHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 65
+source line/ message : [SRC]subscribe(outlet, "switch", outletHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : DocumentExposedEndpoints line : 80
+source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
+rule name : InvertedIfElse line : 142
+source line/ message : [SRC]if (!device) { [MSG]Testing the negative condition first can make an if statement confusing
+rule name : InvertedIfElse line : 153
+source line/ message : [SRC]if (!device) { [MSG]Testing the negative condition first can make an if statement confusing
+rule name : InvertedIfElse line : 173
+source line/ message : [SRC]if (!device) { [MSG]Testing the negative condition first can make an if statement confusing
+rule name : InvertedIfElse line : 184
+source line/ message : [SRC]if (!device) { [MSG]Testing the negative condition first can make an if statement confusing
+rule name : InvertedIfElse line : 195
+source line/ message : [SRC]if (!device) { [MSG]Testing the negative condition first can make an if statement confusing
+rule name : InvertedIfElse line : 207
+source line/ message : [SRC]if (!device) { [MSG]Testing the negative condition first can make an if statement confusing
+rule name : InvertedIfElse line : 228
+source line/ message : [SRC]if (!device) { [MSG]Testing the negative condition first can make an if statement confusing
+rule name : InvertedIfElse line : 248
+source line/ message : [SRC]if (!device) { [MSG]Testing the negative condition first can make an if statement confusing
+---Defect Density Metrics (KLOC)---
+Reliability - 0.0
+Security - 15.08
+Maintainability - 40.2
+Total Defect Density - 55.28
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 199
+DocumentExposedEndpoints : 1
+SpecificSubscription : 2
+InvertedIfElse : 8
+Total Violations : 11
+ 
+FILENAME : ➥ coffee-after-shower.groovy
+rule name : SpecificSubscription line : 42
+source line/ message : [SRC]subscribe(bathroom, "humidity", coffeeMaker) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 47
+source line/ message : [SRC]subscribe(bathroom, "humidity", coffeeMaker) [MSG]Subscription must be specific to the Event you are interested in.
+---Defect Density Metrics (KLOC)---
+Reliability - 0.0
+Security - 55.56
+Maintainability - 0.0
+Total Defect Density - 55.56
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 36
+SpecificSubscription : 2
+Total Violations : 2
+ 
+FILENAME : ➥ door-knocker.groovy
+---Defect Density Metrics (KLOC)---
+Reliability - 0.0
+Security - 0.0
+Maintainability - 0.0
+Total Defect Density - 0.0
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 64
+Total Violations : 0
+ 
+FILENAME : ➥ forgiving-security.groovy
+---Defect Density Metrics (KLOC)---
+Reliability - 0.0
+Security - 0.0
+Maintainability - 0.0
+Total Defect Density - 0.0
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 87
+Total Violations : 0
+ 
+FILENAME : ➥ hall-light-welcome-home.groovy
+---Defect Density Metrics (KLOC)---
+Reliability - 0.0
+Security - 0.0
+Maintainability - 0.0
+Total Defect Density - 0.0
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 54
+Total Violations : 0
+ 
+FILENAME : ➥ nobody-home.groovy
+rule name : SpecificSubscription line : 53
+source line/ message : [SRC]subscribe(people, "presence", presence) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 54
+source line/ message : [SRC]subscribe(location, "sunrise", setSunrise) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 55
+source line/ message : [SRC]subscribe(location, "sunset", setSunset) [MSG]Subscription must be specific to the Event you are interested in.
+---Defect Density Metrics (KLOC)---
+Reliability - 0.0
+Security - 25.21
+Maintainability - 0.0
+Total Defect Density - 25.21
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 119
+SpecificSubscription : 3
+Total Violations : 3
+ 
+FILENAME : ➥ ready-for-rain.groovy
+---Defect Density Metrics (KLOC)---
+Reliability - 0.0
+Security - 0.0
+Maintainability - 0.0
+Total Defect Density - 0.0
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 106
+Total Violations : 0
+ 
+FILENAME : ➥ safe-watch.groovy
+rule name : SpecificSubscription line : 61
+source line/ message : [SRC]subscribe(temp, "temperature", triggerTemp) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 62
+source line/ message : [SRC]subscribe(axis, "threeAxis", triggerAxis) [MSG]Subscription must be specific to the Event you are interested in.
+---Defect Density Metrics (KLOC)---
+Reliability - 0.0
+Security - 20.2
+Maintainability - 0.0
+Total Defect Density - 20.2
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 99
+SpecificSubscription : 2
+Total Violations : 2
+ 
+FILENAME : ➥ thermostat-window-check.groovy
+rule name : SpecificSubscription line : 46
+source line/ message : [SRC]subscribe(thermostats, "thermostatMode", thermoChange); [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 52
+source line/ message : [SRC]subscribe(thermostats, "thermostatMode", thermoChange); [MSG]Subscription must be specific to the Event you are interested in.
+---Defect Density Metrics (KLOC)---
+Reliability - 0.0
+Security - 21.28
+Maintainability - 0.0
+Total Defect Density - 21.28
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 94
+SpecificSubscription : 2
+Total Violations : 2
+ 
+FILENAME : ➥ initial-state-event-streamer.groovy
+rule name : DocumentExposedEndpoints line : 65
+source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
+rule name : CyclomaticComplexity line : 136
+source line/ message : [SRC]def subscribeToEvents() { [MSG]Violation in class None. The cyclomatic complexity for method [subscribeToEvents] is [26]
+rule name : SpecificSubscription line : 138
+source line/ message : [SRC]subscribe(accelerometers, "acceleration", genericHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 141
+source line/ message : [SRC]subscribe(alarms, "alarm", genericHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 144
+source line/ message : [SRC]subscribe(batteries, "battery", genericHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 147
+source line/ message : [SRC]subscribe(beacons, "presence", genericHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 151
+source line/ message : [SRC]subscribe(cos, "carbonMonoxide", genericHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 154
+source line/ message : [SRC]subscribe(colors, "hue", genericHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 155
+source line/ message : [SRC]subscribe(colors, "saturation", genericHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 156
+source line/ message : [SRC]subscribe(colors, "color", genericHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 159
+source line/ message : [SRC]subscribe(contacts, "contact", genericHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 162
+source line/ message : [SRC]subscribe(energyMeters, "energy", genericHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 165
+source line/ message : [SRC]subscribe(illuminances, "illuminance", genericHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 168
+source line/ message : [SRC]subscribe(locks, "lock", genericHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 171
+source line/ message : [SRC]subscribe(motions, "motion", genericHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 174
+source line/ message : [SRC]subscribe(musicPlayers, "status", genericHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 175
+source line/ message : [SRC]subscribe(musicPlayers, "level", genericHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 176
+source line/ message : [SRC]subscribe(musicPlayers, "trackDescription", genericHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 177
+source line/ message : [SRC]subscribe(musicPlayers, "trackData", genericHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 178
+source line/ message : [SRC]subscribe(musicPlayers, "mute", genericHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 181
+source line/ message : [SRC]subscribe(powerMeters, "power", genericHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 184
+source line/ message : [SRC]subscribe(presences, "presence", genericHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 187
+source line/ message : [SRC]subscribe(humidities, "humidity", genericHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 190
+source line/ message : [SRC]subscribe(relaySwitches, "switch", genericHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 193
+source line/ message : [SRC]subscribe(sleepSensors, "sleeping", genericHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 196
+source line/ message : [SRC]subscribe(smokeDetectors, "smoke", genericHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 199
+source line/ message : [SRC]subscribe(peds, "steps", genericHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 200
+source line/ message : [SRC]subscribe(peds, "goal", genericHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 203
+source line/ message : [SRC]subscribe(switches, "switch", genericHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 206
+source line/ message : [SRC]subscribe(switchLevels, "level", genericHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 209
+source line/ message : [SRC]subscribe(temperatures, "temperature", genericHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 212
+source line/ message : [SRC]subscribe(thermostats, "temperature", genericHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 213
+source line/ message : [SRC]subscribe(thermostats, "heatingSetpoint", genericHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 214
+source line/ message : [SRC]subscribe(thermostats, "coolingSetpoint", genericHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 215
+source line/ message : [SRC]subscribe(thermostats, "thermostatSetpoint", genericHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 216
+source line/ message : [SRC]subscribe(thermostats, "thermostatMode", genericHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 217
+source line/ message : [SRC]subscribe(thermostats, "thermostatFanMode", genericHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 218
+source line/ message : [SRC]subscribe(thermostats, "thermostatOperatingState", genericHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 221
+source line/ message : [SRC]subscribe(valves, "contact", genericHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 224
+source line/ message : [SRC]subscribe(waterSensors, "water", genericHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : AtomicStateUpdateUsage line : 287
+source line/ message : [SRC]def bucketCreatePost = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
+rule name : DocumentExternalHTTPRequests line : 300
+source line/ message : [SRC]httpPostJson(bucketCreatePost) { resp -> [MSG]Document external HTTP requests.
+rule name : AtomicStateUpdateUsage line : 353
+source line/ message : [SRC]def eventPost = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
+rule name : DocumentExternalHTTPRequests line : 366
+source line/ message : [SRC]httpPostJson(eventPost) { resp -> [MSG]Document external HTTP requests.
+rule name : CouldBeElvis line : 275
+source line/ message : [SRC]if (!atomicState.bucketName) { [MSG]Code could use elvis operator: atomicState.bucketName = atomicState.bucketName ?: atomicState.bucketKey
+---Defect Density Metrics (KLOC)---
+Reliability - 6.58
+Security - 134.87
+Maintainability - 6.58
+Total Defect Density - 148.03
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 304
+AtomicStateUpdateUsage : 2
+DocumentExternalHTTPRequests : 2
+DocumentExposedEndpoints : 1
+SpecificSubscription : 38
+CyclomaticComplexity : 26
+CouldBeElvis : 1
+Total Violations : 45
+ 
+FILENAME : ➥ my-light-toggle.groovy
+rule name : SpecificSubscription line : 55
+source line/ message : [SRC]subscribe(motionToggler, "motion", toggleSwitches) [MSG]Subscription must be specific to the Event you are interested in.
+---Defect Density Metrics (KLOC)---
+Reliability - 0.0
+Security - 23.81
+Maintainability - 0.0
+Total Defect Density - 23.81
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 42
+SpecificSubscription : 1
+Total Violations : 1
+ 
+FILENAME : ➥ door-jammed-notification.groovy
+rule name : SpecificSubscription line : 48
+source line/ message : [SRC]subscribe(doorSensor, "doorState", coopDoorStateHandler) [MSG]Subscription must be specific to the Event you are interested in.
+---Defect Density Metrics (KLOC)---
+Reliability - 0.0
+Security - 22.73
+Maintainability - 0.0
+Total Defect Density - 22.73
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 44
+SpecificSubscription : 1
+Total Violations : 1
+ 
+FILENAME : ➥ door-state-to-color-light-hue-bulb.groovy
+rule name : SpecificSubscription line : 48
+source line/ message : [SRC]subscribe(doorSensor, "doorState", coopDoorStateHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : MissingSwitchDefault line : 59
+source line/ message : [SRC]switch(evt.value) { [MSG]Missing default: case statement in switch().
+rule name : MissingSwitchDefault line : 83
+source line/ message : [SRC]switch(color) { [MSG]Missing default: case statement in switch().
+---Defect Density Metrics (KLOC)---
+Reliability - 18.52
+Security - 9.26
+Maintainability - 0.0
+Total Defect Density - 27.78
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 108
+MissingSwitchDefault : 2
+SpecificSubscription : 1
+Total Violations : 3
+ 
+FILENAME : ➥ auto-humidity-vent.groovy
+rule name : SpecificSubscription line : 133
+source line/ message : [SRC]subscribe(humidity_sensor, "humidity", "handleThings") [MSG]Subscription must be specific to the Event you are interested in.
+---Defect Density Metrics (KLOC)---
+Reliability - 0.0
+Security - 5.49
+Maintainability - 0.0
+Total Defect Density - 5.49
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 182
+SpecificSubscription : 1
+Total Violations : 1
+ 
+FILENAME : ➥ jawbone-button-notifier.groovy
+rule name : SpecificSubscription line : 61
+source line/ message : [SRC]subscribe(jawbone, "sleeping", sendit) [MSG]Subscription must be specific to the Event you are interested in.
+---Defect Density Metrics (KLOC)---
+Reliability - 0.0
+Security - 16.39
+Maintainability - 0.0
+Total Defect Density - 16.39
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 61
+SpecificSubscription : 1
+Total Violations : 1
+ 
+FILENAME : ➥ jawbone-up-connect.groovy
+rule name : DocumentExposedEndpoints line : 30
+source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
+rule name : DocumentExternalHTTPRequests line : 114
+source line/ message : [SRC]httpGet(params) { response -> [MSG]Document external HTTP requests.
+rule name : DocumentExternalHTTPRequests line : 238
+source line/ message : [SRC]httpPost(uri: url, headers: ["Authorization": "Bearer ${..{response -> [MSG]Document external HTTP requests.
+rule name : DocumentExternalHTTPRequests line : 254
+source line/ message : [SRC]httpGet(params) { refreshResponse -> [MSG]Document external HTTP requests.
+rule name : NestedBlockDepth line : 258
+source line/ message : [SRC]if (data.error == "access_denied") { [MSG]The nested block depth is 6
+rule name : DocumentExternalHTTPRequests line : 282
+source line/ message : [SRC]httpPost(uri: webhook, headers: ["Authorization": "Beare..ssToken}" ]) [MSG]Document external HTTP requests.
+rule name : DocumentExternalHTTPRequests line : 292
+source line/ message : [SRC]httpGet(uri: urlmember, headers: ["Authorization": "Bear..{response -> [MSG]Document external HTTP requests.
+rule name : DocumentExternalHTTPRequests line : 346
+source line/ message : [SRC]httpDelete(uri: "https://jawbone.com/nudge/api/v.1.0/use.. response -> [MSG]Document external HTTP requests.
+rule name : MissingSwitchDefault line : 452
+source line/ message : [SRC]switch (json_action) { [MSG]Missing default: case statement in switch().
+rule name : DocumentExternalHTTPRequests line : 467
+source line/ message : [SRC]httpGet(uri: urlgoals, headers: ["Authorization": "Beare..{response -> [MSG]Document external HTTP requests.
+rule name : DocumentExternalHTTPRequests line : 470
+source line/ message : [SRC]httpGet(uri: urlmoves, headers: ["Authorization": "Beare..{response -> [MSG]Document external HTTP requests.
+---Defect Density Metrics (KLOC)---
+Reliability - 2.49
+Security - 22.44
+Maintainability - 2.49
+Total Defect Density - 27.43
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 401
+MissingSwitchDefault : 1
+DocumentExternalHTTPRequests : 8
+DocumentExposedEndpoints : 1
+NestedBlockDepth : 1
+Total Violations : 11
+ 
+FILENAME : ➥ turn-off-with-motion.groovy
+rule name : SpecificSubscription line : 42
+source line/ message : [SRC]subscribe(motion1, "motion", motionHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 49
+source line/ message : [SRC]subscribe(motion1, "motion", motionHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : CouldBeElvis line : 62
+source line/ message : [SRC]if (!state.inactiveAt) { [MSG]Code could use elvis operator: state.inactiveAt = state.inactiveAt ?: this.now()
+---Defect Density Metrics (KLOC)---
+Reliability - 0.0
+Security - 34.48
+Maintainability - 17.24
+Total Defect Density - 51.72
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 58
+SpecificSubscription : 2
+CouldBeElvis : 1
+Total Violations : 3
+ 
+FILENAME : ➥ enhanced-auto-lock-door.groovy
+---Defect Density Metrics (KLOC)---
+Reliability - 0.0
+Security - 0.0
+Maintainability - 0.0
+Total Defect Density - 0.0
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 105
+Total Violations : 0
+ 
+FILENAME : ➥ weather-underground-pws-connect.groovy
+rule name : DocumentExternalHTTPRequests line : 98
+source line/ message : [SRC]httpGet(params) { resp -> // This is how we define the "..lso use $it. [MSG]Document external HTTP requests.
+---Defect Density Metrics (KLOC)---
+Reliability - 0.0
+Security - 15.15
+Maintainability - 0.0
+Total Defect Density - 15.15
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 66
+DocumentExternalHTTPRequests : 1
+Total Violations : 1
+ 
+FILENAME : ➥ medicine-management-contact-sensor.groovy
+rule name : SpecificSubscription line : 68
+source line/ message : [SRC]subscribe(deviceContactSensor, "contact", contactHandler) [MSG]Subscription must be specific to the Event you are interested in.
+---Defect Density Metrics (KLOC)---
+Reliability - 0.0
+Security - 10.2
+Maintainability - 0.0
+Total Defect Density - 10.2
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 98
+SpecificSubscription : 1
+Total Violations : 1
+ 
+FILENAME : ➥ medicine-management-temp-motion.groovy
+rule name : SpecificSubscription line : 72
+source line/ message : [SRC]subscribe(deviceTemperatureMeasurement, "temperature", tempHandler) [MSG]Subscription must be specific to the Event you are interested in.
+---Defect Density Metrics (KLOC)---
+Reliability - 0.0
+Security - 10.0
+Maintainability - 0.0
+Total Defect Density - 10.0
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 100
+SpecificSubscription : 1
+Total Violations : 1
+ 
+FILENAME : ➥ color-coordinator.groovy
+rule name : SpecificSubscription line : 77
+source line/ message : [SRC]subscribe(master, "switch", onOffHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 78
+source line/ message : [SRC]subscribe(master, "level", colorHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 79
+source line/ message : [SRC]subscribe(master, "hue", colorHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 80
+source line/ message : [SRC]subscribe(master, "saturation", colorHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 81
+source line/ message : [SRC]subscribe(master, "colorTemperature", tempHandler) [MSG]Subscription must be specific to the Event you are interested in.
+---Defect Density Metrics (KLOC)---
+Reliability - 0.0
+Security - 35.97
+Maintainability - 0.0
+Total Defect Density - 35.97
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 139
+SpecificSubscription : 5
+Total Violations : 5
+ 
+FILENAME : ➥ switch-activates-home-phrase-or-mode.groovy
+rule name : SpecificSubscription line : 74
+source line/ message : [SRC]subscribe(controlSwitch, "switch", "switchHandler") [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 80
+source line/ message : [SRC]subscribe(controlSwitch, "switch", "switchHandler") [MSG]Subscription must be specific to the Event you are interested in.
+---Defect Density Metrics (KLOC)---
+Reliability - 0.0
+Security - 18.35
+Maintainability - 0.0
+Total Defect Density - 18.35
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 109
+SpecificSubscription : 2
+Total Violations : 2
+ 
+FILENAME : ➥ switch-activates-home-phrase.groovy
+rule name : SpecificSubscription line : 56
+source line/ message : [SRC]subscribe(controlSwitch, "switch", "switchHandler") [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 62
+source line/ message : [SRC]subscribe(controlSwitch, "switch", "switchHandler") [MSG]Subscription must be specific to the Event you are interested in.
+---Defect Density Metrics (KLOC)---
+Reliability - 0.0
+Security - 45.45
+Maintainability - 0.0
+Total Defect Density - 45.45
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 44
+SpecificSubscription : 2
+Total Violations : 2
+ 
+FILENAME : ➥ switch-changes-mode.groovy
+rule name : SpecificSubscription line : 47
+source line/ message : [SRC]subscribe(controlSwitch, "switch", "switchHandler") [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 54
+source line/ message : [SRC]subscribe(controlSwitch, "switch", "switchHandler") [MSG]Subscription must be specific to the Event you are interested in.
+---Defect Density Metrics (KLOC)---
+Reliability - 0.0
+Security - 43.48
+Maintainability - 0.0
+Total Defect Density - 43.48
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 46
+SpecificSubscription : 2
+Total Violations : 2
+ 
+FILENAME : ➥ lights-off-with-no-motion-and-presence.groovy
+rule name : SpecificSubscription line : 31
+source line/ message : [SRC]subscribe(motionSensor, "motion", motionHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 32
+source line/ message : [SRC]subscribe(presenceSensors, "presence", presenceHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 37
+source line/ message : [SRC]subscribe(motionSensor, "motion", motionHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 38
+source line/ message : [SRC]subscribe(presenceSensors, "presence", presenceHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : InvertedIfElse line : 68
+source line/ message : [SRC]if (!isActivePresence()) { [MSG]Testing the negative condition first can make an if statement confusing
+---Defect Density Metrics (KLOC)---
+Reliability - 0.0
+Security - 60.61
+Maintainability - 15.15
+Total Defect Density - 75.76
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 66
+SpecificSubscription : 4
+InvertedIfElse : 1
+Total Violations : 5
+ 
+FILENAME : ➥ opent2t-smartapp-test.groovy
+rule name : DocumentExposedEndpoints line : 72
+source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
+rule name : CyclomaticComplexity line : 574
+source line/ message : [SRC]private mapDeviceCommands(command, value) { [MSG]Violation in class None. The cyclomatic complexity for method [mapDeviceCommands] is [26]
+---Defect Density Metrics (KLOC)---
+Reliability - 0.0
+Security - 5.88
+Maintainability - 5.88
+Total Defect Density - 11.76
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 170
+DocumentExposedEndpoints : 1
+CyclomaticComplexity : 26
+Total Violations : 2
+ 
+FILENAME : ➥ plantlink-connector.groovy
+rule name : DocumentExposedEndpoints line : 46
+source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
+rule name : AtomicStateUsage line : 57
+source line/ message : [SRC]atomicState.accessToken = state.accessToken [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : SpecificSubscription line : 111
+source line/ message : [SRC]subscribe(plantlinksensors, "moisture_status", moistureHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 112
+source line/ message : [SRC]subscribe(plantlinksensors, "battery_status", batteryHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : DocumentExternalHTTPRequests line : 141
+source line/ message : [SRC]httpPost(docking_params) { docking_response -> [MSG]Document external HTTP requests.
+rule name : NestedBlockDepth line : 150
+source line/ message : [SRC]httpPost(plant_post_params) { plant_post_response -> [MSG]The nested block depth is 6
+rule name : NestedBlockDepth line : 151
+source line/ message : [SRC]if(parse_api_response(plant_post_response, 'creating plant')){ [MSG]The nested block depth is 7
+rule name : DocumentExternalHTTPRequests line : 214
+source line/ message : [SRC]httpPost(measurement_post_params) { measurement_post_response -> [MSG]Document external HTTP requests.
+rule name : NestedBlockDepth line : 222
+source line/ message : [SRC]if (sensor_device.id == event.deviceId){ [MSG]The nested block depth is 6
+rule name : NestedBlockDepth line : 224
+source line/ message : [SRC]if (plant.last_measurements && plant.last_measurements[0].moisture){ [MSG]The nested block depth is 7
+rule name : NestedBlockDepth line : 227
+source line/ message : [SRC]if (plant.last_measurements && plant.last_measurements[0].battery){ [MSG]The nested block depth is 7
+rule name : DocumentExternalHTTPRequests line : 255
+source line/ message : [SRC]httpPost(measurement_post_params) { measurement_post_response -> [MSG]Document external HTTP requests.
+rule name : DocumentExternalHTTPRequests line : 299
+source line/ message : [SRC]httpPost(postParams) { resp -> [MSG]Document external HTTP requests.
+rule name : DocumentExternalHTTPRequests line : 358
+source line/ message : [SRC]httpPost(refreshParams) { resp -> [MSG]Document external HTTP requests.
+rule name : InvertedIfElse line : 68
+source line/ message : [SRC]if (!oauthTokenProvided) { [MSG]Testing the negative condition first can make an if statement confusing
+rule name : InvertedIfElse line : 203
+source line/ message : [SRC]if (!atomicState.attached_sensors.containsKey(device_serial)){ [MSG]Testing the negative condition first can make an if statement confusing
+rule name : InvertedIfElse line : 244
+source line/ message : [SRC]if (!atomicState.attached_sensors.containsKey(device_serial)){ [MSG]Testing the negative condition first can make an if statement confusing
+---Defect Density Metrics (KLOC)---
+Reliability - 2.73
+Security - 21.86
+Maintainability - 21.86
+Total Defect Density - 46.45
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 366
+AtomicStateUsage : 1
+DocumentExternalHTTPRequests : 5
+DocumentExposedEndpoints : 1
+SpecificSubscription : 2
+NestedBlockDepth : 5
+InvertedIfElse : 3
+Total Violations : 17
+ 
+FILENAME : ➥ spruce-scheduler.groovy
+rule name : MethodCount line : 30
+source line/ message : [SRC]definition( [MSG]Class None has 100 methods
+rule name : UseConsistentReturnValue line : 206
+source line/ message : [SRC]if (!startTime) return 'Please set!' else return hhmm(startTime) [MSG]Use consistent return values.
+rule name : IfStatementCouldBeTernary line : 212
+source line/ message : [SRC]else if (enableManual) return 'Off & Manual Set' [MSG]The if statement in class None can be rewritten using the ternary operator: return enableManual ? 'Off & Manual Set' : 'Off'
+rule name : UseConsistentReturnValue line : 255
+source line/ message : [SRC]if (settings.isRain) return settings.rainDelay as String..return 'Off' [MSG]Use consistent return values.
+rule name : IfStatementCouldBeTernary line : 259
+source line/ message : [SRC]if(settings.isSeason) return 'On' else return 'Off' [MSG]The if statement in class None can be rewritten using the ternary operator: return settings.isSeason ? 'On' : 'Off'
+rule name : IfStatementCouldBeTernary line : 263
+source line/ message : [SRC]if (settings.sync) return "${settings.sync.displayName}"..eturn 'None' [MSG]The if statement in class None can be rewritten using the ternary operator: return settings.sync ? "$settings.sync.displayName" : 'None'
+rule name : UseConsistentReturnValue line : 313
+source line/ message : [SRC]if (!pumpDelay) return '0' else return pumpDelay as String [MSG]Use consistent return values.
+rule name : AbcMetric line : 364
+source line/ message : [SRC]def zonePage() { [MSG]Violation in class None. The ABC score for method [zonePage] is [100.0]
+rule name : UseConsistentReturnValue line : 586
+source line/ message : [SRC]if (settings."zone${state.app}") return settings."zone${..rn 'Not Set' [MSG]Use consistent return values.
+rule name : DeadCode line : 587
+source line/ message : [SRC]break [MSG]This code cannot be reached
+rule name : UseConsistentReturnValue line : 589
+source line/ message : [SRC]if (settings."plant${state.app}") return settings."plant..rn 'Not Set' [MSG]Use consistent return values.
+rule name : DeadCode line : 590
+source line/ message : [SRC]break [MSG]This code cannot be reached
+rule name : UseConsistentReturnValue line : 592
+source line/ message : [SRC]if (settings."option${state.app}") return settings."opti..rn 'Not Set' [MSG]Use consistent return values.
+rule name : DeadCode line : 593
+source line/ message : [SRC]break [MSG]This code cannot be reached
+rule name : UseConsistentReturnValue line : 595
+source line/ message : [SRC]return '????' [MSG]Use consistent return values.
+rule name : CyclomaticComplexity line : 770
+source line/ message : [SRC]private String getimage(String image){ [MSG]Violation in class None. The cyclomatic complexity for method [getimage] is [28]
+rule name : UseConsistentReturnValue line : 831
+source line/ message : [SRC]if (settings."name${i}") return settings."name${i}" else.. "Zone ${i}" [MSG]Use consistent return values.
+rule name : UseConsistentReturnValue line : 838
+source line/ message : [SRC]else return settings.zipcode [MSG]Use consistent return values.
+rule name : AtomicStateUsage line : 848
+source line/ message : [SRC]state.pauseTime = null [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 862
+source line/ message : [SRC]if (!state.seasonAdj) state.seasonAdj = 100.0 [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 862
+source line/ message : [SRC]if (!state.seasonAdj) state.seasonAdj = 100.0 [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 863
+source line/ message : [SRC]if (!state.weekseasonAdj) state.weekseasonAdj = 0 [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 863
+source line/ message : [SRC]if (!state.weekseasonAdj) state.weekseasonAdj = 0 [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 864
+source line/ message : [SRC]if (state.daysAvailable != 0) state.daysAvailable = 0 /..sAvailable() [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 864
+source line/ message : [SRC]if (state.daysAvailable != 0) state.daysAvailable = 0 /..sAvailable() [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 865
+source line/ message : [SRC]state.daysAvailable = daysAvailable() // every time..the schedule [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AvoidRecurringShortSchedules line : 914
+source line/ message : [SRC]runIn(15, cycleOn) // goose the cycle, just in case [MSG]Avoid recurring short schedules unless there is a good reason for it.
+rule name : DeadCode line : 922
+source line/ message : [SRC]break [MSG]This code cannot be reached
+rule name : AvoidRecurringShortSchedules line : 936
+source line/ message : [SRC]runIn(15, cycleOn) [MSG]Avoid recurring short schedules unless there is a good reason for it.
+rule name : DeadCode line : 938
+source line/ message : [SRC]break [MSG]This code cannot be reached
+rule name : DeadCode line : 951
+source line/ message : [SRC]break [MSG]This code cannot be reached
+rule name : AvoidRecurringShortSchedules line : 987
+source line/ message : [SRC]runIn(2, preCheck) // run it off a schedule, so we ..he app.state [MSG]Avoid recurring short schedules unless there is a good reason for it.
+rule name : IfStatementCouldBeTernary line : 994
+source line/ message : [SRC]if (settings.toggles && settings.toggles.currentSwitch.c.. return true [MSG]The if statement in class None can be rewritten using the ternary operator: return (settings.toggles && settings.toggles.currentSwitch.contains(settings.toggleStop)) ? true : false
+rule name : AtomicStateUsage line : 1058
+source line/ message : [SRC]if (!state.tpwMap) state.tpwMap = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0] [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1058
+source line/ message : [SRC]if (!state.tpwMap) state.tpwMap = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0] [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1059
+source line/ message : [SRC]if (!state.dpwMap) state.dpwMap = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0] [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1059
+source line/ message : [SRC]if (!state.dpwMap) state.dpwMap = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0] [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1060
+source line/ message : [SRC]if (state.setMoisture) state.setMoisture = null ..ing any more [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1060
+source line/ message : [SRC]if (state.setMoisture) state.setMoisture = null ..ing any more [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1061
+source line/ message : [SRC]if (!state.seasonAdj) state.seasonAdj = 100.0 [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1061
+source line/ message : [SRC]if (!state.seasonAdj) state.seasonAdj = 100.0 [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1062
+source line/ message : [SRC]if (!state.weekseasonAdj) state.weekseasonAdj = 0 [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1062
+source line/ message : [SRC]if (!state.weekseasonAdj) state.weekseasonAdj = 0 [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUpdateUsage line : 1070
+source line/ message : [SRC]def mapDay = [Monday:1, Tuesday:2, Wednesday:3, Thursday..6, Sunday:7] [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
+rule name : AvoidRecurringShortSchedules line : 1110
+source line/ message : [SRC]runIn(60, cycleOn) // start water program [MSG]Avoid recurring short schedules unless there is a good reason for it.
+rule name : AtomicStateUsage line : 1114
+source line/ message : [SRC]int tt = state.totalTime [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AvoidRecurringShortSchedules line : 1207
+source line/ message : [SRC]runIn(45, checkRunMap) // schedule checkRunMap() be.. to complete [MSG]Avoid recurring short schedules unless there is a good reason for it.
+rule name : AvoidRecurringShortSchedules line : 1222
+source line/ message : [SRC]runIn(2, checkRunMap) // jack the schedule so it runs sooner! [MSG]Avoid recurring short schedules unless there is a good reason for it.
+rule name : AtomicStateUsage line : 1242
+source line/ message : [SRC]if (state.pauseTime) state.pauseTime = null [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1242
+source line/ message : [SRC]if (state.pauseTime) state.pauseTime = null [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1243
+source line/ message : [SRC]if (state.totalTime) { [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1244
+source line/ message : [SRC]String finishTime = new Date(now() + (60000 * state.tota..on.timeZone) [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1248
+source line/ message : [SRC]else if (state.pauseTime) { // resuming after a pause [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1250
+source line/ message : [SRC]def elapsedTime = Math.round((now() - state.pauseTime) /..s to minutes [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1251
+source line/ message : [SRC]int tt = state.totalTime + elapsedTime + 1 [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1252
+source line/ message : [SRC]state.totalTime = tt // keep track of the pauses, and t.. delay above [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1254
+source line/ message : [SRC]state.pauseTime = null [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AvoidRecurringShortSchedules line : 1293
+source line/ message : [SRC]runIn(60, cycleOn) // start water [MSG]Avoid recurring short schedules unless there is a good reason for it.
+rule name : AtomicStateUsage line : 1296
+source line/ message : [SRC]if (state.pauseTime) state.pauseTime = null // ditto [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1296
+source line/ message : [SRC]if (state.pauseTime) state.pauseTime = null // ditto [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1300
+source line/ message : [SRC]int tt = state.totalTime [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AbcMetric line : 1329
+source line/ message : [SRC]def cycleLoop(int i) [MSG]Violation in class None. The ABC score for method [cycleLoop] is [87.0]
+rule name : CyclomaticComplexity line : 1329
+source line/ message : [SRC]def cycleLoop(int i) [MSG]Violation in class None. The cyclomatic complexity for method [cycleLoop] is [37]
+rule name : AtomicStateUpdateUsage line : 1339
+source line/ message : [SRC]def timeMap = [:] [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
+rule name : AtomicStateUsage line : 1358
+source line/ message : [SRC]if ((i == 0) || (state.daysAvailable == 7) || (settings...${zone}")) { [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1399
+source line/ message : [SRC]rtime = Math.round(((rtime / cyc) * (state.seasonAdj / 100.0)) + 0.4) [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1419
+source line/ message : [SRC]float sa = state.seasonAdj [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AvoidRecurringShortSchedules line : 1435
+source line/ message : [SRC]runIn(30, writeCycles) [MSG]Avoid recurring short schedules unless there is a good reason for it.
+rule name : AtomicStateUsage line : 1441
+source line/ message : [SRC]state.totalTime = totalTime [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1443
+source line/ message : [SRC]if (state.pauseTime) state.pauseTime = null // and w..t paused yet [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1443
+source line/ message : [SRC]if (state.pauseTime) state.pauseTime = null // and w..t paused yet [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUpdateUsage line : 1451
+source line/ message : [SRC]def cyclesMap = [:] [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
+rule name : AtomicStateUsage line : 1491
+source line/ message : [SRC]if (!state.pauseTime) { // only need to do this for th..ple contacts [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1492
+source line/ message : [SRC]state.pauseTime = now() [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AvoidRecurringShortSchedules line : 1517
+source line/ message : [SRC]runIn(30, subOff) [MSG]Avoid recurring short schedules unless there is a good reason for it.
+rule name : AtomicStateUsage line : 1583
+source line/ message : [SRC]if(!state.dpwMap) state.dpwMap = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0] [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1583
+source line/ message : [SRC]if(!state.dpwMap) state.dpwMap = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0] [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1600
+source line/ message : [SRC]state.dpwMap[zone-1] = dpw [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1606
+source line/ message : [SRC]if (state.dpwMap) return state.dpwMap[zone-1] else retur..nitDPW(zone) [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1606
+source line/ message : [SRC]if (state.dpwMap) return state.dpwMap[zone-1] else retur..nitDPW(zone) [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1612
+source line/ message : [SRC]if (!state.tpwMap) state.tpwMap = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0] [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1612
+source line/ message : [SRC]if (!state.tpwMap) state.tpwMap = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0] [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1624
+source line/ message : [SRC]def wsa = state.weekseasonAdj [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1631
+source line/ message : [SRC]if(state.tpwMap && settings.learn) tpw = state.tpwMap[zone-1] [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1631
+source line/ message : [SRC]if(state.tpwMap && settings.learn) tpw = state.tpwMap[zone-1] [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1644
+source line/ message : [SRC]state.tpwMap[zone-1] = tpw [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1651
+source line/ message : [SRC]if (state.tpwMap) return state.tpwMap[zone-1] else retur..nitTPW(zone) [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1651
+source line/ message : [SRC]if (state.tpwMap) return state.tpwMap[zone-1] else retur..nitTPW(zone) [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AbcMetric line : 1663
+source line/ message : [SRC]def moisture(int i) [MSG]Violation in class None. The ABC score for method [moisture] is [96.7]
+rule name : CyclomaticComplexity line : 1663
+source line/ message : [SRC]def moisture(int i) [MSG]Violation in class None. The cyclomatic complexity for method [moisture] is [40]
+rule name : IfStatementCouldBeTernary line : 1693
+source line/ message : [SRC]if (latestHum <= spHum.toFloat()) { [MSG]The if statement in class None can be rewritten using the ternary operator: return (latestHum <= spHum.toFloat()) ? [1, $settings.name$i, Watering: $settings.sensor$i reads $latestHum%, SP is $spHum% ] : [0, $settings.name$i, Skipping: $settings.sensor$i reads $latestHum%, SP is $spHum% ]
+rule name : AtomicStateUsage line : 1720
+source line/ message : [SRC]int daysA = state.daysAvailable [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1740
+source line/ message : [SRC]float sa = state.seasonAdj [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1766
+source line/ message : [SRC]if (state.tpwMap[i-1] != newTPW) { // are we changing the tpw? [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1767
+source line/ message : [SRC]state.tpwMap[i-1] = newTPW [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1784
+source line/ message : [SRC]if (state.tpwMap[i-1] != newTPW) { // are we changing the tpw? [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1785
+source line/ message : [SRC]state.tpwMap[i-1] = newTPW // store the new tpw [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : UseConsistentReturnValue line : 1814
+source line/ message : [SRC]if (settings."plant${i}" == 'New Plants') return 40 ..special care [MSG]Use consistent return values.
+rule name : UseConsistentReturnValue line : 1819
+source line/ message : [SRC]return 22 [MSG]Use consistent return values.
+rule name : UseConsistentReturnValue line : 1821
+source line/ message : [SRC]return 38 [MSG]Use consistent return values.
+rule name : UseConsistentReturnValue line : 1823
+source line/ message : [SRC]return 28 [MSG]Use consistent return values.
+rule name : CyclomaticComplexity line : 1828
+source line/ message : [SRC]def note(String statStr, String msg, String msgType) { [MSG]Violation in class None. The cyclomatic complexity for method [note] is [30]
+rule name : AtomicStateUsage line : 1921
+source line/ message : [SRC]def daysA = state.daysAvailable [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1927
+source line/ message : [SRC]state.daysAvailable = 7 [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1946
+source line/ message : [SRC]state.daysAvailable = dayCount [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : UseConsistentReturnValue line : 1959
+source line/ message : [SRC]return 1.4 [MSG]Use consistent return values.
+rule name : UseConsistentReturnValue line : 1961
+source line/ message : [SRC]return 2.4 [MSG]Use consistent return values.
+rule name : IfStatementCouldBeTernary line : 2031
+source line/ message : [SRC]if (settings.days.contains('Odd') && (dayint % 2 != 0)) return true [MSG]The if statement in class None can be rewritten using the ternary operator: return (settings.days.contains(Odd) && ((dayint % 2) != 0)) ? true : false
+rule name : AtomicStateUsage line : 2042
+source line/ message : [SRC]if ( !settings.learn || !settings."sensor${zone}" || sta..e-1] == 0) { [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 2047
+source line/ message : [SRC]if (!settings.learn && (tpw != 0) && (state.weekseasonAdj != 0)) { [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 2048
+source line/ message : [SRC]log.debug "Zone ${zone}: seasonally adjusted by ${state...% to ${tpw}" [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 2079
+source line/ message : [SRC]state.Rain[day] = TRain as Float // store today's total rainfall [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AbcMetric line : 2085
+source line/ message : [SRC]boolean isWeather(){ [MSG]Violation in class None. The ABC score for method [isWeather] is [271.5]
+rule name : CyclomaticComplexity line : 2085
+source line/ message : [SRC]boolean isWeather(){ [MSG]Violation in class None. The cyclomatic complexity for method [isWeather] is [79]
+rule name : AtomicStateUsage line : 2181
+source line/ message : [SRC]YRain = state.Rain[day - 1] [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 2189
+source line/ message : [SRC]float getrain = state.Rain[i] [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 2272
+source line/ message : [SRC]state.seasonAdj = sa [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 2279
+source line/ message : [SRC]if ((getWeekDay() == 1) || (state.weekseasonAdj == 0)) { [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 2305
+source line/ message : [SRC]state.weekseasonAdj = wa [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 2385
+source line/ message : [SRC]return state."DPWDays${dpw}" [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : UseConsistentReturnValue line : 2387
+source line/ message : [SRC]return [0,0,0,0,0,0,0] [MSG]Use consistent return values.
+rule name : AbcMetric line : 2396
+source line/ message : [SRC]def createDPWMap() { [MSG]Violation in class None. The ABC score for method [createDPWMap] is [103.0]
+rule name : CyclomaticComplexity line : 2396
+source line/ message : [SRC]def createDPWMap() { [MSG]Violation in class None. The cyclomatic complexity for method [createDPWMap] is [43]
+rule name : AtomicStateUsage line : 2397
+source line/ message : [SRC]state.DPWDays1 = [] [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 2398
+source line/ message : [SRC]state.DPWDays2 = [] [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 2399
+source line/ message : [SRC]state.DPWDays3 = [] [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 2400
+source line/ message : [SRC]state.DPWDays4 = [] [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 2401
+source line/ message : [SRC]state.DPWDays5 = [] [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 2402
+source line/ message : [SRC]state.DPWDays6 = [] [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 2403
+source line/ message : [SRC]state.DPWDays7 = [] [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 2449
+source line/ message : [SRC]state.daysAvailable = i [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : NestedBlockDepth line : 2486
+source line/ message : [SRC]if(d == max) { [MSG]The nested block depth is 6
+rule name : NestedBlockDepth line : 2488
+source line/ message : [SRC]if(d > dayDistance[lmaxday][maxday]) { [MSG]The nested block depth is 7
+rule name : NestedBlockDepth line : 2493
+source line/ message : [SRC]else { [MSG]The nested block depth is 6
+rule name : NestedBlockDepth line : 2504
+source line/ message : [SRC]if(d < lmax && d >= max) { [MSG]The nested block depth is 6
+rule name : NestedBlockDepth line : 2505
+source line/ message : [SRC]if(d == max) { [MSG]The nested block depth is 7
+rule name : NestedBlockDepth line : 2507
+source line/ message : [SRC]if(d > dayDistance[lmaxday][maxday]) { [MSG]The nested block depth is 8
+rule name : NestedBlockDepth line : 2512
+source line/ message : [SRC]else { [MSG]The nested block depth is 7
+rule name : NestedBlockDepth line : 2550
+source line/ message : [SRC]for(def c=0; c < a; c++) [MSG]The nested block depth is 6
+rule name : AtomicStateUsage line : 2560
+source line/ message : [SRC]state.DPWDays1 = runDays[0] [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 2561
+source line/ message : [SRC]state.DPWDays2 = runDays[1] [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 2562
+source line/ message : [SRC]state.DPWDays3 = runDays[2] [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 2563
+source line/ message : [SRC]state.DPWDays4 = runDays[3] [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 2564
+source line/ message : [SRC]state.DPWDays5 = runDays[4] [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 2565
+source line/ message : [SRC]state.DPWDays6 = runDays[5] [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 2566
+source line/ message : [SRC]state.DPWDays7 = runDays[6] [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 2571
+source line/ message : [SRC]state.app = 1 [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 2575
+source line/ message : [SRC]state.app = 2 [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 2579
+source line/ message : [SRC]state.app = 3 [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 2583
+source line/ message : [SRC]state.app = 4 [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 2587
+source line/ message : [SRC]state.app = 5 [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 2591
+source line/ message : [SRC]state.app = 6 [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 2595
+source line/ message : [SRC]state.app = 7 [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 2599
+source line/ message : [SRC]state.app = 8 [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 2603
+source line/ message : [SRC]state.app = 9 [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 2607
+source line/ message : [SRC]state.app = 10 [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 2611
+source line/ message : [SRC]state.app = 11 [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 2615
+source line/ message : [SRC]state.app = 12 [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 2619
+source line/ message : [SRC]state.app = 13 [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 2623
+source line/ message : [SRC]state.app = 14 [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 2627
+source line/ message : [SRC]state.app = 15 [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 2631
+source line/ message : [SRC]state.app = 16 [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : MethodSize line : 364
+source line/ message : [MSG]Method "zonePage" is 123 lines
+rule name : CouldBeElvis line : 862
+source line/ message : [SRC]if (!state.seasonAdj) state.seasonAdj = 100.0 [MSG]Code could use elvis operator: state.seasonAdj = state.seasonAdj ?: 100.0
+rule name : CouldBeElvis line : 863
+source line/ message : [SRC]if (!state.weekseasonAdj) state.weekseasonAdj = 0 [MSG]Code could use elvis operator: state.weekseasonAdj = state.weekseasonAdj ?: 0
+rule name : InvertedIfElse line : 899
+source line/ message : [SRC]if (!atomicState.run) { [MSG]Testing the negative condition first can make an if statement confusing
+rule name : CouldBeElvis line : 1058
+source line/ message : [SRC]if (!state.tpwMap) state.tpwMap = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0] [MSG]Code could use elvis operator: state.tpwMap = state.tpwMap ?: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+rule name : CouldBeElvis line : 1059
+source line/ message : [SRC]if (!state.dpwMap) state.dpwMap = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0] [MSG]Code could use elvis operator: state.dpwMap = state.dpwMap ?: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+rule name : CouldBeElvis line : 1061
+source line/ message : [SRC]if (!state.seasonAdj) state.seasonAdj = 100.0 [MSG]Code could use elvis operator: state.seasonAdj = state.seasonAdj ?: 100.0
+rule name : CouldBeElvis line : 1062
+source line/ message : [SRC]if (!state.weekseasonAdj) state.weekseasonAdj = 0 [MSG]Code could use elvis operator: state.weekseasonAdj = state.weekseasonAdj ?: 0
+rule name : InvertedIfElse line : 1139
+source line/ message : [SRC]if (!attemptRecovery()) { // recovery will clean out an..micState.run [MSG]Testing the negative condition first can make an if statement confusing
+rule name : InvertedIfElse line : 1231
+source line/ message : [SRC]if (!isWaterStopped()) { // make sure ALL the contac..ren't paused [MSG]Testing the negative condition first can make an if statement confusing
+rule name : MethodSize line : 1329
+source line/ message : [MSG]Method "cycleLoop" is 118 lines
+rule name : InvertedIfElse line : 1541
+source line/ message : [SRC]if (!isWaterStopped()){ // only if ALL of the selec..are not open [MSG]Testing the negative condition first can make an if statement confusing
+rule name : CouldBeElvis line : 1583
+source line/ message : [SRC]if(!state.dpwMap) state.dpwMap = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0] [MSG]Code could use elvis operator: state.dpwMap = state.dpwMap ?: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+rule name : CouldBeElvis line : 1612
+source line/ message : [SRC]if (!state.tpwMap) state.tpwMap = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0] [MSG]Code could use elvis operator: state.tpwMap = state.tpwMap ?: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+rule name : MethodSize line : 1663
+source line/ message : [MSG]Method "moisture" is 145 lines
+rule name : InvertedIfElse line : 2060
+source line/ message : [SRC]if (!wdata) { [MSG]Testing the negative condition first can make an if statement confusing
+rule name : MethodSize line : 2085
+source line/ message : [MSG]Method "isWeather" is 286 lines
+rule name : InvertedIfElse line : 2330
+source line/ message : [SRC]if (!anySensors()) { [MSG]Testing the negative condition first can make an if statement confusing
+rule name : MethodSize line : 2396
+source line/ message : [MSG]Method "createDPWMap" is 172 lines
+---Defect Density Metrics (KLOC)---
+Reliability - 66.39
+Security - 0.0
+Maintainability - 18.23
+Total Defect Density - 84.62
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 2139
+AvoidRecurringShortSchedules : 9
+UseConsistentReturnValue : 16
+MethodSize : 172
+MethodCount : 100
+AtomicStateUsage : 102
+AtomicStateUpdateUsage : 3
+DeadCode : 6
+CyclomaticComplexity : 43
+NestedBlockDepth : 8
+AbcMetric : 103.0
+CouldBeElvis : 8
+IfStatementCouldBeTernary : 6
+InvertedIfElse : 6
+Total Violations : 181
+ 
+FILENAME : ➥ smart-light-timer-x-minutes-unless-already-on.groovy
+rule name : SpecificSubscription line : 52
+source line/ message : [SRC]subscribe(switches, "switch", switchChange) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 53
+source line/ message : [SRC]subscribe(motions, "motion", motionHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 54
+source line/ message : [SRC]subscribe(contacts, "contact", contactHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : AvoidRecurringShortSchedules line : 56
+source line/ message : [SRC]runEvery1Minute("scheduleCheck") [MSG]Avoid recurring short schedules unless there is a good reason for it.
+rule name : AvoidRecurringShortSchedules line : 125
+source line/ message : [SRC]runEvery1Minute("scheduleCheck") [MSG]Avoid recurring short schedules unless there is a good reason for it.
+---Defect Density Metrics (KLOC)---
+Reliability - 18.18
+Security - 27.27
+Maintainability - 0.0
+Total Defect Density - 45.45
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 110
+AvoidRecurringShortSchedules : 2
+SpecificSubscription : 3
+Total Violations : 5
+ 
+FILENAME : ➥ monitor-on-sense.groovy
+---Defect Density Metrics (KLOC)---
+Reliability - 0.0
+Security - 0.0
+Maintainability - 0.0
+Total Defect Density - 0.0
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 27
+Total Violations : 0
+ 
+FILENAME : ➥ simple-sync-connect.groovy
+rule name : VerifyArrayIndex line : 247
+source line/ message : [SRC]def valueString = part.split(":")[1].trim() [MSG]Verify array index.
+rule name : VerifyArrayIndex line : 252
+source line/ message : [SRC]def valueString = part.split(":")[1].trim() [MSG]Verify array index.
+rule name : VerifyArrayIndex line : 260
+source line/ message : [SRC]def valueString = part.split(":")[1].trim() [MSG]Verify array index.
+rule name : VerifyArrayIndex line : 268
+source line/ message : [SRC]def valueString = part.split(":")[1].trim() [MSG]Verify array index.
+rule name : VerifyArrayIndex line : 276
+source line/ message : [SRC]def valueString = part.split(":")[1].trim() [MSG]Verify array index.
+rule name : HandleNullValue line : 382
+source line/ message : [SRC]return location.hubs*.firmwareVersionString.findAll { it } [MSG]Handle null values. Avoid NullPointerException by using the safe navigation (?) operator.
+rule name : ConfusingTernary line : 50
+source line/ message : [SRC]int refreshCount = !state.refreshCount ? 0 : state.refreshCount as int [MSG](!state.refreshCount) is a confusing negation in a ternary expression. Rewrite as (state.refreshCount) and invert the conditions.
+rule name : CouldBeElvis line : 150
+source line/ message : [SRC]if (!state.agents) [MSG]Code could use elvis operator: state.agents = state.agents ?: [:]
+rule name : ParameterReassignment line : 244
+source line/ message : [SRC]part = part.trim() [MSG]The method parameter [part] in class None was reassigned. Use a temporary variable instead.
+---Defect Density Metrics (KLOC)---
+Reliability - 21.6
+Security - 0.0
+Maintainability - 6.17
+Total Defect Density - 27.78
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 324
+VerifyArrayIndex : 5
+HandleNullValue : 1
+ParameterReassignment : 1
+ConfusingTernary : 1
+CouldBeElvis : 1
+Total Violations : 9
+ 
+FILENAME : ➥ simple-sync-trigger.groovy
+rule name : ConfusingTernary line : 51
+source line/ message : [SRC]int refreshCount = !state.refreshCount ? 0 : state.refreshCount as int [MSG](!state.refreshCount) is a confusing negation in a ternary expression. Rewrite as (state.refreshCount) and invert the conditions.
+---Defect Density Metrics (KLOC)---
+Reliability - 0.0
+Security - 0.0
+Maintainability - 3.94
+Total Defect Density - 3.94
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 254
+ConfusingTernary : 1
+Total Violations : 1
+ 
+FILENAME : ➥ simple-control.groovy
+rule name : MethodCount line : 9
+source line/ message : [SRC]definition( [MSG]Class None has 39 methods
+rule name : DocumentExposedEndpoints line : 38
+source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
+rule name : MissingSwitchDefault line : 131
+source line/ message : [SRC]switch (statusCode) [MSG]Missing default: case statement in switch().
+rule name : MissingSwitchDefault line : 210
+source line/ message : [SRC]switch (statusCode) [MSG]Missing default: case statement in switch().
+rule name : ClearSubscription line : 314
+source line/ message : [SRC]def subscription = subscribe(device, attribute, deviceHandler) [MSG]Subscriptions should be clear.
+rule name : VerifyArrayIndex line : 636
+source line/ message : [SRC]def valueString = part.split(":")[1].trim() [MSG]Verify array index.
+rule name : VerifyArrayIndex line : 641
+source line/ message : [SRC]def valueString = part.split(":")[1].trim() [MSG]Verify array index.
+rule name : VerifyArrayIndex line : 649
+source line/ message : [SRC]def valueString = part.split(":")[1].trim() [MSG]Verify array index.
+rule name : VerifyArrayIndex line : 657
+source line/ message : [SRC]def valueString = part.split(":")[1].trim() [MSG]Verify array index.
+rule name : VerifyArrayIndex line : 665
+source line/ message : [SRC]def valueString = part.split(":")[1].trim() [MSG]Verify array index.
+rule name : HandleNullValue line : 771
+source line/ message : [SRC]return location.hubs*.firmwareVersionString.findAll { it } [MSG]Handle null values. Avoid NullPointerException by using the safe navigation (?) operator.
+rule name : InvertedIfElse line : 89
+source line/ message : [SRC]if (!device) [MSG]Testing the negative condition first can make an if statement confusing
+rule name : InvertedIfElse line : 189
+source line/ message : [SRC]if (!command) { [MSG]Testing the negative condition first can make an if statement confusing
+rule name : InvertedIfElse line : 304
+source line/ message : [SRC]if (!attribute) { [MSG]Testing the negative condition first can make an if statement confusing
+rule name : ConfusingTernary line : 393
+source line/ message : [SRC]def host = callback.port != -1 ? "${callback.host}:${cal..allback.host [MSG](callback.port != -1) is a confusing negation in a ternary expression. Rewrite as (callback.port == -1) and invert the conditions.
+rule name : ConfusingTernary line : 429
+source line/ message : [SRC]int refreshCount = !state.refreshCount ? 0 : state.refreshCount as int [MSG](!state.refreshCount) is a confusing negation in a ternary expression. Rewrite as (state.refreshCount) and invert the conditions.
+rule name : CouldBeElvis line : 539
+source line/ message : [SRC]if (!state.agents) [MSG]Code could use elvis operator: state.agents = state.agents ?: [:]
+rule name : ParameterReassignment line : 633
+source line/ message : [SRC]part = part.trim() [MSG]The method parameter [part] in class None was reassigned. Use a temporary variable instead.
+---Defect Density Metrics (KLOC)---
+Reliability - 15.8
+Security - 3.16
+Maintainability - 9.48
+Total Defect Density - 28.44
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 633
+VerifyArrayIndex : 5
+HandleNullValue : 1
+MissingSwitchDefault : 2
+ParameterReassignment : 1
+MethodCount : 39
+DocumentExposedEndpoints : 1
+ClearSubscription : 1
+ConfusingTernary : 2
+CouldBeElvis : 1
+InvertedIfElse : 3
+Total Violations : 18
+ 
+FILENAME : ➥ shabbat-and-holiday-modes.groovy
+rule name : VerifyArrayIndex line : 101
+source line/ message : [SRC]if(hebcal_date[i].split("T")[0]==today) [MSG]Verify array index.
+rule name : DocumentExternalHTTPRequests line : 130
+source line/ message : [SRC]httpGet(urlRequest, hebcal); [MSG]Document external HTTP requests.
+rule name : VerifyArrayIndex line : 136
+source line/ message : [SRC]def returnTime = hebcal_title.split(":")[1] + ":" + hebc..:")[2] + " " [MSG]Verify array index.
+rule name : VerifyArrayIndex line : 136
+source line/ message : [SRC]def returnTime = hebcal_title.split(":")[1] + ":" + hebc..:")[2] + " " [MSG]Verify array index.
+rule name : VerifyArrayIndex line : 142
+source line/ message : [SRC]def returnTime = hebcal_date.split("T")[1] [MSG]Verify array index.
+rule name : VerifyArrayIndex line : 143
+source line/ message : [SRC]returnTime = returnTime.split("-")[0] [MSG]Verify array index.
+---Defect Density Metrics (KLOC)---
+Reliability - 37.31
+Security - 7.46
+Maintainability - 0.0
+Total Defect Density - 44.78
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 134
+VerifyArrayIndex : 5
+DocumentExternalHTTPRequests : 1
+Total Violations : 6
+ 
+FILENAME : ➥ smart-humidifier.groovy
+rule name : SpecificSubscription line : 47
+source line/ message : [SRC]subscribe(humiditySensor1, "humidity", humidityHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 52
+source line/ message : [SRC]subscribe(humiditySensor1, "humidity", humidityHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : EmptyElseBlock line : 109
+source line/ message : [SRC]else { [MSG]The else block is empty
+---Defect Density Metrics (KLOC)---
+Reliability - 10.87
+Security - 21.74
+Maintainability - 0.0
+Total Defect Density - 32.61
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 92
+EmptyElseBlock : 1
+SpecificSubscription : 2
+Total Violations : 3
+ 
+FILENAME : ➥ smart-turn-it-on.groovy
+---Defect Density Metrics (KLOC)---
+Reliability - 0.0
+Security - 0.0
+Maintainability - 0.0
+Total Defect Density - 0.0
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 58
+Total Violations : 0
+ 
+FILENAME : ➥ door-lock-code-distress-message.groovy
+rule name : SpecificSubscription line : 35
+source line/ message : [SRC]subscribe(lock1, "lock", checkCode) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 40
+source line/ message : [SRC]subscribe(lock1, "lock", checkCode) [MSG]Subscription must be specific to the Event you are interested in.
+---Defect Density Metrics (KLOC)---
+Reliability - 0.0
+Security - 45.45
+Maintainability - 0.0
+Total Defect Density - 45.45
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 44
+SpecificSubscription : 2
+Total Violations : 2
+ 
+FILENAME : ➥ smart-auto-lock-unlock.groovy
+---Defect Density Metrics (KLOC)---
+Reliability - 0.0
+Security - 0.0
+Maintainability - 0.0
+Total Defect Density - 0.0
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 134
+Total Violations : 0
+ 
+FILENAME : ➥ sprayer-controller-2.groovy
+---Defect Density Metrics (KLOC)---
+Reliability - 0.0
+Security - 0.0
+Maintainability - 0.0
+Total Defect Density - 0.0
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 118
+Total Violations : 0
+ 
+FILENAME : ➥ smart-alarm.groovy
+rule name : MethodCount line : 35
+source line/ message : [SRC]definition( [MSG]Class None has 62 methods
+rule name : DocumentExposedEndpoints line : 64
+source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
+rule name : AtomicStateUsage line : 1020
+source line/ message : [SRC]paragraph "Access Token:\n${state.accessToken}" [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1030
+source line/ message : [SRC]state.installed = true [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1044
+source line/ message : [SRC]if (state.installed == null) { [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1045
+source line/ message : [SRC]state.installed = false [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1046
+source line/ message : [SRC]state.armed = false [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1047
+source line/ message : [SRC]state.zones = [] [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1048
+source line/ message : [SRC]state.alarms = [] [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1049
+source line/ message : [SRC]state.history = [] [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1051
+source line/ message : [SRC]def version = state.version as String [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1057
+source line/ message : [SRC]state.version = getVersion() [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1066
+source line/ message : [SRC]state.delay = settings.delay?.toInteger() ?: 30 [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1067
+source line/ message : [SRC]state.offSwitches = [] [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1068
+source line/ message : [SRC]state.history = [] [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1071
+source line/ message : [SRC]state.armed = true [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1072
+source line/ message : [SRC]state.stay = false [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1074
+source line/ message : [SRC]state.armed = true [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1075
+source line/ message : [SRC]state.stay = true [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1077
+source line/ message : [SRC]state.armed = false [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1078
+source line/ message : [SRC]state.stay = false [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1092
+source line/ message : [SRC]state.alarms = [] [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1096
+source line/ message : [SRC]def switchesOff = state.offSwitches [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1104
+source line/ message : [SRC]state.offSwitches = [] [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AbcMetric line : 1108
+source line/ message : [SRC]private def initZones() { [MSG]Violation in class None. The ABC score for method [initZones] is [70.1]
+rule name : AtomicStateUsage line : 1111
+source line/ message : [SRC]state.zones = [] [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1113
+source line/ message : [SRC]state.zones << [ [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1122
+source line/ message : [SRC]state.zones << [ [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1134
+source line/ message : [SRC]state.zones << [ [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1146
+source line/ message : [SRC]state.zones << [ [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1158
+source line/ message : [SRC]state.zones << [ [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1173
+source line/ message : [SRC]state.zones << [ [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1183
+source line/ message : [SRC]state.zones.each() { [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1189
+source line/ message : [SRC]it.armed = state.armed [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1191
+source line/ message : [SRC]it.armed = state.armed && !state.stay [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1191
+source line/ message : [SRC]it.armed = state.armed && !state.stay [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1201
+source line/ message : [SRC]state.buttonActions = [] [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1206
+source line/ message : [SRC]state.buttonActions << [button:button, event:event, action:"armAway"] [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1212
+source line/ message : [SRC]state.buttonActions << [button:button, event:event, action:"armStay"] [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1218
+source line/ message : [SRC]state.buttonActions << [button:button, event:event, action:"disarm"] [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1224
+source line/ message : [SRC]state.buttonActions << [button:button, event:event, action:"panic"] [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1227
+source line/ message : [SRC]if (state.buttonActions) { [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : SpecificSubscription line : 1228
+source line/ message : [SRC]subscribe(settings.remotes, "button", onButtonEvent) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : AtomicStateUsage line : 1235
+source line/ message : [SRC]if (!state.accessToken) { [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1239
+source line/ message : [SRC]state.url = "https://graph.api.smartthings.com/api/smart../${app.id}/" [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1242
+source line/ message : [SRC]state.url = "" [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1248
+source line/ message : [SRC]return settings.restApiEnabled && state.accessToken [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1267
+source line/ message : [SRC]state.alarms << evt.displayName [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1268
+source line/ message : [SRC]if (zone.zoneType == "alert" || !zone.delay || (state.st..DelayOff)) { [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1271
+source line/ message : [SRC]myRunIn(state.delay, activateAlarm) [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1292
+source line/ message : [SRC]if (!state.buttonActions || !evt.data) { [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1301
+source line/ message : [SRC]def item = state.buttonActions.find { [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1332
+source line/ message : [SRC]state.armed = false [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1333
+source line/ message : [SRC]state.zones.each() { [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1346
+source line/ message : [SRC]state.alarms << "Panic" [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1358
+source line/ message : [SRC]if (state.armed) { [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1360
+source line/ message : [SRC]msg += state.stay ? "STAY" : "AWAY" [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1380
+source line/ message : [SRC]state.zones.each() { [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1402
+source line/ message : [SRC]state.armed = true [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1403
+source line/ message : [SRC]state.stay = stay [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1406
+source line/ message : [SRC]state.zones.each() { [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1435
+source line/ message : [SRC]msg += "will arm ${mode} in ${state.delay} seconds." [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1521
+source line/ message : [SRC]status: state.armed ? (state.stay ? "armed stay" : "arme.. "disarmed", [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1521
+source line/ message : [SRC]status: state.armed ? (state.stay ? "armed stay" : "arme.. "disarmed", [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1522
+source line/ message : [SRC]alarms: state.alarms [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1531
+source line/ message : [SRC]if (state.alarms.size() == 0) { [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : MissingSwitchDefault line : 1536
+source line/ message : [SRC]switch (settings.sirenMode) { [MSG]Missing default: case statement in switch().
+rule name : AtomicStateUsage line : 1555
+source line/ message : [SRC]state.offSwitches = switchesOn.collect { it.id } [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1566
+source line/ message : [SRC]state.alarms.each() { [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : CyclomaticComplexity line : 1576
+source line/ message : [SRC]private def notify(msg) { [MSG]Violation in class None. The cyclomatic complexity for method [notify] is [24]
+rule name : AtomicStateUsage line : 1581
+source line/ message : [SRC]if (state.alarms.size()) { [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1646
+source line/ message : [SRC]if (state.alarms.size()) { [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1654
+source line/ message : [SRC]if (state.armed) { [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1655
+source line/ message : [SRC]if (state.stay) { [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1682
+source line/ message : [SRC]state.history = history [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1689
+source line/ message : [SRC]if (state.alarms.size()) { [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1691
+source line/ message : [SRC]state.alarms.each() { [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1696
+source line/ message : [SRC]if (state.armed) { [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1697
+source line/ message : [SRC]def mode = state.stay ? "stay" : "away" [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 1740
+source line/ message : [SRC]return state.zones.find() { it.deviceId == id && it.sens..sensorType } [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : MissingSwitchDefault line : 1775
+source line/ message : [SRC]switch (sensorType) { [MSG]Missing default: case statement in switch().
+rule name : EmptyMethod line : 1846
+source line/ message : [SRC]private def LOG(message) { [MSG]Violation in class None. The method LOG is both empty and not marked with @Override
+rule name : EmptyMethod line : 1850
+source line/ message : [SRC]private def STATE() { [MSG]Violation in class None. The method STATE is both empty and not marked with @Override
+rule name : MethodSize line : 619
+source line/ message : [MSG]Method "pageNotifications" is 231 lines
+rule name : MethodSize line : 852
+source line/ message : [MSG]Method "pageRemoteOptions" is 109 lines
+---Defect Density Metrics (KLOC)---
+Reliability - 54.14
+Security - 1.34
+Maintainability - 1.34
+Total Defect Density - 56.82
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 1496
+MissingSwitchDefault : 2
+EmptyMethod : 2
+MethodSize : 109
+MethodCount : 62
+AtomicStateUsage : 74
+DocumentExposedEndpoints : 1
+SpecificSubscription : 1
+CyclomaticComplexity : 24
+AbcMetric : 70.1
+Total Violations : 85
+ 
+FILENAME : ➥ hello-home-phrase-director.groovy
+rule name : SpecificSubscription line : 88
+source line/ message : [SRC]subscribe(people, "presence", presence) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : AvoidRecurringShortSchedules line : 89
+source line/ message : [SRC]runIn(60, checkSun) [MSG]Avoid recurring short schedules unless there is a good reason for it.
+rule name : SpecificSubscription line : 90
+source line/ message : [SRC]subscribe(location, "sunrise", setSunrise) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 91
+source line/ message : [SRC]subscribe(location, "sunset", setSunset) [MSG]Subscription must be specific to the Event you are interested in.
+---Defect Density Metrics (KLOC)---
+Reliability - 3.88
+Security - 11.63
+Maintainability - 0.0
+Total Defect Density - 15.5
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 258
+AvoidRecurringShortSchedules : 1
+SpecificSubscription : 3
+Total Violations : 4
+ 
+FILENAME : ➥ lighting-director.groovy
+rule name : MethodCount line : 43
+source line/ message : [SRC]definition( [MSG]Class None has 34 methods
+rule name : CyclomaticComplexity line : 738
+source line/ message : [SRC]def initialize() { [MSG]Violation in class None. The cyclomatic complexity for method [initialize] is [25]
+rule name : SpecificSubscription line : 743
+source line/ message : [SRC]subscribe(settings.A_motion, "motion", onEventA) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 747
+source line/ message : [SRC]subscribe(settings.A_acceleration, "acceleration", onEventA) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 751
+source line/ message : [SRC]subscribe(settings.A_contact, "contact", onEventA) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 755
+source line/ message : [SRC]subscribe(settings.A_lock, "lock", onEventA) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 768
+source line/ message : [SRC]subscribe(settings.B_motion, "motion", onEventB) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 772
+source line/ message : [SRC]subscribe(settings.B_acceleration, "acceleration", onEventB) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 776
+source line/ message : [SRC]subscribe(settings.B_contact, "contact", onEventB) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 780
+source line/ message : [SRC]subscribe(settings.B_lock, "lock", onEventB) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 793
+source line/ message : [SRC]subscribe(settings.C_motion, "motion", onEventC) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 797
+source line/ message : [SRC]subscribe(settings.C_acceleration, "acceleration", onEventC) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 801
+source line/ message : [SRC]subscribe(settings.C_contact, "contact", onEventC) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 805
+source line/ message : [SRC]subscribe(settings.C_lock, "lock", onEventC) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 818
+source line/ message : [SRC]subscribe(settings.D_motion, "motion", onEventD) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 822
+source line/ message : [SRC]subscribe(settings.D_acceleration, "acceleration", onEventD) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 826
+source line/ message : [SRC]subscribe(settings.D_contact, "contact", onEventD) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 830
+source line/ message : [SRC]subscribe(settings.D_lock, "lock", onEventD) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : CyclomaticComplexity line : 844
+source line/ message : [SRC]def onEventA(evt) { [MSG]Violation in class None. The cyclomatic complexity for method [onEventA] is [23]
+rule name : NestedBlockDepth line : 858
+source line/ message : [SRC]if (!A_turnOff) { [MSG]The nested block depth is 6
+rule name : NestedBlockDepth line : 878
+source line/ message : [SRC]if (state.A_triggered) { [MSG]The nested block depth is 6
+rule name : CyclomaticComplexity line : 915
+source line/ message : [SRC]def onEventB(evt) { [MSG]Violation in class None. The cyclomatic complexity for method [onEventB] is [23]
+rule name : NestedBlockDepth line : 930
+source line/ message : [SRC]if (!B_turnOff) { [MSG]The nested block depth is 6
+rule name : NestedBlockDepth line : 950
+source line/ message : [SRC]if (state.B_triggered) { [MSG]The nested block depth is 6
+rule name : CyclomaticComplexity line : 987
+source line/ message : [SRC]def onEventC(evt) { [MSG]Violation in class None. The cyclomatic complexity for method [onEventC] is [24]
+rule name : NestedBlockDepth line : 1001
+source line/ message : [SRC]if (!C_turnOff) { [MSG]The nested block depth is 6
+rule name : NestedBlockDepth line : 1020
+source line/ message : [SRC]if (state.C_triggered) { [MSG]The nested block depth is 6
+rule name : CyclomaticComplexity line : 1058
+source line/ message : [SRC]def onEventD(evt) { [MSG]Violation in class None. The cyclomatic complexity for method [onEventD] is [24]
+rule name : NestedBlockDepth line : 1072
+source line/ message : [SRC]if (!D_turnOff) { [MSG]The nested block depth is 6
+rule name : NestedBlockDepth line : 1091
+source line/ message : [SRC]if (state.D_triggered) { [MSG]The nested block depth is 6
+rule name : MethodSize line : 85
+source line/ message : [MSG]Method "pageSetupScenarioA" is 161 lines
+rule name : MethodSize line : 247
+source line/ message : [MSG]Method "pageSetupScenarioB" is 159 lines
+rule name : MethodSize line : 407
+source line/ message : [MSG]Method "pageSetupScenarioC" is 159 lines
+rule name : MethodSize line : 567
+source line/ message : [MSG]Method "pageSetupScenarioD" is 160 lines
+rule name : MethodSize line : 738
+source line/ message : [MSG]Method "initialize" is 105 lines
+---Defect Density Metrics (KLOC)---
+Reliability - 5.59
+Security - 14.9
+Maintainability - 12.1
+Total Defect Density - 32.59
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 1074
+MethodSize : 105
+MethodCount : 34
+SpecificSubscription : 16
+CyclomaticComplexity : 24
+NestedBlockDepth : 8
+Total Violations : 35
+ 
+FILENAME : ➥ routine-director.groovy
+rule name : SpecificSubscription line : 103
+source line/ message : [SRC]subscribe(people, "presence", presence) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 105
+source line/ message : [SRC]subscribe(location, "sunrise", setSunrise) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 106
+source line/ message : [SRC]subscribe(location, "sunset", setSunset) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : AvoidRecurringShortSchedules line : 118
+source line/ message : [SRC]runIn(60,"setSunrise") [MSG]Avoid recurring short schedules unless there is a good reason for it.
+rule name : AvoidRecurringShortSchedules line : 122
+source line/ message : [SRC]runIn(60,"setSunset") [MSG]Avoid recurring short schedules unless there is a good reason for it.
+---Defect Density Metrics (KLOC)---
+Reliability - 7.66
+Security - 11.49
+Maintainability - 0.0
+Total Defect Density - 19.16
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 261
+AvoidRecurringShortSchedules : 2
+SpecificSubscription : 3
+Total Violations : 5
+ 
+FILENAME : ➥ thermostat-mode-director.groovy
+rule name : AvoidRecurringShortSchedules line : 353
+source line/ message : [SRC]runIn(60, "temperatureHandler") [MSG]Avoid recurring short schedules unless there is a good reason for it.
+rule name : SpecificSubscription line : 354
+source line/ message : [SRC]subscribe(sensor, "temperature", temperatureHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : CyclomaticComplexity line : 364
+source line/ message : [SRC]def temperatureHandler(evt) { [MSG]Violation in class None. The cyclomatic complexity for method [temperatureHandler] is [24]
+rule name : InvertedIfElse line : 482
+source line/ message : [SRC]if (!doorsOk){ [MSG]Testing the negative condition first can make an if statement confusing
+---Defect Density Metrics (KLOC)---
+Reliability - 1.92
+Security - 1.92
+Maintainability - 3.84
+Total Defect Density - 7.68
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 521
+AvoidRecurringShortSchedules : 1
+SpecificSubscription : 1
+CyclomaticComplexity : 24
+InvertedIfElse : 1
+Total Violations : 4
+ 
+FILENAME : ➥ vacation-lighting-director.groovy
+rule name : MissingSwitchDefault line : 409
+source line/ message : [SRC]switch (startTimeType) { [MSG]Missing default: case statement in switch().
+rule name : MissingSwitchDefault line : 425
+source line/ message : [SRC]switch (endTimeType) { [MSG]Missing default: case statement in switch().
+---Defect Density Metrics (KLOC)---
+Reliability - 5.57
+Security - 0.0
+Maintainability - 0.0
+Total Defect Density - 5.57
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 359
+MissingSwitchDefault : 2
+Total Violations : 2
+ 
+FILENAME : ➥ lock-it-at-a-specific-time.groovy
+---Defect Density Metrics (KLOC)---
+Reliability - 0.0
+Security - 0.0
+Maintainability - 0.0
+Total Defect Density - 0.0
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 65
+Total Violations : 0
+ 
+FILENAME : ➥ alfred-workflow.groovy
+rule name : DocumentExposedEndpoints line : 36
+source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
+rule name : EmptyMethod line : 63
+source line/ message : [SRC]def installed() {} [MSG]Violation in class None. The method installed is both empty and not marked with @Override
+rule name : EmptyMethod line : 65
+source line/ message : [SRC]def updated() {} [MSG]Violation in class None. The method updated is both empty and not marked with @Override
+rule name : InvertedIfElse line : 180
+source line/ message : [SRC]if (!device) { [MSG]Testing the negative condition first can make an if statement confusing
+---Defect Density Metrics (KLOC)---
+Reliability - 14.18
+Security - 7.09
+Maintainability - 7.09
+Total Defect Density - 28.37
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 141
+EmptyMethod : 2
+DocumentExposedEndpoints : 1
+InvertedIfElse : 1
+Total Violations : 4
+ 
+FILENAME : ➥ smartblock-chat-sender.groovy
+rule name : DocumentExternalHTTPRequests line : 82
+source line/ message : [SRC]httpPost(url, "foo=bar") { response -> [MSG]Document external HTTP requests.
+---Defect Density Metrics (KLOC)---
+Reliability - 0.0
+Security - 18.18
+Maintainability - 0.0
+Total Defect Density - 18.18
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 55
+DocumentExternalHTTPRequests : 1
+Total Violations : 1
+ 
+FILENAME : ➥ smartblock-linker.groovy
+rule name : SpecificSubscription line : 119
+source line/ message : [SRC]subscribe(linkedSmartBlock, "level", updateSwitchLevel) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 120
+source line/ message : [SRC]subscribe(linkedSmartBlock, "switch", updateSwitchState) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 125
+source line/ message : [SRC]subscribe(linkedSwitch, "level", updateBlockLevel) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 126
+source line/ message : [SRC]subscribe(linkedSwitch, "switch", updateBlockState) [MSG]Subscription must be specific to the Event you are interested in.
+---Defect Density Metrics (KLOC)---
+Reliability - 0.0
+Security - 31.5
+Maintainability - 0.0
+Total Defect Density - 31.5
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 127
+SpecificSubscription : 4
+Total Violations : 4
+ 
+FILENAME : ➥ smartblock-manager.groovy
+rule name : DocumentExposedEndpoints line : 161
+source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
+---Defect Density Metrics (KLOC)---
+Reliability - 0.0
+Security - 4.59
+Maintainability - 0.0
+Total Defect Density - 4.59
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 218
+DocumentExposedEndpoints : 1
+Total Violations : 1
+ 
+FILENAME : ➥ smartblock-notifier.groovy
+rule name : MethodCount line : 20
+source line/ message : [SRC]definition( [MSG]Class None has 36 methods
+rule name : IfStatementCouldBeTernary line : 195
+source line/ message : [SRC]if (redstoneEqualTo) return true [MSG]The if statement in class None can be rewritten using the ternary operator: return redstoneEqualTo ? true : false
+rule name : IfStatementCouldBeTernary line : 200
+source line/ message : [SRC]if (neighborBlockParsed) return true [MSG]The if statement in class None can be rewritten using the ternary operator: return neighborBlockParsed ? true : false
+rule name : IfStatementCouldBeTernary line : 209
+source line/ message : [SRC]if (app."${pageName}ClosestPlayer") return true [MSG]The if statement in class None can be rewritten using the ternary operator: return app.$pageNameClosestPlayer ? true : false
+rule name : SpecificSubscription line : 233
+source line/ message : [SRC]subscribe(smartBlock, "redstoneSignalStrength", redstone..ngthHandler) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : DocumentExternalHTTPRequests line : 381
+source line/ message : [SRC]httpPost(url, "foo=bar") {} [MSG]Document external HTTP requests.
+rule name : UseConsistentReturnValue line : 450
+source line/ message : [SRC]return null [MSG]Use consistent return values.
+rule name : UseConsistentReturnValue line : 501
+source line/ message : [SRC]return "unknown" [MSG]Use consistent return values.
+rule name : MethodSize line : 532
+source line/ message : [MSG]Method "allBlocks" is 458 lines
+---Defect Density Metrics (KLOC)---
+Reliability - 4.66
+Security - 2.33
+Maintainability - 3.5
+Total Defect Density - 10.49
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 858
+UseConsistentReturnValue : 2
+MethodSize : 458
+MethodCount : 36
+DocumentExternalHTTPRequests : 1
+SpecificSubscription : 1
+IfStatementCouldBeTernary : 3
+Total Violations : 9
+ 
+FILENAME : ➥ quirky-connect.groovy
+rule name : MethodCount line : 54
+source line/ message : [SRC]definition( [MSG]Class None has 55 methods
+rule name : DocumentExposedEndpoints line : 74
+source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
+rule name : DocumentExternalHTTPRequests line : 159
+source line/ message : [SRC]httpPost(params) { response -> [MSG]Document external HTTP requests.
+rule name : MissingSwitchDefault line : 344
+source line/ message : [SRC]switch(it.type) { [MSG]Missing default: case statement in switch().
+rule name : DocumentExternalHTTPRequests line : 502
+source line/ message : [SRC]httpPostJson([ [MSG]Document external HTTP requests.
+rule name : DocumentExternalHTTPRequests line : 517
+source line/ message : [SRC]httpDelete([ [MSG]Document external HTTP requests.
+rule name : NestedBlockDepth line : 538
+source line/ message : [SRC]if ( it.subscription_id ) { [MSG]The nested block depth is 6
+rule name : DocumentExternalHTTPRequests line : 594
+source line/ message : [SRC]httpGet([ [MSG]Document external HTTP requests.
+rule name : DocumentExternalHTTPRequests line : 607
+source line/ message : [SRC]httpPutJson([ [MSG]Document external HTTP requests.
+rule name : MissingSwitchDefault line : 659
+source line/ message : [SRC]switch(deviceType) { //outlets are polled in unique method not here [MSG]Missing default: case statement in switch().
+rule name : CyclomaticComplexity line : 763
+source line/ message : [SRC]def pollNimbus(dni) [MSG]Violation in class None. The cyclomatic complexity for method [pollNimbus] is [27]
+rule name : MissingSwitchDefault line : 791
+source line/ message : [SRC]switch(it.name) { [MSG]Missing default: case statement in switch().
+rule name : HandleNullValue line : 1116
+source line/ message : [SRC]return location.hubs*.firmwareVersionString.findAll { it } [MSG]Handle null values. Avoid NullPointerException by using the safe navigation (?) operator.
+rule name : InvertedIfElse line : 564
+source line/ message : [SRC]if(!existingDevice) { [MSG]Testing the negative condition first can make an if statement confusing
+---Defect Density Metrics (KLOC)---
+Reliability - 6.88
+Security - 8.25
+Maintainability - 4.13
+Total Defect Density - 19.26
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 727
+HandleNullValue : 1
+MissingSwitchDefault : 3
+MethodCount : 55
+DocumentExternalHTTPRequests : 5
+DocumentExposedEndpoints : 1
+CyclomaticComplexity : 27
+NestedBlockDepth : 1
+InvertedIfElse : 1
+Total Violations : 14
+ 
+FILENAME : ➥ tcp-bulbs-connect.groovy
+rule name : CyclomaticComplexity line : 174
+source line/ message : [SRC]def deviceDiscovery() { [MSG]Violation in class None. The cyclomatic complexity for method [deviceDiscovery] is [21]
+rule name : AtomicStateUpdateUsage line : 177
+source line/ message : [SRC]def Params = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
+rule name : AtomicStateUpdateUsage line : 207
+source line/ message : [SRC]deviceList += ["name" : "${roomName} ${it?.name}", "did"..e" : "bulb"] [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
+rule name : AtomicStateUpdateUsage line : 211
+source line/ message : [SRC]deviceList += ["name" : "${roomName} ${it?.name}", "did"..e" : "bulb"] [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
+rule name : AtomicStateUpdateUsage line : 223
+source line/ message : [SRC]deviceList += ["name" : "${roomName} ${it?.name}", "did"..e" : "bulb"] [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
+rule name : AtomicStateUpdateUsage line : 227
+source line/ message : [SRC]deviceList += ["name" : "${roomName} ${devices?.name}", ..e" : "bulb"] [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
+rule name : AtomicStateUpdateUsage line : 231
+source line/ message : [SRC]devices = ["devices" : deviceList] [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
+rule name : AtomicStateUsage line : 232
+source line/ message : [SRC]state.devices = devices.devices [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 236
+source line/ message : [SRC]def devices = state.devices [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUpdateUsage line : 237
+source line/ message : [SRC]def map = [:] [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
+rule name : AtomicStateUpdateUsage line : 259
+source line/ message : [SRC]def qParams = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
+rule name : AtomicStateUpdateUsage line : 282
+source line/ message : [SRC]def qParams = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
+rule name : AtomicStateUpdateUsage line : 311
+source line/ message : [SRC]def params = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
+rule name : DocumentExternalHTTPRequests line : 316
+source line/ message : [SRC]httpPost(params) { [MSG]Document external HTTP requests.
+rule name : AtomicStateUpdateUsage line : 383
+source line/ message : [SRC]def qParams = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
+rule name : AtomicStateUsage line : 426
+source line/ message : [SRC]def device = state.devices.find() {(( it.type == 'room').. "${dni}"))} [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUsage line : 430
+source line/ message : [SRC]def device = state.devices.find() {(( it.type == 'bulb').. "${dni}"))} [MSG]Avoid using atomicState and state in the same SmartApp.
+rule name : AtomicStateUpdateUsage line : 435
+source line/ message : [SRC]def results = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
+rule name : EmptyMethod line : 445
+source line/ message : [SRC]def debugOut(msg) { [MSG]Violation in class None. The method debugOut is both empty and not marked with @Override
+rule name : AtomicStateUpdateUsage line : 469
+source line/ message : [SRC]def qParams = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
+rule name : AtomicStateUpdateUsage line : 500
+source line/ message : [SRC]def qParams = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
+rule name : AtomicStateUpdateUsage line : 531
+source line/ message : [SRC]def qParams = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
+rule name : AtomicStateUpdateUsage line : 557
+source line/ message : [SRC]def qParams = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
+rule name : AtomicStateUpdateUsage line : 623
+source line/ message : [SRC]def qParams = [ [MSG]Modifying collections in Atomic State does not work as it does with State. Read documentation for reference.
+rule name : InvertedIfElse line : 120
+source line/ message : [SRC]if(!d) { [MSG]Testing the negative condition first can make an if statement confusing
+---Defect Density Metrics (KLOC)---
+Reliability - 47.72
+Security - 2.17
+Maintainability - 4.34
+Total Defect Density - 54.23
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 461
+EmptyMethod : 1
+AtomicStateUsage : 4
+AtomicStateUpdateUsage : 17
+DocumentExternalHTTPRequests : 1
+CyclomaticComplexity : 21
+InvertedIfElse : 1
+Total Violations : 25
+ 
+FILENAME : ➥ weatherbug-home.groovy
+rule name : DocumentExposedEndpoints line : 25
+source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
+rule name : IfStatementCouldBeTernary line : 100
+source line/ message : [SRC]if(device == null) [MSG]The if statement in class None can be rewritten using the ternary operator: return (device == null) ? [Id:UUID.randomUUID().toString(), Code:404, ErrorMessage:(Device not found. id= + params.id), Result:null] : [Id:UUID.randomUUID().toString(), Code:200, ErrorMessage:null, Result:[DeviceId:device.id, LocationId:location.id, ReportType:2, ReportList:[[Key:Temperature, Value:this.GetOrDefault(device, temperature)], [Key:ThermostatSetpoint, Value:this.GetOrDefault(device, thermostatSetpoint)], [Key:CoolingSetpoint, Value:this.GetOrDefault(device, coolingSetpoint)], [Key:HeatingSetpoint, Value:this.GetOrDefault(device, heatingSetpoint)], [Key:ThermostatMode, Value:this.GetOrDefault(device, thermostatMode)], [Key:ThermostatFanMode, Value:this.GetOrDefault(device, thermostatFanMode)], [Key:ThermostatOperatingState, Value:this.GetOrDefault(device, thermostatOperatingState)]], ... ]]
+rule name : SpecificSubscription line : 205
+source line/ message : [SRC]subscribe(thermostatDevice, "heatingSetpoint", pushLatest) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 206
+source line/ message : [SRC]subscribe(thermostatDevice, "coolingSetpoint", pushLatest) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 207
+source line/ message : [SRC]subscribe(thermostatDevice, "thermostatSetpoint", pushLatest) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 208
+source line/ message : [SRC]subscribe(thermostatDevice, "thermostatMode", pushLatest) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 209
+source line/ message : [SRC]subscribe(thermostatDevice, "thermostatFanMode", pushLatest) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 210
+source line/ message : [SRC]subscribe(thermostatDevice, "thermostatOperatingState", pushLatest) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : SpecificSubscription line : 211
+source line/ message : [SRC]subscribe(thermostatDevice, "temperature", pushLatest) [MSG]Subscription must be specific to the Event you are interested in.
+rule name : DocumentExternalHTTPRequests line : 294
+source line/ message : [SRC]httpPostJson(postParams) { resp -> [MSG]Document external HTTP requests.
+---Defect Density Metrics (KLOC)---
+Reliability - 0.0
+Security - 45.92
+Maintainability - 5.1
+Total Defect Density - 51.02
+---Breakdown of Violations and Other Metrics---
+Lines of Code : 196
+DocumentExternalHTTPRequests : 1
+DocumentExposedEndpoints : 1
+SpecificSubscription : 7
+IfStatementCouldBeTernary : 1
+Total Violations : 10
+ 
+Total SmartApps Analyzed : 74
+Total SmartApps with Violations : 62
+---Most Common Violations---
+SpecificSubscription:38
+DocumentExposedEndpoints:18
+DocumentExternalHTTPRequests:15
+InvertedIfElse:15
+CyclomaticComplexity:13
+MethodCount:8
+CouldBeElvis:8
+MissingSwitchDefault:7
+EmptyMethod:7
+AtomicStateUsage:6
+MethodSize:6
+AvoidRecurringShortSchedules:6
+NestedBlockDepth:5
+HandleNullValue:5
+AbcMetric:4
+ConfusingTernary:3
+IfStatementCouldBeTernary:3
+AtomicStateUpdateUsage:3
+VerifyArrayIndex:3
+ParameterReassignment:2
+UseConsistentReturnValue:2
+EmptyElseBlock:1
+EmptyIfStatement:1
+DeadCode:1
+ClearSubscription:1
+--app-end--

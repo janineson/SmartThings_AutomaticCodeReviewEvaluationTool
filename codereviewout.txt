@@ -280,8 +280,6 @@ Lines of Code : 96
 Total Violations : 0
  
 FILENAME : ➥ energy-alerts.groovy
-rule name : SpecificSubscription line : 53
-source line/ message : [SRC]subscribe(meter, "power", meterHandler) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : EmptyElseBlock line : 74
 source line/ message : [SRC]} else { [MSG]The else block is empty
 rule name : EmptyElseBlock line : 85
@@ -290,28 +288,24 @@ rule name : CouldBeElvis line : 60
 source line/ message : [SRC]if (!atomicState.lastValue) { [MSG]Code could use elvis operator: atomicState.lastValue = atomicState.lastValue ?: meterValue
 ---Defect Density Metrics (KLOC)---
 Reliability - 27.4
-Security - 13.7
+Security - 0.0
 Maintainability - 13.7
-Total Defect Density - 54.79
+Total Defect Density - 41.1
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 73
 EmptyElseBlock : 2
-SpecificSubscription : 1
 CouldBeElvis : 1
-Total Violations : 4
+Total Violations : 3
  
 FILENAME : ➥ energy-saver.groovy
-rule name : SpecificSubscription line : 49
-source line/ message : [SRC]subscribe(meter, "power", meterHandler) [MSG]Subscription must be specific to the Event you are interested in.
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
-Security - 25.64
+Security - 0.0
 Maintainability - 0.0
-Total Defect Density - 25.64
+Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 39
-SpecificSubscription : 1
-Total Violations : 1
+Total Violations : 0
  
 FILENAME : ➥ every-element.groovy
 rule name : MethodCount line : 16
@@ -523,6 +517,8 @@ rule name : DocumentExposedEndpoints line : 61
 source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
 rule name : ClearSubscription line : 227
 source line/ message : [SRC]subscribe(device, attribute, deviceHandler) [MSG]Subscriptions should be clear.
+rule name : SpecificSubscription line : 227
+source line/ message : [SRC]subscribe(device, attribute, deviceHandler) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : DocumentExternalHTTPRequests line : 252
 source line/ message : [SRC]httpPostJson(uri: deviceInfo.callbackUrl, path: '', bod..t.value]]) { [MSG]Document external HTTP requests.
 rule name : UseConsistentReturnValue line : 287
@@ -531,17 +527,18 @@ rule name : InvertedIfElse line : 203
 source line/ message : [SRC]if (!device) { [MSG]Testing the negative condition first can make an if statement confusing
 ---Defect Density Metrics (KLOC)---
 Reliability - 4.67
-Security - 14.02
+Security - 18.69
 Maintainability - 4.67
-Total Defect Density - 23.36
+Total Defect Density - 28.04
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 214
 UseConsistentReturnValue : 1
 DocumentExternalHTTPRequests : 1
 DocumentExposedEndpoints : 1
 ClearSubscription : 1
+SpecificSubscription : 1
 InvertedIfElse : 1
-Total Violations : 5
+Total Violations : 6
  
 FILENAME : ➥ it-moved.groovy
 ---Defect Density Metrics (KLOC)---
@@ -554,74 +551,47 @@ Lines of Code : 45
 Total Violations : 0
  
 FILENAME : ➥ its-too-cold.groovy
-rule name : SpecificSubscription line : 46
-source line/ message : [SRC]subscribe(temperatureSensor1, "temperature", temperatureHandler) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 51
-source line/ message : [SRC]subscribe(temperatureSensor1, "temperature", temperatureHandler) [MSG]Subscription must be specific to the Event you are interested in.
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
-Security - 28.17
+Security - 0.0
 Maintainability - 0.0
-Total Defect Density - 28.17
+Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 71
-SpecificSubscription : 2
-Total Violations : 2
+Total Violations : 0
  
 FILENAME : ➥ its-too-hot.groovy
-rule name : SpecificSubscription line : 46
-source line/ message : [SRC]subscribe(temperatureSensor1, "temperature", temperatureHandler) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 51
-source line/ message : [SRC]subscribe(temperatureSensor1, "temperature", temperatureHandler) [MSG]Subscription must be specific to the Event you are interested in.
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
-Security - 28.17
+Security - 0.0
 Maintainability - 0.0
-Total Defect Density - 28.17
+Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 71
-SpecificSubscription : 2
-Total Violations : 2
+Total Violations : 0
  
 FILENAME : ➥ keep-me-cozy-ii.groovy
-rule name : SpecificSubscription line : 60
-source line/ message : [SRC]subscribe(sensor, "temperature", temperatureHandler) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 61
-source line/ message : [SRC]subscribe(thermostat, "temperature", temperatureHandler) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : SpecificSubscription line : 62
 source line/ message : [SRC]subscribe(thermostat, "thermostatMode", temperatureHandler) [MSG]Subscription must be specific to the Event you are interested in.
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
-Security - 31.58
+Security - 10.53
 Maintainability - 0.0
-Total Defect Density - 31.58
+Total Defect Density - 10.53
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 95
-SpecificSubscription : 3
-Total Violations : 3
+SpecificSubscription : 1
+Total Violations : 1
  
 FILENAME : ➥ keep-me-cozy.groovy
-rule name : SpecificSubscription line : 41
-source line/ message : [SRC]subscribe(thermostat, "heatingSetpoint", heatingSetpointHandler) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 42
-source line/ message : [SRC]subscribe(thermostat, "coolingSetpoint", coolingSetpointHandler) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 43
-source line/ message : [SRC]subscribe(thermostat, "temperature", temperatureHandler) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 51
-source line/ message : [SRC]subscribe(thermostat, "heatingSetpoint", heatingSetpointHandler) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 52
-source line/ message : [SRC]subscribe(thermostat, "coolingSetpoint", coolingSetpointHandler) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 53
-source line/ message : [SRC]subscribe(thermostat, "temperature", temperatureHandler) [MSG]Subscription must be specific to the Event you are interested in.
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
-Security - 89.55
+Security - 0.0
 Maintainability - 0.0
-Total Defect Density - 89.55
+Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 67
-SpecificSubscription : 6
-Total Violations : 6
+Total Violations : 0
  
 FILENAME : ➥ laundry-monitor.groovy
 rule name : InvertedIfElse line : 95
@@ -764,19 +734,14 @@ SpecificSubscription : 2
 Total Violations : 2
  
 FILENAME : ➥ light-up-the-night.groovy
-rule name : SpecificSubscription line : 37
-source line/ message : [SRC]subscribe(lightSensor, "illuminance", illuminanceHandler) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 42
-source line/ message : [SRC]subscribe(lightSensor, "illuminance", illuminanceHandler) [MSG]Subscription must be specific to the Event you are interested in.
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
-Security - 57.14
+Security - 0.0
 Maintainability - 0.0
-Total Defect Density - 57.14
+Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 35
-SpecificSubscription : 2
-Total Violations : 2
+Total Violations : 0
  
 FILENAME : ➥ lights-off-when-closed.groovy
 ---Defect Density Metrics (KLOC)---
@@ -828,6 +793,8 @@ rule name : DocumentExternalHTTPRequests line : 658
 source line/ message : [SRC]httpGet(uri: url, headers: ["Accept": "application/json"..{response -> [MSG]Document external HTTP requests.
 rule name : ClearSubscription line : 803
 source line/ message : [SRC]def subscription = subscribe(device, attribute, deviceHandler) [MSG]Subscriptions should be clear.
+rule name : SpecificSubscription line : 803
+source line/ message : [SRC]def subscription = subscribe(device, attribute, deviceHandler) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : DocumentExternalHTTPRequests line : 889
 source line/ message : [SRC]httpPostJson(params) { resp -> [MSG]Document external HTTP requests.
 rule name : InvertedIfElse line : 105
@@ -858,21 +825,22 @@ rule name : CouldBeElvis line : 933
 source line/ message : [SRC]if (!state.harmonyHubs) { state.harmonyHubs = [] } [MSG]Code could use elvis operator: state.harmonyHubs = state.harmonyHubs ?: []
 ---Defect Density Metrics (KLOC)---
 Reliability - 1.19
-Security - 8.3
+Security - 9.49
 Maintainability - 21.35
-Total Defect Density - 30.84
+Total Defect Density - 32.03
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 843
 MethodCount : 57
 DocumentExternalHTTPRequests : 5
 DocumentExposedEndpoints : 1
 ClearSubscription : 1
+SpecificSubscription : 1
 NestedBlockDepth : 4
 AbcMetric : 74.1
 ConfusingTernary : 3
 CouldBeElvis : 1
 InvertedIfElse : 9
-Total Violations : 26
+Total Violations : 27
  
 FILENAME : ➥ mail-arrived.groovy
 ---Defect Density Metrics (KLOC)---
@@ -921,17 +889,14 @@ SpecificSubscription : 1
 Total Violations : 1
  
 FILENAME : ➥ mood-cube.groovy
-rule name : SpecificSubscription line : 143
-source line/ message : [SRC]subscribe cube, "threeAxis", positionHandler [MSG]Subscription must be specific to the Event you are interested in.
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
-Security - 3.86
+Security - 0.0
 Maintainability - 0.0
-Total Defect Density - 3.86
+Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 259
-SpecificSubscription : 1
-Total Violations : 1
+Total Violations : 0
  
 FILENAME : ➥ nfc-tag-toggle.groovy
 rule name : SpecificSubscription line : 82
@@ -1272,19 +1237,14 @@ Lines of Code : 369
 Total Violations : 0
  
 FILENAME : ➥ step-notifier.groovy
-rule name : SpecificSubscription line : 162
-source line/ message : [SRC]subscribe (jawbone,"goal",goalHandler) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 163
-source line/ message : [SRC]subscribe (jawbone,"steps",stepHandler) [MSG]Subscription must be specific to the Event you are interested in.
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
-Security - 8.1
+Security - 0.0
 Maintainability - 0.0
-Total Defect Density - 8.1
+Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 247
-SpecificSubscription : 2
-Total Violations : 2
+Total Violations : 0
  
 FILENAME : ➥ sunrise-sunset.groovy
 rule name : SpecificSubscription line : 71
@@ -1361,19 +1321,14 @@ Lines of Code : 53
 Total Violations : 0
  
 FILENAME : ➥ the-big-switch.groovy
-rule name : SpecificSubscription line : 51
-source line/ message : [SRC]subscribe(master, "level", dimHandler) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 59
-source line/ message : [SRC]subscribe(master, "level", dimHandler) [MSG]Subscription must be specific to the Event you are interested in.
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
-Security - 30.3
+Security - 0.0
 Maintainability - 0.0
-Total Defect Density - 30.3
+Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 66
-SpecificSubscription : 2
-Total Violations : 2
+Total Violations : 0
  
 FILENAME : ➥ the-flasher.groovy
 rule name : SpecificSubscription line : 73
@@ -1481,15 +1436,17 @@ rule name : DocumentExternalHTTPRequests line : 391
 source line/ message : [SRC]httpPostJson(uri: deviceInfo.callbackUrl, path: '', body..t.value]]) { [MSG]Document external HTTP requests.
 rule name : ClearSubscription line : 558
 source line/ message : [SRC]def subscription = subscribe(myDevice, attribute, deviceHandler) [MSG]Subscriptions should be clear.
+rule name : SpecificSubscription line : 558
+source line/ message : [SRC]def subscription = subscribe(myDevice, attribute, deviceHandler) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : InvertedIfElse line : 407
 source line/ message : [SRC]if (!device) [MSG]Testing the negative condition first can make an if statement confusing
 rule name : InvertedIfElse line : 530
 source line/ message : [SRC]if (!device) [MSG]Testing the negative condition first can make an if statement confusing
 ---Defect Density Metrics (KLOC)---
 Reliability - 6.86
-Security - 6.86
+Security - 9.15
 Maintainability - 4.58
-Total Defect Density - 18.31
+Total Defect Density - 20.59
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 437
 EmptyMethod : 2
@@ -1497,8 +1454,9 @@ MethodCount : 51
 DocumentExternalHTTPRequests : 1
 DocumentExposedEndpoints : 1
 ClearSubscription : 1
+SpecificSubscription : 1
 InvertedIfElse : 2
-Total Violations : 8
+Total Violations : 9
  
 FILENAME : ➥ undead-early-warning.groovy
 ---Defect Density Metrics (KLOC)---
@@ -1521,23 +1479,19 @@ Lines of Code : 35
 Total Violations : 0
  
 FILENAME : ➥ virtual-thermostat.groovy
-rule name : SpecificSubscription line : 53
-source line/ message : [SRC]subscribe(sensor, "temperature", temperatureHandler) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : SpecificSubscription line : 55
 source line/ message : [SRC]subscribe(motion, "motion", motionHandler) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 62
-source line/ message : [SRC]subscribe(sensor, "temperature", temperatureHandler) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : SpecificSubscription line : 64
 source line/ message : [SRC]subscribe(motion, "motion", motionHandler) [MSG]Subscription must be specific to the Event you are interested in.
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
-Security - 34.19
+Security - 17.09
 Maintainability - 0.0
-Total Defect Density - 34.19
+Total Defect Density - 17.09
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 117
-SpecificSubscription : 4
-Total Violations : 4
+SpecificSubscription : 2
+Total Violations : 2
  
 FILENAME : ➥ wattvision-manager.groovy
 rule name : MethodCount line : 20
@@ -1707,9 +1661,9 @@ InvertedIfElse : 1
 Total Violations : 15
  
 Total SmartApps Analyzed : 105
-Total SmartApps with Violations : 58
+Total SmartApps with Violations : 50
 ---Most Common Violations---
-SpecificSubscription:35
+SpecificSubscription:29
 InvertedIfElse:12
 DocumentExternalHTTPRequests:11
 MethodCount:11
