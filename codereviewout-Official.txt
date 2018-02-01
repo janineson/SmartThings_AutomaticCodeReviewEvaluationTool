@@ -1,6 +1,6 @@
 
 --app-start--
-processing CodeNarcAntReport.html
+processing CodeNarcAntReport-official.html
 FILENAME : ➥ beacon-control.groovy
 rule name : SpecificSubscription line : 108
 source line/ message : [SRC]subscribe(beacons, "presence", beaconHandler) [MSG]Subscription must be specific to the Event you are interested in.
@@ -1662,6 +1662,7 @@ Total Violations : 15
  
 Total SmartApps Analyzed : 105
 Total SmartApps with Violations : 50
+Defect Density Mean : 24.0961962890625
 ---Most Common Violations---
 SpecificSubscription:29
 InvertedIfElse:12
