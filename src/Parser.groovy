@@ -11,7 +11,7 @@ import java.util.regex.Pattern
 
 class Parser{
 
-    int reliabilityViolationCount, securityViolationCount, maintainabilityViolationCount, noViolationsCount, passCount
+    int reliabilityViolationCount, securityViolationCount, maintainabilityViolationCount, noViolationsCount
     def cyclomaticComplexity, abcMetric, methodCount, methodSize, linesOfCode, totalApps
     Logger log
     ArrayList<String> ruleViolationList
@@ -30,7 +30,6 @@ class Parser{
          ruleViolationList = new ArrayList()
          combinedViolationList=  new HashMap<>()
         totalDefDensity = 0
-        passCount = 0
     }
 
     ArrayList<String> reliabilityList = new ArrayList<String>(
@@ -148,7 +147,6 @@ class Parser{
         log.append("Total SmartApps with Violations : " + withViolation)
         log.append("Defect Density Mean : " + (totalDefDensity / withViolation))
 
-        log.append("Passed Count : " + passCount)
         log.append("---Most Common Violations---")
         for (String keys : sortByValues(combinedViolationList).keySet())
         {
@@ -274,12 +272,6 @@ class Parser{
                 maintainabilityViolationCount+securityViolationCount).round(2)
         log.append("Total Defect Density - " + defDensity)
 
-        if(defDensity <= 24) {
-            log.append('PASSED')
-            passCount++
-        }
-        else
-            log.append('FAIL')
 
         totalDefDensity = totalDefDensity + defDensity
 
