@@ -1,6 +1,6 @@
 
 --app-start--
-processing CodeNarcAntReport-official.html
+processing CodeNarcAntReport.html
 FILENAME : ➥ beacon-control.groovy
 rule name : SpecificSubscription line : 108
 source line/ message : [SRC]subscribe(beacons, "presence", beaconHandler) [MSG]Subscription must be specific to the Event you are interested in.
@@ -90,21 +90,18 @@ Total Violations : 0
 FILENAME : ➥ button-controller.groovy
 rule name : MethodCount line : 18
 source line/ message : [SRC]definition( [MSG]Class None has 31 methods
-rule name : SpecificSubscription line : 160
-source line/ message : [SRC]subscribe(buttonDevice, "button", buttonEvent) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : MissingSwitchDefault line : 189
 source line/ message : [SRC]switch(buttonNumber) { [MSG]Missing default: case statement in switch().
 ---Defect Density Metrics (KLOC)---
 Reliability - 7.33
-Security - 3.66
+Security - 0.0
 Maintainability - 0.0
-Total Defect Density - 10.99
+Total Defect Density - 7.33
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 273
 MissingSwitchDefault : 1
 MethodCount : 31
-SpecificSubscription : 1
-Total Violations : 3
+Total Violations : 2
  
 FILENAME : ➥ camera-power-scheduler.groovy
 ---Defect Density Metrics (KLOC)---
@@ -876,17 +873,14 @@ MissingSwitchDefault : 1
 Total Violations : 1
  
 FILENAME : ➥ mini-hue-controller.groovy
-rule name : SpecificSubscription line : 49
-source line/ message : [SRC]subscribe controller, "button", buttonHandler [MSG]Subscription must be specific to the Event you are interested in.
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
-Security - 7.94
+Security - 0.0
 Maintainability - 0.0
-Total Defect Density - 7.94
+Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 126
-SpecificSubscription : 1
-Total Violations : 1
+Total Violations : 0
  
 FILENAME : ➥ mood-cube.groovy
 ---Defect Density Metrics (KLOC)---
@@ -1062,17 +1056,14 @@ Lines of Code : 97
 Total Violations : 0
  
 FILENAME : ➥ single-button-controller.groovy
-rule name : SpecificSubscription line : 70
-source line/ message : [SRC]subscribe(buttonDevice, "button", buttonEvent) [MSG]Subscription must be specific to the Event you are interested in.
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
-Security - 8.77
+Security - 0.0
 Maintainability - 0.0
-Total Defect Density - 8.77
+Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 114
-SpecificSubscription : 1
-Total Violations : 1
+Total Violations : 0
  
 FILENAME : ➥ sleepy-time.groovy
 rule name : SpecificSubscription line : 56
@@ -1181,20 +1172,17 @@ CouldBeElvis : 1
 Total Violations : 2
  
 FILENAME : ➥ sonos-remote-control.groovy
-rule name : SpecificSubscription line : 71
-source line/ message : [SRC]subscribe(buttonDevice, "button", buttonEvent) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : MissingSwitchDefault line : 93
 source line/ message : [SRC]switch(data) { [MSG]Missing default: case statement in switch().
 ---Defect Density Metrics (KLOC)---
 Reliability - 8.85
-Security - 8.85
+Security - 0.0
 Maintainability - 0.0
-Total Defect Density - 17.7
+Total Defect Density - 8.85
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 113
 MissingSwitchDefault : 1
-SpecificSubscription : 1
-Total Violations : 2
+Total Violations : 1
  
 FILENAME : ➥ speaker-control.groovy
 ---Defect Density Metrics (KLOC)---
@@ -1661,10 +1649,10 @@ InvertedIfElse : 1
 Total Violations : 15
  
 Total SmartApps Analyzed : 105
-Total SmartApps with Violations : 50
-Defect Density Mean : 24.0961962890625
+Total SmartApps with Violations : 48
+Defect Density Mean : 24.491455078125
 ---Most Common Violations---
-SpecificSubscription:29
+SpecificSubscription:25
 InvertedIfElse:12
 DocumentExternalHTTPRequests:11
 MethodCount:11

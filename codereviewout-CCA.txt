@@ -1,6 +1,6 @@
 
 --app-start--
-processing CodeNarcAntReport-CCA.html
+processing CodeNarcAntReport.html
 FILENAME : ➥ bright-when-dark-and-or-bright-after-sunset.groovy
 rule name : AbcMetric line : 49
 source line/ message : [SRC]def options() [MSG]Violation in class None. The ABC score for method [options] is [60.7]
@@ -51,7 +51,6 @@ Reliability - 4.1
 Security - 19.13
 Maintainability - 6.83
 Total Defect Density - 30.05
-FAIL
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 732
 MethodSize : 191
@@ -66,7 +65,6 @@ Reliability - 0.0
 Security - 0.0
 Maintainability - 0.0
 Total Defect Density - 0.0
-PASSED
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 53
 Total Violations : 0
@@ -81,7 +79,6 @@ Reliability - 13.33
 Security - 13.33
 Maintainability - 0.0
 Total Defect Density - 26.67
-FAIL
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 75
 EmptyIfStatement : 1
@@ -96,7 +93,6 @@ Reliability - 0.0
 Security - 21.28
 Maintainability - 0.0
 Total Defect Density - 21.28
-PASSED
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 47
 DocumentExternalHTTPRequests : 1
@@ -112,7 +108,6 @@ Reliability - 5.49
 Security - 5.49
 Maintainability - 0.0
 Total Defect Density - 10.99
-PASSED
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 182
 EmptyMethod : 1
@@ -129,7 +124,6 @@ Reliability - 9.8
 Security - 9.8
 Maintainability - 0.0
 Total Defect Density - 19.61
-PASSED
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 102
 EmptyMethod : 1
@@ -146,7 +140,6 @@ Reliability - 50.0
 Security - 0.0
 Maintainability - 0.0
 Total Defect Density - 50.0
-FAIL
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 40
 HandleNullValue : 1
@@ -159,7 +152,6 @@ Reliability - 0.0
 Security - 0.0
 Maintainability - 0.0
 Total Defect Density - 0.0
-PASSED
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 93
 Total Violations : 0
@@ -172,7 +164,6 @@ Reliability - 0.0
 Security - 7.19
 Maintainability - 0.0
 Total Defect Density - 7.19
-PASSED
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 139
 DocumentExposedEndpoints : 1
@@ -194,7 +185,6 @@ Reliability - 19.61
 Security - 9.8
 Maintainability - 19.61
 Total Defect Density - 49.02
-FAIL
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 102
 EmptyMethod : 2
@@ -224,7 +214,6 @@ Reliability - 4.99
 Security - 9.98
 Maintainability - 4.99
 Total Defect Density - 19.95
-PASSED
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 401
 AvoidRecurringShortSchedules : 1
@@ -281,7 +270,6 @@ Reliability - 28.76
 Security - 8.85
 Maintainability - 6.64
 Total Defect Density - 44.25
-FAIL
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 452
 HandleNullValue : 1
@@ -302,7 +290,6 @@ Reliability - 0.0
 Security - 15.87
 Maintainability - 0.0
 Total Defect Density - 15.87
-PASSED
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 63
 SpecificSubscription : 1
@@ -318,7 +305,6 @@ Reliability - 0.0
 Security - 27.03
 Maintainability - 0.0
 Total Defect Density - 27.03
-FAIL
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 74
 SpecificSubscription : 2
@@ -330,7 +316,6 @@ Reliability - 0.0
 Security - 0.0
 Maintainability - 0.0
 Total Defect Density - 0.0
-PASSED
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 78
 Total Violations : 0
@@ -345,7 +330,6 @@ Reliability - 0.0
 Security - 58.82
 Maintainability - 0.0
 Total Defect Density - 58.82
-FAIL
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 34
 SpecificSubscription : 2
@@ -365,7 +349,6 @@ Reliability - 0.0
 Security - 0.0
 Maintainability - 34.48
 Total Defect Density - 34.48
-FAIL
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 116
 CyclomaticComplexity : 21
@@ -385,7 +368,6 @@ Reliability - 0.0
 Security - 0.0
 Maintainability - 27.78
 Total Defect Density - 27.78
-FAIL
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 108
 CyclomaticComplexity : 21
@@ -526,7 +508,6 @@ Reliability - 99.43
 Security - 5.74
 Maintainability - 17.21
 Total Defect Density - 122.37
-FAIL
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 523
 MethodSize : 520
@@ -565,7 +546,6 @@ Reliability - 0.0
 Security - 10.05
 Maintainability - 40.2
 Total Defect Density - 50.25
-FAIL
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 199
 DocumentExposedEndpoints : 1
@@ -579,7 +559,6 @@ Reliability - 0.0
 Security - 0.0
 Maintainability - 0.0
 Total Defect Density - 0.0
-PASSED
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 36
 Total Violations : 0
@@ -590,7 +569,6 @@ Reliability - 0.0
 Security - 0.0
 Maintainability - 0.0
 Total Defect Density - 0.0
-PASSED
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 64
 Total Violations : 0
@@ -601,7 +579,6 @@ Reliability - 0.0
 Security - 0.0
 Maintainability - 0.0
 Total Defect Density - 0.0
-PASSED
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 87
 Total Violations : 0
@@ -612,7 +589,6 @@ Reliability - 0.0
 Security - 0.0
 Maintainability - 0.0
 Total Defect Density - 0.0
-PASSED
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 54
 Total Violations : 0
@@ -629,7 +605,6 @@ Reliability - 0.0
 Security - 25.21
 Maintainability - 0.0
 Total Defect Density - 25.21
-FAIL
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 119
 SpecificSubscription : 3
@@ -641,7 +616,6 @@ Reliability - 0.0
 Security - 0.0
 Maintainability - 0.0
 Total Defect Density - 0.0
-PASSED
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 106
 Total Violations : 0
@@ -652,7 +626,6 @@ Reliability - 0.0
 Security - 0.0
 Maintainability - 0.0
 Total Defect Density - 0.0
-PASSED
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 99
 Total Violations : 0
@@ -667,7 +640,6 @@ Reliability - 0.0
 Security - 21.28
 Maintainability - 0.0
 Total Defect Density - 21.28
-PASSED
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 94
 SpecificSubscription : 2
@@ -729,7 +701,6 @@ Reliability - 6.58
 Security - 69.08
 Maintainability - 6.58
 Total Defect Density - 82.24
-FAIL
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 304
 AtomicStateUpdateUsage : 2
@@ -748,7 +719,6 @@ Reliability - 0.0
 Security - 23.81
 Maintainability - 0.0
 Total Defect Density - 23.81
-PASSED
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 42
 SpecificSubscription : 1
@@ -762,7 +732,6 @@ Reliability - 0.0
 Security - 22.73
 Maintainability - 0.0
 Total Defect Density - 22.73
-PASSED
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 44
 SpecificSubscription : 1
@@ -780,7 +749,6 @@ Reliability - 18.52
 Security - 9.26
 Maintainability - 0.0
 Total Defect Density - 27.78
-FAIL
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 108
 MissingSwitchDefault : 2
@@ -793,7 +761,6 @@ Reliability - 0.0
 Security - 0.0
 Maintainability - 0.0
 Total Defect Density - 0.0
-PASSED
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 182
 Total Violations : 0
@@ -806,7 +773,6 @@ Reliability - 0.0
 Security - 16.39
 Maintainability - 0.0
 Total Defect Density - 16.39
-PASSED
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 61
 SpecificSubscription : 1
@@ -840,7 +806,6 @@ Reliability - 2.49
 Security - 22.44
 Maintainability - 2.49
 Total Defect Density - 27.43
-FAIL
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 401
 MissingSwitchDefault : 1
@@ -861,7 +826,6 @@ Reliability - 0.0
 Security - 34.48
 Maintainability - 17.24
 Total Defect Density - 51.72
-FAIL
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 58
 SpecificSubscription : 2
@@ -874,7 +838,6 @@ Reliability - 0.0
 Security - 0.0
 Maintainability - 0.0
 Total Defect Density - 0.0
-PASSED
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 105
 Total Violations : 0
@@ -887,7 +850,6 @@ Reliability - 0.0
 Security - 15.15
 Maintainability - 0.0
 Total Defect Density - 15.15
-PASSED
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 66
 DocumentExternalHTTPRequests : 1
@@ -901,7 +863,6 @@ Reliability - 0.0
 Security - 10.2
 Maintainability - 0.0
 Total Defect Density - 10.2
-PASSED
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 98
 SpecificSubscription : 1
@@ -913,7 +874,6 @@ Reliability - 0.0
 Security - 0.0
 Maintainability - 0.0
 Total Defect Density - 0.0
-PASSED
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 100
 Total Violations : 0
@@ -926,7 +886,6 @@ Reliability - 0.0
 Security - 7.19
 Maintainability - 0.0
 Total Defect Density - 7.19
-PASSED
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 139
 SpecificSubscription : 1
@@ -942,7 +901,6 @@ Reliability - 0.0
 Security - 18.35
 Maintainability - 0.0
 Total Defect Density - 18.35
-PASSED
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 109
 SpecificSubscription : 2
@@ -958,7 +916,6 @@ Reliability - 0.0
 Security - 45.45
 Maintainability - 0.0
 Total Defect Density - 45.45
-FAIL
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 44
 SpecificSubscription : 2
@@ -974,7 +931,6 @@ Reliability - 0.0
 Security - 43.48
 Maintainability - 0.0
 Total Defect Density - 43.48
-FAIL
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 46
 SpecificSubscription : 2
@@ -996,7 +952,6 @@ Reliability - 0.0
 Security - 60.61
 Maintainability - 15.15
 Total Defect Density - 75.76
-FAIL
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 66
 SpecificSubscription : 4
@@ -1017,7 +972,6 @@ Reliability - 0.0
 Security - 17.65
 Maintainability - 5.88
 Total Defect Density - 23.53
-PASSED
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 170
 DocumentExposedEndpoints : 1
@@ -1065,7 +1019,6 @@ Reliability - 2.73
 Security - 21.86
 Maintainability - 21.86
 Total Defect Density - 46.45
-FAIL
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 366
 AtomicStateUsage : 1
@@ -1452,7 +1405,6 @@ Reliability - 66.39
 Security - 1.87
 Maintainability - 18.23
 Total Defect Density - 86.49
-FAIL
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 2139
 AvoidRecurringShortSchedules : 9
@@ -1487,7 +1439,6 @@ Reliability - 18.18
 Security - 27.27
 Maintainability - 0.0
 Total Defect Density - 45.45
-FAIL
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 110
 AvoidRecurringShortSchedules : 2
@@ -1500,7 +1451,6 @@ Reliability - 0.0
 Security - 0.0
 Maintainability - 0.0
 Total Defect Density - 0.0
-PASSED
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 27
 Total Violations : 0
@@ -1529,7 +1479,6 @@ Reliability - 21.6
 Security - 0.0
 Maintainability - 6.17
 Total Defect Density - 27.78
-FAIL
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 324
 VerifyArrayIndex : 5
@@ -1547,7 +1496,6 @@ Reliability - 0.0
 Security - 0.0
 Maintainability - 3.94
 Total Defect Density - 3.94
-PASSED
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 254
 ConfusingTernary : 1
@@ -1597,7 +1545,6 @@ Reliability - 15.8
 Security - 4.74
 Maintainability - 9.48
 Total Defect Density - 30.02
-FAIL
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 633
 VerifyArrayIndex : 5
@@ -1631,7 +1578,6 @@ Reliability - 37.31
 Security - 7.46
 Maintainability - 0.0
 Total Defect Density - 44.78
-FAIL
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 134
 VerifyArrayIndex : 5
@@ -1646,7 +1592,6 @@ Reliability - 10.87
 Security - 0.0
 Maintainability - 0.0
 Total Defect Density - 10.87
-PASSED
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 92
 EmptyElseBlock : 1
@@ -1658,7 +1603,6 @@ Reliability - 0.0
 Security - 0.0
 Maintainability - 0.0
 Total Defect Density - 0.0
-PASSED
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 58
 Total Violations : 0
@@ -1673,7 +1617,6 @@ Reliability - 0.0
 Security - 45.45
 Maintainability - 0.0
 Total Defect Density - 45.45
-FAIL
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 44
 SpecificSubscription : 2
@@ -1685,7 +1628,6 @@ Reliability - 0.0
 Security - 0.0
 Maintainability - 0.0
 Total Defect Density - 0.0
-PASSED
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 134
 Total Violations : 0
@@ -1696,7 +1638,6 @@ Reliability - 0.0
 Security - 0.0
 Maintainability - 0.0
 Total Defect Density - 0.0
-PASSED
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 118
 Total Violations : 0
@@ -1786,8 +1727,6 @@ rule name : AtomicStateUsage line : 1224
 source line/ message : [SRC]state.buttonActions << [button:button, event:event, action:"panic"] [MSG]Avoid using atomicState and state in the same SmartApp.
 rule name : AtomicStateUsage line : 1227
 source line/ message : [SRC]if (state.buttonActions) { [MSG]Avoid using atomicState and state in the same SmartApp.
-rule name : SpecificSubscription line : 1228
-source line/ message : [SRC]subscribe(settings.remotes, "button", onButtonEvent) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : AtomicStateUsage line : 1235
 source line/ message : [SRC]if (!state.accessToken) { [MSG]Avoid using atomicState and state in the same SmartApp.
 rule name : AtomicStateUsage line : 1239
@@ -1874,10 +1813,9 @@ rule name : MethodSize line : 852
 source line/ message : [MSG]Method "pageRemoteOptions" is 109 lines
 ---Defect Density Metrics (KLOC)---
 Reliability - 54.14
-Security - 1.34
+Security - 0.67
 Maintainability - 1.34
-Total Defect Density - 56.82
-FAIL
+Total Defect Density - 56.15
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 1496
 MissingSwitchDefault : 2
@@ -1886,10 +1824,9 @@ MethodSize : 109
 MethodCount : 62
 AtomicStateUsage : 74
 DocumentExposedEndpoints : 1
-SpecificSubscription : 1
 CyclomaticComplexity : 24
 AbcMetric : 70.1
-Total Violations : 85
+Total Violations : 84
  
 FILENAME : ➥ hello-home-phrase-director.groovy
 rule name : SpecificSubscription line : 88
@@ -1905,7 +1842,6 @@ Reliability - 3.88
 Security - 11.63
 Maintainability - 0.0
 Total Defect Density - 15.5
-PASSED
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 258
 AvoidRecurringShortSchedules : 1
@@ -1988,7 +1924,6 @@ Reliability - 5.59
 Security - 14.9
 Maintainability - 12.1
 Total Defect Density - 32.59
-FAIL
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 1074
 MethodSize : 105
@@ -2014,7 +1949,6 @@ Reliability - 7.66
 Security - 11.49
 Maintainability - 0.0
 Total Defect Density - 19.16
-PASSED
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 261
 AvoidRecurringShortSchedules : 2
@@ -2033,7 +1967,6 @@ Reliability - 1.92
 Security - 0.0
 Maintainability - 3.84
 Total Defect Density - 5.76
-PASSED
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 521
 AvoidRecurringShortSchedules : 1
@@ -2051,7 +1984,6 @@ Reliability - 5.57
 Security - 0.0
 Maintainability - 0.0
 Total Defect Density - 5.57
-PASSED
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 359
 MissingSwitchDefault : 2
@@ -2063,7 +1995,6 @@ Reliability - 0.0
 Security - 0.0
 Maintainability - 0.0
 Total Defect Density - 0.0
-PASSED
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 65
 Total Violations : 0
@@ -2082,7 +2013,6 @@ Reliability - 14.18
 Security - 7.09
 Maintainability - 7.09
 Total Defect Density - 28.37
-FAIL
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 141
 EmptyMethod : 2
@@ -2098,7 +2028,6 @@ Reliability - 0.0
 Security - 18.18
 Maintainability - 0.0
 Total Defect Density - 18.18
-PASSED
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 55
 DocumentExternalHTTPRequests : 1
@@ -2114,7 +2043,6 @@ Reliability - 0.0
 Security - 15.75
 Maintainability - 0.0
 Total Defect Density - 15.75
-PASSED
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 127
 SpecificSubscription : 2
@@ -2128,7 +2056,6 @@ Reliability - 0.0
 Security - 4.59
 Maintainability - 0.0
 Total Defect Density - 4.59
-PASSED
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 218
 DocumentExposedEndpoints : 1
@@ -2158,7 +2085,6 @@ Reliability - 4.66
 Security - 2.33
 Maintainability - 3.5
 Total Defect Density - 10.49
-PASSED
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 858
 UseConsistentReturnValue : 2
@@ -2203,7 +2129,6 @@ Reliability - 6.88
 Security - 8.25
 Maintainability - 4.13
 Total Defect Density - 19.26
-PASSED
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 727
 HandleNullValue : 1
@@ -2272,7 +2197,6 @@ Reliability - 47.72
 Security - 2.17
 Maintainability - 4.34
 Total Defect Density - 54.23
-FAIL
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 461
 EmptyMethod : 1
@@ -2301,7 +2225,6 @@ Reliability - 0.0
 Security - 25.51
 Maintainability - 5.1
 Total Defect Density - 30.61
-FAIL
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 196
 DocumentExternalHTTPRequests : 1
@@ -2312,10 +2235,9 @@ Total Violations : 6
  
 Total SmartApps Analyzed : 74
 Total SmartApps with Violations : 57
-Defect Density Mean : 31.779296875
-Passed Count : 43
+Defect Density Mean : 31.767543859649123
 ---Most Common Violations---
-SpecificSubscription:32
+SpecificSubscription:31
 DocumentExposedEndpoints:18
 DocumentExternalHTTPRequests:15
 InvertedIfElse:15
