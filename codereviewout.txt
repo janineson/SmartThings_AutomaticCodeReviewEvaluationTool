@@ -1,6 +1,6 @@
 
 --app-start--
-processing CodeNarcAntReport-CCA.html
+processing CodeNarcAntReport.html
 FILENAME : ➥ bright-when-dark-and-or-bright-after-sunset.groovy
 rule name : AbcMetric line : 49
 source line/ message : [SRC]def options() [MSG]Violation in class None. The ABC score for method [options] is [60.7]
@@ -1727,8 +1727,6 @@ rule name : AtomicStateUsage line : 1224
 source line/ message : [SRC]state.buttonActions << [button:button, event:event, action:"panic"] [MSG]Avoid using atomicState and state in the same SmartApp.
 rule name : AtomicStateUsage line : 1227
 source line/ message : [SRC]if (state.buttonActions) { [MSG]Avoid using atomicState and state in the same SmartApp.
-rule name : SpecificSubscription line : 1228
-source line/ message : [SRC]subscribe(settings.remotes, "button", onButtonEvent) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : AtomicStateUsage line : 1235
 source line/ message : [SRC]if (!state.accessToken) { [MSG]Avoid using atomicState and state in the same SmartApp.
 rule name : AtomicStateUsage line : 1239
@@ -1815,9 +1813,9 @@ rule name : MethodSize line : 852
 source line/ message : [MSG]Method "pageRemoteOptions" is 109 lines
 ---Defect Density Metrics (KLOC)---
 Reliability - 54.14
-Security - 1.34
+Security - 0.67
 Maintainability - 1.34
-Total Defect Density - 56.82
+Total Defect Density - 56.15
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 1496
 MissingSwitchDefault : 2
@@ -1826,10 +1824,9 @@ MethodSize : 109
 MethodCount : 62
 AtomicStateUsage : 74
 DocumentExposedEndpoints : 1
-SpecificSubscription : 1
 CyclomaticComplexity : 24
 AbcMetric : 70.1
-Total Violations : 85
+Total Violations : 84
  
 FILENAME : ➥ hello-home-phrase-director.groovy
 rule name : SpecificSubscription line : 88
@@ -2238,9 +2235,9 @@ Total Violations : 6
  
 Total SmartApps Analyzed : 74
 Total SmartApps with Violations : 57
-Defect Density Mean : 31.779296875
+Defect Density Mean : 31.767543859649123
 ---Most Common Violations---
-SpecificSubscription:32
+SpecificSubscription:31
 DocumentExposedEndpoints:18
 DocumentExternalHTTPRequests:15
 InvertedIfElse:15

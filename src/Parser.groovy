@@ -5,31 +5,24 @@ import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
 import org.jsoup.nodes.Element
 import org.jsoup.select.Elements
-
 import java.util.regex.Matcher
 import java.util.regex.Pattern
 
 class Parser{
-
     int reliabilityViolationCount, securityViolationCount, maintainabilityViolationCount, noViolationsCount
-    def cyclomaticComplexity, abcMetric, methodCount, methodSize, linesOfCode, totalApps
     Logger log
-    ArrayList<String> ruleViolationList
     Map<String, Integer> combinedViolationList
     float totalDefDensity
 
-    public Parser(Logger logger) {
-
+     Parser(Logger logger) {
          reliabilityViolationCount = 0
          securityViolationCount = 0
          maintainabilityViolationCount= 0
-         cyclomaticComplexity= 0
-         abcMetric= 0
          noViolationsCount = 0
          log = logger
-         ruleViolationList = new ArrayList()
+
          combinedViolationList=  new HashMap<>()
-        totalDefDensity = 0
+         totalDefDensity = 0
     }
 
     ArrayList<String> reliabilityList = new ArrayList<String>(
@@ -58,16 +51,14 @@ class Parser{
     );
 
     void process(String obj) {
-        def ruleName, rulePriority, ruleLineNo, ruleSource
+        def ruleName, rulePriority, ruleLineNo, ruleSource, totalApps, linesOfCode, methodSize, methodCount, abcMetric, cyclomaticComplexity
         String[] fileRuleSource
-
+        ArrayList<String> ruleViolationList = new ArrayList()
         Document doc = Jsoup.parse(obj)
-
         Elements divs = doc.select('div.summary');
 
         boolean flag = true
         for (Element div : divs) {
-
             Iterator<Element> headerIterator = div.select("h3").iterator() //header
             Iterator<Element> tableIterator = div.select("td").iterator()
 
@@ -77,13 +68,10 @@ class Parser{
                 flag = false
             }
 
-
             while(headerIterator.hasNext()){
                 log.append("FILENAME : "+headerIterator.next().text())
 
-
                 while (tableIterator.hasNext()) {
-
                     //violations and priority num
                     ruleName = tableIterator.next().text()
                     rulePriority = tableIterator.next().text()
@@ -128,20 +116,18 @@ class Parser{
                         log.append("rule name : " + ruleName + " line : " + ruleLineNo)
                         log.append("source line/ message : " + ruleSource)
 
-
                         ruleViolationList.add(ruleName)
-
                     }
-
                 }
 
-                displayQualityAttribute()
+                displayQualityAttribute(ruleViolationList, linesOfCode, methodSize, methodCount, abcMetric, cyclomaticComplexity)
+                ruleViolationList = new ArrayList()
+                cyclomaticComplexity = 0
+                abcMetric = 0
                 resetCount()
-
             }
-
-
         }
+
         int withViolation =  Integer.parseInt((String)totalApps)-noViolationsCount
         log.append("Total SmartApps Analyzed : " + totalApps)
         log.append("Total SmartApps with Violations : " + withViolation)
@@ -154,7 +140,105 @@ class Parser{
         }
     }
 
-     Map<String, Integer> sortByValues(Map<String, Integer> map) {
+    void displayQualityAttribute(def listOfViolations, def loc, def methodSize, def methodCount, def abcMetric, def cyclomaticComplexity){
+        Float defDensity
+        log.append("---Defect Density Metrics (KLOC)---")
+        defectCount(listOfViolations)
+
+        log.append("Reliability - " + calculateRate(reliabilityViolationCount,loc).round(2))
+        log.append("Security - "  + calculateRate(securityViolationCount,loc).round(2))
+        log.append("Maintainability - "  + calculateRate(maintainabilityViolationCount,loc).round(2))
+
+        defDensity = calculateRate(reliabilityViolationCount+ maintainabilityViolationCount+securityViolationCount,loc).round(2)
+        log.append("Total Defect Density - " + defDensity)
+
+
+        totalDefDensity = totalDefDensity + defDensity
+
+        log.append("---Breakdown of Violations and Other Metrics---")
+        log.append("Lines of Code : " + loc)
+
+        violations(listOfViolations, methodSize, methodCount, abcMetric, cyclomaticComplexity)
+        log.append(" ")
+    }
+
+    void defectCount(def listOfViolations){
+        for (String rule : listOfViolations) {
+            if(reliabilityList.contains(rule)){
+                reliabilityViolationCount++
+            }
+
+            if(securityList.contains(rule)){
+                securityViolationCount++
+            }
+
+            if(maintainabilityList.contains(rule)){
+                maintainabilityViolationCount++
+            }
+        }
+
+    }
+
+    void violations(def listOfViolations, def methodSize, def methodCount, def abcMetric, def cyclomaticComplexity){
+        for (String rule : reliabilityList) {
+            if (listOfViolations.count(rule) > 0){
+                if (rule == 'MethodCount')
+                    log.append(rule + " : "  + methodCount)
+                else if (rule == 'MethodSize')
+                    log.append(rule + " : "  + methodSize)
+                else
+                    log.append(rule + " : "  + listOfViolations.count(rule))
+
+                setCombinedViolations(rule, 1)
+            }
+        }
+
+        for (String rule : securityList) {
+            if (listOfViolations.count(rule) > 0){
+                log.append(rule + " : "  + listOfViolations.count(rule))
+                setCombinedViolations(rule, 1)
+            }
+
+        }
+
+        for (String rule : maintainabilityList) {
+            if (listOfViolations.count(rule) > 0){
+                if (rule == 'CyclomaticComplexity')
+                    log.append(rule + " : "  + cyclomaticComplexity)
+                else if (rule == 'AbcMetric')
+                    log.append(rule + " : "  + abcMetric)
+                else
+                    log.append(rule + " : "  + listOfViolations.count(rule))
+                setCombinedViolations(rule, 1)
+            }
+        }
+        log.append("Total Violations : " + listOfViolations.size())
+        if (listOfViolations.size() == 0) noViolationsCount++
+    }
+
+    /*
+    Defect density is the number of defects found in the software product
+    per size of the code. It can be defined as the number of defects per 1,000 lines of code or function points.
+     */
+    Float calculateRate(int count, def loc){
+        return (count / Integer.parseInt(loc)) * 1000
+    }
+
+    void setCombinedViolations(String rule, int count){
+        if(combinedViolationList.containsKey(rule))
+            combinedViolationList.put(rule, combinedViolationList.get(rule) + count)
+        else
+            combinedViolationList.put(rule, count)
+    }
+
+    void resetCount(){
+        reliabilityViolationCount = 0
+        securityViolationCount = 0
+        maintainabilityViolationCount = 0
+    }
+
+    //utils
+    Map<String, Integer> sortByValues(Map<String, Integer> map) {
         Comparator<String> valueComparator =  new Comparator<String>() {
             int compare(String k1, String k2) {
                 int compare = map.get(k2).compareTo(map.get(k1))
@@ -175,112 +259,8 @@ class Parser{
         }
         return string
     }
+    ////////////
 
 
-    void resetCount(){
-        reliabilityViolationCount = 0
-        securityViolationCount = 0
-        maintainabilityViolationCount = 0
-
-        ruleViolationList = new ArrayList()
-
-        cyclomaticComplexity = 0
-        abcMetric = 0
-    }
-    void defectCount(){
-
-        for (String rule : ruleViolationList) {
-            if(reliabilityList.contains(rule)){
-                reliabilityViolationCount++
-            }
-
-            if(securityList.contains(rule)){
-                securityViolationCount++
-            }
-
-            if(maintainabilityList.contains(rule)){
-                maintainabilityViolationCount++
-            }
-        }
-
-    }
-
-    /*
-    Defect density is the number of defects found in the software product
-    per size of the code. It can be defined as the number of defects per 1,000 lines of code or function points.
-     */
-    Float calculateRate(int count){
-        return (count / Integer.parseInt(linesOfCode)) * 1000
-    }
-
-    void violations(){
-
-        for (String rule : reliabilityList) {
-            if (ruleViolationList.count(rule) > 0){
-                if (rule == 'MethodCount')
-                    log.append(rule + " : "  + methodCount)
-                else if (rule == 'MethodSize')
-                    log.append(rule + " : "  + methodSize)
-                else
-                    log.append(rule + " : "  + ruleViolationList.count(rule))
-
-                setCombinedViolations(rule, 1)
-            }
-        }
-
-        for (String rule : securityList) {
-            if (ruleViolationList.count(rule) > 0){
-                log.append(rule + " : "  + ruleViolationList.count(rule))
-                setCombinedViolations(rule, 1)
-            }
-
-        }
-
-        for (String rule : maintainabilityList) {
-            if (ruleViolationList.count(rule) > 0){
-                if (rule == 'CyclomaticComplexity')
-                    log.append(rule + " : "  + cyclomaticComplexity)
-                else if (rule == 'AbcMetric')
-                    log.append(rule + " : "  + abcMetric)
-                else
-                    log.append(rule + " : "  + ruleViolationList.count(rule))
-                setCombinedViolations(rule, 1)
-            }
-        }
-        log.append("Total Violations : " + ruleViolationList.size())
-        if (ruleViolationList.size() == 0) noViolationsCount++
-    }
-
-    void setCombinedViolations(String rule, int count){
-        if(combinedViolationList.containsKey(rule))
-            combinedViolationList.put(rule, combinedViolationList.get(rule) + count)
-        else
-            combinedViolationList.put(rule, count)
-    }
-
-
-    void displayQualityAttribute(){
-        Float defDensity
-        log.append("---Defect Density Metrics (KLOC)---")
-        defectCount()
-
-        log.append("Reliability - " + calculateRate(reliabilityViolationCount).round(2))
-        log.append("Security - "  + calculateRate(securityViolationCount).round(2))
-        log.append("Maintainability - "  + calculateRate(maintainabilityViolationCount).round(2))
-
-        defDensity = calculateRate(reliabilityViolationCount+
-                maintainabilityViolationCount+securityViolationCount).round(2)
-        log.append("Total Defect Density - " + defDensity)
-
-
-        totalDefDensity = totalDefDensity + defDensity
-
-        log.append("---Breakdown of Violations and Other Metrics---")
-        log.append("Lines of Code : " + linesOfCode)
-
-
-        violations()
-        log.append(" ")
-    }
 
 }
