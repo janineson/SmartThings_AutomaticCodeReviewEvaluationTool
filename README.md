@@ -23,3 +23,10 @@ jsoup-1.11.1.jar<br/>
 java jdk 1.8<br/>
 groovy 2.4.7<br/>
 
+# How to Run Executable Jar file
+The files under deploy can be copied in any directory.
+Make sure the out/dump_html folder exists and contains the CodeNarc HTML file.
+Open command line and type 'java -jar CodeReviewTool.jar'
+Wait until the process is done.
+It will output a text file named codereviewout.txt in the root.
+
