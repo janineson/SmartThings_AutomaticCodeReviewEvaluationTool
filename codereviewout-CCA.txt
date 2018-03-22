@@ -1,7 +1,7 @@
 
 --app-start--
 processing CodeNarcAntReport.html
-FILENAME : ➥ bright-when-dark-and-or-bright-after-sunset.groovy
+FILENAME : ? bright-when-dark-and-or-bright-after-sunset.groovy
 rule name : AbcMetric line : 49
 source line/ message : [SRC]def options() [MSG]Violation in class None. The ABC score for method [options] is [60.7]
 rule name : AbcMetric line : 191
@@ -14,28 +14,10 @@ rule name : SpecificSubscription line : 197
 source line/ message : [SRC]subscribe(lights, "switch", lightsHandler) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : SpecificSubscription line : 199
 source line/ message : [SRC]subscribe(dimmers, "switch", dimmersHandler) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 209
-source line/ message : [SRC]subscribe(location, "position", locationPositionChange) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 210
-source line/ message : [SRC]subscribe(location, "sunriseTime", sunriseSunsetTimeHandler) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 211
-source line/ message : [SRC]subscribe(location, "sunsetTime", sunriseSunsetTimeHandler) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : SpecificSubscription line : 221
 source line/ message : [SRC]subscribe(lights, "switch", lightsHandler) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 231
-source line/ message : [SRC]subscribe(location, "position", locationPositionChange) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 232
-source line/ message : [SRC]subscribe(location, "sunriseTime", sunriseSunsetTimeHandler) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 233
-source line/ message : [SRC]subscribe(location, "sunsetTime", sunriseSunsetTimeHandler) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : SpecificSubscription line : 243
 source line/ message : [SRC]subscribe(dimmers, "switch", dimmersHandler) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 253
-source line/ message : [SRC]subscribe(location, "position", locationPositionChange) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 254
-source line/ message : [SRC]subscribe(location, "sunriseTime", sunriseSunsetTimeHandler) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 255
-source line/ message : [SRC]subscribe(location, "sunsetTime", sunriseSunsetTimeHandler) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : AbcMetric line : 312
 source line/ message : [SRC]def motionHandler(evt) [MSG]Violation in class None. The ABC score for method [motionHandler] is [109.5]
 rule name : CyclomaticComplexity line : 312
@@ -48,18 +30,18 @@ rule name : MethodSize line : 312
 source line/ message : [MSG]Method "motionHandler" is 191 lines
 ---Defect Density Metrics (KLOC)---
 Reliability - 4.1
-Security - 19.13
+Security - 6.83
 Maintainability - 6.83
-Total Defect Density - 30.05
+Total Defect Density - 17.76
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 732
 MethodSize : 191
-SpecificSubscription : 14
+SpecificSubscription : 5
 CyclomaticComplexity : 72
 AbcMetric : 109.5
-Total Violations : 22
+Total Violations : 13
  
-FILENAME : ➥ good-night-house.groovy
+FILENAME : ? good-night-house.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -69,7 +51,7 @@ Total Defect Density - 0.0
 Lines of Code : 53
 Total Violations : 0
  
-FILENAME : ➥ goodnight-ubi.groovy
+FILENAME : ? goodnight-ubi.groovy
 rule name : DocumentExternalHTTPRequests line : 99
 source line/ message : [SRC]httpGet("https://portal.theubi.com/webapi/behaviour?acce..=${phrase}") [MSG]Document external HTTP requests.
 rule name : EmptyIfStatement line : 113
@@ -85,7 +67,7 @@ EmptyIfStatement : 1
 DocumentExternalHTTPRequests : 1
 Total Violations : 2
  
-FILENAME : ➥ jenkins-notifier.groovy
+FILENAME : ? jenkins-notifier.groovy
 rule name : DocumentExternalHTTPRequests line : 118
 source line/ message : [SRC]httpGet(uri: host, headers: ["Authorization": "${basicAu..]) { resp -> [MSG]Document external HTTP requests.
 ---Defect Density Metrics (KLOC)---
@@ -98,7 +80,7 @@ Lines of Code : 47
 DocumentExternalHTTPRequests : 1
 Total Violations : 1
  
-FILENAME : ➥ gidjit-hub.groovy
+FILENAME : ? gidjit-hub.groovy
 rule name : DocumentExposedEndpoints line : 45
 source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
 rule name : EmptyMethod line : 100
@@ -114,7 +96,7 @@ EmptyMethod : 1
 DocumentExposedEndpoints : 1
 Total Violations : 2
  
-FILENAME : ➥ beaconthings-manager.groovy
+FILENAME : ? beaconthings-manager.groovy
 rule name : EmptyMethod line : 40
 source line/ message : [SRC]def initialize() { [MSG]Violation in class None. The method initialize is both empty and not marked with @Override
 rule name : DocumentExposedEndpoints line : 47
@@ -130,7 +112,7 @@ EmptyMethod : 1
 DocumentExposedEndpoints : 1
 Total Violations : 2
  
-FILENAME : ➥ obything-music-connect.groovy
+FILENAME : ? obything-music-connect.groovy
 rule name : EmptyMethod line : 43
 source line/ message : [SRC]def updated() { [MSG]Violation in class None. The method updated is both empty and not marked with @Override
 rule name : HandleNullValue line : 63
@@ -146,7 +128,7 @@ HandleNullValue : 1
 EmptyMethod : 1
 Total Violations : 2
  
-FILENAME : ➥ working-from-home.groovy
+FILENAME : ? working-from-home.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -156,7 +138,7 @@ Total Defect Density - 0.0
 Lines of Code : 93
 Total Violations : 0
  
-FILENAME : ➥ vinli-home-connect.groovy
+FILENAME : ? vinli-home-connect.groovy
 rule name : DocumentExposedEndpoints line : 25
 source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
 ---Defect Density Metrics (KLOC)---
@@ -169,7 +151,7 @@ Lines of Code : 139
 DocumentExposedEndpoints : 1
 Total Violations : 1
  
-FILENAME : ➥ curb-control.groovy
+FILENAME : ? curb-control.groovy
 rule name : DocumentExposedEndpoints line : 24
 source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
 rule name : EmptyMethod line : 44
@@ -192,7 +174,7 @@ DocumentExposedEndpoints : 1
 InvertedIfElse : 2
 Total Violations : 5
  
-FILENAME : ➥ curb-energy-monitor.groovy
+FILENAME : ? curb-energy-monitor.groovy
 rule name : MethodCount line : 17
 source line/ message : [SRC]include 'asynchttp_v1' [MSG]Class None has 32 methods
 rule name : DocumentExposedEndpoints line : 43
@@ -224,7 +206,7 @@ CouldBeElvis : 1
 InvertedIfElse : 1
 Total Violations : 8
  
-FILENAME : ➥ netatmo-connect.groovy
+FILENAME : ? netatmo-connect.groovy
 rule name : MethodCount line : 18
 source line/ message : [SRC]definition( [MSG]Class None has 37 methods
 rule name : DocumentExposedEndpoints line : 39
@@ -282,7 +264,7 @@ CyclomaticComplexity : 23
 InvertedIfElse : 2
 Total Violations : 20
  
-FILENAME : ➥ thermostat-auto-off.groovy
+FILENAME : ? thermostat-auto-off.groovy
 rule name : SpecificSubscription line : 47
 source line/ message : [SRC]subscribe(sensors, 'contact', "sensorChange") [MSG]Subscription must be specific to the Event you are interested in.
 ---Defect Density Metrics (KLOC)---
@@ -295,7 +277,7 @@ Lines of Code : 63
 SpecificSubscription : 1
 Total Violations : 1
  
-FILENAME : ➥ whole-house-fan.groovy
+FILENAME : ? whole-house-fan.groovy
 rule name : SpecificSubscription line : 67
 source line/ message : [SRC]subscribe(thermostat, "thermostatMode", "checkThings"); [MSG]Subscription must be specific to the Event you are interested in.
 rule name : SpecificSubscription line : 68
@@ -310,7 +292,7 @@ Lines of Code : 74
 SpecificSubscription : 2
 Total Violations : 2
  
-FILENAME : ➥ humidity-alert.groovy
+FILENAME : ? humidity-alert.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -320,7 +302,7 @@ Total Defect Density - 0.0
 Lines of Code : 78
 Total Violations : 0
  
-FILENAME : ➥ let-there-be-dark.groovy
+FILENAME : ? let-there-be-dark.groovy
 rule name : SpecificSubscription line : 27
 source line/ message : [SRC]subscribe(contact1, "contact", contactHandler) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : SpecificSubscription line : 32
@@ -335,7 +317,7 @@ Lines of Code : 34
 SpecificSubscription : 2
 Total Violations : 2
  
-FILENAME : ➥ smart-windows.groovy
+FILENAME : ? smart-windows.groovy
 rule name : CyclomaticComplexity line : 71
 source line/ message : [SRC]def temperatureHandler(evt) { [MSG]Violation in class None. The cyclomatic complexity for method [temperatureHandler] is [21]
 rule name : CouldBeElvis line : 88
@@ -356,7 +338,7 @@ CouldBeElvis : 1
 InvertedIfElse : 2
 Total Violations : 4
  
-FILENAME : ➥ weather-windows.groovy
+FILENAME : ? weather-windows.groovy
 rule name : CyclomaticComplexity line : 65
 source line/ message : [SRC]def temperatureHandler(evt) { [MSG]Violation in class None. The cyclomatic complexity for method [temperatureHandler] is [21]
 rule name : InvertedIfElse line : 96
@@ -374,7 +356,7 @@ CyclomaticComplexity : 21
 InvertedIfElse : 2
 Total Violations : 3
  
-FILENAME : ➥ smart-energy-service.groovy
+FILENAME : ? smart-energy-service.groovy
 rule name : DocumentExposedEndpoints line : 62
 source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
 rule name : AbcMetric line : 76
@@ -520,7 +502,7 @@ CouldBeElvis : 1
 InvertedIfElse : 5
 Total Violations : 64
  
-FILENAME : ➥ gideon.groovy
+FILENAME : ? gideon.groovy
 rule name : SpecificSubscription line : 65
 source line/ message : [SRC]subscribe(outlet, "switch", outletHandler) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : DocumentExposedEndpoints line : 80
@@ -553,7 +535,7 @@ SpecificSubscription : 1
 InvertedIfElse : 8
 Total Violations : 10
  
-FILENAME : ➥ coffee-after-shower.groovy
+FILENAME : ? coffee-after-shower.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -563,7 +545,7 @@ Total Defect Density - 0.0
 Lines of Code : 36
 Total Violations : 0
  
-FILENAME : ➥ door-knocker.groovy
+FILENAME : ? door-knocker.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -573,7 +555,7 @@ Total Defect Density - 0.0
 Lines of Code : 64
 Total Violations : 0
  
-FILENAME : ➥ forgiving-security.groovy
+FILENAME : ? forgiving-security.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -583,7 +565,7 @@ Total Defect Density - 0.0
 Lines of Code : 87
 Total Violations : 0
  
-FILENAME : ➥ hall-light-welcome-home.groovy
+FILENAME : ? hall-light-welcome-home.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -593,24 +575,20 @@ Total Defect Density - 0.0
 Lines of Code : 54
 Total Violations : 0
  
-FILENAME : ➥ nobody-home.groovy
+FILENAME : ? nobody-home.groovy
 rule name : SpecificSubscription line : 53
 source line/ message : [SRC]subscribe(people, "presence", presence) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 54
-source line/ message : [SRC]subscribe(location, "sunrise", setSunrise) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 55
-source line/ message : [SRC]subscribe(location, "sunset", setSunset) [MSG]Subscription must be specific to the Event you are interested in.
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
-Security - 25.21
+Security - 8.4
 Maintainability - 0.0
-Total Defect Density - 25.21
+Total Defect Density - 8.4
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 119
-SpecificSubscription : 3
-Total Violations : 3
+SpecificSubscription : 1
+Total Violations : 1
  
-FILENAME : ➥ ready-for-rain.groovy
+FILENAME : ? ready-for-rain.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -620,7 +598,7 @@ Total Defect Density - 0.0
 Lines of Code : 106
 Total Violations : 0
  
-FILENAME : ➥ safe-watch.groovy
+FILENAME : ? safe-watch.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -630,7 +608,7 @@ Total Defect Density - 0.0
 Lines of Code : 99
 Total Violations : 0
  
-FILENAME : ➥ thermostat-window-check.groovy
+FILENAME : ? thermostat-window-check.groovy
 rule name : SpecificSubscription line : 46
 source line/ message : [SRC]subscribe(thermostats, "thermostatMode", thermoChange); [MSG]Subscription must be specific to the Event you are interested in.
 rule name : SpecificSubscription line : 52
@@ -645,7 +623,7 @@ Lines of Code : 94
 SpecificSubscription : 2
 Total Violations : 2
  
-FILENAME : ➥ initial-state-event-streamer.groovy
+FILENAME : ? initial-state-event-streamer.groovy
 rule name : DocumentExposedEndpoints line : 65
 source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
 rule name : CyclomaticComplexity line : 136
@@ -711,7 +689,7 @@ CyclomaticComplexity : 26
 CouldBeElvis : 1
 Total Violations : 25
  
-FILENAME : ➥ my-light-toggle.groovy
+FILENAME : ? my-light-toggle.groovy
 rule name : SpecificSubscription line : 55
 source line/ message : [SRC]subscribe(motionToggler, "motion", toggleSwitches) [MSG]Subscription must be specific to the Event you are interested in.
 ---Defect Density Metrics (KLOC)---
@@ -724,7 +702,7 @@ Lines of Code : 42
 SpecificSubscription : 1
 Total Violations : 1
  
-FILENAME : ➥ door-jammed-notification.groovy
+FILENAME : ? door-jammed-notification.groovy
 rule name : SpecificSubscription line : 48
 source line/ message : [SRC]subscribe(doorSensor, "doorState", coopDoorStateHandler) [MSG]Subscription must be specific to the Event you are interested in.
 ---Defect Density Metrics (KLOC)---
@@ -737,7 +715,7 @@ Lines of Code : 44
 SpecificSubscription : 1
 Total Violations : 1
  
-FILENAME : ➥ door-state-to-color-light-hue-bulb.groovy
+FILENAME : ? door-state-to-color-light-hue-bulb.groovy
 rule name : SpecificSubscription line : 48
 source line/ message : [SRC]subscribe(doorSensor, "doorState", coopDoorStateHandler) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : MissingSwitchDefault line : 59
@@ -755,7 +733,7 @@ MissingSwitchDefault : 2
 SpecificSubscription : 1
 Total Violations : 3
  
-FILENAME : ➥ auto-humidity-vent.groovy
+FILENAME : ? auto-humidity-vent.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -765,7 +743,7 @@ Total Defect Density - 0.0
 Lines of Code : 182
 Total Violations : 0
  
-FILENAME : ➥ jawbone-button-notifier.groovy
+FILENAME : ? jawbone-button-notifier.groovy
 rule name : SpecificSubscription line : 61
 source line/ message : [SRC]subscribe(jawbone, "sleeping", sendit) [MSG]Subscription must be specific to the Event you are interested in.
 ---Defect Density Metrics (KLOC)---
@@ -778,7 +756,7 @@ Lines of Code : 61
 SpecificSubscription : 1
 Total Violations : 1
  
-FILENAME : ➥ jawbone-up-connect.groovy
+FILENAME : ? jawbone-up-connect.groovy
 rule name : DocumentExposedEndpoints line : 30
 source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
 rule name : DocumentExternalHTTPRequests line : 114
@@ -814,7 +792,7 @@ DocumentExposedEndpoints : 1
 NestedBlockDepth : 1
 Total Violations : 11
  
-FILENAME : ➥ turn-off-with-motion.groovy
+FILENAME : ? turn-off-with-motion.groovy
 rule name : SpecificSubscription line : 42
 source line/ message : [SRC]subscribe(motion1, "motion", motionHandler) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : SpecificSubscription line : 49
@@ -832,7 +810,7 @@ SpecificSubscription : 2
 CouldBeElvis : 1
 Total Violations : 3
  
-FILENAME : ➥ enhanced-auto-lock-door.groovy
+FILENAME : ? enhanced-auto-lock-door.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -842,7 +820,7 @@ Total Defect Density - 0.0
 Lines of Code : 105
 Total Violations : 0
  
-FILENAME : ➥ weather-underground-pws-connect.groovy
+FILENAME : ? weather-underground-pws-connect.groovy
 rule name : DocumentExternalHTTPRequests line : 98
 source line/ message : [SRC]httpGet(params) { resp -> // This is how we define the "..lso use $it. [MSG]Document external HTTP requests.
 ---Defect Density Metrics (KLOC)---
@@ -855,7 +833,7 @@ Lines of Code : 66
 DocumentExternalHTTPRequests : 1
 Total Violations : 1
  
-FILENAME : ➥ medicine-management-contact-sensor.groovy
+FILENAME : ? medicine-management-contact-sensor.groovy
 rule name : SpecificSubscription line : 68
 source line/ message : [SRC]subscribe(deviceContactSensor, "contact", contactHandler) [MSG]Subscription must be specific to the Event you are interested in.
 ---Defect Density Metrics (KLOC)---
@@ -868,7 +846,7 @@ Lines of Code : 98
 SpecificSubscription : 1
 Total Violations : 1
  
-FILENAME : ➥ medicine-management-temp-motion.groovy
+FILENAME : ? medicine-management-temp-motion.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -878,7 +856,7 @@ Total Defect Density - 0.0
 Lines of Code : 100
 Total Violations : 0
  
-FILENAME : ➥ color-coordinator.groovy
+FILENAME : ? color-coordinator.groovy
 rule name : SpecificSubscription line : 77
 source line/ message : [SRC]subscribe(master, "switch", onOffHandler) [MSG]Subscription must be specific to the Event you are interested in.
 ---Defect Density Metrics (KLOC)---
@@ -891,7 +869,7 @@ Lines of Code : 139
 SpecificSubscription : 1
 Total Violations : 1
  
-FILENAME : ➥ switch-activates-home-phrase-or-mode.groovy
+FILENAME : ? switch-activates-home-phrase-or-mode.groovy
 rule name : SpecificSubscription line : 74
 source line/ message : [SRC]subscribe(controlSwitch, "switch", "switchHandler") [MSG]Subscription must be specific to the Event you are interested in.
 rule name : SpecificSubscription line : 80
@@ -906,7 +884,7 @@ Lines of Code : 109
 SpecificSubscription : 2
 Total Violations : 2
  
-FILENAME : ➥ switch-activates-home-phrase.groovy
+FILENAME : ? switch-activates-home-phrase.groovy
 rule name : SpecificSubscription line : 56
 source line/ message : [SRC]subscribe(controlSwitch, "switch", "switchHandler") [MSG]Subscription must be specific to the Event you are interested in.
 rule name : SpecificSubscription line : 62
@@ -921,7 +899,7 @@ Lines of Code : 44
 SpecificSubscription : 2
 Total Violations : 2
  
-FILENAME : ➥ switch-changes-mode.groovy
+FILENAME : ? switch-changes-mode.groovy
 rule name : SpecificSubscription line : 47
 source line/ message : [SRC]subscribe(controlSwitch, "switch", "switchHandler") [MSG]Subscription must be specific to the Event you are interested in.
 rule name : SpecificSubscription line : 54
@@ -936,7 +914,7 @@ Lines of Code : 46
 SpecificSubscription : 2
 Total Violations : 2
  
-FILENAME : ➥ lights-off-with-no-motion-and-presence.groovy
+FILENAME : ? lights-off-with-no-motion-and-presence.groovy
 rule name : SpecificSubscription line : 31
 source line/ message : [SRC]subscribe(motionSensor, "motion", motionHandler) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : SpecificSubscription line : 32
@@ -958,7 +936,7 @@ SpecificSubscription : 4
 InvertedIfElse : 1
 Total Violations : 5
  
-FILENAME : ➥ opent2t-smartapp-test.groovy
+FILENAME : ? opent2t-smartapp-test.groovy
 rule name : DocumentExposedEndpoints line : 72
 source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
 rule name : SpecificSubscription line : 151
@@ -979,7 +957,7 @@ SpecificSubscription : 2
 CyclomaticComplexity : 26
 Total Violations : 4
  
-FILENAME : ➥ plantlink-connector.groovy
+FILENAME : ? plantlink-connector.groovy
 rule name : DocumentExposedEndpoints line : 46
 source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
 rule name : AtomicStateUsage line : 57
@@ -1029,7 +1007,7 @@ NestedBlockDepth : 5
 InvertedIfElse : 3
 Total Violations : 17
  
-FILENAME : ➥ spruce-scheduler.groovy
+FILENAME : ? spruce-scheduler.groovy
 rule name : MethodCount line : 30
 source line/ message : [SRC]definition( [MSG]Class None has 100 methods
 rule name : UseConsistentReturnValue line : 206
@@ -1423,7 +1401,7 @@ IfStatementCouldBeTernary : 6
 InvertedIfElse : 6
 Total Violations : 185
  
-FILENAME : ➥ smart-light-timer-x-minutes-unless-already-on.groovy
+FILENAME : ? smart-light-timer-x-minutes-unless-already-on.groovy
 rule name : SpecificSubscription line : 52
 source line/ message : [SRC]subscribe(switches, "switch", switchChange) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : SpecificSubscription line : 53
@@ -1445,7 +1423,7 @@ AvoidRecurringShortSchedules : 2
 SpecificSubscription : 3
 Total Violations : 5
  
-FILENAME : ➥ monitor-on-sense.groovy
+FILENAME : ? monitor-on-sense.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -1455,7 +1433,7 @@ Total Defect Density - 0.0
 Lines of Code : 27
 Total Violations : 0
  
-FILENAME : ➥ simple-sync-connect.groovy
+FILENAME : ? simple-sync-connect.groovy
 rule name : VerifyArrayIndex line : 247
 source line/ message : [SRC]def valueString = part.split(":")[1].trim() [MSG]Verify array index.
 rule name : VerifyArrayIndex line : 252
@@ -1488,7 +1466,7 @@ ConfusingTernary : 1
 CouldBeElvis : 1
 Total Violations : 9
  
-FILENAME : ➥ simple-sync-trigger.groovy
+FILENAME : ? simple-sync-trigger.groovy
 rule name : ConfusingTernary line : 51
 source line/ message : [SRC]int refreshCount = !state.refreshCount ? 0 : state.refreshCount as int [MSG](!state.refreshCount) is a confusing negation in a ternary expression. Rewrite as (state.refreshCount) and invert the conditions.
 ---Defect Density Metrics (KLOC)---
@@ -1501,7 +1479,7 @@ Lines of Code : 254
 ConfusingTernary : 1
 Total Violations : 1
  
-FILENAME : ➥ simple-control.groovy
+FILENAME : ? simple-control.groovy
 rule name : MethodCount line : 9
 source line/ message : [SRC]definition( [MSG]Class None has 39 methods
 rule name : DocumentExposedEndpoints line : 38
@@ -1560,7 +1538,7 @@ CouldBeElvis : 1
 InvertedIfElse : 3
 Total Violations : 19
  
-FILENAME : ➥ shabbat-and-holiday-modes.groovy
+FILENAME : ? shabbat-and-holiday-modes.groovy
 rule name : VerifyArrayIndex line : 101
 source line/ message : [SRC]if(hebcal_date[i].split("T")[0]==today) [MSG]Verify array index.
 rule name : DocumentExternalHTTPRequests line : 130
@@ -1584,7 +1562,7 @@ VerifyArrayIndex : 5
 DocumentExternalHTTPRequests : 1
 Total Violations : 6
  
-FILENAME : ➥ smart-humidifier.groovy
+FILENAME : ? smart-humidifier.groovy
 rule name : EmptyElseBlock line : 109
 source line/ message : [SRC]else { [MSG]The else block is empty
 ---Defect Density Metrics (KLOC)---
@@ -1597,7 +1575,7 @@ Lines of Code : 92
 EmptyElseBlock : 1
 Total Violations : 1
  
-FILENAME : ➥ smart-turn-it-on.groovy
+FILENAME : ? smart-turn-it-on.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -1607,7 +1585,7 @@ Total Defect Density - 0.0
 Lines of Code : 58
 Total Violations : 0
  
-FILENAME : ➥ door-lock-code-distress-message.groovy
+FILENAME : ? door-lock-code-distress-message.groovy
 rule name : SpecificSubscription line : 35
 source line/ message : [SRC]subscribe(lock1, "lock", checkCode) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : SpecificSubscription line : 40
@@ -1622,7 +1600,7 @@ Lines of Code : 44
 SpecificSubscription : 2
 Total Violations : 2
  
-FILENAME : ➥ smart-auto-lock-unlock.groovy
+FILENAME : ? smart-auto-lock-unlock.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -1632,7 +1610,7 @@ Total Defect Density - 0.0
 Lines of Code : 134
 Total Violations : 0
  
-FILENAME : ➥ sprayer-controller-2.groovy
+FILENAME : ? sprayer-controller-2.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -1642,7 +1620,7 @@ Total Defect Density - 0.0
 Lines of Code : 118
 Total Violations : 0
  
-FILENAME : ➥ smart-alarm.groovy
+FILENAME : ? smart-alarm.groovy
 rule name : MethodCount line : 35
 source line/ message : [SRC]definition( [MSG]Class None has 62 methods
 rule name : DocumentExposedEndpoints line : 64
@@ -1828,27 +1806,23 @@ CyclomaticComplexity : 24
 AbcMetric : 70.1
 Total Violations : 84
  
-FILENAME : ➥ hello-home-phrase-director.groovy
+FILENAME : ? hello-home-phrase-director.groovy
 rule name : SpecificSubscription line : 88
 source line/ message : [SRC]subscribe(people, "presence", presence) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : AvoidRecurringShortSchedules line : 89
 source line/ message : [SRC]runIn(60, checkSun) [MSG]Avoid recurring short schedules unless there is a good reason for it.
-rule name : SpecificSubscription line : 90
-source line/ message : [SRC]subscribe(location, "sunrise", setSunrise) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 91
-source line/ message : [SRC]subscribe(location, "sunset", setSunset) [MSG]Subscription must be specific to the Event you are interested in.
 ---Defect Density Metrics (KLOC)---
 Reliability - 3.88
-Security - 11.63
+Security - 3.88
 Maintainability - 0.0
-Total Defect Density - 15.5
+Total Defect Density - 7.75
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 258
 AvoidRecurringShortSchedules : 1
-SpecificSubscription : 3
-Total Violations : 4
+SpecificSubscription : 1
+Total Violations : 2
  
-FILENAME : ➥ lighting-director.groovy
+FILENAME : ? lighting-director.groovy
 rule name : MethodCount line : 43
 source line/ message : [SRC]definition( [MSG]Class None has 34 methods
 rule name : CyclomaticComplexity line : 738
@@ -1933,29 +1907,25 @@ CyclomaticComplexity : 24
 NestedBlockDepth : 8
 Total Violations : 35
  
-FILENAME : ➥ routine-director.groovy
+FILENAME : ? routine-director.groovy
 rule name : SpecificSubscription line : 103
 source line/ message : [SRC]subscribe(people, "presence", presence) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 105
-source line/ message : [SRC]subscribe(location, "sunrise", setSunrise) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 106
-source line/ message : [SRC]subscribe(location, "sunset", setSunset) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : AvoidRecurringShortSchedules line : 118
 source line/ message : [SRC]runIn(60,"setSunrise") [MSG]Avoid recurring short schedules unless there is a good reason for it.
 rule name : AvoidRecurringShortSchedules line : 122
 source line/ message : [SRC]runIn(60,"setSunset") [MSG]Avoid recurring short schedules unless there is a good reason for it.
 ---Defect Density Metrics (KLOC)---
 Reliability - 7.66
-Security - 11.49
+Security - 3.83
 Maintainability - 0.0
-Total Defect Density - 19.16
+Total Defect Density - 11.49
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 261
 AvoidRecurringShortSchedules : 2
-SpecificSubscription : 3
-Total Violations : 5
+SpecificSubscription : 1
+Total Violations : 3
  
-FILENAME : ➥ thermostat-mode-director.groovy
+FILENAME : ? thermostat-mode-director.groovy
 rule name : AvoidRecurringShortSchedules line : 353
 source line/ message : [SRC]runIn(60, "temperatureHandler") [MSG]Avoid recurring short schedules unless there is a good reason for it.
 rule name : CyclomaticComplexity line : 364
@@ -1974,7 +1944,7 @@ CyclomaticComplexity : 24
 InvertedIfElse : 1
 Total Violations : 3
  
-FILENAME : ➥ vacation-lighting-director.groovy
+FILENAME : ? vacation-lighting-director.groovy
 rule name : MissingSwitchDefault line : 409
 source line/ message : [SRC]switch (startTimeType) { [MSG]Missing default: case statement in switch().
 rule name : MissingSwitchDefault line : 425
@@ -1989,7 +1959,7 @@ Lines of Code : 359
 MissingSwitchDefault : 2
 Total Violations : 2
  
-FILENAME : ➥ lock-it-at-a-specific-time.groovy
+FILENAME : ? lock-it-at-a-specific-time.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -1999,7 +1969,7 @@ Total Defect Density - 0.0
 Lines of Code : 65
 Total Violations : 0
  
-FILENAME : ➥ alfred-workflow.groovy
+FILENAME : ? alfred-workflow.groovy
 rule name : DocumentExposedEndpoints line : 36
 source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
 rule name : EmptyMethod line : 63
@@ -2020,7 +1990,7 @@ DocumentExposedEndpoints : 1
 InvertedIfElse : 1
 Total Violations : 4
  
-FILENAME : ➥ smartblock-chat-sender.groovy
+FILENAME : ? smartblock-chat-sender.groovy
 rule name : DocumentExternalHTTPRequests line : 82
 source line/ message : [SRC]httpPost(url, "foo=bar") { response -> [MSG]Document external HTTP requests.
 ---Defect Density Metrics (KLOC)---
@@ -2033,7 +2003,7 @@ Lines of Code : 55
 DocumentExternalHTTPRequests : 1
 Total Violations : 1
  
-FILENAME : ➥ smartblock-linker.groovy
+FILENAME : ? smartblock-linker.groovy
 rule name : SpecificSubscription line : 120
 source line/ message : [SRC]subscribe(linkedSmartBlock, "switch", updateSwitchState) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : SpecificSubscription line : 126
@@ -2048,7 +2018,7 @@ Lines of Code : 127
 SpecificSubscription : 2
 Total Violations : 2
  
-FILENAME : ➥ smartblock-manager.groovy
+FILENAME : ? smartblock-manager.groovy
 rule name : DocumentExposedEndpoints line : 161
 source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
 ---Defect Density Metrics (KLOC)---
@@ -2061,7 +2031,7 @@ Lines of Code : 218
 DocumentExposedEndpoints : 1
 Total Violations : 1
  
-FILENAME : ➥ smartblock-notifier.groovy
+FILENAME : ? smartblock-notifier.groovy
 rule name : MethodCount line : 20
 source line/ message : [SRC]definition( [MSG]Class None has 36 methods
 rule name : IfStatementCouldBeTernary line : 195
@@ -2095,7 +2065,7 @@ SpecificSubscription : 1
 IfStatementCouldBeTernary : 3
 Total Violations : 9
  
-FILENAME : ➥ quirky-connect.groovy
+FILENAME : ? quirky-connect.groovy
 rule name : MethodCount line : 54
 source line/ message : [SRC]definition( [MSG]Class None has 55 methods
 rule name : DocumentExposedEndpoints line : 74
@@ -2141,7 +2111,7 @@ NestedBlockDepth : 1
 InvertedIfElse : 1
 Total Violations : 14
  
-FILENAME : ➥ tcp-bulbs-connect.groovy
+FILENAME : ? tcp-bulbs-connect.groovy
 rule name : CyclomaticComplexity line : 174
 source line/ message : [SRC]def deviceDiscovery() { [MSG]Violation in class None. The cyclomatic complexity for method [deviceDiscovery] is [21]
 rule name : AtomicStateUpdateUsage line : 177
@@ -2207,7 +2177,7 @@ CyclomaticComplexity : 21
 InvertedIfElse : 1
 Total Violations : 25
  
-FILENAME : ➥ weatherbug-home.groovy
+FILENAME : ? weatherbug-home.groovy
 rule name : DocumentExposedEndpoints line : 25
 source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
 rule name : IfStatementCouldBeTernary line : 100
@@ -2235,7 +2205,7 @@ Total Violations : 6
  
 Total SmartApps Analyzed : 74
 Total SmartApps with Violations : 57
-Defect Density Mean : 31.767543859649123
+Defect Density Mean : 30.986490885416668
 ---Most Common Violations---
 SpecificSubscription:31
 DocumentExposedEndpoints:18
