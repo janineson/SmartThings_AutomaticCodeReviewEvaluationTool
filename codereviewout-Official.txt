@@ -1,7 +1,7 @@
 
 --app-start--
 processing CodeNarcAntReport.html
-FILENAME : ➥ beacon-control.groovy
+FILENAME : ? beacon-control.groovy
 rule name : SpecificSubscription line : 108
 source line/ message : [SRC]subscribe(beacons, "presence", beaconHandler) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : UseConsistentReturnValue line : 313
@@ -19,7 +19,7 @@ UseConsistentReturnValue : 2
 SpecificSubscription : 1
 Total Violations : 3
  
-FILENAME : ➥ big-turn-off.groovy
+FILENAME : ? big-turn-off.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -29,7 +29,7 @@ Total Defect Density - 0.0
 Lines of Code : 33
 Total Violations : 0
  
-FILENAME : ➥ big-turn-on.groovy
+FILENAME : ? big-turn-on.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -39,7 +39,7 @@ Total Defect Density - 0.0
 Lines of Code : 33
 Total Violations : 0
  
-FILENAME : ➥ bon-voyage.groovy
+FILENAME : ? bon-voyage.groovy
 rule name : SpecificSubscription line : 54
 source line/ message : [SRC]subscribe(people, "presence", presence) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : SpecificSubscription line : 62
@@ -54,7 +54,7 @@ Lines of Code : 111
 SpecificSubscription : 2
 Total Violations : 2
  
-FILENAME : ➥ bose-soundtouch-control.groovy
+FILENAME : ? bose-soundtouch-control.groovy
 rule name : CyclomaticComplexity line : 207
 source line/ message : [SRC]private takeAction(evt) { [MSG]Violation in class None. The cyclomatic complexity for method [takeAction] is [28]
 ---Defect Density Metrics (KLOC)---
@@ -67,7 +67,7 @@ Lines of Code : 294
 CyclomaticComplexity : 28
 Total Violations : 1
  
-FILENAME : ➥ brighten-dark-places.groovy
+FILENAME : ? brighten-dark-places.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -77,7 +77,7 @@ Total Defect Density - 0.0
 Lines of Code : 37
 Total Violations : 0
  
-FILENAME : ➥ brighten-my-path.groovy
+FILENAME : ? brighten-my-path.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -87,7 +87,7 @@ Total Defect Density - 0.0
 Lines of Code : 29
 Total Violations : 0
  
-FILENAME : ➥ button-controller.groovy
+FILENAME : ? button-controller.groovy
 rule name : MethodCount line : 18
 source line/ message : [SRC]definition( [MSG]Class None has 31 methods
 rule name : MissingSwitchDefault line : 189
@@ -103,7 +103,7 @@ MissingSwitchDefault : 1
 MethodCount : 31
 Total Violations : 2
  
-FILENAME : ➥ camera-power-scheduler.groovy
+FILENAME : ? camera-power-scheduler.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -113,7 +113,7 @@ Total Defect Density - 0.0
 Lines of Code : 45
 Total Violations : 0
  
-FILENAME : ➥ cameras-on-when-im-away.groovy
+FILENAME : ? cameras-on-when-im-away.groovy
 rule name : SpecificSubscription line : 41
 source line/ message : [SRC]subscribe(people, "presence", presence) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : SpecificSubscription line : 48
@@ -128,7 +128,7 @@ Lines of Code : 69
 SpecificSubscription : 2
 Total Violations : 2
  
-FILENAME : ➥ carpool-notifier.groovy
+FILENAME : ? carpool-notifier.groovy
 rule name : IfStatementCouldBeTernary line : 99
 source line/ message : [SRC]if (minusFive > latestState.date) [MSG]The if statement in class None can be rewritten using the ternary operator: return (minusFive > latestState.date) ? true : false
 ---Defect Density Metrics (KLOC)---
@@ -141,7 +141,7 @@ Lines of Code : 64
 IfStatementCouldBeTernary : 1
 Total Violations : 1
  
-FILENAME : ➥ close-the-valve.groovy
+FILENAME : ? close-the-valve.groovy
 rule name : SpecificSubscription line : 48
 source line/ message : [SRC]subscribe(sensor, "water", waterHandler) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : SpecificSubscription line : 53
@@ -156,7 +156,7 @@ Lines of Code : 64
 SpecificSubscription : 2
 Total Violations : 2
  
-FILENAME : ➥ curling-iron.groovy
+FILENAME : ? curling-iron.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -166,7 +166,7 @@ Total Defect Density - 0.0
 Lines of Code : 83
 Total Violations : 0
  
-FILENAME : ➥ darken-behind-me.groovy
+FILENAME : ? darken-behind-me.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -176,7 +176,7 @@ Total Defect Density - 0.0
 Lines of Code : 29
 Total Violations : 0
  
-FILENAME : ➥ double-tap.groovy
+FILENAME : ? double-tap.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -186,7 +186,7 @@ Total Defect Density - 0.0
 Lines of Code : 71
 Total Violations : 0
  
-FILENAME : ➥ dry-the-wetspot.groovy
+FILENAME : ? dry-the-wetspot.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -196,7 +196,7 @@ Total Defect Density - 0.0
 Lines of Code : 34
 Total Violations : 0
  
-FILENAME : ➥ ecobee-connect.groovy
+FILENAME : ? ecobee-connect.groovy
 rule name : MethodCount line : 24
 source line/ message : [SRC]include 'localization' [MSG]Class None has 44 methods
 rule name : DocumentExposedEndpoints line : 43
@@ -250,7 +250,7 @@ CouldBeElvis : 1
 InvertedIfElse : 5
 Total Violations : 19
  
-FILENAME : ➥ elder-care-daily-routine.groovy
+FILENAME : ? elder-care-daily-routine.groovy
 rule name : UseConsistentReturnValue line : 128
 source line/ message : [SRC]return new Date(now() - 21600000) [MSG]Use consistent return values.
 rule name : IfStatementCouldBeTernary line : 137
@@ -266,7 +266,7 @@ UseConsistentReturnValue : 1
 IfStatementCouldBeTernary : 1
 Total Violations : 2
  
-FILENAME : ➥ elder-care-slip-fall.groovy
+FILENAME : ? elder-care-slip-fall.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -276,7 +276,7 @@ Total Defect Density - 0.0
 Lines of Code : 96
 Total Violations : 0
  
-FILENAME : ➥ energy-alerts.groovy
+FILENAME : ? energy-alerts.groovy
 rule name : EmptyElseBlock line : 74
 source line/ message : [SRC]} else { [MSG]The else block is empty
 rule name : EmptyElseBlock line : 85
@@ -294,7 +294,7 @@ EmptyElseBlock : 2
 CouldBeElvis : 1
 Total Violations : 3
  
-FILENAME : ➥ energy-saver.groovy
+FILENAME : ? energy-saver.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -304,7 +304,7 @@ Total Defect Density - 0.0
 Lines of Code : 39
 Total Violations : 0
  
-FILENAME : ➥ every-element.groovy
+FILENAME : ? every-element.groovy
 rule name : MethodCount line : 16
 source line/ message : [SRC]definition( [MSG]Class None has 34 methods
 rule name : EmptyMethod line : 569
@@ -323,7 +323,7 @@ ParameterReassignment : 1
 MethodCount : 34
 Total Violations : 3
  
-FILENAME : ➥ feed-my-pet.groovy
+FILENAME : ? feed-my-pet.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -333,7 +333,7 @@ Total Defect Density - 0.0
 Lines of Code : 31
 Total Violations : 0
  
-FILENAME : ➥ flood-alert.groovy
+FILENAME : ? flood-alert.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -343,7 +343,7 @@ Total Defect Density - 0.0
 Lines of Code : 48
 Total Violations : 0
  
-FILENAME : ➥ foscam-connect.groovy
+FILENAME : ? foscam-connect.groovy
 rule name : HandleNullValue line : 236
 source line/ message : [SRC]return location.hubs*.firmwareVersionString.findAll { it } [MSG]Handle null values. Avoid NullPointerException by using the safe navigation (?) operator.
 rule name : ConfusingTernary line : 41
@@ -362,7 +362,7 @@ ConfusingTernary : 1
 InvertedIfElse : 1
 Total Violations : 3
  
-FILENAME : ➥ garage-door-monitor.groovy
+FILENAME : ? garage-door-monitor.groovy
 rule name : SpecificSubscription line : 43
 source line/ message : [SRC]subscribe(multisensor, "acceleration", accelerationHandler) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : SpecificSubscription line : 49
@@ -380,7 +380,7 @@ SpecificSubscription : 2
 CouldBeElvis : 1
 Total Violations : 3
  
-FILENAME : ➥ garage-door-opener.groovy
+FILENAME : ? garage-door-opener.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -390,7 +390,7 @@ Total Defect Density - 0.0
 Lines of Code : 31
 Total Violations : 0
  
-FILENAME : ➥ gentle-wake-up.groovy
+FILENAME : ? gentle-wake-up.groovy
 rule name : MethodCount line : 26
 source line/ message : [SRC]definition( [MSG]Class None has 76 methods
 rule name : IfStatementCouldBeTernary line : 165
@@ -441,7 +441,7 @@ IfStatementCouldBeTernary : 5
 InvertedIfElse : 1
 Total Violations : 17
  
-FILENAME : ➥ good-night.groovy
+FILENAME : ? good-night.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -451,7 +451,7 @@ Total Defect Density - 0.0
 Lines of Code : 159
 Total Violations : 0
  
-FILENAME : ➥ greetings-earthling.groovy
+FILENAME : ? greetings-earthling.groovy
 rule name : SpecificSubscription line : 51
 source line/ message : [SRC]subscribe(people, "presence", presence) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : SpecificSubscription line : 58
@@ -466,7 +466,7 @@ Lines of Code : 77
 SpecificSubscription : 2
 Total Violations : 2
  
-FILENAME : ➥ habit-helper.groovy
+FILENAME : ? habit-helper.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -476,7 +476,7 @@ Total Defect Density - 0.0
 Lines of Code : 44
 Total Violations : 0
  
-FILENAME : ➥ has-barkley-been-fed.groovy
+FILENAME : ? has-barkley-been-fed.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -486,7 +486,7 @@ Total Defect Density - 0.0
 Lines of Code : 53
 Total Violations : 0
  
-FILENAME : ➥ hub-ip-notifier.groovy
+FILENAME : ? hub-ip-notifier.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -496,7 +496,7 @@ Total Defect Density - 0.0
 Lines of Code : 54
 Total Violations : 0
  
-FILENAME : ➥ hue-mood-lighting.groovy
+FILENAME : ? hue-mood-lighting.groovy
 rule name : MissingSwitchDefault line : 206
 source line/ message : [SRC]switch(color) { [MSG]Missing default: case statement in switch().
 ---Defect Density Metrics (KLOC)---
@@ -509,7 +509,7 @@ Lines of Code : 286
 MissingSwitchDefault : 1
 Total Violations : 1
  
-FILENAME : ➥ ifttt.groovy
+FILENAME : ? ifttt.groovy
 rule name : DocumentExposedEndpoints line : 61
 source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
 rule name : ClearSubscription line : 227
@@ -537,7 +537,7 @@ SpecificSubscription : 1
 InvertedIfElse : 1
 Total Violations : 6
  
-FILENAME : ➥ it-moved.groovy
+FILENAME : ? it-moved.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -547,7 +547,7 @@ Total Defect Density - 0.0
 Lines of Code : 45
 Total Violations : 0
  
-FILENAME : ➥ its-too-cold.groovy
+FILENAME : ? its-too-cold.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -557,7 +557,7 @@ Total Defect Density - 0.0
 Lines of Code : 71
 Total Violations : 0
  
-FILENAME : ➥ its-too-hot.groovy
+FILENAME : ? its-too-hot.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -567,7 +567,7 @@ Total Defect Density - 0.0
 Lines of Code : 71
 Total Violations : 0
  
-FILENAME : ➥ keep-me-cozy-ii.groovy
+FILENAME : ? keep-me-cozy-ii.groovy
 rule name : SpecificSubscription line : 62
 source line/ message : [SRC]subscribe(thermostat, "thermostatMode", temperatureHandler) [MSG]Subscription must be specific to the Event you are interested in.
 ---Defect Density Metrics (KLOC)---
@@ -580,7 +580,7 @@ Lines of Code : 95
 SpecificSubscription : 1
 Total Violations : 1
  
-FILENAME : ➥ keep-me-cozy.groovy
+FILENAME : ? keep-me-cozy.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -590,7 +590,7 @@ Total Defect Density - 0.0
 Lines of Code : 67
 Total Violations : 0
  
-FILENAME : ➥ laundry-monitor.groovy
+FILENAME : ? laundry-monitor.groovy
 rule name : InvertedIfElse line : 95
 source line/ message : [SRC]if (!sensorStates.find{it.value == "active"}) { [MSG]Testing the negative condition first can make an if statement confusing
 ---Defect Density Metrics (KLOC)---
@@ -603,7 +603,7 @@ Lines of Code : 144
 InvertedIfElse : 1
 Total Violations : 1
  
-FILENAME : ➥ left-it-open.groovy
+FILENAME : ? left-it-open.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -613,7 +613,7 @@ Total Defect Density - 0.0
 Lines of Code : 78
 Total Violations : 0
  
-FILENAME : ➥ let-there-be-light.groovy
+FILENAME : ? let-there-be-light.groovy
 rule name : SpecificSubscription line : 38
 source line/ message : [SRC]subscribe(contact1, "contact", contactHandler) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : SpecificSubscription line : 43
@@ -628,7 +628,7 @@ Lines of Code : 32
 SpecificSubscription : 2
 Total Violations : 2
  
-FILENAME : ➥ life360-connect.groovy
+FILENAME : ? life360-connect.groovy
 rule name : DocumentExposedEndpoints line : 42
 source line/ message : [SRC]mappings { [MSG]Document any exposed endpoints.
 rule name : DocumentExternalHTTPRequests line : 285
@@ -673,7 +673,7 @@ DocumentExposedEndpoints : 1
 InvertedIfElse : 2
 Total Violations : 14
  
-FILENAME : ➥ lifx-connect.groovy
+FILENAME : ? lifx-connect.groovy
 rule name : MethodCount line : 7
 source line/ message : [SRC]include 'localization' [MSG]Class None has 36 methods
 rule name : DocumentExposedEndpoints line : 37
@@ -715,7 +715,7 @@ CouldBeElvis : 1
 InvertedIfElse : 3
 Total Violations : 12
  
-FILENAME : ➥ light-follows-me.groovy
+FILENAME : ? light-follows-me.groovy
 rule name : SpecificSubscription line : 41
 source line/ message : [SRC]subscribe(motion1, "motion", motionHandler) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : SpecificSubscription line : 46
@@ -730,7 +730,7 @@ Lines of Code : 52
 SpecificSubscription : 2
 Total Violations : 2
  
-FILENAME : ➥ light-up-the-night.groovy
+FILENAME : ? light-up-the-night.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -740,7 +740,7 @@ Total Defect Density - 0.0
 Lines of Code : 35
 Total Violations : 0
  
-FILENAME : ➥ lights-off-when-closed.groovy
+FILENAME : ? lights-off-when-closed.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -750,7 +750,7 @@ Total Defect Density - 0.0
 Lines of Code : 29
 Total Violations : 0
  
-FILENAME : ➥ lock-it-when-i-leave.groovy
+FILENAME : ? lock-it-when-i-leave.groovy
 rule name : SpecificSubscription line : 45
 source line/ message : [SRC]subscribe(presence1, "presence", presence) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : SpecificSubscription line : 51
@@ -765,7 +765,7 @@ Lines of Code : 63
 SpecificSubscription : 2
 Total Violations : 2
  
-FILENAME : ➥ logitech-harmony-connect.groovy
+FILENAME : ? logitech-harmony-connect.groovy
 rule name : MethodCount line : 43
 source line/ message : [SRC]include 'asynchttp_v1' [MSG]Class None has 57 methods
 rule name : DocumentExposedEndpoints line : 80
@@ -839,7 +839,7 @@ CouldBeElvis : 1
 InvertedIfElse : 9
 Total Violations : 27
  
-FILENAME : ➥ mail-arrived.groovy
+FILENAME : ? mail-arrived.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -849,7 +849,7 @@ Total Defect Density - 0.0
 Lines of Code : 54
 Total Violations : 0
  
-FILENAME : ➥ make-it-so.groovy
+FILENAME : ? make-it-so.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -859,7 +859,7 @@ Total Defect Density - 0.0
 Lines of Code : 105
 Total Violations : 0
  
-FILENAME : ➥ medicine-reminder.groovy
+FILENAME : ? medicine-reminder.groovy
 rule name : MissingSwitchDefault line : 67
 source line/ message : [SRC]switch (index) { [MSG]Missing default: case statement in switch().
 ---Defect Density Metrics (KLOC)---
@@ -872,7 +872,7 @@ Lines of Code : 97
 MissingSwitchDefault : 1
 Total Violations : 1
  
-FILENAME : ➥ mini-hue-controller.groovy
+FILENAME : ? mini-hue-controller.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -882,7 +882,7 @@ Total Defect Density - 0.0
 Lines of Code : 126
 Total Violations : 0
  
-FILENAME : ➥ mood-cube.groovy
+FILENAME : ? mood-cube.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -892,7 +892,7 @@ Total Defect Density - 0.0
 Lines of Code : 259
 Total Violations : 0
  
-FILENAME : ➥ nfc-tag-toggle.groovy
+FILENAME : ? nfc-tag-toggle.groovy
 rule name : SpecificSubscription line : 82
 source line/ message : [SRC]subscribe tag, "nfcTouch", touchHandler [MSG]Subscription must be specific to the Event you are interested in.
 ---Defect Density Metrics (KLOC)---
@@ -905,7 +905,7 @@ Lines of Code : 113
 SpecificSubscription : 1
 Total Violations : 1
  
-FILENAME : ➥ notify-me-when-it-opens.groovy
+FILENAME : ? notify-me-when-it-opens.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -915,7 +915,7 @@ Total Defect Density - 0.0
 Lines of Code : 28
 Total Violations : 0
  
-FILENAME : ➥ notify-me-when.groovy
+FILENAME : ? notify-me-when.groovy
 rule name : HandleNullValue line : 160
 source line/ message : [SRC]def name = location.name.toLowerCase() [MSG]Handle null values. Avoid NullPointerException by using the safe navigation (?) operator.
 ---Defect Density Metrics (KLOC)---
@@ -928,7 +928,7 @@ Lines of Code : 132
 HandleNullValue : 1
 Total Violations : 1
  
-FILENAME : ➥ notify-me-with-hue.groovy
+FILENAME : ? notify-me-with-hue.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -938,7 +938,7 @@ Total Defect Density - 0.0
 Lines of Code : 154
 Total Violations : 0
  
-FILENAME : ➥ once-a-day.groovy
+FILENAME : ? once-a-day.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -948,7 +948,7 @@ Total Defect Density - 0.0
 Lines of Code : 38
 Total Violations : 0
  
-FILENAME : ➥ photo-burst-when.groovy
+FILENAME : ? photo-burst-when.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -958,7 +958,7 @@ Total Defect Density - 0.0
 Lines of Code : 64
 Total Violations : 0
  
-FILENAME : ➥ power-allowance.groovy
+FILENAME : ? power-allowance.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -968,7 +968,7 @@ Total Defect Density - 0.0
 Lines of Code : 35
 Total Violations : 0
  
-FILENAME : ➥ presence-change-push.groovy
+FILENAME : ? presence-change-push.groovy
 rule name : SpecificSubscription line : 34
 source line/ message : [SRC]subscribe(presence, "presence", presenceHandler) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : SpecificSubscription line : 39
@@ -983,7 +983,7 @@ Lines of Code : 28
 SpecificSubscription : 2
 Total Violations : 2
  
-FILENAME : ➥ presence-change-text.groovy
+FILENAME : ? presence-change-text.groovy
 rule name : SpecificSubscription line : 40
 source line/ message : [SRC]subscribe(presence, "presence", presenceHandler) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : SpecificSubscription line : 45
@@ -998,7 +998,7 @@ Lines of Code : 43
 SpecificSubscription : 2
 Total Violations : 2
  
-FILENAME : ➥ ridiculously-automated-garage-door.groovy
+FILENAME : ? ridiculously-automated-garage-door.groovy
 rule name : SpecificSubscription line : 71
 source line/ message : [SRC]subscribe(doorSensor, "contact", garageDoorContact) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : SpecificSubscription line : 73
@@ -1015,7 +1015,7 @@ Lines of Code : 156
 SpecificSubscription : 3
 Total Violations : 3
  
-FILENAME : ➥ rise-and-shine.groovy
+FILENAME : ? rise-and-shine.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -1025,7 +1025,7 @@ Total Defect Density - 0.0
 Lines of Code : 96
 Total Violations : 0
  
-FILENAME : ➥ scheduled-mode-change.groovy
+FILENAME : ? scheduled-mode-change.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -1035,7 +1035,7 @@ Total Defect Density - 0.0
 Lines of Code : 65
 Total Violations : 0
  
-FILENAME : ➥ send-ham-bridge-command-when.groovy
+FILENAME : ? send-ham-bridge-command-when.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -1045,7 +1045,7 @@ Total Defect Density - 0.0
 Lines of Code : 61
 Total Violations : 0
  
-FILENAME : ➥ severe-weather-alert.groovy
+FILENAME : ? severe-weather-alert.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -1055,7 +1055,7 @@ Total Defect Density - 0.0
 Lines of Code : 97
 Total Violations : 0
  
-FILENAME : ➥ single-button-controller.groovy
+FILENAME : ? single-button-controller.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -1065,7 +1065,7 @@ Total Defect Density - 0.0
 Lines of Code : 114
 Total Violations : 0
  
-FILENAME : ➥ sleepy-time.groovy
+FILENAME : ? sleepy-time.groovy
 rule name : SpecificSubscription line : 56
 source line/ message : [SRC]subscribe (jawbone, "sleeping", jawboneHandler) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : SpecificSubscription line : 67
@@ -1083,7 +1083,7 @@ EmptyMethod : 1
 SpecificSubscription : 2
 Total Violations : 3
  
-FILENAME : ➥ smart-care-daily-routine.groovy
+FILENAME : ? smart-care-daily-routine.groovy
 rule name : UseConsistentReturnValue line : 174
 source line/ message : [SRC]return new Date(now() - 21600000) [MSG]Use consistent return values.
 rule name : IfStatementCouldBeTernary line : 183
@@ -1099,7 +1099,7 @@ UseConsistentReturnValue : 1
 IfStatementCouldBeTernary : 1
 Total Violations : 2
  
-FILENAME : ➥ smart-care-detect-motion.groovy
+FILENAME : ? smart-care-detect-motion.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -1109,26 +1109,20 @@ Total Defect Density - 0.0
 Lines of Code : 139
 Total Violations : 0
  
-FILENAME : ➥ smart-nightlight.groovy
+FILENAME : ? smart-nightlight.groovy
 rule name : SpecificSubscription line : 65
 source line/ message : [SRC]subscribe(motionSensor, "motion", motionHandler) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 70
-source line/ message : [SRC]subscribe(location, "position", locationPositionChange) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 71
-source line/ message : [SRC]subscribe(location, "sunriseTime", sunriseSunsetTimeHandler) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 72
-source line/ message : [SRC]subscribe(location, "sunsetTime", sunriseSunsetTimeHandler) [MSG]Subscription must be specific to the Event you are interested in.
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
-Security - 28.37
+Security - 7.09
 Maintainability - 0.0
-Total Defect Density - 28.37
+Total Defect Density - 7.09
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 141
-SpecificSubscription : 4
-Total Violations : 4
+SpecificSubscription : 1
+Total Violations : 1
  
-FILENAME : ➥ smart-security.groovy
+FILENAME : ? smart-security.groovy
 rule name : SpecificSubscription line : 73
 source line/ message : [SRC]subscribe intrusionMotions, "motion", intruderMotion [MSG]Subscription must be specific to the Event you are interested in.
 rule name : SpecificSubscription line : 75
@@ -1145,7 +1139,7 @@ Lines of Code : 265
 SpecificSubscription : 3
 Total Violations : 3
  
-FILENAME : ➥ smartweather-station-controller.groovy
+FILENAME : ? smartweather-station-controller.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -1155,7 +1149,7 @@ Total Defect Density - 0.0
 Lines of Code : 29
 Total Violations : 0
  
-FILENAME : ➥ sonos-music-modes.groovy
+FILENAME : ? sonos-music-modes.groovy
 rule name : HandleNullValue line : 124
 source line/ message : [SRC]location.modes.each {mode -> [MSG]Handle null values. Avoid NullPointerException by using the safe navigation (?) operator.
 rule name : CouldBeElvis line : 48
@@ -1171,7 +1165,7 @@ HandleNullValue : 1
 CouldBeElvis : 1
 Total Violations : 2
  
-FILENAME : ➥ sonos-remote-control.groovy
+FILENAME : ? sonos-remote-control.groovy
 rule name : MissingSwitchDefault line : 93
 source line/ message : [SRC]switch(data) { [MSG]Missing default: case statement in switch().
 ---Defect Density Metrics (KLOC)---
@@ -1184,7 +1178,7 @@ Lines of Code : 113
 MissingSwitchDefault : 1
 Total Violations : 1
  
-FILENAME : ➥ speaker-control.groovy
+FILENAME : ? speaker-control.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -1194,7 +1188,7 @@ Total Defect Density - 0.0
 Lines of Code : 269
 Total Violations : 0
  
-FILENAME : ➥ speaker-mood-music.groovy
+FILENAME : ? speaker-mood-music.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -1204,7 +1198,7 @@ Total Defect Density - 0.0
 Lines of Code : 275
 Total Violations : 0
  
-FILENAME : ➥ speaker-notify-with-sound.groovy
+FILENAME : ? speaker-notify-with-sound.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -1214,7 +1208,7 @@ Total Defect Density - 0.0
 Lines of Code : 362
 Total Violations : 0
  
-FILENAME : ➥ speaker-weather-forecast.groovy
+FILENAME : ? speaker-weather-forecast.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -1224,7 +1218,7 @@ Total Defect Density - 0.0
 Lines of Code : 369
 Total Violations : 0
  
-FILENAME : ➥ step-notifier.groovy
+FILENAME : ? step-notifier.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -1234,24 +1228,17 @@ Total Defect Density - 0.0
 Lines of Code : 247
 Total Violations : 0
  
-FILENAME : ➥ sunrise-sunset.groovy
-rule name : SpecificSubscription line : 71
-source line/ message : [SRC]subscribe(location, "position", locationPositionChange) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 72
-source line/ message : [SRC]subscribe(location, "sunriseTime", sunriseSunsetTimeHandler) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 73
-source line/ message : [SRC]subscribe(location, "sunsetTime", sunriseSunsetTimeHandler) [MSG]Subscription must be specific to the Event you are interested in.
+FILENAME : ? sunrise-sunset.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
-Security - 21.13
+Security - 0.0
 Maintainability - 0.0
-Total Defect Density - 21.13
+Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 142
-SpecificSubscription : 3
-Total Violations : 3
+Total Violations : 0
  
-FILENAME : ➥ tesla-connect.groovy
+FILENAME : ? tesla-connect.groovy
 rule name : DocumentExternalHTTPRequests line : 134
 source line/ message : [SRC]httpGet(carListParams) { resp -> [MSG]Document external HTTP requests.
 rule name : UseConsistentReturnValue line : 198
@@ -1288,7 +1275,7 @@ AbcMetric : 72.5
 InvertedIfElse : 1
 Total Violations : 11
  
-FILENAME : ➥ text-me-when-it-opens.groovy
+FILENAME : ? text-me-when-it-opens.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -1298,7 +1285,7 @@ Total Defect Density - 0.0
 Lines of Code : 38
 Total Violations : 0
  
-FILENAME : ➥ text-me-when-theres-motion-and-im-not-here.groovy
+FILENAME : ? text-me-when-theres-motion-and-im-not-here.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -1308,7 +1295,7 @@ Total Defect Density - 0.0
 Lines of Code : 53
 Total Violations : 0
  
-FILENAME : ➥ the-big-switch.groovy
+FILENAME : ? the-big-switch.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -1318,7 +1305,7 @@ Total Defect Density - 0.0
 Lines of Code : 66
 Total Violations : 0
  
-FILENAME : ➥ the-flasher.groovy
+FILENAME : ? the-flasher.groovy
 rule name : SpecificSubscription line : 73
 source line/ message : [SRC]subscribe(myPresence, "presence", presenceHandler) [MSG]Subscription must be specific to the Event you are interested in.
 ---Defect Density Metrics (KLOC)---
@@ -1331,7 +1318,7 @@ Lines of Code : 118
 SpecificSubscription : 1
 Total Violations : 1
  
-FILENAME : ➥ the-gun-case-moved.groovy
+FILENAME : ? the-gun-case-moved.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -1341,7 +1328,7 @@ Total Defect Density - 0.0
 Lines of Code : 44
 Total Violations : 0
  
-FILENAME : ➥ thermostats.groovy
+FILENAME : ? thermostats.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -1351,7 +1338,7 @@ Total Defect Density - 0.0
 Lines of Code : 93
 Total Violations : 0
  
-FILENAME : ➥ device-tile-controller.groovy
+FILENAME : ? device-tile-controller.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -1361,7 +1348,7 @@ Total Defect Density - 0.0
 Lines of Code : 82
 Total Violations : 0
  
-FILENAME : ➥ turn-it-on-for-5-minutes.groovy
+FILENAME : ? turn-it-on-for-5-minutes.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -1371,7 +1358,7 @@ Total Defect Density - 0.0
 Lines of Code : 34
 Total Violations : 0
  
-FILENAME : ➥ turn-it-on-when-im-here.groovy
+FILENAME : ? turn-it-on-when-im-here.groovy
 rule name : SpecificSubscription line : 38
 source line/ message : [SRC]subscribe(presence1, "presence", presenceHandler) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : SpecificSubscription line : 44
@@ -1386,7 +1373,7 @@ Lines of Code : 42
 SpecificSubscription : 2
 Total Violations : 2
  
-FILENAME : ➥ turn-it-on-when-it-opens.groovy
+FILENAME : ? turn-it-on-when-it-opens.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -1396,7 +1383,7 @@ Total Defect Density - 0.0
 Lines of Code : 31
 Total Violations : 0
  
-FILENAME : ➥ turn-on-only-if-i-arrive-after-sunset.groovy
+FILENAME : ? turn-on-only-if-i-arrive-after-sunset.groovy
 rule name : SpecificSubscription line : 27
 source line/ message : [SRC]subscribe(presence1, "presence", presenceHandler) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : SpecificSubscription line : 33
@@ -1411,7 +1398,7 @@ Lines of Code : 50
 SpecificSubscription : 2
 Total Violations : 2
  
-FILENAME : ➥ ubi.groovy
+FILENAME : ? ubi.groovy
 rule name : MethodCount line : 18
 source line/ message : [SRC]definition( [MSG]Class None has 51 methods
 rule name : DocumentExposedEndpoints line : 38
@@ -1446,7 +1433,7 @@ SpecificSubscription : 1
 InvertedIfElse : 2
 Total Violations : 9
  
-FILENAME : ➥ undead-early-warning.groovy
+FILENAME : ? undead-early-warning.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -1456,7 +1443,7 @@ Total Defect Density - 0.0
 Lines of Code : 31
 Total Violations : 0
  
-FILENAME : ➥ unlock-it-when-i-arrive.groovy
+FILENAME : ? unlock-it-when-i-arrive.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -1466,7 +1453,7 @@ Total Defect Density - 0.0
 Lines of Code : 35
 Total Violations : 0
  
-FILENAME : ➥ virtual-thermostat.groovy
+FILENAME : ? virtual-thermostat.groovy
 rule name : SpecificSubscription line : 55
 source line/ message : [SRC]subscribe(motion, "motion", motionHandler) [MSG]Subscription must be specific to the Event you are interested in.
 rule name : SpecificSubscription line : 64
@@ -1481,7 +1468,7 @@ Lines of Code : 117
 SpecificSubscription : 2
 Total Violations : 2
  
-FILENAME : ➥ wattvision-manager.groovy
+FILENAME : ? wattvision-manager.groovy
 rule name : MethodCount line : 20
 source line/ message : [SRC]definition( [MSG]Class None has 32 methods
 rule name : DocumentExposedEndpoints line : 52
@@ -1526,7 +1513,7 @@ CouldBeElvis : 2
 InvertedIfElse : 1
 Total Violations : 14
  
-FILENAME : ➥ when-its-going-to-rain.groovy
+FILENAME : ? when-its-going-to-rain.groovy
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
 Security - 0.0
@@ -1536,7 +1523,7 @@ Total Defect Density - 0.0
 Lines of Code : 67
 Total Violations : 0
  
-FILENAME : ➥ withings-manager.groovy
+FILENAME : ? withings-manager.groovy
 rule name : MethodCount line : 22
 source line/ message : [SRC]definition( [MSG]Class None has 71 methods
 rule name : ConstantIfExpression line : 53
@@ -1565,7 +1552,7 @@ DocumentExternalHTTPRequests : 2
 DocumentExposedEndpoints : 1
 Total Violations : 7
  
-FILENAME : ➥ withings.groovy
+FILENAME : ? withings.groovy
 rule name : MethodCount line : 19
 source line/ message : [SRC]definition( [MSG]Class None has 39 methods
 rule name : DocumentExposedEndpoints line : 39
@@ -1599,7 +1586,7 @@ DocumentExternalHTTPRequests : 2
 DocumentExposedEndpoints : 1
 Total Violations : 9
  
-FILENAME : ➥ yoics-connect.groovy
+FILENAME : ? yoics-connect.groovy
 rule name : MethodCount line : 19
 source line/ message : [SRC]definition( [MSG]Class None has 33 methods
 rule name : DocumentExposedEndpoints line : 39
@@ -1649,10 +1636,10 @@ InvertedIfElse : 1
 Total Violations : 15
  
 Total SmartApps Analyzed : 105
-Total SmartApps with Violations : 48
-Defect Density Mean : 24.491455078125
+Total SmartApps with Violations : 47
+Defect Density Mean : 24.11021131150266
 ---Most Common Violations---
-SpecificSubscription:25
+SpecificSubscription:24
 InvertedIfElse:12
 DocumentExternalHTTPRequests:11
 MethodCount:11

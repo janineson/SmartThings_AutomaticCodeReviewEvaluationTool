@@ -1112,21 +1112,15 @@ Total Violations : 0
 FILENAME : ? smart-nightlight.groovy
 rule name : SpecificSubscription line : 65
 source line/ message : [SRC]subscribe(motionSensor, "motion", motionHandler) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 70
-source line/ message : [SRC]subscribe(location, "position", locationPositionChange) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 71
-source line/ message : [SRC]subscribe(location, "sunriseTime", sunriseSunsetTimeHandler) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 72
-source line/ message : [SRC]subscribe(location, "sunsetTime", sunriseSunsetTimeHandler) [MSG]Subscription must be specific to the Event you are interested in.
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
-Security - 28.37
+Security - 7.09
 Maintainability - 0.0
-Total Defect Density - 28.37
+Total Defect Density - 7.09
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 141
-SpecificSubscription : 4
-Total Violations : 4
+SpecificSubscription : 1
+Total Violations : 1
  
 FILENAME : ? smart-security.groovy
 rule name : SpecificSubscription line : 73
@@ -1235,21 +1229,14 @@ Lines of Code : 247
 Total Violations : 0
  
 FILENAME : ? sunrise-sunset.groovy
-rule name : SpecificSubscription line : 71
-source line/ message : [SRC]subscribe(location, "position", locationPositionChange) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 72
-source line/ message : [SRC]subscribe(location, "sunriseTime", sunriseSunsetTimeHandler) [MSG]Subscription must be specific to the Event you are interested in.
-rule name : SpecificSubscription line : 73
-source line/ message : [SRC]subscribe(location, "sunsetTime", sunriseSunsetTimeHandler) [MSG]Subscription must be specific to the Event you are interested in.
 ---Defect Density Metrics (KLOC)---
 Reliability - 0.0
-Security - 21.13
+Security - 0.0
 Maintainability - 0.0
-Total Defect Density - 21.13
+Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 142
-SpecificSubscription : 3
-Total Violations : 3
+Total Violations : 0
  
 FILENAME : ? tesla-connect.groovy
 rule name : DocumentExternalHTTPRequests line : 134
@@ -1649,10 +1636,10 @@ InvertedIfElse : 1
 Total Violations : 15
  
 Total SmartApps Analyzed : 105
-Total SmartApps with Violations : 48
-Defect Density Mean : 24.491455078125
+Total SmartApps with Violations : 47
+Defect Density Mean : 24.11021131150266
 ---Most Common Violations---
-SpecificSubscription:25
+SpecificSubscription:24
 InvertedIfElse:12
 DocumentExternalHTTPRequests:11
 MethodCount:11
