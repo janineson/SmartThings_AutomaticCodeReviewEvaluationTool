@@ -3,14 +3,17 @@
  */
 import java.nio.charset.Charset
 import java.nio.file.Files
+import java.nio.file.Path
 import java.nio.file.Paths
 
 class Analyzer {
 
     static main(def args) {
-        def project_root = "C:\\Users\\Janine\\Desktop\\CodeReviewTool"
+        //def project_root = "C:\\Users\\Janine\\Desktop\\CodeReviewTool"
         //REPLACE with your project root
-
+        Path currentRelativePath = Paths.get("");
+        def project_root = currentRelativePath.toAbsolutePath().toString();
+        //System.out.println("Current relative path is: " + s);
         def outputfilename = project_root + "/" + "codereviewout.txt"
         Logger log = new Logger(outputfilename)
         String sourceCodeDir = project_root + "/out/" + "dump_html" //REPLACE with your dataset

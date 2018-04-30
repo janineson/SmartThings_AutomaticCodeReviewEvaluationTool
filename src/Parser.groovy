@@ -11,7 +11,7 @@ import java.util.regex.Pattern
 class Parser{
     int reliabilityViolationCount, securityViolationCount, maintainabilityViolationCount, noViolationsCount
     Logger log
-    Map<String, Integer> combinedViolationList
+    Map<String, Integer> combinedViolationList, combinedInputList,combinedSubscriptionList
     float totalDefDensity
 
      Parser(Logger logger) {
@@ -22,6 +22,8 @@ class Parser{
          log = logger
 
          combinedViolationList=  new HashMap<>()
+         combinedInputList=  new HashMap<>()
+         combinedSubscriptionList=  new HashMap<>()
          totalDefDensity = 0
     }
 
@@ -54,6 +56,8 @@ class Parser{
         def ruleName, rulePriority, ruleLineNo, ruleSource, totalApps, linesOfCode, methodSize, methodCount, abcMetric, cyclomaticComplexity
         String[] fileRuleSource
         ArrayList<String> ruleViolationList = new ArrayList()
+        ArrayList<String> ruleCountList = new ArrayList()
+
         Document doc = Jsoup.parse(obj)
         Elements divs = doc.select('div.summary');
 
@@ -112,16 +116,19 @@ class Parser{
 
                     if (ruleName == "TotalLinesOfCode")
                         linesOfCode = fileRuleSource[fileRuleSource.length - 2]
+                    else if (ruleName == "CountInput" || ruleName == "CountSubscription" )
+                        ruleCountList.add(ruleName)
                     else{
                         log.append("rule name : " + ruleName + " line : " + ruleLineNo)
                         log.append("source line/ message : " + ruleSource)
-
                         ruleViolationList.add(ruleName)
+
                     }
                 }
 
-                displayQualityAttribute(ruleViolationList, linesOfCode, methodSize, methodCount, abcMetric, cyclomaticComplexity)
+                displayQualityAttribute(ruleViolationList, ruleCountList, linesOfCode, methodSize, methodCount, abcMetric, cyclomaticComplexity)
                 ruleViolationList = new ArrayList()
+                ruleCountList = new ArrayList()
                 cyclomaticComplexity = 0
                 abcMetric = 0
                 resetCount()
@@ -131,16 +138,23 @@ class Parser{
         int withViolation =  Integer.parseInt((String)totalApps)-noViolationsCount
         log.append("Total SmartApps Analyzed : " + totalApps)
         log.append("Total SmartApps with Violations : " + withViolation)
-        log.append("Defect Density Mean : " + (totalDefDensity / withViolation))
-
-        log.append("---Most Common Violations---")
+        log.append("Average Defect Density : " + (totalDefDensity / withViolation).round(2))
+//        int sum = 0;
+//        for(int d : combinedInputList.values())
+//            sum += d;
+//
+//        log.append("Average No. of Device Input : " + (sum/Integer.parseInt((String)totalApps)))
+//        for(int d : combinedSubscriptionList.values())
+//            sum += d;
+//        log.append("Average No. of Device Subscription : " + (sum/Integer.parseInt((String)totalApps)))
+       log.append("---Most Common Violations---")
         for (String keys : sortByValues(combinedViolationList).keySet())
         {
             log.append(keys + ":"+ combinedViolationList.get(keys))
         }
     }
 
-    void displayQualityAttribute(def listOfViolations, def loc, def methodSize, def methodCount, def abcMetric, def cyclomaticComplexity){
+    void displayQualityAttribute(def listOfViolations, def listOfCount, def loc, def methodSize, def methodCount, def abcMetric, def cyclomaticComplexity){
         Float defDensity
         log.append("---Defect Density Metrics (KLOC)---")
         defectCount(listOfViolations)
@@ -158,7 +172,7 @@ class Parser{
         log.append("---Breakdown of Violations and Other Metrics---")
         log.append("Lines of Code : " + loc)
 
-        violations(listOfViolations, methodSize, methodCount, abcMetric, cyclomaticComplexity)
+        violations(listOfViolations, listOfCount, methodSize, methodCount, abcMetric, cyclomaticComplexity)
         log.append(" ")
     }
 
@@ -179,7 +193,25 @@ class Parser{
 
     }
 
-    void violations(def listOfViolations, def methodSize, def methodCount, def abcMetric, def cyclomaticComplexity){
+    void violations(def listOfViolations, def listOfCount, def methodSize, def methodCount, def abcMetric, def cyclomaticComplexity){
+
+
+        int countInput = listOfCount.count('CountInput')
+        int countSubscription = listOfCount.count('CountSubscription')
+
+        log.append("No. of Device Input : " + countInput)
+        log.append("No. of Subscriptions : " + countSubscription)
+        if(combinedInputList.containsKey('CountInput'))
+            combinedInputList.put('CountInput', combinedInputList.get('CountInput') + countInput)
+        else
+            combinedInputList.put('CountInput', countInput)
+
+        if(combinedSubscriptionList.containsKey('CountSubscription'))
+            combinedSubscriptionList.put('CountSubscription', combinedSubscriptionList.get('CountSubscription') + countSubscription)
+        else
+            combinedSubscriptionList.put('CountSubscription', countSubscription)
+
+
         for (String rule : reliabilityList) {
             if (listOfViolations.count(rule) > 0){
                 if (rule == 'MethodCount')
