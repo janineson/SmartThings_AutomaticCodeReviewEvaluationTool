@@ -1,6 +1,6 @@
-
+﻿
 --app-start--
-processing CodeNarcAntReport.html
+processing CodeNarcAntReport-official.html
 FILENAME : ➥ beacon-control.groovy
 rule name : SpecificSubscription line : 108
 source line/ message : [SRC]subscribe(beacons, "presence", beaconHandler) [MSG]Subscription must be specific to the Event you are interested in.
@@ -15,7 +15,7 @@ Maintainability - 0.0
 Total Defect Density - 11.86
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 253
-No. of Device Input : 6
+No. of Device Input : 8
 No. of Subscriptions : 1
 UseConsistentReturnValue : 2
 SpecificSubscription : 1
@@ -30,7 +30,7 @@ Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 33
 No. of Device Input : 1
-No. of Subscriptions : 2
+No. of Subscriptions : 0
 Total Violations : 0
  
 FILENAME : ➥ big-turn-on.groovy
@@ -58,7 +58,7 @@ Total Defect Density - 18.02
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 111
 No. of Device Input : 1
-No. of Subscriptions : 2
+No. of Subscriptions : 1
 SpecificSubscription : 2
 Total Violations : 2
  
@@ -73,7 +73,7 @@ Total Defect Density - 3.4
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 294
 No. of Device Input : 1
-No. of Subscriptions : 14
+No. of Subscriptions : 13
 CyclomaticComplexity : 28
 Total Violations : 1
  
@@ -86,7 +86,7 @@ Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 37
 No. of Device Input : 2
-No. of Subscriptions : 2
+No. of Subscriptions : 1
 Total Violations : 0
  
 FILENAME : ➥ brighten-my-path.groovy
@@ -98,7 +98,7 @@ Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 29
 No. of Device Input : 2
-No. of Subscriptions : 2
+No. of Subscriptions : 1
 Total Violations : 0
  
 FILENAME : ➥ button-controller.groovy
@@ -144,7 +144,7 @@ Total Defect Density - 28.99
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 69
 No. of Device Input : 2
-No. of Subscriptions : 2
+No. of Subscriptions : 1
 SpecificSubscription : 2
 Total Violations : 2
  
@@ -158,7 +158,7 @@ Maintainability - 15.63
 Total Defect Density - 15.63
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 64
-No. of Device Input : 0
+No. of Device Input : 2
 No. of Subscriptions : 1
 IfStatementCouldBeTernary : 1
 Total Violations : 1
@@ -176,7 +176,7 @@ Total Defect Density - 31.25
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 64
 No. of Device Input : 2
-No. of Subscriptions : 2
+No. of Subscriptions : 1
 SpecificSubscription : 2
 Total Violations : 2
  
@@ -188,7 +188,7 @@ Maintainability - 0.0
 Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 83
-No. of Device Input : 0
+No. of Device Input : 3
 No. of Subscriptions : 3
 Total Violations : 0
  
@@ -201,7 +201,7 @@ Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 29
 No. of Device Input : 2
-No. of Subscriptions : 2
+No. of Subscriptions : 1
 Total Violations : 0
  
 FILENAME : ➥ double-tap.groovy
@@ -213,7 +213,7 @@ Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 71
 No. of Device Input : 4
-No. of Subscriptions : 2
+No. of Subscriptions : 1
 Total Violations : 0
  
 FILENAME : ➥ dry-the-wetspot.groovy
@@ -225,7 +225,7 @@ Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 34
 No. of Device Input : 2
-No. of Subscriptions : 4
+No. of Subscriptions : 2
 Total Violations : 0
  
 FILENAME : ➥ ecobee-connect.groovy
@@ -311,7 +311,7 @@ Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 96
 No. of Device Input : 1
-No. of Subscriptions : 2
+No. of Subscriptions : 1
 Total Violations : 0
  
 FILENAME : ➥ energy-alerts.groovy
@@ -328,7 +328,7 @@ Maintainability - 13.7
 Total Defect Density - 41.1
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 73
-No. of Device Input : 0
+No. of Device Input : 1
 No. of Subscriptions : 1
 EmptyElseBlock : 2
 CouldBeElvis : 1
@@ -342,7 +342,7 @@ Maintainability - 0.0
 Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 39
-No. of Device Input : 0
+No. of Device Input : 2
 No. of Subscriptions : 1
 Total Violations : 0
  
@@ -375,7 +375,7 @@ Maintainability - 0.0
 Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 31
-No. of Device Input : 0
+No. of Device Input : 1
 No. of Subscriptions : 0
 Total Violations : 0
  
@@ -388,7 +388,7 @@ Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 48
 No. of Device Input : 1
-No. of Subscriptions : 2
+No. of Subscriptions : 1
 Total Violations : 0
  
 FILENAME : ➥ foscam-connect.groovy
@@ -427,7 +427,7 @@ Total Defect Density - 31.91
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 94
 No. of Device Input : 1
-No. of Subscriptions : 2
+No. of Subscriptions : 1
 SpecificSubscription : 2
 CouldBeElvis : 1
 Total Violations : 3
@@ -441,7 +441,7 @@ Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 31
 No. of Device Input : 0
-No. of Subscriptions : 2
+No. of Subscriptions : 0
 Total Violations : 0
  
 FILENAME : ➥ gentle-wake-up.groovy
@@ -486,8 +486,8 @@ Maintainability - 8.12
 Total Defect Density - 19.72
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 862
-No. of Device Input : 0
-No. of Subscriptions : 2
+No. of Device Input : 4
+No. of Subscriptions : 1
 UseConsistentReturnValue : 3
 MethodCount : 76
 AtomicStateUsage : 1
@@ -522,7 +522,7 @@ Total Defect Density - 25.97
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 77
 No. of Device Input : 1
-No. of Subscriptions : 2
+No. of Subscriptions : 1
 SpecificSubscription : 2
 Total Violations : 2
  
@@ -573,7 +573,7 @@ Total Defect Density - 3.5
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 286
 No. of Device Input : 1
-No. of Subscriptions : 14
+No. of Subscriptions : 13
 MissingSwitchDefault : 1
 Total Violations : 1
  
@@ -616,7 +616,7 @@ Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 45
 No. of Device Input : 1
-No. of Subscriptions : 2
+No. of Subscriptions : 1
 Total Violations : 0
  
 FILENAME : ➥ its-too-cold.groovy
@@ -628,7 +628,7 @@ Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 71
 No. of Device Input : 1
-No. of Subscriptions : 2
+No. of Subscriptions : 1
 Total Violations : 0
  
 FILENAME : ➥ its-too-hot.groovy
@@ -640,7 +640,7 @@ Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 71
 No. of Device Input : 1
-No. of Subscriptions : 2
+No. of Subscriptions : 1
 Total Violations : 0
  
 FILENAME : ➥ keep-me-cozy-ii.groovy
@@ -654,7 +654,7 @@ Total Defect Density - 10.53
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 95
 No. of Device Input : 1
-No. of Subscriptions : 3
+No. of Subscriptions : 2
 SpecificSubscription : 1
 Total Violations : 1
  
@@ -667,7 +667,7 @@ Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 67
 No. of Device Input : 0
-No. of Subscriptions : 8
+No. of Subscriptions : 3
 Total Violations : 0
  
 FILENAME : ➥ laundry-monitor.groovy
@@ -710,7 +710,7 @@ Total Defect Density - 62.5
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 32
 No. of Device Input : 1
-No. of Subscriptions : 2
+No. of Subscriptions : 1
 SpecificSubscription : 2
 Total Violations : 2
  
@@ -818,7 +818,7 @@ Total Defect Density - 38.46
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 52
 No. of Device Input : 2
-No. of Subscriptions : 2
+No. of Subscriptions : 1
 SpecificSubscription : 2
 Total Violations : 2
  
@@ -831,7 +831,7 @@ Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 35
 No. of Device Input : 1
-No. of Subscriptions : 2
+No. of Subscriptions : 1
 Total Violations : 0
  
 FILENAME : ➥ lights-off-when-closed.groovy
@@ -843,7 +843,7 @@ Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 29
 No. of Device Input : 1
-No. of Subscriptions : 2
+No. of Subscriptions : 1
 Total Violations : 0
  
 FILENAME : ➥ lock-it-when-i-leave.groovy
@@ -859,7 +859,7 @@ Total Defect Density - 31.75
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 63
 No. of Device Input : 2
-No. of Subscriptions : 2
+No. of Subscriptions : 1
 SpecificSubscription : 2
 Total Violations : 2
  
@@ -948,7 +948,7 @@ Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 54
 No. of Device Input : 1
-No. of Subscriptions : 2
+No. of Subscriptions : 1
 Total Violations : 0
  
 FILENAME : ➥ make-it-so.groovy
@@ -960,7 +960,7 @@ Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 105
 No. of Device Input : 3
-No. of Subscriptions : 2
+No. of Subscriptions : 0
 Total Violations : 0
  
 FILENAME : ➥ medicine-reminder.groovy
@@ -1013,7 +1013,7 @@ Total Defect Density - 8.85
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 113
 No. of Device Input : 4
-No. of Subscriptions : 2
+No. of Subscriptions : 1
 SpecificSubscription : 1
 Total Violations : 1
  
@@ -1026,7 +1026,7 @@ Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 28
 No. of Device Input : 1
-No. of Subscriptions : 2
+No. of Subscriptions : 1
 Total Violations : 0
  
 FILENAME : ➥ notify-me-when.groovy
@@ -1053,7 +1053,7 @@ Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 154
 No. of Device Input : 12
-No. of Subscriptions : 14
+No. of Subscriptions : 13
 Total Violations : 0
  
 FILENAME : ➥ once-a-day.groovy
@@ -1064,7 +1064,7 @@ Maintainability - 0.0
 Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 38
-No. of Device Input : 0
+No. of Device Input : 1
 No. of Subscriptions : 0
 Total Violations : 0
  
@@ -1089,7 +1089,7 @@ Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 35
 No. of Device Input : 0
-No. of Subscriptions : 2
+No. of Subscriptions : 1
 Total Violations : 0
  
 FILENAME : ➥ presence-change-push.groovy
@@ -1105,7 +1105,7 @@ Total Defect Density - 71.43
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 28
 No. of Device Input : 1
-No. of Subscriptions : 2
+No. of Subscriptions : 1
 SpecificSubscription : 2
 Total Violations : 2
  
@@ -1122,7 +1122,7 @@ Total Defect Density - 46.51
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 43
 No. of Device Input : 1
-No. of Subscriptions : 2
+No. of Subscriptions : 1
 SpecificSubscription : 2
 Total Violations : 2
  
@@ -1201,7 +1201,7 @@ Maintainability - 0.0
 Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 114
-No. of Device Input : 6
+No. of Device Input : 7
 No. of Subscriptions : 1
 Total Violations : 0
  
@@ -1219,8 +1219,8 @@ Maintainability - 0.0
 Total Defect Density - 53.57
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 56
-No. of Device Input : 0
-No. of Subscriptions : 2
+No. of Device Input : 1
+No. of Subscriptions : 1
 EmptyMethod : 1
 SpecificSubscription : 2
 Total Violations : 3
@@ -1252,7 +1252,7 @@ Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 139
 No. of Device Input : 1
-No. of Subscriptions : 2
+No. of Subscriptions : 1
 Total Violations : 0
  
 FILENAME : ➥ smart-nightlight.groovy
@@ -1285,7 +1285,7 @@ Total Defect Density - 11.32
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 265
 No. of Device Input : 5
-No. of Subscriptions : 4
+No. of Subscriptions : 3
 SpecificSubscription : 3
 Total Violations : 3
  
@@ -1343,7 +1343,7 @@ Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 269
 No. of Device Input : 1
-No. of Subscriptions : 14
+No. of Subscriptions : 13
 Total Violations : 0
  
 FILENAME : ➥ speaker-mood-music.groovy
@@ -1355,7 +1355,7 @@ Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 275
 No. of Device Input : 1
-No. of Subscriptions : 14
+No. of Subscriptions : 13
 Total Violations : 0
  
 FILENAME : ➥ speaker-notify-with-sound.groovy
@@ -1367,7 +1367,7 @@ Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 362
 No. of Device Input : 1
-No. of Subscriptions : 14
+No. of Subscriptions : 13
 Total Violations : 0
  
 FILENAME : ➥ speaker-weather-forecast.groovy
@@ -1379,7 +1379,7 @@ Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 369
 No. of Device Input : 1
-No. of Subscriptions : 14
+No. of Subscriptions : 13
 Total Violations : 0
  
 FILENAME : ➥ step-notifier.groovy
@@ -1390,7 +1390,7 @@ Maintainability - 0.0
 Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 247
-No. of Device Input : 3
+No. of Device Input : 4
 No. of Subscriptions : 2
 Total Violations : 0
  
@@ -1454,7 +1454,7 @@ Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 38
 No. of Device Input : 1
-No. of Subscriptions : 2
+No. of Subscriptions : 1
 Total Violations : 0
  
 FILENAME : ➥ text-me-when-theres-motion-and-im-not-here.groovy
@@ -1466,7 +1466,7 @@ Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 53
 No. of Device Input : 2
-No. of Subscriptions : 2
+No. of Subscriptions : 1
 Total Violations : 0
  
 FILENAME : ➥ the-big-switch.groovy
@@ -1478,7 +1478,7 @@ Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 66
 No. of Device Input : 5
-No. of Subscriptions : 6
+No. of Subscriptions : 3
 Total Violations : 0
  
 FILENAME : ➥ the-flasher.groovy
@@ -1505,7 +1505,7 @@ Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 44
 No. of Device Input : 1
-No. of Subscriptions : 2
+No. of Subscriptions : 1
 Total Violations : 0
  
 FILENAME : ➥ thermostats.groovy
@@ -1517,7 +1517,7 @@ Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 93
 No. of Device Input : 3
-No. of Subscriptions : 4
+No. of Subscriptions : 3
 Total Violations : 0
  
 FILENAME : ➥ device-tile-controller.groovy
@@ -1541,7 +1541,7 @@ Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 34
 No. of Device Input : 0
-No. of Subscriptions : 2
+No. of Subscriptions : 1
 Total Violations : 0
  
 FILENAME : ➥ turn-it-on-when-im-here.groovy
@@ -1557,7 +1557,7 @@ Total Defect Density - 47.62
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 42
 No. of Device Input : 2
-No. of Subscriptions : 2
+No. of Subscriptions : 1
 SpecificSubscription : 2
 Total Violations : 2
  
@@ -1570,7 +1570,7 @@ Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 31
 No. of Device Input : 2
-No. of Subscriptions : 2
+No. of Subscriptions : 1
 Total Violations : 0
  
 FILENAME : ➥ turn-on-only-if-i-arrive-after-sunset.groovy
@@ -1586,7 +1586,7 @@ Total Defect Density - 40.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 50
 No. of Device Input : 2
-No. of Subscriptions : 2
+No. of Subscriptions : 1
 SpecificSubscription : 2
 Total Violations : 2
  
@@ -1616,7 +1616,7 @@ Maintainability - 4.58
 Total Defect Density - 20.59
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 437
-No. of Device Input : 0
+No. of Device Input : 5
 No. of Subscriptions : 1
 EmptyMethod : 2
 MethodCount : 51
@@ -1636,7 +1636,7 @@ Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 31
 No. of Device Input : 2
-No. of Subscriptions : 2
+No. of Subscriptions : 1
 Total Violations : 0
  
 FILENAME : ➥ unlock-it-when-i-arrive.groovy
@@ -1648,7 +1648,7 @@ Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 35
 No. of Device Input : 2
-No. of Subscriptions : 2
+No. of Subscriptions : 1
 Total Violations : 0
  
 FILENAME : ➥ virtual-thermostat.groovy
@@ -1664,7 +1664,7 @@ Total Defect Density - 17.09
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 117
 No. of Device Input : 3
-No. of Subscriptions : 4
+No. of Subscriptions : 2
 SpecificSubscription : 2
 Total Violations : 2
  
