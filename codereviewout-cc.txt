@@ -1,4 +1,4 @@
-﻿
+
 --app-start--
 processing CodeNarcAntReport-cc.html
 FILENAME : ➥ bright-when-dark-and-or-bright-after-sunset.groovy
@@ -36,7 +36,7 @@ Total Defect Density - 17.76
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 732
 No. of Device Input : 14
-No. of Subscriptions : 3
+No. of Subscriptions : 4
 MethodSize : 191
 SpecificSubscription : 5
 CyclomaticComplexity : 72
@@ -136,7 +136,7 @@ Maintainability - 0.0
 Total Defect Density - 50.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 40
-No. of Device Input : 0
+No. of Device Input : 1
 No. of Subscriptions : 0
 HandleNullValue : 1
 EmptyMethod : 1
@@ -316,7 +316,7 @@ Total Defect Density - 27.03
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 74
 No. of Device Input : 5
-No. of Subscriptions : 3
+No. of Subscriptions : 4
 SpecificSubscription : 2
 Total Violations : 2
  
@@ -328,7 +328,7 @@ Maintainability - 0.0
 Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 78
-No. of Device Input : 1
+No. of Device Input : 2
 No. of Subscriptions : 1
 Total Violations : 0
  
@@ -344,7 +344,7 @@ Maintainability - 0.0
 Total Defect Density - 58.82
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 34
-No. of Device Input : 1
+No. of Device Input : 2
 No. of Subscriptions : 1
 SpecificSubscription : 2
 Total Violations : 2
@@ -568,7 +568,7 @@ Maintainability - 40.2
 Total Defect Density - 50.25
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 199
-No. of Device Input : 5
+No. of Device Input : 6
 No. of Subscriptions : 2
 DocumentExposedEndpoints : 1
 SpecificSubscription : 1
@@ -738,7 +738,7 @@ Total Defect Density - 82.24
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 304
 No. of Device Input : 26
-No. of Subscriptions : 33
+No. of Subscriptions : 38
 AtomicStateUpdateUsage : 2
 DocumentExternalHTTPRequests : 2
 DocumentExposedEndpoints : 1
@@ -1480,7 +1480,7 @@ Total Defect Density - 86.49
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 2139
 No. of Device Input : 5
-No. of Subscriptions : 1
+No. of Subscriptions : 15
 AvoidRecurringShortSchedules : 9
 UseConsistentReturnValue : 16
 MethodSize : 172
@@ -1529,7 +1529,7 @@ Maintainability - 0.0
 Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 27
-No. of Device Input : 1
+No. of Device Input : 2
 No. of Subscriptions : 1
 Total Violations : 0
  
@@ -1578,7 +1578,7 @@ Maintainability - 3.94
 Total Defect Density - 3.94
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 254
-No. of Device Input : 1
+No. of Device Input : 21
 No. of Subscriptions : 10
 ConfusingTernary : 1
 Total Violations : 1
@@ -1680,7 +1680,7 @@ Maintainability - 0.0
 Total Defect Density - 10.87
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 92
-No. of Device Input : 0
+No. of Device Input : 2
 No. of Subscriptions : 1
 EmptyElseBlock : 1
 Total Violations : 1
@@ -1914,8 +1914,8 @@ Maintainability - 1.34
 Total Defect Density - 56.15
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 1496
-No. of Device Input : 0
-No. of Subscriptions : 0
+No. of Device Input : 11
+No. of Subscriptions : 9
 MissingSwitchDefault : 2
 EmptyMethod : 2
 MethodSize : 109
@@ -2022,8 +2022,8 @@ Maintainability - 12.1
 Total Defect Density - 32.59
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 1074
-No. of Device Input : 0
-No. of Subscriptions : 1
+No. of Device Input : 28
+No. of Subscriptions : 24
 MethodSize : 105
 MethodCount : 34
 SpecificSubscription : 16
@@ -2065,7 +2065,7 @@ Maintainability - 3.84
 Total Defect Density - 5.76
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 521
-No. of Device Input : 0
+No. of Device Input : 4
 No. of Subscriptions : 3
 AvoidRecurringShortSchedules : 1
 CyclomaticComplexity : 24
@@ -2084,7 +2084,7 @@ Maintainability - 0.0
 Total Defect Density - 5.57
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 359
-No. of Device Input : 0
+No. of Device Input : 2
 No. of Subscriptions : 0
 MissingSwitchDefault : 2
 Total Violations : 2
@@ -2097,7 +2097,7 @@ Maintainability - 0.0
 Total Defect Density - 0.0
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 65
-No. of Device Input : 1
+No. of Device Input : 2
 No. of Subscriptions : 0
 Total Violations : 0
  
@@ -2152,7 +2152,7 @@ Total Defect Density - 15.75
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 127
 No. of Device Input : 2
-No. of Subscriptions : 2
+No. of Subscriptions : 4
 SpecificSubscription : 2
 Total Violations : 2
  
