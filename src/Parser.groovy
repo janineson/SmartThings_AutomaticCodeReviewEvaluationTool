@@ -199,7 +199,7 @@ class Parser{
         int countInput = listOfCount.count('CountInput')
         int countSubscription = listOfCount.count('CountSubscription')
 
-        log.append("No. of Device Input : " + countInput)
+        log.append("No. of Input : " + countInput)
         log.append("No. of Subscriptions : " + countSubscription)
         if(combinedInputList.containsKey('CountInput'))
             combinedInputList.put('CountInput', combinedInputList.get('CountInput') + countInput)
