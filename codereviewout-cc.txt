@@ -37,6 +37,7 @@ Total Defect Density - 17.76
 Lines of Code : 732
 No. of Input : 39
 No. of Subscriptions : 7
+No. of Event Handlers : 6
 MethodSize : 191
 SpecificSubscription : 5
 CyclomaticComplexity : 72
@@ -53,6 +54,7 @@ Total Defect Density - 0.0
 Lines of Code : 53
 No. of Input : 4
 No. of Subscriptions : 2
+No. of Event Handlers : 1
 Total Violations : 0
  
 FILENAME : ➥ goodnight-ubi.groovy
@@ -69,6 +71,7 @@ Total Defect Density - 26.67
 Lines of Code : 75
 No. of Input : 6
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 EmptyIfStatement : 1
 DocumentExternalHTTPRequests : 1
 Total Violations : 2
@@ -85,6 +88,7 @@ Total Defect Density - 21.28
 Lines of Code : 47
 No. of Input : 10
 No. of Subscriptions : 0
+No. of Event Handlers : 0
 DocumentExternalHTTPRequests : 1
 Total Violations : 1
  
@@ -102,6 +106,7 @@ Total Defect Density - 10.99
 Lines of Code : 182
 No. of Input : 3
 No. of Subscriptions : 0
+No. of Event Handlers : 0
 EmptyMethod : 1
 DocumentExposedEndpoints : 1
 Total Violations : 2
@@ -120,6 +125,7 @@ Total Defect Density - 19.61
 Lines of Code : 102
 No. of Input : 0
 No. of Subscriptions : 0
+No. of Event Handlers : 0
 EmptyMethod : 1
 DocumentExposedEndpoints : 1
 Total Violations : 2
@@ -138,6 +144,7 @@ Total Defect Density - 50.0
 Lines of Code : 40
 No. of Input : 1
 No. of Subscriptions : 0
+No. of Event Handlers : 0
 HandleNullValue : 1
 EmptyMethod : 1
 Total Violations : 2
@@ -152,6 +159,7 @@ Total Defect Density - 0.0
 Lines of Code : 93
 No. of Input : 6
 No. of Subscriptions : 0
+No. of Event Handlers : 0
 Total Violations : 0
  
 FILENAME : ➥ vinli-home-connect.groovy
@@ -166,6 +174,7 @@ Total Defect Density - 7.19
 Lines of Code : 139
 No. of Input : 2
 No. of Subscriptions : 0
+No. of Event Handlers : 0
 DocumentExposedEndpoints : 1
 Total Violations : 1
  
@@ -189,6 +198,7 @@ Total Defect Density - 49.02
 Lines of Code : 102
 No. of Input : 1
 No. of Subscriptions : 0
+No. of Event Handlers : 0
 EmptyMethod : 2
 DocumentExposedEndpoints : 1
 InvertedIfElse : 2
@@ -220,6 +230,7 @@ Total Defect Density - 19.95
 Lines of Code : 401
 No. of Input : 1
 No. of Subscriptions : 0
+No. of Event Handlers : 0
 AvoidRecurringShortSchedules : 1
 MethodCount : 32
 DocumentExternalHTTPRequests : 3
@@ -278,6 +289,7 @@ Total Defect Density - 44.25
 Lines of Code : 452
 No. of Input : 2
 No. of Subscriptions : 0
+No. of Event Handlers : 0
 HandleNullValue : 1
 MissingSwitchDefault : 2
 MethodCount : 37
@@ -300,6 +312,7 @@ Total Defect Density - 15.87
 Lines of Code : 63
 No. of Input : 3
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 SpecificSubscription : 1
 Total Violations : 1
  
@@ -317,6 +330,7 @@ Total Defect Density - 27.03
 Lines of Code : 74
 No. of Input : 7
 No. of Subscriptions : 4
+No. of Event Handlers : 1
 SpecificSubscription : 2
 Total Violations : 2
  
@@ -330,6 +344,7 @@ Total Defect Density - 0.0
 Lines of Code : 78
 No. of Input : 6
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 Total Violations : 0
  
 FILENAME : ➥ let-there-be-dark.groovy
@@ -346,6 +361,7 @@ Total Defect Density - 58.82
 Lines of Code : 34
 No. of Input : 2
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 SpecificSubscription : 2
 Total Violations : 2
  
@@ -367,6 +383,7 @@ Total Defect Density - 34.48
 Lines of Code : 116
 No. of Input : 8
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 CyclomaticComplexity : 21
 CouldBeElvis : 1
 InvertedIfElse : 2
@@ -388,6 +405,7 @@ Total Defect Density - 27.78
 Lines of Code : 108
 No. of Input : 8
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 CyclomaticComplexity : 21
 InvertedIfElse : 2
 Total Violations : 3
@@ -530,6 +548,7 @@ Total Defect Density - 122.37
 Lines of Code : 523
 No. of Input : 5
 No. of Subscriptions : 0
+No. of Event Handlers : 0
 MethodSize : 520
 AtomicStateUsage : 49
 DocumentExternalHTTPRequests : 2
@@ -570,6 +589,7 @@ Total Defect Density - 50.25
 Lines of Code : 199
 No. of Input : 6
 No. of Subscriptions : 2
+No. of Event Handlers : 1
 DocumentExposedEndpoints : 1
 SpecificSubscription : 1
 InvertedIfElse : 8
@@ -585,6 +605,7 @@ Total Defect Density - 0.0
 Lines of Code : 36
 No. of Input : 3
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 Total Violations : 0
  
 FILENAME : ➥ door-knocker.groovy
@@ -597,6 +618,7 @@ Total Defect Density - 0.0
 Lines of Code : 64
 No. of Input : 5
 No. of Subscriptions : 2
+No. of Event Handlers : 2
 Total Violations : 0
  
 FILENAME : ➥ forgiving-security.groovy
@@ -609,6 +631,7 @@ Total Defect Density - 0.0
 Lines of Code : 87
 No. of Input : 8
 No. of Subscriptions : 2
+No. of Event Handlers : 1
 Total Violations : 0
  
 FILENAME : ➥ hall-light-welcome-home.groovy
@@ -621,6 +644,7 @@ Total Defect Density - 0.0
 Lines of Code : 54
 No. of Input : 5
 No. of Subscriptions : 2
+No. of Event Handlers : 2
 Total Violations : 0
  
 FILENAME : ➥ nobody-home.groovy
@@ -635,6 +659,7 @@ Total Defect Density - 8.4
 Lines of Code : 119
 No. of Input : 3
 No. of Subscriptions : 3
+No. of Event Handlers : 3
 SpecificSubscription : 1
 Total Violations : 1
  
@@ -648,6 +673,7 @@ Total Defect Density - 0.0
 Lines of Code : 106
 No. of Input : 5
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 Total Violations : 0
  
 FILENAME : ➥ safe-watch.groovy
@@ -660,6 +686,7 @@ Total Defect Density - 0.0
 Lines of Code : 99
 No. of Input : 11
 No. of Subscriptions : 5
+No. of Event Handlers : 5
 Total Violations : 0
  
 FILENAME : ➥ thermostat-window-check.groovy
@@ -676,6 +703,7 @@ Total Defect Density - 21.28
 Lines of Code : 94
 No. of Input : 6
 No. of Subscriptions : 2
+No. of Event Handlers : 2
 SpecificSubscription : 2
 Total Violations : 2
  
@@ -739,6 +767,7 @@ Total Defect Density - 82.24
 Lines of Code : 304
 No. of Input : 26
 No. of Subscriptions : 38
+No. of Event Handlers : 1
 AtomicStateUpdateUsage : 2
 DocumentExternalHTTPRequests : 2
 DocumentExposedEndpoints : 1
@@ -759,6 +788,7 @@ Total Defect Density - 23.81
 Lines of Code : 42
 No. of Input : 3
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 SpecificSubscription : 1
 Total Violations : 1
  
@@ -774,6 +804,7 @@ Total Defect Density - 22.73
 Lines of Code : 44
 No. of Input : 2
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 SpecificSubscription : 1
 Total Violations : 1
  
@@ -793,6 +824,7 @@ Total Defect Density - 27.78
 Lines of Code : 108
 No. of Input : 2
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 MissingSwitchDefault : 2
 SpecificSubscription : 1
 Total Violations : 3
@@ -807,6 +839,7 @@ Total Defect Density - 0.0
 Lines of Code : 182
 No. of Input : 10
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 Total Violations : 0
  
 FILENAME : ➥ jawbone-button-notifier.groovy
@@ -821,6 +854,7 @@ Total Defect Density - 16.39
 Lines of Code : 61
 No. of Input : 5
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 SpecificSubscription : 1
 Total Violations : 1
  
@@ -856,6 +890,7 @@ Total Defect Density - 27.43
 Lines of Code : 401
 No. of Input : 0
 No. of Subscriptions : 0
+No. of Event Handlers : 0
 MissingSwitchDefault : 1
 DocumentExternalHTTPRequests : 8
 DocumentExposedEndpoints : 1
@@ -878,6 +913,7 @@ Total Defect Density - 51.72
 Lines of Code : 58
 No. of Input : 3
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 SpecificSubscription : 2
 CouldBeElvis : 1
 Total Violations : 3
@@ -892,6 +928,7 @@ Total Defect Density - 0.0
 Lines of Code : 105
 No. of Input : 5
 No. of Subscriptions : 4
+No. of Event Handlers : 1
 Total Violations : 0
  
 FILENAME : ➥ weather-underground-pws-connect.groovy
@@ -906,6 +943,7 @@ Total Defect Density - 15.15
 Lines of Code : 66
 No. of Input : 4
 No. of Subscriptions : 0
+No. of Event Handlers : 0
 DocumentExternalHTTPRequests : 1
 Total Violations : 1
  
@@ -921,6 +959,7 @@ Total Defect Density - 10.2
 Lines of Code : 98
 No. of Input : 3
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 SpecificSubscription : 1
 Total Violations : 1
  
@@ -934,6 +973,7 @@ Total Defect Density - 0.0
 Lines of Code : 100
 No. of Input : 5
 No. of Subscriptions : 2
+No. of Event Handlers : 2
 Total Violations : 0
  
 FILENAME : ➥ color-coordinator.groovy
@@ -948,6 +988,7 @@ Total Defect Density - 7.19
 Lines of Code : 139
 No. of Input : 3
 No. of Subscriptions : 5
+No. of Event Handlers : 3
 SpecificSubscription : 1
 Total Violations : 1
  
@@ -965,6 +1006,7 @@ Total Defect Density - 18.35
 Lines of Code : 109
 No. of Input : 3
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 SpecificSubscription : 2
 Total Violations : 2
  
@@ -982,6 +1024,7 @@ Total Defect Density - 45.45
 Lines of Code : 44
 No. of Input : 3
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 SpecificSubscription : 2
 Total Violations : 2
  
@@ -999,6 +1042,7 @@ Total Defect Density - 43.48
 Lines of Code : 46
 No. of Input : 1
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 SpecificSubscription : 2
 Total Violations : 2
  
@@ -1022,6 +1066,7 @@ Total Defect Density - 75.76
 Lines of Code : 66
 No. of Input : 4
 No. of Subscriptions : 2
+No. of Event Handlers : 2
 SpecificSubscription : 4
 InvertedIfElse : 1
 Total Violations : 5
@@ -1044,6 +1089,7 @@ Total Defect Density - 23.53
 Lines of Code : 170
 No. of Input : 2
 No. of Subscriptions : 5
+No. of Event Handlers : 2
 DocumentExposedEndpoints : 1
 SpecificSubscription : 2
 CyclomaticComplexity : 26
@@ -1093,6 +1139,7 @@ Total Defect Density - 46.45
 Lines of Code : 366
 No. of Input : 1
 No. of Subscriptions : 2
+No. of Event Handlers : 2
 AtomicStateUsage : 1
 DocumentExternalHTTPRequests : 5
 DocumentExposedEndpoints : 1
@@ -1480,7 +1527,8 @@ Total Defect Density - 86.49
 ---Breakdown of Violations and Other Metrics---
 Lines of Code : 2139
 No. of Input : 30
-No. of Subscriptions : 16
+No. of Subscriptions : 8
+No. of Event Handlers : 8
 AvoidRecurringShortSchedules : 9
 UseConsistentReturnValue : 16
 MethodSize : 172
@@ -1517,6 +1565,7 @@ Total Defect Density - 45.45
 Lines of Code : 110
 No. of Input : 4
 No. of Subscriptions : 3
+No. of Event Handlers : 3
 AvoidRecurringShortSchedules : 2
 SpecificSubscription : 3
 Total Violations : 5
@@ -1531,6 +1580,7 @@ Total Defect Density - 0.0
 Lines of Code : 27
 No. of Input : 2
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 Total Violations : 0
  
 FILENAME : ➥ simple-sync-connect.groovy
@@ -1561,6 +1611,7 @@ Total Defect Density - 27.78
 Lines of Code : 324
 No. of Input : 2
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 VerifyArrayIndex : 5
 HandleNullValue : 1
 ParameterReassignment : 1
@@ -1580,6 +1631,7 @@ Total Defect Density - 3.94
 Lines of Code : 254
 No. of Input : 29
 No. of Subscriptions : 12
+No. of Event Handlers : 3
 ConfusingTernary : 1
 Total Violations : 1
  
@@ -1631,6 +1683,7 @@ Total Defect Density - 30.02
 Lines of Code : 633
 No. of Input : 16
 No. of Subscriptions : 2
+No. of Event Handlers : 2
 VerifyArrayIndex : 5
 HandleNullValue : 1
 MissingSwitchDefault : 2
@@ -1666,6 +1719,7 @@ Total Defect Density - 44.78
 Lines of Code : 134
 No. of Input : 4
 No. of Subscriptions : 0
+No. of Event Handlers : 0
 VerifyArrayIndex : 5
 DocumentExternalHTTPRequests : 1
 Total Violations : 6
@@ -1682,6 +1736,7 @@ Total Defect Density - 10.87
 Lines of Code : 92
 No. of Input : 6
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 EmptyElseBlock : 1
 Total Violations : 1
  
@@ -1695,6 +1750,7 @@ Total Defect Density - 0.0
 Lines of Code : 58
 No. of Input : 5
 No. of Subscriptions : 0
+No. of Event Handlers : 0
 Total Violations : 0
  
 FILENAME : ➥ door-lock-code-distress-message.groovy
@@ -1711,6 +1767,7 @@ Total Defect Density - 45.45
 Lines of Code : 44
 No. of Input : 5
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 SpecificSubscription : 2
 Total Violations : 2
  
@@ -1724,6 +1781,7 @@ Total Defect Density - 0.0
 Lines of Code : 134
 No. of Input : 7
 No. of Subscriptions : 4
+No. of Event Handlers : 1
 Total Violations : 0
  
 FILENAME : ➥ sprayer-controller-2.groovy
@@ -1736,6 +1794,7 @@ Total Defect Density - 0.0
 Lines of Code : 118
 No. of Input : 5
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 Total Violations : 0
  
 FILENAME : ➥ smart-alarm.groovy
@@ -1916,6 +1975,7 @@ Total Defect Density - 56.15
 Lines of Code : 1496
 No. of Input : 58
 No. of Subscriptions : 10
+No. of Event Handlers : 7
 MissingSwitchDefault : 2
 EmptyMethod : 2
 MethodSize : 109
@@ -1940,6 +2000,7 @@ Total Defect Density - 7.75
 Lines of Code : 258
 No. of Input : 10
 No. of Subscriptions : 3
+No. of Event Handlers : 3
 AvoidRecurringShortSchedules : 1
 SpecificSubscription : 1
 Total Violations : 2
@@ -2024,6 +2085,7 @@ Total Defect Density - 32.59
 Lines of Code : 1074
 No. of Input : 64
 No. of Subscriptions : 28
+No. of Event Handlers : 8
 MethodSize : 105
 MethodCount : 34
 SpecificSubscription : 16
@@ -2047,6 +2109,7 @@ Total Defect Density - 11.49
 Lines of Code : 261
 No. of Input : 11
 No. of Subscriptions : 3
+No. of Event Handlers : 3
 AvoidRecurringShortSchedules : 2
 SpecificSubscription : 1
 Total Violations : 3
@@ -2067,6 +2130,7 @@ Total Defect Density - 5.76
 Lines of Code : 521
 No. of Input : 19
 No. of Subscriptions : 5
+No. of Event Handlers : 4
 AvoidRecurringShortSchedules : 1
 CyclomaticComplexity : 24
 InvertedIfElse : 1
@@ -2086,6 +2150,7 @@ Total Defect Density - 5.57
 Lines of Code : 359
 No. of Input : 12
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 MissingSwitchDefault : 2
 Total Violations : 2
  
@@ -2099,6 +2164,7 @@ Total Defect Density - 0.0
 Lines of Code : 65
 No. of Input : 5
 No. of Subscriptions : 0
+No. of Event Handlers : 0
 Total Violations : 0
  
 FILENAME : ➥ alfred-workflow.groovy
@@ -2119,6 +2185,7 @@ Total Defect Density - 28.37
 Lines of Code : 141
 No. of Input : 2
 No. of Subscriptions : 0
+No. of Event Handlers : 0
 EmptyMethod : 2
 DocumentExposedEndpoints : 1
 InvertedIfElse : 1
@@ -2136,6 +2203,7 @@ Total Defect Density - 18.18
 Lines of Code : 55
 No. of Input : 1
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 DocumentExternalHTTPRequests : 1
 Total Violations : 1
  
@@ -2153,6 +2221,7 @@ Total Defect Density - 15.75
 Lines of Code : 127
 No. of Input : 4
 No. of Subscriptions : 4
+No. of Event Handlers : 4
 SpecificSubscription : 2
 Total Violations : 2
  
@@ -2168,6 +2237,7 @@ Total Defect Density - 4.59
 Lines of Code : 218
 No. of Input : 2
 No. of Subscriptions : 0
+No. of Event Handlers : 0
 DocumentExposedEndpoints : 1
 Total Violations : 1
  
@@ -2199,6 +2269,7 @@ Total Defect Density - 10.49
 Lines of Code : 858
 No. of Input : 7
 No. of Subscriptions : 3
+No. of Event Handlers : 3
 UseConsistentReturnValue : 2
 MethodSize : 458
 MethodCount : 36
@@ -2245,6 +2316,7 @@ Total Defect Density - 19.26
 Lines of Code : 727
 No. of Input : 2
 No. of Subscriptions : 0
+No. of Event Handlers : 0
 HandleNullValue : 1
 MissingSwitchDefault : 3
 MethodCount : 55
@@ -2315,6 +2387,7 @@ Total Defect Density - 54.23
 Lines of Code : 461
 No. of Input : 3
 No. of Subscriptions : 0
+No. of Event Handlers : 0
 EmptyMethod : 1
 AtomicStateUsage : 4
 AtomicStateUpdateUsage : 17
@@ -2345,6 +2418,7 @@ Total Defect Density - 30.61
 Lines of Code : 196
 No. of Input : 1
 No. of Subscriptions : 7
+No. of Event Handlers : 1
 DocumentExternalHTTPRequests : 1
 DocumentExposedEndpoints : 1
 SpecificSubscription : 3

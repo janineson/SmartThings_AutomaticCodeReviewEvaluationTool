@@ -17,6 +17,7 @@ Total Defect Density - 11.86
 Lines of Code : 253
 No. of Input : 15
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 UseConsistentReturnValue : 2
 SpecificSubscription : 1
 Total Violations : 3
@@ -31,6 +32,7 @@ Total Defect Density - 0.0
 Lines of Code : 33
 No. of Input : 1
 No. of Subscriptions : 4
+No. of Event Handlers : 2
 Total Violations : 0
  
 FILENAME : ➥ big-turn-on.groovy
@@ -43,6 +45,7 @@ Total Defect Density - 0.0
 Lines of Code : 33
 No. of Input : 1
 No. of Subscriptions : 4
+No. of Event Handlers : 2
 Total Violations : 0
  
 FILENAME : ➥ bon-voyage.groovy
@@ -59,6 +62,7 @@ Total Defect Density - 18.02
 Lines of Code : 111
 No. of Input : 4
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 SpecificSubscription : 2
 Total Violations : 2
  
@@ -74,6 +78,7 @@ Total Defect Density - 3.4
 Lines of Code : 294
 No. of Input : 32
 No. of Subscriptions : 15
+No. of Event Handlers : 3
 CyclomaticComplexity : 28
 Total Violations : 1
  
@@ -87,6 +92,7 @@ Total Defect Density - 0.0
 Lines of Code : 37
 No. of Input : 3
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 Total Violations : 0
  
 FILENAME : ➥ brighten-my-path.groovy
@@ -99,6 +105,7 @@ Total Defect Density - 0.0
 Lines of Code : 29
 No. of Input : 2
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 Total Violations : 0
  
 FILENAME : ➥ button-controller.groovy
@@ -115,6 +122,7 @@ Total Defect Density - 7.33
 Lines of Code : 273
 No. of Input : 19
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 MissingSwitchDefault : 1
 MethodCount : 31
 Total Violations : 2
@@ -129,6 +137,7 @@ Total Defect Density - 0.0
 Lines of Code : 45
 No. of Input : 3
 No. of Subscriptions : 0
+No. of Event Handlers : 0
 Total Violations : 0
  
 FILENAME : ➥ cameras-on-when-im-away.groovy
@@ -145,6 +154,7 @@ Total Defect Density - 28.99
 Lines of Code : 69
 No. of Input : 2
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 SpecificSubscription : 2
 Total Violations : 2
  
@@ -160,6 +170,7 @@ Total Defect Density - 15.63
 Lines of Code : 64
 No. of Input : 4
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 IfStatementCouldBeTernary : 1
 Total Violations : 1
  
@@ -177,6 +188,7 @@ Total Defect Density - 31.25
 Lines of Code : 64
 No. of Input : 6
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 SpecificSubscription : 2
 Total Violations : 2
  
@@ -190,6 +202,7 @@ Total Defect Density - 0.0
 Lines of Code : 83
 No. of Input : 4
 No. of Subscriptions : 3
+No. of Event Handlers : 3
 Total Violations : 0
  
 FILENAME : ➥ darken-behind-me.groovy
@@ -202,6 +215,7 @@ Total Defect Density - 0.0
 Lines of Code : 29
 No. of Input : 2
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 Total Violations : 0
  
 FILENAME : ➥ double-tap.groovy
@@ -214,6 +228,7 @@ Total Defect Density - 0.0
 Lines of Code : 71
 No. of Input : 4
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 Total Violations : 0
  
 FILENAME : ➥ dry-the-wetspot.groovy
@@ -226,6 +241,7 @@ Total Defect Density - 0.0
 Lines of Code : 34
 No. of Input : 2
 No. of Subscriptions : 2
+No. of Event Handlers : 1
 Total Violations : 0
  
 FILENAME : ➥ ecobee-connect.groovy
@@ -276,6 +292,7 @@ Total Defect Density - 28.23
 Lines of Code : 673
 No. of Input : 1
 No. of Subscriptions : 0
+No. of Event Handlers : 0
 MethodCount : 44
 DocumentExternalHTTPRequests : 5
 DocumentExposedEndpoints : 1
@@ -298,6 +315,7 @@ Total Defect Density - 17.7
 Lines of Code : 113
 No. of Input : 6
 No. of Subscriptions : 0
+No. of Event Handlers : 0
 UseConsistentReturnValue : 1
 IfStatementCouldBeTernary : 1
 Total Violations : 2
@@ -312,6 +330,7 @@ Total Defect Density - 0.0
 Lines of Code : 96
 No. of Input : 9
 No. of Subscriptions : 2
+No. of Event Handlers : 2
 Total Violations : 0
  
 FILENAME : ➥ energy-alerts.groovy
@@ -330,6 +349,7 @@ Total Defect Density - 41.1
 Lines of Code : 73
 No. of Input : 5
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 EmptyElseBlock : 2
 CouldBeElvis : 1
 Total Violations : 3
@@ -344,6 +364,7 @@ Total Defect Density - 0.0
 Lines of Code : 39
 No. of Input : 3
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 Total Violations : 0
  
 FILENAME : ➥ every-element.groovy
@@ -362,6 +383,7 @@ Total Defect Density - 6.36
 Lines of Code : 472
 No. of Input : 47
 No. of Subscriptions : 0
+No. of Event Handlers : 0
 EmptyMethod : 1
 ParameterReassignment : 1
 MethodCount : 34
@@ -377,6 +399,7 @@ Total Defect Density - 0.0
 Lines of Code : 31
 No. of Input : 2
 No. of Subscriptions : 0
+No. of Event Handlers : 0
 Total Violations : 0
  
 FILENAME : ➥ flood-alert.groovy
@@ -389,6 +412,7 @@ Total Defect Density - 0.0
 Lines of Code : 48
 No. of Input : 2
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 Total Violations : 0
  
 FILENAME : ➥ foscam-connect.groovy
@@ -407,6 +431,7 @@ Total Defect Density - 18.4
 Lines of Code : 163
 No. of Input : 3
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 HandleNullValue : 1
 ConfusingTernary : 1
 InvertedIfElse : 1
@@ -428,6 +453,7 @@ Total Defect Density - 31.91
 Lines of Code : 94
 No. of Input : 3
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 SpecificSubscription : 2
 CouldBeElvis : 1
 Total Violations : 3
@@ -442,6 +468,7 @@ Total Defect Density - 0.0
 Lines of Code : 31
 No. of Input : 1
 No. of Subscriptions : 2
+No. of Event Handlers : 2
 Total Violations : 0
  
 FILENAME : ➥ gentle-wake-up.groovy
@@ -488,6 +515,7 @@ Total Defect Density - 19.72
 Lines of Code : 862
 No. of Input : 19
 No. of Subscriptions : 3
+No. of Event Handlers : 3
 UseConsistentReturnValue : 3
 MethodCount : 76
 AtomicStateUsage : 1
@@ -507,6 +535,7 @@ Total Defect Density - 0.0
 Lines of Code : 159
 No. of Input : 6
 No. of Subscriptions : 5
+No. of Event Handlers : 4
 Total Violations : 0
  
 FILENAME : ➥ greetings-earthling.groovy
@@ -523,6 +552,7 @@ Total Defect Density - 25.97
 Lines of Code : 77
 No. of Input : 4
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 SpecificSubscription : 2
 Total Violations : 2
  
@@ -536,6 +566,7 @@ Total Defect Density - 0.0
 Lines of Code : 44
 No. of Input : 3
 No. of Subscriptions : 0
+No. of Event Handlers : 0
 Total Violations : 0
  
 FILENAME : ➥ has-barkley-been-fed.groovy
@@ -548,6 +579,7 @@ Total Defect Density - 0.0
 Lines of Code : 53
 No. of Input : 3
 No. of Subscriptions : 0
+No. of Event Handlers : 0
 Total Violations : 0
  
 FILENAME : ➥ hub-ip-notifier.groovy
@@ -560,6 +592,7 @@ Total Defect Density - 0.0
 Lines of Code : 54
 No. of Input : 1
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 Total Violations : 0
  
 FILENAME : ➥ hue-mood-lighting.groovy
@@ -574,6 +607,7 @@ Total Defect Density - 3.5
 Lines of Code : 286
 No. of Input : 32
 No. of Subscriptions : 15
+No. of Event Handlers : 3
 MissingSwitchDefault : 1
 Total Violations : 1
  
@@ -599,6 +633,7 @@ Total Defect Density - 28.04
 Lines of Code : 214
 No. of Input : 11
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 UseConsistentReturnValue : 1
 DocumentExternalHTTPRequests : 1
 DocumentExposedEndpoints : 1
@@ -617,6 +652,7 @@ Total Defect Density - 0.0
 Lines of Code : 45
 No. of Input : 2
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 Total Violations : 0
  
 FILENAME : ➥ its-too-cold.groovy
@@ -629,6 +665,7 @@ Total Defect Density - 0.0
 Lines of Code : 71
 No. of Input : 5
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 Total Violations : 0
  
 FILENAME : ➥ its-too-hot.groovy
@@ -641,6 +678,7 @@ Total Defect Density - 0.0
 Lines of Code : 71
 No. of Input : 5
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 Total Violations : 0
  
 FILENAME : ➥ keep-me-cozy-ii.groovy
@@ -655,6 +693,7 @@ Total Defect Density - 10.53
 Lines of Code : 95
 No. of Input : 4
 No. of Subscriptions : 4
+No. of Event Handlers : 2
 SpecificSubscription : 1
 Total Violations : 1
  
@@ -668,6 +707,7 @@ Total Defect Density - 0.0
 Lines of Code : 67
 No. of Input : 3
 No. of Subscriptions : 7
+No. of Event Handlers : 5
 Total Violations : 0
  
 FILENAME : ➥ laundry-monitor.groovy
@@ -682,6 +722,7 @@ Total Defect Density - 6.94
 Lines of Code : 144
 No. of Input : 6
 No. of Subscriptions : 2
+No. of Event Handlers : 2
 InvertedIfElse : 1
 Total Violations : 1
  
@@ -695,6 +736,7 @@ Total Defect Density - 0.0
 Lines of Code : 78
 No. of Input : 4
 No. of Subscriptions : 2
+No. of Event Handlers : 2
 Total Violations : 0
  
 FILENAME : ➥ let-there-be-light.groovy
@@ -711,6 +753,7 @@ Total Defect Density - 62.5
 Lines of Code : 32
 No. of Input : 2
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 SpecificSubscription : 2
 Total Violations : 2
  
@@ -752,6 +795,7 @@ Total Defect Density - 33.41
 Lines of Code : 419
 No. of Input : 7
 No. of Subscriptions : 0
+No. of Event Handlers : 0
 EmptyCatchBlock : 1
 EmptyMethod : 1
 ParameterReassignment : 2
@@ -795,6 +839,7 @@ Total Defect Density - 28.3
 Lines of Code : 424
 No. of Input : 1
 No. of Subscriptions : 0
+No. of Event Handlers : 0
 AvoidRecurringShortSchedules : 1
 UseConsistentReturnValue : 1
 MethodCount : 36
@@ -819,6 +864,7 @@ Total Defect Density - 38.46
 Lines of Code : 52
 No. of Input : 3
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 SpecificSubscription : 2
 Total Violations : 2
  
@@ -832,6 +878,7 @@ Total Defect Density - 0.0
 Lines of Code : 35
 No. of Input : 2
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 Total Violations : 0
  
 FILENAME : ➥ lights-off-when-closed.groovy
@@ -844,6 +891,7 @@ Total Defect Density - 0.0
 Lines of Code : 29
 No. of Input : 2
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 Total Violations : 0
  
 FILENAME : ➥ lock-it-when-i-leave.groovy
@@ -860,6 +908,7 @@ Total Defect Density - 31.75
 Lines of Code : 63
 No. of Input : 4
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 SpecificSubscription : 2
 Total Violations : 2
  
@@ -927,6 +976,7 @@ Total Defect Density - 32.03
 Lines of Code : 843
 No. of Input : 14
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 MethodCount : 57
 DocumentExternalHTTPRequests : 5
 DocumentExposedEndpoints : 1
@@ -949,6 +999,7 @@ Total Defect Density - 0.0
 Lines of Code : 54
 No. of Input : 3
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 Total Violations : 0
  
 FILENAME : ➥ make-it-so.groovy
@@ -961,6 +1012,7 @@ Total Defect Density - 0.0
 Lines of Code : 105
 No. of Input : 3
 No. of Subscriptions : 4
+No. of Event Handlers : 2
 Total Violations : 0
  
 FILENAME : ➥ medicine-reminder.groovy
@@ -975,6 +1027,7 @@ Total Defect Density - 10.31
 Lines of Code : 97
 No. of Input : 8
 No. of Subscriptions : 0
+No. of Event Handlers : 0
 MissingSwitchDefault : 1
 Total Violations : 1
  
@@ -988,6 +1041,7 @@ Total Defect Density - 0.0
 Lines of Code : 126
 No. of Input : 2
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 Total Violations : 0
  
 FILENAME : ➥ mood-cube.groovy
@@ -1000,6 +1054,7 @@ Total Defect Density - 0.0
 Lines of Code : 259
 No. of Input : 6
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 Total Violations : 0
  
 FILENAME : ➥ nfc-tag-toggle.groovy
@@ -1014,6 +1069,7 @@ Total Defect Density - 8.85
 Lines of Code : 113
 No. of Input : 7
 No. of Subscriptions : 2
+No. of Event Handlers : 1
 SpecificSubscription : 1
 Total Violations : 1
  
@@ -1027,6 +1083,7 @@ Total Defect Density - 0.0
 Lines of Code : 28
 No. of Input : 1
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 Total Violations : 0
  
 FILENAME : ➥ notify-me-when.groovy
@@ -1041,6 +1098,7 @@ Total Defect Density - 7.58
 Lines of Code : 132
 No. of Input : 15
 No. of Subscriptions : 13
+No. of Event Handlers : 1
 HandleNullValue : 1
 Total Violations : 1
  
@@ -1054,6 +1112,7 @@ Total Defect Density - 0.0
 Lines of Code : 154
 No. of Input : 17
 No. of Subscriptions : 15
+No. of Event Handlers : 3
 Total Violations : 0
  
 FILENAME : ➥ once-a-day.groovy
@@ -1066,6 +1125,7 @@ Total Defect Density - 0.0
 Lines of Code : 38
 No. of Input : 3
 No. of Subscriptions : 0
+No. of Event Handlers : 0
 Total Violations : 0
  
 FILENAME : ➥ photo-burst-when.groovy
@@ -1078,6 +1138,7 @@ Total Defect Density - 0.0
 Lines of Code : 64
 No. of Input : 10
 No. of Subscriptions : 6
+No. of Event Handlers : 1
 Total Violations : 0
  
 FILENAME : ➥ power-allowance.groovy
@@ -1090,6 +1151,7 @@ Total Defect Density - 0.0
 Lines of Code : 35
 No. of Input : 2
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 Total Violations : 0
  
 FILENAME : ➥ presence-change-push.groovy
@@ -1106,6 +1168,7 @@ Total Defect Density - 71.43
 Lines of Code : 28
 No. of Input : 1
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 SpecificSubscription : 2
 Total Violations : 2
  
@@ -1123,6 +1186,7 @@ Total Defect Density - 46.51
 Lines of Code : 43
 No. of Input : 2
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 SpecificSubscription : 2
 Total Violations : 2
  
@@ -1142,6 +1206,7 @@ Total Defect Density - 19.23
 Lines of Code : 156
 No. of Input : 8
 No. of Subscriptions : 4
+No. of Event Handlers : 4
 SpecificSubscription : 3
 Total Violations : 3
  
@@ -1155,6 +1220,7 @@ Total Defect Density - 0.0
 Lines of Code : 96
 No. of Input : 6
 No. of Subscriptions : 3
+No. of Event Handlers : 2
 Total Violations : 0
  
 FILENAME : ➥ scheduled-mode-change.groovy
@@ -1167,6 +1233,7 @@ Total Defect Density - 0.0
 Lines of Code : 65
 No. of Input : 3
 No. of Subscriptions : 0
+No. of Event Handlers : 0
 Total Violations : 0
  
 FILENAME : ➥ send-ham-bridge-command-when.groovy
@@ -1179,6 +1246,7 @@ Total Defect Density - 0.0
 Lines of Code : 61
 No. of Input : 13
 No. of Subscriptions : 12
+No. of Event Handlers : 1
 Total Violations : 0
  
 FILENAME : ➥ severe-weather-alert.groovy
@@ -1191,6 +1259,7 @@ Total Defect Density - 0.0
 Lines of Code : 97
 No. of Input : 4
 No. of Subscriptions : 0
+No. of Event Handlers : 0
 Total Violations : 0
  
 FILENAME : ➥ single-button-controller.groovy
@@ -1203,6 +1272,7 @@ Total Defect Density - 0.0
 Lines of Code : 114
 No. of Input : 9
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 Total Violations : 0
  
 FILENAME : ➥ sleepy-time.groovy
@@ -1221,6 +1291,7 @@ Total Defect Density - 53.57
 Lines of Code : 56
 No. of Input : 3
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 EmptyMethod : 1
 SpecificSubscription : 2
 Total Violations : 3
@@ -1239,6 +1310,7 @@ Total Defect Density - 12.82
 Lines of Code : 156
 No. of Input : 7
 No. of Subscriptions : 0
+No. of Event Handlers : 0
 UseConsistentReturnValue : 1
 IfStatementCouldBeTernary : 1
 Total Violations : 2
@@ -1253,6 +1325,7 @@ Total Defect Density - 0.0
 Lines of Code : 139
 No. of Input : 10
 No. of Subscriptions : 2
+No. of Event Handlers : 2
 Total Violations : 0
  
 FILENAME : ➥ smart-nightlight.groovy
@@ -1267,6 +1340,7 @@ Total Defect Density - 7.09
 Lines of Code : 141
 No. of Input : 9
 No. of Subscriptions : 5
+No. of Event Handlers : 4
 SpecificSubscription : 1
 Total Violations : 1
  
@@ -1286,6 +1360,7 @@ Total Defect Density - 11.32
 Lines of Code : 265
 No. of Input : 10
 No. of Subscriptions : 4
+No. of Event Handlers : 4
 SpecificSubscription : 3
 Total Violations : 3
  
@@ -1299,6 +1374,7 @@ Total Defect Density - 0.0
 Lines of Code : 29
 No. of Input : 1
 No. of Subscriptions : 0
+No. of Event Handlers : 0
 Total Violations : 0
  
 FILENAME : ➥ sonos-music-modes.groovy
@@ -1315,6 +1391,7 @@ Total Defect Density - 9.48
 Lines of Code : 211
 No. of Input : 8
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 HandleNullValue : 1
 CouldBeElvis : 1
 Total Violations : 2
@@ -1331,6 +1408,7 @@ Total Defect Density - 8.85
 Lines of Code : 113
 No. of Input : 3
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 MissingSwitchDefault : 1
 Total Violations : 1
  
@@ -1344,6 +1422,7 @@ Total Defect Density - 0.0
 Lines of Code : 269
 No. of Input : 32
 No. of Subscriptions : 15
+No. of Event Handlers : 3
 Total Violations : 0
  
 FILENAME : ➥ speaker-mood-music.groovy
@@ -1356,6 +1435,7 @@ Total Defect Density - 0.0
 Lines of Code : 275
 No. of Input : 32
 No. of Subscriptions : 15
+No. of Event Handlers : 3
 Total Violations : 0
  
 FILENAME : ➥ speaker-notify-with-sound.groovy
@@ -1368,6 +1448,7 @@ Total Defect Density - 0.0
 Lines of Code : 362
 No. of Input : 35
 No. of Subscriptions : 15
+No. of Event Handlers : 3
 Total Violations : 0
  
 FILENAME : ➥ speaker-weather-forecast.groovy
@@ -1380,6 +1461,7 @@ Total Defect Density - 0.0
 Lines of Code : 369
 No. of Input : 35
 No. of Subscriptions : 15
+No. of Event Handlers : 3
 Total Violations : 0
  
 FILENAME : ➥ step-notifier.groovy
@@ -1392,6 +1474,7 @@ Total Defect Density - 0.0
 Lines of Code : 247
 No. of Input : 19
 No. of Subscriptions : 2
+No. of Event Handlers : 2
 Total Violations : 0
  
 FILENAME : ➥ sunrise-sunset.groovy
@@ -1404,6 +1487,7 @@ Total Defect Density - 0.0
 Lines of Code : 142
 No. of Input : 11
 No. of Subscriptions : 3
+No. of Event Handlers : 2
 Total Violations : 0
  
 FILENAME : ➥ tesla-connect.groovy
@@ -1438,6 +1522,7 @@ Total Defect Density - 32.54
 Lines of Code : 338
 No. of Input : 3
 No. of Subscriptions : 0
+No. of Event Handlers : 0
 UseConsistentReturnValue : 1
 DocumentExternalHTTPRequests : 7
 CyclomaticComplexity : 30
@@ -1455,6 +1540,7 @@ Total Defect Density - 0.0
 Lines of Code : 38
 No. of Input : 2
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 Total Violations : 0
  
 FILENAME : ➥ text-me-when-theres-motion-and-im-not-here.groovy
@@ -1467,6 +1553,7 @@ Total Defect Density - 0.0
 Lines of Code : 53
 No. of Input : 3
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 Total Violations : 0
  
 FILENAME : ➥ the-big-switch.groovy
@@ -1479,6 +1566,7 @@ Total Defect Density - 0.0
 Lines of Code : 66
 No. of Input : 5
 No. of Subscriptions : 3
+No. of Event Handlers : 3
 Total Violations : 0
  
 FILENAME : ➥ the-flasher.groovy
@@ -1493,6 +1581,7 @@ Total Defect Density - 8.47
 Lines of Code : 118
 No. of Input : 9
 No. of Subscriptions : 5
+No. of Event Handlers : 5
 SpecificSubscription : 1
 Total Violations : 1
  
@@ -1506,6 +1595,7 @@ Total Defect Density - 0.0
 Lines of Code : 44
 No. of Input : 2
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 Total Violations : 0
  
 FILENAME : ➥ thermostats.groovy
@@ -1518,6 +1608,7 @@ Total Defect Density - 0.0
 Lines of Code : 93
 No. of Input : 7
 No. of Subscriptions : 4
+No. of Event Handlers : 1
 Total Violations : 0
  
 FILENAME : ➥ device-tile-controller.groovy
@@ -1530,6 +1621,7 @@ Total Defect Density - 0.0
 Lines of Code : 82
 No. of Input : 11
 No. of Subscriptions : 0
+No. of Event Handlers : 0
 Total Violations : 0
  
 FILENAME : ➥ turn-it-on-for-5-minutes.groovy
@@ -1542,6 +1634,7 @@ Total Defect Density - 0.0
 Lines of Code : 34
 No. of Input : 2
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 Total Violations : 0
  
 FILENAME : ➥ turn-it-on-when-im-here.groovy
@@ -1558,6 +1651,7 @@ Total Defect Density - 47.62
 Lines of Code : 42
 No. of Input : 2
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 SpecificSubscription : 2
 Total Violations : 2
  
@@ -1571,6 +1665,7 @@ Total Defect Density - 0.0
 Lines of Code : 31
 No. of Input : 2
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 Total Violations : 0
  
 FILENAME : ➥ turn-on-only-if-i-arrive-after-sunset.groovy
@@ -1587,6 +1682,7 @@ Total Defect Density - 40.0
 Lines of Code : 50
 No. of Input : 2
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 SpecificSubscription : 2
 Total Violations : 2
  
@@ -1618,6 +1714,7 @@ Total Defect Density - 20.59
 Lines of Code : 437
 No. of Input : 5
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 EmptyMethod : 2
 MethodCount : 51
 DocumentExternalHTTPRequests : 1
@@ -1637,6 +1734,7 @@ Total Defect Density - 0.0
 Lines of Code : 31
 No. of Input : 2
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 Total Violations : 0
  
 FILENAME : ➥ unlock-it-when-i-arrive.groovy
@@ -1649,6 +1747,7 @@ Total Defect Density - 0.0
 Lines of Code : 35
 No. of Input : 2
 No. of Subscriptions : 1
+No. of Event Handlers : 1
 Total Violations : 0
  
 FILENAME : ➥ virtual-thermostat.groovy
@@ -1665,6 +1764,7 @@ Total Defect Density - 17.09
 Lines of Code : 117
 No. of Input : 7
 No. of Subscriptions : 2
+No. of Event Handlers : 2
 SpecificSubscription : 2
 Total Violations : 2
  
@@ -1706,6 +1806,7 @@ Total Defect Density - 44.87
 Lines of Code : 312
 No. of Input : 0
 No. of Subscriptions : 0
+No. of Event Handlers : 0
 UseConsistentReturnValue : 3
 ParameterReassignment : 4
 MethodCount : 32
@@ -1725,6 +1826,7 @@ Total Defect Density - 0.0
 Lines of Code : 67
 No. of Input : 4
 No. of Subscriptions : 0
+No. of Event Handlers : 0
 Total Violations : 0
  
 FILENAME : ➥ withings-manager.groovy
@@ -1751,6 +1853,7 @@ Total Defect Density - 14.52
 Lines of Code : 482
 No. of Input : 1
 No. of Subscriptions : 0
+No. of Event Handlers : 0
 MissingSwitchDefault : 2
 ConstantIfExpression : 1
 MethodCount : 71
@@ -1786,6 +1889,7 @@ Total Defect Density - 22.61
 Lines of Code : 398
 No. of Input : 0
 No. of Subscriptions : 0
+No. of Event Handlers : 0
 UseConsistentReturnValue : 1
 EmptyMethod : 1
 MethodCount : 39
@@ -1834,6 +1938,7 @@ Total Defect Density - 36.5
 Lines of Code : 411
 No. of Input : 2
 No. of Subscriptions : 0
+No. of Event Handlers : 0
 UseConsistentReturnValue : 1
 ConstantIfExpression : 1
 ParameterReassignment : 2

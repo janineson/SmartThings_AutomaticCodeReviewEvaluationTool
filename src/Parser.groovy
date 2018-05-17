@@ -11,7 +11,7 @@ import java.util.regex.Pattern
 class Parser{
     int reliabilityViolationCount, securityViolationCount, maintainabilityViolationCount, noViolationsCount
     Logger log
-    Map<String, Integer> combinedViolationList, combinedInputList,combinedSubscriptionList
+    Map<String, Integer> combinedViolationList, combinedInputList,combinedSubscriptionList, combinedHandlerList
     float totalDefDensity
 
      Parser(Logger logger) {
@@ -24,6 +24,7 @@ class Parser{
          combinedViolationList=  new HashMap<>()
          combinedInputList=  new HashMap<>()
          combinedSubscriptionList=  new HashMap<>()
+         combinedHandlerList=  new HashMap<>()
          totalDefDensity = 0
     }
 
@@ -116,7 +117,7 @@ class Parser{
 
                     if (ruleName == "TotalLinesOfCode")
                         linesOfCode = fileRuleSource[fileRuleSource.length - 2]
-                    else if (ruleName == "CountInput" || ruleName == "CountSubscription" )
+                    else if (ruleName == "CountInput" || ruleName == "CountSubscription" || ruleName == "CountEventHandler" )
                         ruleCountList.add(ruleName)
                     else{
                         log.append("rule name : " + ruleName + " line : " + ruleLineNo)
@@ -198,9 +199,11 @@ class Parser{
 
         int countInput = listOfCount.count('CountInput')
         int countSubscription = listOfCount.count('CountSubscription')
+        int countEventHandler = listOfCount.count('CountEventHandler')
 
         log.append("No. of Input : " + countInput)
         log.append("No. of Subscriptions : " + countSubscription)
+        log.append("No. of Event Handlers : " + countEventHandler)
         if(combinedInputList.containsKey('CountInput'))
             combinedInputList.put('CountInput', combinedInputList.get('CountInput') + countInput)
         else
@@ -210,6 +213,11 @@ class Parser{
             combinedSubscriptionList.put('CountSubscription', combinedSubscriptionList.get('CountSubscription') + countSubscription)
         else
             combinedSubscriptionList.put('CountSubscription', countSubscription)
+
+        if(combinedHandlerList.containsKey('CountEventHandler'))
+            combinedHandlerList.put('CountEventHandler', combinedHandlerList.get('CountEventHandler') + countEventHandler)
+        else
+            combinedHandlerList.put('CountEventHandler', countEventHandler)
 
 
         for (String rule : reliabilityList) {
